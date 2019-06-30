@@ -1,0 +1,15 @@
+@1000   = ~Diese Komponente ist nur mit SoD und EET kompatibel.~
+@1001   = ~Diese Komponente ist nur mit BGT und EET kompatibel.~ 
+@1002   = ~Modmerge oder Argents DLC Merger wird benoetigt, bevor Mods installiert werden koennen.~
+@1003   = ~Ende unabhaengig von den HC-Antworten~
+@1004   = ~Keine HC-NPC-Dialoge verpassen~
+@1005   = ~Nur fuer NPCs in der Gruppe~
+@1006   = ~Immer alle HC-NPC-Dialoge ermoeglichen~
+@1007   = ~Korlaszs Dungeon ueberspringen~
+@1008   = ~Weitere Dialogoptionen und keine Sackgassen im Questverlauf~
+@1009   = ~Imoens SoD Portrait fuer BGII in EET & BGT verwenden~
+
+
+/* new for v2 */
+@1010   = ~Diese Komponente ist nur mit SoD kompatibel.~
+@1011   = ~Geskripteten Kampf am Ende von SoD wiederherstellen~

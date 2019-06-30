@@ -1,0 +1,60 @@
+/* bdvoghil Voghiln */
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance1","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	TriggerOverride("Voghiln",See(Player1))
+	IsValidForPartyDialog("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance2","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	TriggerOverride("Voghiln",See(Player1))
+	IsValidForPartyDialog("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance3","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	IsValidForPartyDialogue("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",Dialogue(Player1))
+END
+
+/* 4th romance dialogue */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance4","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	IsValidForPartyDialog("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",Dialogue(Player1))
+END

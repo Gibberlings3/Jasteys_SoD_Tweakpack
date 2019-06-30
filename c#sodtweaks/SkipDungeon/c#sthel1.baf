@@ -1,0 +1,65 @@
+// c#sthel1.baf - Korlasz will be killed
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([20.0],0)
+        Wait(1)
+	%item_destroy_party%
+	AddXPObject(Player1,5000)
+	AddXPObject(Player2,5000)
+	AddXPObject(Player3,5000)
+	AddXPObject(Player4,5000)
+	AddXPObject(Player5,5000)
+	AddXPObject(Player6,5000)
+	SetGlobal("BDSH_Imoen_Floor","GLOBAL",3)
+	SetGlobal("bd_Imoen_farewell","bd0120",1)
+	SetGlobal("bd_plot","global",40)
+	SetGlobal("C#st_ShortcutEnabled", "GLOBAL", 1)
+        Wait(1)
+        FadeFromColor([20.0],0)
+//	EndcutSceneMode()
+//      ActionOverride("c#sthelp",StartDialogNoSet(Player1))
+END
+
+IF
+    Global("SPRITE_IS_DEADBDKORLAS","global",1)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        Kill("bdporios")
+        Kill("bdkorde4")
+        Kill("bdkorde5")
+        Kill("bdkorde6")
+        Kill("bdkorde7")
+        Kill("bdkorde8")
+        Kill("bdkorde9")
+        Kill("bdkordeo")
+END
+
+
+IF
+    Global("C#st_EnteredBD0130","GLOBAL",0)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+	AddXPObject(Player1,3000)
+	AddXPObject(Player2,3000)
+	AddXPObject(Player3,3000)
+	AddXPObject(Player4,3000)
+	AddXPObject(Player5,3000)
+	AddXPObject(Player6,3000)
+END 
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+//        FadeFromColor([20.0],0)
+//	EndcutSceneMode()
+        ActionOverride("c#sthelp",StartDialogNoSet(Player1))
+END
+	

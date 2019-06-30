@@ -1,0 +1,75 @@
+/* bdrasaad.bcs Rasaad */
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance1","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	TriggerOverride("Rasaad",See(Player1))
+	IsValidForPartyDialogue("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance2","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	TriggerOverride("Rasaad",See(Player1))
+	IsValidForPartyDialog("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance3","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	TriggerOverride("Rasaad",See(Player1))
+	IsValidForPartyDialogue("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+/* 4th romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance4","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	IsValidForPartyDialogue("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+/* 5th romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance5","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	IsValidForPartyDialog("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END

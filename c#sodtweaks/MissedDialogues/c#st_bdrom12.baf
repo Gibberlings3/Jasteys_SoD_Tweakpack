@@ -1,0 +1,22 @@
+/* bd7300.are: bdrom12.bcs */
+
+/* Dorn */
+
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance1","GLOBAL",2)
+	Global("bd_DornRomance2","GLOBAL",0)
+	!InParty("Dorn")  // Dorn
+	!Dead("Dorn")  // Dorn
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_DornRomance2","GLOBAL",1)
+		IncrementGlobal("C#st_DornTalk","global",1)
+END

@@ -1,0 +1,155 @@
+/* bd5100.are: bdrom17.bcs */
+
+/* Dorn */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance3","GLOBAL",2)
+	Global("bd_DornRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Dorn")  // Dorn
+	!Dead("Dorn")  // Dorn
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_DornRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_DornTalk","global",1)
+END
+
+
+/* Glint */
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance1","GLOBAL",2)
+	Global("bd_GlintRomance2","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Glint")  // Glint
+	!Dead("Glint")  // Glint
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance2","GLOBAL",1)
+		IncrementGlobal("C#st_GlintTalk","global",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance3","GLOBAL",2)
+	Global("bd_GlintRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Glint")  // Glint
+	!Dead("Glint")  // Glint
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_GlintTalk","global",1)
+END
+
+
+/* Rasaad */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance4","GLOBAL",2)
+	Global("bd_RasaadRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Rasaad")  // Rasaad
+	!Dead("Rasaad")  // Rasaad
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance5","GLOBAL",1)
+		IncrementGlobal("C#st_RasaadTalk","global",1)
+END
+
+
+/* Safana */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance4","GLOBAL",2)
+	Global("bd_SafanaRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Safana")  // Safana
+	!Dead("Safana")  // Safana
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+	OR(2)
+		Global("bd_SafanaRomance9","GLOBAL",0)
+		!Dead("voghiln")  // Voghiln
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance5","GLOBAL",1)
+		IncrementGlobal("C#st_SafanaTalk","global",1)
+END
+
+
+/* Viconia */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance4","GLOBAL",2)
+	Global("bd_ViconiaRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Viconia")  // Viconia
+	!Dead("Viconia")  // Viconia
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_ViconiaRomance5","GLOBAL",1)
+		IncrementGlobal("C#st_ViconiaTalk","global",1)
+END
+
+/* Voghiln */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance3","GLOBAL",2)
+	Global("bd_VoghilnRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Voghiln")  // Voghiln
+	!Dead("Voghiln")  // Voghiln
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_VoghilnRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_VoghilnTalk","global",1)
+END
+

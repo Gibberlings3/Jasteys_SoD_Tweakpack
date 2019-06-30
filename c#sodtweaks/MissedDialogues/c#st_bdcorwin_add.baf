@@ -1,0 +1,16 @@
+/* bdcorwin.bcs Corwin */
+
+
+/* let player know there's a new dialogue (only for mod component 4 relevant) */
+
+IF
+	GlobalGT("C#st_CorwinTalk","global",0)
+	!InParty(Myself)
+	Range(Player1,10)
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#st_CorwinTalk","global",-1)
+		DisplayStringHead("Corwin",@0) //~<CHARNAME>, let me join, I want to talk to you!~
+END

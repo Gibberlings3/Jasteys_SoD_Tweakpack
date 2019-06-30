@@ -1,0 +1,92 @@
+/* bdcorwin.bcs Corwin */
+
+
+/* about PC's heritage */
+IF
+	Global("bd_sdd020_talk","global",1)
+	InParty("Corwin")  // Corwin
+	TriggerOverride("Corwin",See(Player1))
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance1","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	TriggerOverride("Corwin",See(Player1))
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance2","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	TriggerOverride("Corwin",See(Player1))
+	IsValidForPartyDialog("Corwin")  // Corwin
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance3","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+/* 4th romance dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance4","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	IsValidForPartyDialog("Corwin")  // Corwin
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+
+
+/* Conflict dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",2)
+	Global("bd_CorwinRomance5","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END

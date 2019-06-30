@@ -1,0 +1,44 @@
+/* bd5000.are: bdrom15.bcs */
+
+/* Neera */
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance3","GLOBAL",2)
+	Global("bd_NeeraRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Neera")  // Neera
+	!Dead("Neera")  // Neera
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_NeeraTalk","global",1)
+END
+
+/* Viconia */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance2","GLOBAL",2)
+	Global("bd_ViconiaRomance3","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Viconia")  // Viconia
+	!Dead("Viconia")  // Viconia
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_ViconiaRomance3","GLOBAL",1)
+		IncrementGlobal("C#st_ViconiaTalk","global",1)
+END

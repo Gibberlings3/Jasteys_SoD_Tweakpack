@@ -1,0 +1,1089 @@
+//List of SoD lovetalks: areas and connected trigger script */
+
+
+/* Corwin */
+/* no area checks but the 2nd dialogue is supposed to trigger before Dragon Spear Castle */
+/* bd1000.are: bdrom01.bcs
+
+/* dialogue about PC's heritage */
+IF
+	Global("bd_sdd020_talk","global",0)
+	InParty("Corwin")  // Corwin
+	IsOverMe(Player1)
+	GlobalLT("bd_plot","GLOBAL",170)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_sdd020_talk","global",1)
+END
+
+IF
+	Global("bd_sdd020_talk","global",1)
+	InParty("Corwin")  // Corwin
+	TriggerOverride("Corwin",See(Player1))
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+/* 1st romance dialogue */
+IF
+	Global("bd_CorwinRomance1","GLOBAL",0)
+	!GlobalLT("bd_plot","GLOBAL",170)
+	InParty("Corwin")  // Corwin
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance1","GLOBAL",1)
+		SetGlobal("bd_corwin_romanceactive","global",1)
+END
+
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance1","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	TriggerOverride("Corwin",See(Player1))
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+
+bd7100.are: bdrom06.bcs
+/* 2nd romance dialogue */
+/* dialogue before Dragon Spear Castle */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance1","GLOBAL",2)
+	Global("bd_CorwinRomance2","GLOBAL",0)
+	InParty("Corwin")  // Corwin
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance2","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	TriggerOverride("Corwin",See(Player1))
+	IsValidForPartyDialog("Corwin")  // Corwin
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+
+bd7300.are: bdrom13.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance2","GLOBAL",2)
+	Global("bd_CorwinRomance3","GLOBAL",0)
+	InParty("Corwin")  // Corwin
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance3","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+bd5200.are: bdrom18.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance3","GLOBAL",2)
+	Global("bd_CorwinRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Corwin")  // Corwin
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance4","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	IsValidForPartyDialog("Corwin")  // Corwin
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+bd5100.are: bdrom16.bcs
+/* Conflict dialogue */
+IF
+	Global("bd_corwin_romanceactive","global",2)
+	Global("bd_CorwinRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	OR(7)
+		Global("bd_neera_romanceactive","global",1)
+		Global("bd_rasaad_romanceactive","global",1)
+		Global("bd_dorn_romanceactive","global",1)
+		Global("bd_safana_romanceactive","global",1)
+		Global("bd_viconia_romanceactive","global",1)
+		Global("bd_glint_romanceactive","global",1)
+		Global("bd_voghiln_romanceactive","global",1)
+	InParty("Corwin")  // Corwin
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance5","GLOBAL",1)
+END
+
+IF
+	Global("bd_corwin_romanceactive","global",2)
+	Global("bd_CorwinRomance5","GLOBAL",1)
+	InParty("Corwin")  // Corwin
+	IsValidForPartyDialogue("Corwin")  // Corwin
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Corwin",StartDialogueNoSet(Player1))
+END
+
+
+*/
+
+/* Dorn */
+/* ok */
+/* bd1200.are: bdrom08.bcs
+/* 1st romance dialogue */
+IF
+	Global("bd_DornRomance1","GLOBAL",0)
+	InParty("Dorn")  // Dorn
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_dorn_romanceactive","global",1)
+		SetGlobal("bd_DornRomance1","GLOBAL",1)
+END
+
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance1","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	TriggerOverride("Dorn",See(Player1))
+	IsValidForPartyDialog("Dorn")  // Dorn
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END
+
+bd7300.are: bdrom12.bcs
+/* 2nd romance dialogue */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance1","GLOBAL",2)
+	Global("bd_DornRomance2","GLOBAL",0)
+	InParty("Dorn")  // Dorn
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_DornRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance2","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	IsValidForPartyDialogue("Dorn")  // Dorn
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END
+
+bd5100.are: bdrom16.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance2","GLOBAL",2)
+	Global("bd_DornRomance3","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Dorn")  // Dorn
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_DornRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance3","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	IsValidForPartyDialogue("Dorn")  // Dorn
+	GlobalLT("bd_plot","GLOBAL",350)
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END
+
+
+
+bd5100.are: bdrom17.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance3","GLOBAL",2)
+	Global("bd_DornRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Dorn")  // Dorn
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_DornRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance4","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	IsValidForPartyDialog("Dorn")  // Dorn
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END
+
+*/
+
+/* Glint */
+/* ok . die ersten zwei Dialoge werden in zwei bzw. drei Skripten ausgelöst */
+/* bd7100.are: bdrom04.bcs
+/* 1st romance dialogue */
+IF
+	Global("bd_glint_romancecheck","global",1)
+	Global("bd_GlintRomance1","GLOBAL",0)
+	InParty("Glint")  // Glint
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_glint_romanceactive","global",1)
+		SetGlobal("bd_GlintRomance1","GLOBAL",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance1","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialog("Glint")  // Glint
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+/* ermöglicht den ersten Dialog auch noch einmal! */
+bd7300.are: bdrom11.bcs
+/* 1st and 2nd romance dialogue */
+IF
+	Global("bd_glint_romancecheck","global",1)
+	Global("bd_GlintRomance1","GLOBAL",0)
+	InParty("Glint")  // Glint
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_glint_romanceactive","global",1)
+		SetGlobal("bd_GlintRomance1","GLOBAL",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance1","GLOBAL",2)
+	Global("bd_GlintRomance2","GLOBAL",0)
+	InParty("Glint")  // Glint
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	OR(2)
+		Global("bd_GlintRomance1","GLOBAL",1)
+		Global("bd_GlintRomance2","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialogue("Glint")  // Glint
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+bd5100.are: bdrom17.bcs:
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance1","GLOBAL",2)
+	Global("bd_GlintRomance2","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Glint")  // Glint
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	OR(2)
+		Global("bd_GlintRomance1","GLOBAL",1)
+		Global("bd_GlintRomance2","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialog("Glint")  // Glint
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+bd5200.are: bdrom18.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance2","GLOBAL",2)
+	Global("bd_GlintRomance3","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Glint")  // Glint
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance3","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialog("Glint")  // Glint
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+
+bd5100.are: bdrom17.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance3","GLOBAL",2)
+	Global("bd_GlintRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Glint")  // Glint
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance4","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialog("Glint")  // Glint
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+
+*/
+
+
+
+/* Neera */
+/* ok - beware of special treatment depending on her quest status */
+/* bd2000.are: bdrom07.bcs
+/* 1st romance dialogue */
+IF
+	Global("bd_neera_romancecheck","global",1)
+	Global("bd_NeeraRomance1","GLOBAL",0)
+	InParty("Neera")  // Neera
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_neera_romanceactive","global",1)
+		SetGlobal("bd_NeeraRomance1","GLOBAL",1)
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance1","GLOBAL",1)
+	InParty("Neera")  // Neera
+	TriggerOverride("Neera",See(Player1))
+	IsValidForPartyDialog("Neera")  // Neera
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END
+
+bd5000.are: bdrom14.bcs
+/* 2nd romance dialogue */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance1","GLOBAL",2)
+	Global("bd_NeeraRomance2","GLOBAL",0)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	InParty("Neera")  // Neera
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance2","GLOBAL",1)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	InParty("Neera")  // Neera
+	TriggerOverride("Neera",See(Player1))
+	IsValidForPartyDialog("Neera")  // Neera
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance1","GLOBAL",2)
+	Global("bd_NeeraRomance2","GLOBAL",0)
+	Global("bd_neera_plot","global",15)
+	InParty("Neera")  // Neera
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance2","GLOBAL",2)
+END
+
+bd5100.are: bdrom16.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance2","GLOBAL",2)
+	Global("bd_NeeraRomance3","GLOBAL",0)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Neera")  // Neera
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance3","GLOBAL",1)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	InParty("Neera")  // Neera
+	IsValidForPartyDialogue("Neera")  // Neera
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance2","GLOBAL",2)
+	Global("bd_NeeraRomance3","GLOBAL",0)
+	Global("bd_neera_plot","global",15)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Neera")  // Neera
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance3","GLOBAL",2)
+END
+
+
+
+bd5000.are: bdrom15.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance3","GLOBAL",2)
+	Global("bd_NeeraRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Neera")  // Neera
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance4","GLOBAL",1)
+	InParty("Neera")  // Neera
+	IsValidForPartyDialog("Neera")  // Neera
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END
+
+
+*/
+
+/* Rasaad */
+/* no area checks or anything (coding wise), but the 4th dialogue begins with "how dark it is" */
+
+/* bd1000.are: bdrom02.bcs
+
+/* 1st romance dialogue */
+IF
+	Global("bd_rasaad_romancecheck","global",1)
+	Global("bd_RasaadRomance1","GLOBAL",0)
+	InParty("Rasaad")  // Rasaad
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance1","GLOBAL",1)
+		SetGlobal("bd_rasaad_romanceactive","global",1)
+END
+
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance1","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	TriggerOverride("Rasaad",See(Player1))
+	IsValidForPartyDialogue("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+bd7100.are: bdrom05.bcs
+
+/* 2nd romance dialogue */
+
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance1","GLOBAL",2)
+	Global("bd_RasaadRomance2","GLOBAL",0)
+	InParty("Rasaad")  // Rasaad
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance2","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	TriggerOverride("Rasaad",See(Player1))
+	IsValidForPartyDialog("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+bd3000.are: bdrom10.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance2","GLOBAL",2)
+	Global("bd_RasaadRomance3","GLOBAL",0)
+	InParty("Rasaad")  // Rasaad
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance3","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	TriggerOverride("Rasaad",See(Player1))
+	IsValidForPartyDialogue("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+bd5100.are: bdrom16.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance3","GLOBAL",2)
+	Global("bd_RasaadRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Rasaad")  // Rasaad
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance4","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	IsValidForPartyDialogue("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+
+bd5100.are: bdrom17.bcs
+/* 5th romance dialogue */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance4","GLOBAL",2)
+	Global("bd_RasaadRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Rasaad")  // Rasaad
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance5","GLOBAL",1)
+END
+
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance5","GLOBAL",1)
+	InParty("Rasaad")  // Rasaad
+	IsValidForPartyDialog("Rasaad")  // Rasaad
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",StartDialogueNoSet(Player1))
+END
+
+*/
+
+
+/* Safana */
+/* ok */
+/* bd1000.are: bdrom02.bcs
+
+/* 1st romance dialogue */
+IF
+	Global("bd_safana_romancecheck","global",1)
+	Global("bd_SafanaRomance1","GLOBAL",0)
+	InParty("Safana")  // Safana
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance1","GLOBAL",1)
+		SetGlobal("bd_safana_romanceactive","global",1)
+END
+
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance1","GLOBAL",1)
+	InParty("Safana")  // Safana
+	TriggerOverride("Safana",See(Player1))
+	IsValidForPartyDialogue("Safana")  // Safana
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+
+
+/* 2nd romance dialogue */
+bd7100.are: bdrom05.bcs
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance1","GLOBAL",2)
+	Global("bd_SafanaRomance2","GLOBAL",0)
+	InParty("Safana")  // Safana
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance2","GLOBAL",1)
+	InParty("Safana")  // Safana
+	TriggerOverride("Safana",See(Player1))
+	IsValidForPartyDialog("Safana")  // Safana
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+bd3000.are: bdrom10.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance2","GLOBAL",2)
+	Global("bd_SafanaRomance3","GLOBAL",0)
+	InParty("Safana")  // Safana
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance3","GLOBAL",1)
+	InParty("Safana")  // Safana
+	TriggerOverride("Safana",See(Player1))
+	IsValidForPartyDialogue("Safana")  // Safana
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+bd5100.are: bdrom16.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance3","GLOBAL",2)
+	Global("bd_SafanaRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Safana")  // Safana
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance4","GLOBAL",1)
+	InParty("Safana")  // Safana
+	IsValidForPartyDialogue("Safana")  // Safana
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+
+bd5100.are: bdrom17.bcs
+/* 5th romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance4","GLOBAL",2)
+	Global("bd_SafanaRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Safana")  // Safana
+	IsOverMe(Player1)
+	OR(2)
+		Global("bd_SafanaRomance9","GLOBAL",0)
+		!Dead("voghiln")  // Voghiln
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance5","GLOBAL",1)
+END
+
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance9","GLOBAL",1)
+	Dead("voghiln")  // Voghiln
+THEN
+	RESPONSE #100
+		SetGlobal("bd_safana_romanceactive","global",3)
+		SetGlobal("bd_SafanaRomance9","GLOBAL",3)
+END
+
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance5","GLOBAL",1)
+	InParty("Safana")  // Safana
+	IsValidForPartyDialog("Safana")  // Safana
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+*/
+
+
+/* Viconia */
+/* ok. 4th dialogue should be inside a cave */
+/* bd7100.are: bdrom03.bcs
+/* 1st romance dialogue */
+IF
+	Global("bd_viconia_romancecheck","global",1)
+	Global("bd_ViconiaRomance1","GLOBAL",0)
+	InParty("Viconia")  // Viconia
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_viconia_romanceactive","global",1)
+		SetGlobal("bd_ViconiaRomance1","GLOBAL",1)
+END
+
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance1","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	TriggerOverride("Viconia",See(Player1))
+	IsValidForPartyDialog("Viconia")  // Viconia
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",StartDialogueNoSet(Player1))
+END
+
+bd3000.are: bdrom09.bcs
+/* 2nd romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance1","GLOBAL",2)
+	Global("bd_ViconiaRomance2","GLOBAL",0)
+	InParty("Viconia")  // Viconia
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_ViconiaRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance2","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	TriggerOverride("Viconia",See(Player1))
+	IsValidForPartyDialogue("Viconia")  // Viconia
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",StartDialogueNoSet(Player1))
+END
+
+
+bd5000.are: bdrom15.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance2","GLOBAL",2)
+	Global("bd_ViconiaRomance3","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Viconia")  // Viconia
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_ViconiaRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance3","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	IsValidForPartyDialog("Viconia")  // Viconia
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",Dialogue(Player1))
+END
+
+bd5100.are: bdrom16.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance3","GLOBAL",2)
+	Global("bd_ViconiaRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Viconia")  // Viconia
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_ViconiaRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance4","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	IsValidForPartyDialogue("Viconia")  // Viconia
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",Dialogue(Player1))
+END
+
+
+
+bd5100.are: bdrom17.bcs
+/* 5th romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance4","GLOBAL",2)
+	Global("bd_ViconiaRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Viconia")  // Viconia
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_ViconiaRomance5","GLOBAL",1)
+END
+
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance5","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	IsValidForPartyDialog("Viconia")  // Viconia
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",Dialogue(Player1))
+END
+
+*/
+
+
+
+/* Voghiln */
+/* no area checks or other complications, but the 3rd dialogue states "it's so dark and creepy here" */
+/* bd2000.are: bdrom07.bcs
+/* 1st romance dialogue */
+
+IF
+	Global("bd_voghiln_romancecheck","global",1)
+	Global("bd_VoghilnRomance1","GLOBAL",0)
+	InParty("Voghiln")  // Voghiln
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_voghiln_romanceactive","global",1)
+		SetGlobal("bd_VoghilnRomance1","GLOBAL",1)
+END
+
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance1","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	TriggerOverride("Voghiln",See(Player1))
+	IsValidForPartyDialog("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",StartDialogueNoSet(Player1))
+END
+
+bd5000.are: bdrom14.bcs
+/* 2nd romance dialogue */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance1","GLOBAL",2)
+	Global("bd_VoghilnRomance2","GLOBAL",0)
+	InParty("Voghiln")  // Voghiln
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_VoghilnRomance2","GLOBAL",1)
+END
+
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance2","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	TriggerOverride("Voghiln",See(Player1))
+	IsValidForPartyDialog("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",StartDialogueNoSet(Player1))
+END
+
+bd5100.are: bdrom16.bcs
+/* 3rd romance dialogue */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance2","GLOBAL",2)
+	Global("bd_VoghilnRomance3","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	InParty("Voghiln")  // Voghiln
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_VoghilnRomance3","GLOBAL",1)
+END
+
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance3","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	IsValidForPartyDialogue("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",Dialogue(Player1))
+END
+
+
+bd5100.are: bdrom17.bcs
+/* 4th romance dialogue */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance3","GLOBAL",2)
+	Global("bd_VoghilnRomance4","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	InParty("Voghiln")  // Voghiln
+	IsOverMe(Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_VoghilnRomance4","GLOBAL",1)
+END
+
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance4","GLOBAL",1)
+	InParty("Voghiln")  // Voghiln
+	IsValidForPartyDialog("Voghiln")  // Voghiln
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		ActionOverride("Voghiln",Dialogue(Player1))
+END
+
+
+
+
+
+*/

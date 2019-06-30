@@ -1,0 +1,41 @@
+/* bd7300.are: bdrom11.bcs */
+
+/* Glint */
+
+IF
+	Global("bd_glint_romancecheck","global",1)
+	Global("bd_GlintRomance1","GLOBAL",0)
+	!InParty("Glint")  // Glint
+	!Dead("Glint")  // Glint
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_glint_romanceactive","global",1)
+		SetGlobal("bd_GlintRomance1","GLOBAL",1)
+		IncrementGlobal("C#st_GlintTalk","global",1)
+END
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance1","GLOBAL",2)
+	Global("bd_GlintRomance2","GLOBAL",0)
+	!InParty("Glint")  // Glint
+	!Dead("Glint")  // Glint
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance2","GLOBAL",1)
+		IncrementGlobal("C#st_GlintTalk","global",1)
+END

@@ -1,0 +1,75 @@
+/* bdsafana.bcs Safana */
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance1","GLOBAL",1)
+	InParty("Safana")  // Safana
+	TriggerOverride("Safana",See(Player1))
+	IsValidForPartyDialogue("Safana")  // Safana
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance2","GLOBAL",1)
+	InParty("Safana")  // Safana
+	TriggerOverride("Safana",See(Player1))
+	IsValidForPartyDialog("Safana")  // Safana
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance3","GLOBAL",1)
+	InParty("Safana")  // Safana
+	TriggerOverride("Safana",See(Player1))
+	IsValidForPartyDialogue("Safana")  // Safana
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+/* 4th romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance4","GLOBAL",1)
+	InParty("Safana")  // Safana
+	IsValidForPartyDialogue("Safana")  // Safana
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END
+
+/* 5th romance dialogue */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance5","GLOBAL",1)
+	InParty("Safana")  // Safana
+	IsValidForPartyDialog("Safana")  // Safana
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",StartDialogueNoSet(Player1))
+END

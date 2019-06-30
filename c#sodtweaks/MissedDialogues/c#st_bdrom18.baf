@@ -1,0 +1,44 @@
+/* bd5200.are: bdrom18.bcs */
+
+/* Corwin */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance3","GLOBAL",2)
+	Global("bd_CorwinRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Corwin")  // Corwin
+	!Dead("Corwin")  // Corwin
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_CorwinTalk","global",1)
+END
+
+
+/* Glint */
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance2","GLOBAL",2)
+	Global("bd_GlintRomance3","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	!InParty("Glint")  // Glint
+	!Dead("Glint")  // Glint
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_GlintRomance3","GLOBAL",1)
+		IncrementGlobal("C#st_GlintTalk","global",1)
+END

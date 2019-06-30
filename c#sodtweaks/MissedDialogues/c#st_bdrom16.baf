@@ -1,0 +1,184 @@
+/* bd5100.are: bdrom16.bcs */
+
+/* Corwin */
+
+IF
+	Global("bd_corwin_romanceactive","global",2)
+	Global("bd_CorwinRomance5","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",349)
+	OR(7)
+		Global("bd_neera_romanceactive","global",1)
+		Global("bd_rasaad_romanceactive","global",1)
+		Global("bd_dorn_romanceactive","global",1)
+		Global("bd_safana_romanceactive","global",1)
+		Global("bd_viconia_romanceactive","global",1)
+		Global("bd_glint_romanceactive","global",1)
+		Global("bd_voghiln_romanceactive","global",1)
+	!InParty("Corwin")  // Corwin
+	!Dead("Corwin")  // Corwin
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance5","GLOBAL",1)
+		IncrementGlobal("C#st_CorwinTalk","global",1)
+END
+
+
+
+/* Dorn */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance2","GLOBAL",2)
+	Global("bd_DornRomance3","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Dorn")  // Dorn
+	!Dead("Dorn")  // Dorn
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_DornRomance3","GLOBAL",1)
+		IncrementGlobal("C#st_DornTalk","global",1)
+END
+
+
+/* Neera */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance2","GLOBAL",2)
+	Global("bd_NeeraRomance3","GLOBAL",0)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Neera")  // Neera
+	!Dead("Neera")  // Neera
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance3","GLOBAL",1)
+		IncrementGlobal("C#st_NeeraTalk","global",1)
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance2","GLOBAL",2)
+	Global("bd_NeeraRomance3","GLOBAL",0)
+	Global("bd_neera_plot","global",15)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Neera")  // Neera
+	!Dead("Neera")  // Neera
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance3","GLOBAL",2)
+END
+
+/* Rasaad */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance3","GLOBAL",2)
+	Global("bd_RasaadRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Rasaad")  // Rasaad
+	!Dead("Rasaad")  // Rasaad
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_RasaadTalk","global",1)
+END
+
+/* Safana */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance3","GLOBAL",2)
+	Global("bd_SafanaRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Safana")  // Safana
+	!Dead("Safana")  // Safana
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_SafanaTalk","global",1)
+END
+
+/* Viconia */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance3","GLOBAL",2)
+	Global("bd_ViconiaRomance4","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Viconia")  // Viconia
+	!Dead("Viconia")  // Viconia
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_ViconiaRomance4","GLOBAL",1)
+		IncrementGlobal("C#st_ViconiaTalk","global",1)
+END
+
+
+/* Voghiln */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance2","GLOBAL",2)
+	Global("bd_VoghilnRomance3","GLOBAL",0)
+	GlobalLT("bd_plot","GLOBAL",350)
+	!InParty("Voghiln")  // Voghiln
+	!Dead("Voghiln")  // Voghiln
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_VoghilnRomance3","GLOBAL",1)
+		IncrementGlobal("C#st_VoghilnTalk","global",1)
+END
+

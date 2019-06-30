@@ -1,0 +1,68 @@
+/* bdneera.bcs Neera */
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance1","GLOBAL",1)
+	InParty("Neera")  // Neera
+	TriggerOverride("Neera",See(Player1))
+	IsValidForPartyDialog("Neera")  // Neera
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance2","GLOBAL",1)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	InParty("Neera")  // Neera
+	TriggerOverride("Neera",See(Player1))
+	IsValidForPartyDialog("Neera")  // Neera
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance3","GLOBAL",1)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	InParty("Neera")  // Neera
+	IsValidForPartyDialogue("Neera")  // Neera
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END
+
+
+
+/* 4th romance dialogue */
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance4","GLOBAL",1)
+	InParty("Neera")  // Neera
+	IsValidForPartyDialog("Neera")  // Neera
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",StartDialogueNoSet(Player1))
+END

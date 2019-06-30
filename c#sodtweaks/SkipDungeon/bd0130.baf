@@ -1,0 +1,9 @@
+/* check whether PC entered bd0130 - reduces amount of XP */
+
+IF
+	Global("C#st_EnteredBD0130","GLOBAL",0)
+	InMyArea(Player1)
+THEN
+  RESPONSE #100
+	SetGlobal("C#st_EnteredBD0130","GLOBAL",1)
+END

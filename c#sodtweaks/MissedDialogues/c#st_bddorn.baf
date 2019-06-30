@@ -1,0 +1,60 @@
+/* bddorn.bcs Dorn */
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance1","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	TriggerOverride("Dorn",See(Player1))
+	IsValidForPartyDialog("Dorn")  // Dorn
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance2","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	IsValidForPartyDialogue("Dorn")  // Dorn
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance3","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	IsValidForPartyDialogue("Dorn")  // Dorn
+	GlobalLT("bd_plot","GLOBAL",350)
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END
+
+/* 4th romance dialogue */
+IF
+	Global("bd_dorn_romanceactive","global",1)
+	Global("bd_DornRomance4","GLOBAL",1)
+	InParty("Dorn")  // Dorn
+	IsValidForPartyDialog("Dorn")  // Dorn
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",StartDialogueNoSet(Player1))
+END

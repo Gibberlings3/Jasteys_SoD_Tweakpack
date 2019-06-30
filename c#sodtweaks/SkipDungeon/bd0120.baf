@@ -1,0 +1,50 @@
+/* spawn either Arkanis, Canterous, or Biff the Understudy */
+
+/* Arkanis didn't die in Candlekeep Catacombs */
+IF
+	Global("bd_plot","global",10)
+	!Dead("ARKANIS")
+	Global("C#st_SpawnKorlaszHelp","bd0120",0)
+THEN
+  RESPONSE #100
+	CreateCreature("c#st0001",[1100.1600],W)
+	SetGlobal("C#st_SpawnKorlaszHelp","bd0120",1)
+END
+	
+
+/* Arkanis is dead, Biff the Understudy will do the work */
+IF
+	Global("bd_plot","global",10)
+	Dead("ARKANIS")
+	Global("C#st_SpawnKorlaszHelp","bd0120",0)
+THEN
+  RESPONSE #100
+	CreateCreature("c#st0002",[1100.1600],W)
+	SetGlobal("C#st_SpawnKorlaszHelp","bd0120",1)
+END
+
+
+IF
+	Global("C#st_ShortcutEnabled", "GLOBAL", 1)
+	Global("C#st_KorlaszHelp","GLOBAL",4)
+	!InMyArea("c#sthelp")
+THEN
+  RESPONSE #100
+	SetGlobal("C#st_KorlaszHelp","GLOBAL",5)
+	ActionOverride("%IMOEN_DV_SOD%",StartDialogNoSet(Player1))
+END
+
+/* In case player did fight Korlasz himself, helper will be gone */
+
+IF
+	GlobalLT("C#st_KorlaszHelp","GLOBAL",4)
+	OR(3)
+		Global("C#st_KorlaszHelp","GLOBAL",3)
+		Global("SPRITE_IS_DEADBDKORLAS","global",1)
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+	InMyArea("c#sthelp")
+THEN
+  RESPONSE #100
+	SetGlobal("C#st_KorlaszHelp","GLOBAL",4)
+	ActionOverride("c#sthelp",EscapeArea())
+END

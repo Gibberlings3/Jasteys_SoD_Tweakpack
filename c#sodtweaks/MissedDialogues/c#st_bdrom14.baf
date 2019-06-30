@@ -1,0 +1,64 @@
+/* bd5000.are: bdrom14.bcs */
+
+/* Neera */
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance1","GLOBAL",2)
+	Global("bd_NeeraRomance2","GLOBAL",0)
+	OR(2)
+		GlobalLT("bd_neera_plot","global",15)
+		GlobalGT("bd_neera_plot","global",19)
+	!InParty("Neera")  // Neera
+	!Dead("Neera")  // Neera
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance2","GLOBAL",1)
+		IncrementGlobal("C#st_NeeraTalk","global",1)
+END
+
+IF
+	Global("bd_neera_romanceactive","global",1)
+	Global("bd_NeeraRomance1","GLOBAL",2)
+	Global("bd_NeeraRomance2","GLOBAL",0)
+	Global("bd_neera_plot","global",15)
+	!InParty("Neera")  // Neera
+	!Dead("Neera")  // Neera
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_NeeraRomance2","GLOBAL",2)
+END
+
+/* Voghiln */
+IF
+	Global("bd_voghiln_romanceactive","global",1)
+	Global("bd_VoghilnRomance1","GLOBAL",2)
+	Global("bd_VoghilnRomance2","GLOBAL",0)
+	!InParty("Voghiln")  // Voghiln
+	!Dead("Voghiln")  // Voghiln
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_VoghilnRomance2","GLOBAL",1)
+		IncrementGlobal("C#st_VoghilnTalk","global",1)
+END

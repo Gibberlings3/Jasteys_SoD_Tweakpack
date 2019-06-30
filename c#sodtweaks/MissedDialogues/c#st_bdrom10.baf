@@ -1,0 +1,41 @@
+/* bd3000.are: bdrom10.bcs */
+
+/* Rasaad */
+IF
+	Global("bd_rasaad_romanceactive","global",1)
+	Global("bd_RasaadRomance2","GLOBAL",2)
+	Global("bd_RasaadRomance3","GLOBAL",0)
+	!InParty("Rasaad")  // Rasaad
+	!Dead("Rasaad")  // Rasaad
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_RasaadRomance3","GLOBAL",1)
+		IncrementGlobal("C#st_RasaadTalk","global",1)
+END
+
+/* Safana */
+IF
+	Global("bd_safana_romanceactive","global",1)
+	Global("bd_SafanaRomance2","GLOBAL",2)
+	Global("bd_SafanaRomance3","GLOBAL",0)
+	!InParty("Safana")  // Safana
+	!Dead("Safana")  // Safana
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_SafanaRomance3","GLOBAL",1)
+		IncrementGlobal("C#st_SafanaTalk","global",1)
+END

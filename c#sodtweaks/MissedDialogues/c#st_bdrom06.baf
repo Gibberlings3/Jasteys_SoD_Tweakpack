@@ -1,0 +1,21 @@
+/* bd7100.are: bdrom06.bcs */
+
+/* Corwin */
+IF
+	Global("bd_corwin_romanceactive","global",1)
+	Global("bd_CorwinRomance1","GLOBAL",2)
+	Global("bd_CorwinRomance2","GLOBAL",0)
+	!InParty("Corwin")  // Corwin
+	!Dead("Corwin")  // Corwin
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance2","GLOBAL",1)
+		IncrementGlobal("C#st_CorwinTalk","global",1)
+END

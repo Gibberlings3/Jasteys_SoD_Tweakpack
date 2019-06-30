@@ -1,0 +1,57 @@
+Item control tables
+===================
+
+The subfolder "tables" may contain one or more 2DA files which define how items or containers should be handled.
+The table can be universally used for three different actions.
+
+1. Which areas should be considered when transferring container items:
+The default areas to consider are AR0601, AR0602 and AR0603. However, mods may add more areas to initial dungeon. 
+This action can be used to register these areas. It's defined as follows:
+ACTION:     ADD_AREA
+AREA:       The area code of the map.
+
+2. Which containers should be excluded from the item transfer process:
+Some containers may be used internally without being accessed by the party. These containers can be ignored by the 
+item transfer process. For example, EET uses such a container. It's defined as follows:
+ACTION:     SKIP_CONTAINER
+AREA:       The area code where the container can be found.
+CONTAINER:  The container name. Spaces in container names must be removed completely.
+
+3. Which items should be destroyed after leaving Chateau Irenicus:
+Some items are only useful in Chateau Irenicus. These items can be destroyed after leaving the dungeon. You can also 
+specify whether to destroy them only in party inventory. You have to define these entries multiple times if you want 
+to destroy more than one instance of the same item or stack. It's defined as follows:
+ACTION:     DESTROY_ITEM
+AREA:       The area code where the item can be acquired.
+ITEMNAME:   The item's resource name without extension.
+INV_ONLY:   Set to 0 if the item should be destroyed in both container and party inventory.
+            Set to 1 if the item should only be destroyed in party inventory.
+
+4. Which items should be manually created after leaving Irenicus:
+Some items are acquired by other means, like quest rewards or scripted events. These items are not transferred 
+automatically. You can define which item to create manually after leaving the dungeon. You can also specify whether 
+the item has to be unique. It's defined as follows:
+ACTION:     CREATE_ITEM
+AREA:       The area code where the item could be acquired normally.
+ITEMNAME:   The item's resource name without extension.
+UNIQUE:     Set to 0 if multiple instance of the item are allowed.
+            Set to 1 if only a single instance of the item is allowed.
+CHARGE1:    Defines the number of stackable items or primary charges.
+CHARGE2:    Defines the number of secondary charges.
+CHARGE3:    Defines the number of tertiary charges.
+
+
+Example 2DA entries for each action:
+                AREA      CONTAINER/ITEMNAME  UNIQUE/INV_ONLY CHARGE1 CHARGE2 CHARGE3
+ADD_AREA        X#0001    *                   0               0       0       0
+SKIP_CONTAINER  AR0602    K#ImportContainer   0               0       0       0
+DESTROY_ITEM    AR0602    MISC4I              1               0       0       0
+CREATE_ITEM     AR0602    AROW01              0               20      0       0
+
+Important: All columns must be filled with data, even for actions which require fewer parameters.
+
+
+Example TP2 code from an imaginary mod:
+ACTION_IF (DIRECTORY_EXISTS ~SkipChateauIrenicus/tables~) BEGIN
+  COPY ~AnImaginaryMod/skiptables/my_table1.2da~ ~SkipChateauIrenicus/tables~
+END

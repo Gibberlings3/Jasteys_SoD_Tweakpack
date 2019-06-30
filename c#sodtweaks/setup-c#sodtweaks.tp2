@@ -1,0 +1,475 @@
+
+BACKUP ~c#sodtweaks/backup~
+AUTHOR ~jastey@web.de~ 
+
+
+VERSION ~v2~
+
+
+README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
+
+
+AUTO_TRA ~c#sodtweaks/Translations/%s~
+
+ALWAYS
+
+/* check for a ready SoD */
+
+ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+  FAIL @1002 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
+END
+
+OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
+END
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+END
+
+/*
+  ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
+
+  ACTION_DEFINE_ARRAY fl#reload BEGIN game END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charset = 1
+      STR_VAR
+        tra_path = EVAL ~c#sodtweaks/Translations~
+        noconvert_array = fl#noconvert
+        reload_array = fl#reload
+    END
+*/
+
+
+
+
+END //ALWAYS
+
+
+LANGUAGE ~English~
+         ~english~   
+         ~c#sodtweaks/Translations/english/setup.tra~
+	 ~c#sodtweaks/Translations/english/game.tra~
+
+LANGUAGE ~Deutsch~
+         ~german~   
+         ~c#sodtweaks/Translations/german/setup.tra~
+	 ~c#sodtweaks/Translations/german/game.tra~
+
+
+/* ~Jastey's SoD Tweaks for SoD and EET~ */
+
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 1 ~Ending Independent on PC Replies~
+//////
+////////////////////////////////////////////////////////////////////////
+
+
+BEGIN @1003 /* ~Ending Independent on PC Replies~ */ DESIGNATED 1
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+
+/*
+from BDBELT.dlg
+points for good:
+Global("bd_mdd420_morale","global",1): priestess of Bhaal released to do good
+Global("bd_MDD1001_morale","global",1): did not poison the crusaders supplies
+Global("bd_sdd302_uncommon_cold","global",3): searched for cure for soldiers at the coalition camp
+Global("bd_thrix_sacrifice_self","global",1): offered own soul to Thrix
+Class(Player1,PALADIN_ALL) !Kit(Player1,Blackguard): paladin not fallen
+ReputationGT(Player1,16): high rep
+
+
+points for evil:
+Global("bd_mdd420_morale","global",-1): told priestess of Bhaal to murder
+Global("bd_MDD1001_morale","global",-1): did poison the crusaders supplies
+Global("SDD303_executed","global",1): executed traitor at coalition camp
+Global("bd_thrix_sacrifice_companion","global",1): sold companion's soul to Thrix
+Class(Player1,PALADIN_ALL) Kit(Player1,Blackguard): is BLackguard
+ReputationLT(Player1,6): low rep
+
+*/
+
+
+/* in bdcut61t.bcs */
+/* count good points up: */
+
+<<<<<<<< ...inlined/c#sodtweaks_trialend.baf
+IF
+	Global("bd_mdd420_morale","global",1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("c#st_bd_trial_hero","bd0035",1)
+END
+
+IF
+	Global("bd_MDD1001_morale","global",1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("c#st_bd_trial_hero","bd0035",1)
+END
+
+IF
+	Global("bd_sdd302_uncommon_cold","global",3)
+THEN
+	RESPONSE #100
+		IncrementGlobal("c#st_bd_trial_hero","bd0035",1)
+END
+
+IF
+	Global("bd_thrix_sacrifice_self","global",1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("c#st_bd_trial_hero","bd0035",1)
+END
+
+IF
+	Class(Player1,PALADIN_ALL) !Kit(Player1,Blackguard)
+THEN
+	RESPONSE #100
+		IncrementGlobal("c#st_bd_trial_hero","bd0035",1)
+END
+
+IF
+	ReputationGT(Player1,16)
+THEN
+	RESPONSE #100
+		IncrementGlobal("c#st_bd_trial_hero","bd0035",1)
+END
+
+
+/* count evil points up: */
+IF
+	Global("bd_mdd420_morale","global",-1)
+	THEN
+		RESPONSE #100
+			IncrementGlobal("c#st_bd_trial_evil","bd0035",1)
+END
+IF
+	Global("bd_MDD1001_morale","global",-1)
+	THEN
+		RESPONSE #100
+			IncrementGlobal("c#st_bd_trial_evil","bd0035",1)
+END
+
+IF
+	Global("SDD303_executed","global",1)
+	THEN
+		RESPONSE #100
+			IncrementGlobal("c#st_bd_trial_evil","bd0035",1)
+END
+
+IF
+	Global("bd_thrix_sacrifice_companion","global",1)
+	THEN
+		RESPONSE #100
+			IncrementGlobal("c#st_bd_trial_evil","bd0035",1)
+END
+
+IF
+	Class(Player1,PALADIN_ALL) Kit(Player1,Blackguard)
+	THEN
+		RESPONSE #100
+			IncrementGlobal("c#st_bd_trial_evil","bd0035",1)
+END
+
+IF
+	ReputationLT(Player1,6)
+	THEN
+		RESPONSE #100
+			IncrementGlobal("c#st_bd_trial_evil","bd0035",1)
+END
+
+/* the variables are set here, regardless of how much the PC tells at the trial */
+IF
+	OR(2)
+		!GlobalLT("c#st_bd_trial_hero","bd0035",3)
+		!GlobalLT("c#st_bd_trial_evil","bd0035",3)
+
+	THEN
+		RESPONSE #100
+			SetGlobal("bd_trial_Innocent","GLOBAL",1)
+			SetGlobal("bd_player_exiled","global",1)
+END
+
+>>>>>>>>
+EXTEND_TOP ~bdcut61t.bcs~ ~...inlined/c#sodtweaks_trialend.baf~ EVALUATE_BUFFER
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 2 ~Do Not Miss NPC-PC Dialogues: For NPCs in Party Only~
+//////
+////////////////////////////////////////////////////////////////////////
+
+
+BEGIN @1005 /* ~For NPCs in Party Only~ */ DESIGNATED 2
+SUBCOMPONENT @1004 /* ~Do Not Miss NPC-PC Dialogues~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+INCLUDE ~c#sodtweaks/MissedDialogues/lib/activate_partynpc.tpa~
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 3 ~Do Not Miss NPC-PC Dialogues: Activate All Dialogues Always~
+//////
+////////////////////////////////////////////////////////////////////////
+
+BEGIN @1006 /* ~Activate All NPC-PC Dialogues Always~ */ DESIGNATED 3
+SUBCOMPONENT @1004 /* ~Do Not Miss NPC-PC Dialogues~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+INCLUDE ~c#sodtweaks/MissedDialogues/lib/activate_partynpc.tpa~
+
+
+/* bdport01.bcs - pep lovetalk before abyss - not considered */
+
+EXTEND_BOTTOM ~bdrom01.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom01.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom02.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom02.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom03.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom03.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom04.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom04.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom05.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom05.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom06.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom06.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom07.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom07.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom08.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom08.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom09.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom09.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom10.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom10.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom11.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom11.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom12.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom12.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom13.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom13.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom14.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom14.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom15.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom15.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom16.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom16.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom17.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom17.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrom18.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrom18.baf~ EVALUATE_BUFFER
+
+
+/* Add Display String Head info for activated dialogues */
+
+EXTEND_BOTTOM ~bdcorwin.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdcorwin_add.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bddorn.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bddorn_add.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdglint.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdglint_add.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdneera.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdneera_add.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdrasaad.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdrasaad_add.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdsafana.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdsafana_add.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdviconi.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdviconi_add.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdvoghil.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdvoghil_add.baf~ EVALUATE_BUFFER
+
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 4 ~Skip Korlasz's Dungeon~
+//////
+////////////////////////////////////////////////////////////////////////
+
+
+BEGIN @1007 /* ~Skip Korlasz's Dungeon~ */ DESIGNATED 4
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+/* patching of item "gold" by Argent with many thanks */
+OUTER_PATCH ~~ BEGIN
+  SET slot = "-1"
+  FOR (bit = 14; bit < 32; ++bit) BEGIN // skipping first 14 hardcoded bits
+    SET value = 1 << bit
+    LOOKUP_IDS_SYMBOL_OF_INT symbol ~itemflag~ value
+    PATCH_IF (~%symbol%~ STR_EQ ~%value%~) BEGIN
+      SET slot = value
+      SET bit = 32
+    END
+  END
+END
+
+ACTION_IF (slot > 0) BEGIN
+  APPEND ~itemflag.ids~ ~%slot% GOLD~
+  COPY_EXISTING ~misc07.itm~ ~override~
+    WRITE_LONG 0x18 (THIS | slot)
+END ELSE BEGIN
+  // Instead of a warning you could reuse a rarely used reserved item flag, e.g. ADAMANTINE.
+  WARN ~Could not find free item flag. (This is not game-breaking. Carry on.)~
+END
+
+/* taken and adapted from Argent's "Skip Chateau Irenicus" with many thanks */
+  INCLUDE ~%MOD_FOLDER%/SkipDungeon/lib/tables.tph~
+
+// Creating container in Duchal Palce 3rd level for dungeon items
+COPY_EXISTING ~bd0103.ARE~ ~override~
+
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 175
+    fj_loc_y          = 430
+    fj_type           = 8
+    fj_lock_diff      = 0
+    fj_flags          = (1 << 5)  // initially disabled
+    fj_trap_remove_diff = 0
+    fj_box_left       = 132
+    fj_box_top        = 388
+    fj_box_right      = 160
+    fj_box_bottom     = 407
+    fj_vertex_0       = 132 + (400 << 16)
+    fj_vertex_1       = 151 + (388 << 16)
+    fj_vertex_2       = 160 + (395 << 16)
+    fj_vertex_3       = 144 + (407 << 16)
+//    fj_vertex_4       = 132 + (400 << 16)
+  STR_VAR
+    fj_structure_type = container
+    fj_name           = "c#st0001"
+  END
+BUT_ONLY
+
+
+
+
+/* Arkanis will offer to do the work */
+COPY_EXISTING ~ARKANI3.cre~ ~override/c#st0001.cre~
+WRITE_EVALUATED_ASCII 0x280 ~c#sthelp~ #8   // Death variable
+WRITE_EVALUATED_ASCII 0x2cc ~c#sthelp~ #8   // dialogue
+WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
+
+/* if Arkanis is dead, Biff the Understudy will take over */
+COPY_EXISTING ~DIALOGMO.cre~ ~override/c#st0002.cre~
+WRITE_EVALUATED_ASCII 0x280 ~c#sthelp~ #8   // Death variable
+WRITE_EVALUATED_ASCII 0x2cc ~c#sthelp~ #8   // dialogue
+WRITE_EVALUATED_ASCII 0x248 ~shout~ #8   // Override script
+WRITE_EVALUATED_ASCII 0x250 ~initmain~ #8   // Class script
+WRITE_EVALUATED_ASCII 0x258 ~seeenemy~ #8   // Race script
+WRITE_EVALUATED_ASCII 0x260 ~wtarsgt~ #8   // General script
+
+EXTEND_BOTTOM ~bd0120.bcs~ ~c#sodtweaks/SkipDungeon/bd0120.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bd0130.bcs~ ~c#sodtweaks/SkipDungeon/bd0130.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/bd0103.baf~ EVALUATE_BUFFER
+
+COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthel1.baf~
+
+COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthelp.d~
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 5 ~More Dialogue Choices & Prevent Dead Ends~
+//////
+////////////////////////////////////////////////////////////////////////
+
+
+BEGIN @1008 /* ~More Dialogue Choices & Prevent Dead Ends~ */ DESIGNATED 5
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+COMPILE EVALUATE_BUFFER ~c#sodtweaks/MoreDialogueChoices/dialogue_choices.d~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 6 ~Use Imoen's BG1 and SoD Portrait for BGII in EET&BGT~
+//////
+////////////////////////////////////////////////////////////////////////
+
+BEGIN @1009 /* ~Use Imoen's SoD Portrait for BGII in EET & BGT~ */ DESIGNATED 6
+REQUIRE_PREDICATE (GAME_IS ~eet bgt~) @1001  /* ~This component is only compatible with BGT and EET.~ */
+
+/* EET&BGT: Imoen in ID has script IMOEN.bcs */
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  COPY ~c#sodtweaks/ImoenSoDPortrait/imoen_1_60.bmp~ ~override/c#stimos.bmp~
+  COPY ~c#sodtweaks/ImoenSoDPortrait/imoen_1_170.bmp~ ~override/c#stimom.bmp~
+
+/* will just replace the ToB endportrait */
+  COPY ~c#sodtweaks/ImoenSoDPortrait/imoen_1_330.bmp~ ~override/nimoenl.bmp~
+
+  COPY ~c#sodtweaks/ImoenSoDPortrait/c#stimoe_bgt.spl~ ~override/c#stimoe.spl~
+END
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+//  COPY_EXISTING ~bdimoens.bmp~ ~override/c#stimos.bmp~
+  COPY_EXISTING ~bdimoenm.bmp~ ~override/c#stimom.bmp~
+  COPY_EXISTING ~bdimoenl.bmp~ ~override/c#stimol.bmp~
+
+  COPY ~c#sodtweaks/ImoenSoDPortrait/c#stimoe_eet.spl~ ~override/c#stimoe.spl~
+END
+
+
+<<<<<<<< ...inlined/imoen_portrait.baf
+IF
+	Global("C#st_ImoenPortraitChange","MYAREA",0)
+	AreaCheck("AR0602")
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_ImoenPortraitChange","MYAREA",1)
+		ApplySpellRES("c#stimoe",Myself)
+		Continue()
+END
+>>>>>>>>
+
+EXTEND_TOP ~IMOEN.bcs~ ~...inlined/imoen_portrait.baf~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 7 ~Restore scripted Abduction Scene Fight~
+//////
+////////////////////////////////////////////////////////////////////////
+BEGIN @1011 /* ~Restore scripted Abduction Scene Fight~ */ DESIGNATED 7
+REQUIRE_PREDICATE (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) @1010  /* ~This component is only compatible with SoD.~ */
+
+//BD6100.BCS
+COPY_EXISTING ~BD6100.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~IncrementGlobal("bd_finale","bd6100",10)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~IncrementGlobal("bd_finale","bd6100",1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~StartMovie("sodcin05")[%newline%]*EndCutSceneMode()[%newline%]*ContinueGame(FALSE)[%newline%]*EndCredits()~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~StartMovie("sodcin05") EndCutSceneMode()~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+<<<<<<<< .../BD6100-et.baf
+
+IF
+	GlobalGT("bd_finale","bd6100",0)
+	InMyArea("IMOEN")
+	HasItem("MINHP1","IMOEN")
+THEN
+	RESPONSE #100
+		ActionOverride("IMOEN",DestroyItem("MINHP1"))
+END
+
+IF
+  Global("C#StoryMode","BD6100",0)
+  StoryModeOn()
+  Global("OHSMODE","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("C#StoryMode","BD6100",1)
+    SetGlobal("OHSMODE","GLOBAL",-1)
+    ReallyForceSpellDeadRES("OHSMODE2",Player1)
+    Continue()
+END
+>>>>>>>>
+
+EXTEND_TOP ~BD6100.BCS~ ~.../BD6100-et.baf~
+
+
+
+

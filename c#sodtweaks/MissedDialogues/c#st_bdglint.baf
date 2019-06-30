@@ -1,0 +1,64 @@
+/* c#st_bdglint.baf Glint */
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance1","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialog("Glint")  // Glint
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance2","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialogue("Glint")  // Glint
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance3","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialog("Glint")  // Glint
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END
+
+
+/* 4th romance dialogue */
+IF
+	Global("bd_glint_romanceactive","global",1)
+	Global("bd_GlintRomance4","GLOBAL",1)
+	InParty("Glint")  // Glint
+	TriggerOverride("Glint",See(Player1))
+	IsValidForPartyDialog("Glint")  // Glint
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Glint",StartDialogueNoSet(Player1))
+END

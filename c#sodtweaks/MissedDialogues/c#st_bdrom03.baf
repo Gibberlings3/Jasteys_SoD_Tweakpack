@@ -1,0 +1,21 @@
+/* bd7100.are: bdrom03.bcs */
+
+/* Viconia */
+IF
+	Global("bd_viconia_romancecheck","global",1)
+	Global("bd_ViconiaRomance1","GLOBAL",0)
+	!InParty("Viconia")  // Viconia
+	!Dead("Viconia")  // Viconia
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_viconia_romanceactive","global",1)
+		SetGlobal("bd_ViconiaRomance1","GLOBAL",1)
+		IncrementGlobal("C#st_ViconiaTalk","global",1)
+END

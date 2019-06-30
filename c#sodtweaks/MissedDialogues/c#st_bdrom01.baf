@@ -1,0 +1,42 @@
+/* bd1000.are: bdrom01.bcs */
+
+/* Corwin */
+
+/* dialogue about PC's heritage */
+IF
+	Global("bd_sdd020_talk","global",0)
+	!InParty("Corwin")  // Corwin
+	!Dead("Corwin")  // Corwin
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+	GlobalLT("bd_plot","GLOBAL",170)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_sdd020_talk","global",1)
+		IncrementGlobal("C#st_CorwinTalk","global",1)
+END
+
+/* 1st romance dialogue */
+IF
+	Global("bd_CorwinRomance1","GLOBAL",0)
+	!GlobalLT("bd_plot","GLOBAL",170)
+	!InParty("Corwin")  // Corwin
+	!Dead("Corwin")  // Corwin
+	OR(6)
+		IsOverMe(Player1) 
+		IsOverMe(Player2)
+		IsOverMe(Player3)
+		IsOverMe(Player4)
+		IsOverMe(Player5)
+		IsOverMe(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_CorwinRomance1","GLOBAL",1)
+		SetGlobal("bd_corwin_romanceactive","global",1)
+		IncrementGlobal("C#st_CorwinTalk","global",1)
+END

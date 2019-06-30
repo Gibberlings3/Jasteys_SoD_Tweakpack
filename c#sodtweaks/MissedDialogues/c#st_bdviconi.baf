@@ -1,0 +1,74 @@
+/* c#st_bdviconi.baf Viconia */
+
+
+/* 1st romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance1","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	TriggerOverride("Viconia",See(Player1))
+	IsValidForPartyDialog("Viconia")  // Viconia
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",StartDialogueNoSet(Player1))
+END
+
+/* 2nd romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance2","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	TriggerOverride("Viconia",See(Player1))
+	IsValidForPartyDialogue("Viconia")  // Viconia
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",StartDialogueNoSet(Player1))
+END
+
+/* 3rd romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance3","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	IsValidForPartyDialog("Viconia")  // Viconia
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",Dialogue(Player1))
+END
+
+/* 4th romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance4","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	IsValidForPartyDialogue("Viconia")  // Viconia
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",Dialogue(Player1))
+END
+
+/* 5th romance dialogue */
+IF
+	Global("bd_viconia_romanceactive","global",1)
+	Global("bd_ViconiaRomance5","GLOBAL",1)
+	InParty("Viconia")  // Viconia
+	IsValidForPartyDialog("Viconia")  // Viconia
+	!ActuallyInCombat()
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",Dialogue(Player1))
+END

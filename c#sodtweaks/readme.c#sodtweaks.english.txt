@@ -41,7 +41,7 @@ This component has two install options. Note that component "3" includes the cha
 This changes the trigger of the lovetalk activations from "Player1" to something more general, so that they are also activated by the presence of any party NPC and not the PC, only. i.e. enabling the possibility to scout the area with any NPC and still get the lovetalks. 
 This component is the one that interferes less with the original design than the following one. It does not change the fact that the dialogues are only activated if the according NPC is in the party at the time.
 
-	3.A Activate All NPC-PC Dialogues Always
+	2.A Activate All NPC-PC Dialogues Always
 	------
 With this component, the romanceable NPCs do not have to be in the group in specific areas for the romance dialogues to be activated. If a romance dialogue was supposed to trigger in an area, it will be triggered later as soon as the NPC rejoins the group. Also, it is sufficient that any party NPC steps on the area trigger. Only exception: When going into the portal in Dragon Spear Castle, the romancing NPC has to be in the group to give the final pep lovetalk.
 

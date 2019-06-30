@@ -47,7 +47,7 @@ War ein NPC länger nicht mehr in der Gruppe und es sind mehrere Dialoge, die war
 Hinweis: So gut wie alle NPC haben einen Dialog, der in einer Höhle triggern sollte, und daher mit einer Bemerkung darüber beginnen. Dies könnte etwas seltsam wirken, wenn der Dialog erst später unter freiem Himmel im Camp erfolgt.
 
 
-4. Skip Korlaszs Dungeon
+3. Skip Korlaszs Dungeon
 -----------------------------------
 Diese Komponente ermöglicht es ohne Immersionsbruch, den Anfangsdungeon von SoD (Korlaszs Gruft) auszulassen und direkt weiter in den Herzogspalast zu springen.
 
@@ -65,7 +65,7 @@ Das Transferieren der Gegenstände aus der Gruft zum Herzogpalast verwendet das S
 
 
 
-5. Weitere Dialogoptionen und keine Sackgassen im Questverlauf
+4. Weitere Dialogoptionen und keine Sackgassen im Questverlauf
 -----------------------------------
 Diese Komponente fügt an ein paar Stellen weitere Antwortmöglichkeiten hinzu, entweder, weil man sonst relevante Informationen schlicht verpassen könnte, wenn in einem Gespräch eine Information nur an einer bestimmten Stelle abgefragt werden kann, obwohl der Dialog das nicht erkennen lässt, oder weil die Auswahl an Antwortmöglichkeiten zu beschränkt ist, um allen HCs gerecht zu werden und dadurch Quests nicht weiterverfolgt werden können (zumindest nicht, ohne sich "out-of-character" zu verhalten).
 
@@ -79,7 +79,7 @@ Bisher sind die folgenden Situationen berücksichtigt:
 
 
 
-6. Imoens SoD Portrait für BGII in EET & BGT verwenden
+5. Imoens SoD Portrait für BGII in EET & BGT verwenden
 -----------------------------------
 Diese Komponente verändert Imoens Portrait in BGII zu dem aus SoD. 
 Dies gilt auch für ein in BGT und EET neu gestartetes BGII-Spiel.
@@ -95,7 +95,7 @@ Die Portraitdateien sind aus CamDawg's "Continuous NPC Portraits" Mod genommen, 
 
 
 
-7 Geskripteten Kampf am Ende von SoD wiederherstellen
+6. Geskripteten Kampf am Ende von SoD wiederherstellen
 -----------------------------------
 Diese Komponente schaltet den in SoD vorhandenen aber von den Entwicklern dann doch nicht verwendeten, geskripteten "Kampf" am Ende von SoD frei. Die Szene erfolgt, nachdem der Abspannfilm mit der bechriebenen Entführung gelaufen ist. Sie besteht aus einem nicht gewinnbaren Kampf, der damit endet, dass die gesamte Gruppe ohnmächtig von verhüllten Gestalten verschleppt wird. Danach endet das Spiel wie normal. 
 Diese Komponente ist nur mit SoD kompatibel, da in EET diese Szene standardmäßig wiederhergestellt ist.

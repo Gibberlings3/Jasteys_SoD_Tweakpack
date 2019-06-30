@@ -1,4 +1,4 @@
-# Jasteys_SoD_Tweakpack
+# Jastey's SoD Tweakpack
 Jastey's SoD related tweaks, for SoD, EET, or even BGT.
 
 This tweak pack is mainly meant for the SoD part of BG:EE (except for the last component which introduces Imoen's SoD portrait into BGII). 

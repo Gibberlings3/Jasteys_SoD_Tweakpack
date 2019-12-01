@@ -8,8 +8,11 @@ It deals with some tweaks that I found useful for my own game.
 Note: For downloading the current version from GitHUb, make sure you go to the releases page and download the [latest release of this mod!](https://github.com/Gibberlings3/Jasteys_SoD_Tweakpack/releases)
 
 [Visit the mod's forum at Gibberlings Three.](https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/)
+
 [Visit the German Discussion Thread at Kerzenburgforum.](https://www.baldurs-gate.de/index.php?threads/jasteys-sod-tweakpack.44745/)
+
 [Visit the mod's Homepage.](https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/)
+
 [Download the mod at Gibberlings Three.](https://www.gibberlings3.net/files/file/1015-jasteys-sod-tweak-pack/)
 
 

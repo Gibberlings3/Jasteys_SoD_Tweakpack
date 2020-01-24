@@ -1,7 +1,5 @@
 --- Jasteys Tweaks für SoD und EET (und BGT) ---
 
-Version 2
-
 Dieser Tweakpack ist vornehmlich für die Erweiterung Siege of Dragonspear (SoD) selbst gedacht (auch in EET), hat aber auch Komponeten, die (nur) für BGT und/oder EET kompatibel sind.
 Die beinhalteten Tweaks fand ich für mein eigenes Spiel hilfreich.
 
@@ -57,7 +55,7 @@ Das Angebot kann auch zunächst abgelehnt werden, in diesem Fall wartet Arkanis a
 
 Sobald die Hilfe angenommen wurde, erfolgt der normale Übergang in den Herzogspalast mit nachfolgender Spielsequenz wie im normalen Spiel. Hierz erfolgt Imoens normaler Dialog, dass es nun endlich vorbei ist, wie im Originalspiel. Alle Gegenstände werden in den Nachttisch neben dem Bett in CHARNAMEs Zimmer transferiert - aber kein Gold. Letzteres hat mit der Originalgeschichte von SoD zu tun.
 
-Hinweis: Das Transferieren der Gegenstände erfolgt, sobald Imoen den HC im Herzogspaladt geweckt hat und wieder gegangen ist. Das Transferieren dauert seine Zeit, in der das Spiel sehr laggt (bei mir mehr als eine Minute). Sobald das Transferieren erledigt ist, läuft das Spiel wieder normal.
+Hinweis: Das Transferieren der Gegenstände erfolgt, sobald Imoen den HC im Herzogspalast geweckt hat und wieder gegangen ist. Das Transferieren dauert seine Zeit, in der das Spiel sehr laggt (bei mir mehr als eine Minute). Sobald das Transferieren erledigt ist, läuft das Spiel wieder normal.
 
 Auch zu beachten: Kurz nachdem Arkanis einem berichtet, dass alles erledigt ist und Imoen daraufhin ihren "Nun ist es endlich vorbei"-Dialog beginnt, müssen einige Skripte des Originalspiels ablaufen. Daher kann es zu einer kleinen Verzögerung kommen, bevor Imoen ihren Dialog beginnt. Diesen am besten einfach abwarten.
 
@@ -101,6 +99,18 @@ Diese Komponente schaltet den in SoD vorhandenen aber von den Entwicklern dann d
 Diese Komponente ist nur mit SoD kompatibel, da in EET diese Szene standardmäßig wiederhergestellt ist.
 
 Danke an k4thos für das Templat hierzu, das ich aus EET übernommen habe.
+
+
+
+7 Start-EP des HC in SoD anpassen, von subtledoctor
+-----------------------------------
+Mit dieser Komponente können die EP zu Beginn einer SoD-Kampagne angepasst werden.
+Es besteht die Wahl zwischen:
+65,000
+90,000
+125,000
+161,000
+
 
 
 
@@ -162,6 +172,11 @@ Spellhold Studios			http://www.shsforums.net/
 SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 3
+-added new component: Adjust PC's Starting XP at Beginning of SoD, by subtledoctor
+-uses HANDLE_CHARSETS for text convertion
+-added c#sodtweaks.ini with mod info
 
 Version 2
 -new tweak component added (SoD only): "Restore scripted Abduction Scene Fight"

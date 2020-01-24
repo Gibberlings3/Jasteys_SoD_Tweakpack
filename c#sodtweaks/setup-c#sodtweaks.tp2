@@ -1,9 +1,9 @@
 
 BACKUP ~c#sodtweaks/backup~
-AUTHOR ~jastey@web.de~ 
+AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v2~
+VERSION ~v3~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -13,23 +13,27 @@ AUTO_TRA ~c#sodtweaks/Translations/%s~
 
 ALWAYS
 
+/* from subtledoctor */
+ DEFINE_ACTION_FUNCTION starting_xp INT_VAR value = 64000 BEGIN
+	COPY_EXISTING ~sodstrta.2da~ ~override~
+	  COUNT_2DA_ROWS 2 rows
+	  FOR (row = 1; row < rows; ++row) BEGIN
+		READ_2DA_ENTRY row 0 2 setting
+		PATCH_IF (~%setting%~ STRING_EQUAL_CASE ~START_XP~) BEGIN
+		  SET_2DA_ENTRY row 1 2 %value%
+		END
+	  END
+	IF_EXISTS BUT_ONLY
+  END
+
 /* check for a ready SoD */
 
 ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
   FAIL @1002 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
 END
 
-OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
+  OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
-ACTION_IF GAME_IS ~bgee~ THEN BEGIN
-  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
-END
-
-ACTION_IF GAME_IS ~eet~ THEN BEGIN
-  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
-END
-
-/*
   ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
 
   ACTION_DEFINE_ARRAY fl#reload BEGIN game END
@@ -42,9 +46,10 @@ END
         noconvert_array = fl#noconvert
         reload_array = fl#reload
     END
-*/
 
 
+//CamDawgs CD_STATE_NOTVALID 
+    APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
 
 END //ALWAYS
@@ -205,7 +210,7 @@ EXTEND_TOP ~bdcut61t.bcs~ ~...inlined/c#sodtweaks_trialend.baf~ EVALUATE_BUFFER
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// 2 ~Do Not Miss NPC-PC Dialogues: For NPCs in Party Only~
+////// 2A ~Do Not Miss NPC-PC Dialogues: For NPCs in Party Only~
 //////
 ////////////////////////////////////////////////////////////////////////
 
@@ -222,7 +227,7 @@ INCLUDE ~c#sodtweaks/MissedDialogues/lib/activate_partynpc.tpa~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// 3 ~Do Not Miss NPC-PC Dialogues: Activate All Dialogues Always~
+////// 2B ~Do Not Miss NPC-PC Dialogues: Activate All Dialogues Always~
 //////
 ////////////////////////////////////////////////////////////////////////
 
@@ -270,7 +275,7 @@ EXTEND_BOTTOM ~bdvoghil.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdvoghil_add.baf~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// 4 ~Skip Korlasz's Dungeon~
+////// 3 ~Skip Korlasz's Dungeon~
 //////
 ////////////////////////////////////////////////////////////////////////
 
@@ -358,7 +363,7 @@ COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthelp.d~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// 5 ~More Dialogue Choices & Prevent Dead Ends~
+////// 4 ~More Dialogue Choices & Prevent Dead Ends~
 //////
 ////////////////////////////////////////////////////////////////////////
 
@@ -371,7 +376,7 @@ COMPILE EVALUATE_BUFFER ~c#sodtweaks/MoreDialogueChoices/dialogue_choices.d~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// 6 ~Use Imoen's BG1 and SoD Portrait for BGII in EET&BGT~
+////// 5 ~Use Imoen's BG1 and SoD Portrait for BGII in EET&BGT~
 //////
 ////////////////////////////////////////////////////////////////////////
 
@@ -416,7 +421,7 @@ EXTEND_TOP ~IMOEN.bcs~ ~...inlined/imoen_portrait.baf~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// 7 ~Restore scripted Abduction Scene Fight~
+////// 6 ~Restore scripted Abduction Scene Fight~
 //////
 ////////////////////////////////////////////////////////////////////////
 BEGIN @1011 /* ~Restore scripted Abduction Scene Fight~ */ DESIGNATED 7
@@ -470,6 +475,40 @@ END
 
 EXTEND_TOP ~BD6100.BCS~ ~.../BD6100-et.baf~
 
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 7 ~Adjust PC's Starting XP at Beginning of SoD~
+////// by subtledoctor
+////////////////////////////////////////////////////////////////////////
+
+//---------------------------------
+BEGIN @1013 /* ~Set Starting XP to 65,000~ */
+SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+LAF starting_xp INT_VAR value = 65000 END
+
+//---------------------------------
+BEGIN @1014 /* ~Set Starting XP to 90,000~ */
+SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+LAF starting_xp INT_VAR value = 90000 END
+
+//---------------------------------
+BEGIN @1015 /* ~Set Starting XP to 125,000~ */
+SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+LAF starting_xp INT_VAR value = 125000 END
+
+//---------------------------------
+BEGIN @1016 /* ~Set Starting XP to 161,000~ */
+SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+
+LAF starting_xp INT_VAR value = 161000 END
 
 
 

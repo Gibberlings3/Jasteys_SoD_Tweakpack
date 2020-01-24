@@ -12,3 +12,11 @@
 /* new for v2 */
 @1010   = ~This component is only compatible with SoD.~
 @1011   = ~Restore scripted Abduction Scene Fight~
+
+/* new for v3 */
+@1012   = ~Adjust PC's Starting XP at Beginning of SoD, by subtledoctor~
+@1013   = ~Set Starting XP to 65,000~
+@1014   = ~Set Starting XP to 90,000~
+@1015   = ~Set Starting XP to 125,000~
+@1016   = ~Set Starting XP to 161,000~
+

@@ -13,3 +13,10 @@
 /* new for v2 */
 @1010   = ~Diese Komponente ist nur mit SoD kompatibel.~
 @1011   = ~Geskripteten Kampf am Ende von SoD wiederherstellen~
+
+/* new for v3 */
+@1012   = ~Start-EP des HC in SoD anpassen, von subtledoctor~
+@1013   = ~EP auf 65.000 setzen~
+@1014   = ~EP auf 90.000 setzen~
+@1015   = ~EP auf 125.000 setzen~
+@1016   = ~EP auf 161.000 setzen~

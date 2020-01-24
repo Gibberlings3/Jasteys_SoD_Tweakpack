@@ -1,7 +1,5 @@
 --- Jastey's Tweaks for SoD and EET (and BGT) ---
 
-Version 2
-
 This tweak pack is mainly meant for the SoD part of BG:EE (except for the last component which introduces Imoen's SoD portrait into BGII). 
 It deals with some tweaks that I found useful for my own game.
 
@@ -34,14 +32,14 @@ This component does not change the way the romances are killed by one another.
 Note:
 For Neera, some of her lovetalks are meant to trigger during her active quest and will be skipped if the quest is already finished (as per original design).
 
-This component has two install options. Note that component "3" includes the changes made by "2", also.
+This component has two install options. Note that component "B" includes the changes made by "A", also.
 
 	2.A For NPCs in Party Only
 	------
 This changes the trigger of the lovetalk activations from "Player1" to something more general, so that they are also activated by the presence of any party NPC and not the PC, only. i.e. enabling the possibility to scout the area with any NPC and still get the lovetalks. 
 This component is the one that interferes less with the original design than the following one. It does not change the fact that the dialogues are only activated if the according NPC is in the party at the time.
 
-	2.A Activate All NPC-PC Dialogues Always
+	2.B Activate All NPC-PC Dialogues Always
 	------
 With this component, the romanceable NPCs do not have to be in the group in specific areas for the romance dialogues to be activated. If a romance dialogue was supposed to trigger in an area, it will be triggered later as soon as the NPC rejoins the group. Also, it is sufficient that any party NPC steps on the area trigger. Only exception: When going into the portal in Dragon Spear Castle, the romancing NPC has to be in the group to give the final pep lovetalk.
 
@@ -103,28 +101,49 @@ Thanks to k4thos for the template how to restore the scene(s), which was taken f
 
 
 
+7 Adjust PC's Starting XP at Beginning of SoD, by subtledoctor
+-----------------------------------
+This component lets you chose the PC's starting XP at the beginning of a new SoD game. The choices are:
+65,000
+90,000
+125,000
+161,000
+
+Thank you to subtledoctor for providing this tweak.
 
 
 INSTALLATION
 
-Note: If you've previously installed the mod, remove it before extracting a new version. To do this, uninstall all previously installed components and delete the mod folder and executables. When installing or uninstalling, do not close the DOS window by clicking on the X button! Instead, press the Enter key when instructed to do so.
+NOTE: If you've previously installed the mod, remove it before extracting a new version. To do this, uninstall all previously installed components and delete the mod folder and executables. 
+
+When installing or uninstalling, do not close the DOS window by clicking on the X button! Instead, press the Enter key when instructed to do so.
 
 
 BG:EE
-If you use SoD from GOG or Steam, you need to prepare your game with modmerge before installing any mods:
+If you use SoD from GOG or Steam, you need to prepare your game with DLC Merger or modmerge before installing any mods:
+argent77's DLC Merger:
+https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
+
+modmerge (if in doubt, use the DLC Merger instead):
 https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1
 
  
 General (Windows, Mac OS X, and Linux)
-Make sure you back up your game accordingly, just to be sure. 
 
 Extract the contents of the mod archive to your game's main directory. 
 NOTE: For Enhanced Edition it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 
 Windows
-On successful extraction, there should be an bgqe folder and a setup-c#sodtweaks.exe file in your game folder. To install, simply double-click setup-bgqe.exe and follow the instructions on screen.
-Run setup-bgqe.exe in your game folder to reinstall, uninstall or otherwise change components.
+On successful extraction, there should be an c#sodtweaks folder and a setup-c#sodtweaks.exe file in your game folder. To install, simply double-click setup-c#sodtweaks.exe and follow the instructions on screen.
+Run setup-c#sodtweaks.exe in your game folder to reinstall, uninstall or otherwise change components.
+
+Mac OS X
+The Tweak Pack is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the folder into your game folder (the folder which contains the CHITIN.KEY file). If properly extracted, you should have a "c#sodtweaks" folder, setup-c#sodtweaks, and setup-c#sodtweaks.command in your game folder. To install, simply double-click setup-c#sodtweaks.command and follow the instructions on screen.
+
+Linux
+Extract the contents of the mod to the folder of the game you wish to modify. Download the latest version of WeiDU for Linux from https://github.com/WeiDUorg/weidu/releases and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal and cd to your BG2 installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. If you're unsure, running tolower and choosing both options is the safe bet.
+Run WeInstall c#sodtweaks in your game folder to install the mod. Then run wine BGMain.exe and start playing. 
 
 NOTE: BG(II):EE are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update as even after reinstalling the mods, you might not be able to continue with your old savegames. 
 
@@ -142,6 +161,7 @@ CamDawg: correctly sized Portrait files
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lava Del'Vortel: ideas
+subteldoctor: tweak component
 
 
 USED TOOLS AND RESSOURCES
@@ -161,7 +181,14 @@ Spellhold Studios			http://www.shsforums.net/
 
 SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
+
+
 HISTORY
+
+Version 3
+-added new component: Adjust PC's Starting XP at Beginning of SoD, by subtledoctor
+-uses HANDLE_CHARSETS for text convertion
+-added c#sodtweaks.ini with mod info
 
 Version 2
 -new tweak component added (SoD only): "Restore scripted Abduction Scene Fight"

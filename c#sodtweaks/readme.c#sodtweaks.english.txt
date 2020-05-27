@@ -7,7 +7,7 @@ It deals with some tweaks that I found useful for my own game.
 DESCRIPTION
 
 
-1 Ending Independent on PC Replies
+1 Ending Independent of PC Replies
 -----------------------------------
 This component prevents the "assassin escape" ending to trigger if the deeds of the PC qualify for the "ducal release" ending, independent on whether the PC lists all of his/her deeds at the final hearing. This is also for players who don't want to click through more reply options than necessary. 
 
@@ -184,6 +184,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 3.1
+-English version proof read by Lauriel.
 
 Version 3
 -added new component: Adjust PC's Starting XP at Beginning of SoD, by subtledoctor

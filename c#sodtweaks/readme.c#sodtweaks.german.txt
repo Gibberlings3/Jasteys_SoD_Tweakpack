@@ -173,6 +173,9 @@ SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrou
 
 VERSIONS-HISTORIE
 
+Version 3.1
+-English version proof read by Lauriel.
+
 Version 3
 -added new component: Adjust PC's Starting XP at Beginning of SoD, by subtledoctor
 -uses HANDLE_CHARSETS for text convertion

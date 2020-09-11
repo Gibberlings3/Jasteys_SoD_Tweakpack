@@ -71,6 +71,10 @@ Hierbei soll die ursprüngliche Idee erhalten bleiben, das heißt konret, dass wen
 
 Bisher sind die folgenden Situationen berücksichtigt:
 
+-Verkürzen des repetitiven Dialogs mit Herzog Eltan durch zusätzliche Antwortoptinen.
+
+-Verkürzen des Dialogs mit dem Verhüllten Mann im Palast durch zusätzliche Antwortoptinen.
+
 -im Keller des Herzogpalastes: mehr Möglichkeiten eingefügt, wichtige Questinformationen zu dem letzten Gefangenen zu erhalten. Diese wurden ansonsten schnell übergangen.
 
 -Für die "Traitors in Camp (Verräter im Lager)" Quest (Safana) muss der/die HC keinen Schlagabtausch mehr mit Miszena darüber machen, wer dem anderen die brutaleren Verletzungen zufügt, um questrelevante Informationen zu erhalten.
@@ -173,7 +177,15 @@ SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrou
 
 VERSIONS-HISTORIE
 
+Version 4
+- Russian translation added, by yota13
+-"Skip Korlasz' Dungeon": compatibility with Transitions added
+-"More Dialogue Choices & Prevent Dead Ends": new contents: 
+	--More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor.
+	--More reply options to shorten the repetitive dialogue with Duke Eltan in the Palace.
+
 Version 3.1
+
 -English version proof read by Lauriel.
 
 Version 3

@@ -7,7 +7,7 @@ It deals with some tweaks that I found useful for my own game.
 DESCRIPTION
 
 
-1 Ending Independent of PC Replies
+1 Ending Independent on PC Replies
 -----------------------------------
 This component prevents the "assassin escape" ending to trigger if the deeds of the PC qualify for the "ducal release" ending, independent on whether the PC lists all of his/her deeds at the final hearing. This is also for players who don't want to click through more reply options than necessary. 
 
@@ -71,7 +71,11 @@ The component tries to preserve the original game ideas: e.g. if an information 
 
 So far, the following instances are considered:
 
--in Ducal Palace Dungeon: the PC will have more reply options that will lead to quest relevant information about the other prisoner.
+-Shorten the repetitive dialogue with Duke Eltan in the Palace.
+
+-More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor.
+
+-In Ducal Palace Dungeon: the PC will have more reply options that will lead to quest relevant information about the other prisoner.
 
 -For the "Traitors in Camp" quest, Miszena doesn't need to be bullied with the brutal physical threats needed currently to provide the needed information.
 
@@ -185,7 +189,15 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
+Version 4
+- Russian translation added, by yota13
+-"Skip Korlasz' Dungeon": compatibility with Transitions added
+-"More Dialogue Choices & Prevent Dead Ends": new contents: 
+	--More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor.
+	--More reply options to shorten the repetitive dialogue with Duke Eltan in the Palace.
+
 Version 3.1
+
 -English version proof read by Lauriel.
 
 Version 3

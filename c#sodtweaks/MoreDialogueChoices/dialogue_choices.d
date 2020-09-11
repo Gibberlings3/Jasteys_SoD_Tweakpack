@@ -21,6 +21,32 @@ COPY_TRANS BDFIST1A 4
 END
 END
 
+/* More reply options to shorten the repetitive dialogue with Duke Eltan in the Palace. */
+EXTEND_BOTTOM BDELTAN 10
+++ @7 /* ~I'll be on my way.~ */ + 16
+END
+
+EXTEND_BOTTOM BDELTAN 11
+++ @7 /* ~I'll be on my way.~ */ + 16 
+END
+
+EXTEND_BOTTOM BDELTAN 12
+++ @7 /* ~I'll be on my way.~ */ + 16
+END
+
+EXTEND_BOTTOM BDELTAN 13
+++ @7 /* ~I'll be on my way.~ */ + 16
+END
+
+
+/* More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor. */
+EXTEND_BOTTOM BDIRENI 3
+++ @8 /* ~Excuse me - who are you and how did you come in here?~ */ + 7
+END
+
+EXTEND_BOTTOM BDIRENI 7
+++ @9 /* ~I don't see a point in discussing this with you. Leave now, before I call the guards.~ */ + 12
+END
 
 
 /* add some less psychopathic reply options to Mizhena to proceed with the quest */

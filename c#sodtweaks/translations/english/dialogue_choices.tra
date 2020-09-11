@@ -5,8 +5,8 @@
 @4   = ~Maybe I should teach you some manners, cleric?~
 @5   = ~Pardon me? I think a lesson in manners is more than appropriate here!~
 @6   = ~How about you try that, cleric, and I'll show you what this would mean for *you*!~
-/*
-@7   = 
-@8   = 
-@9   = 
-*/
+
+/* new for v4 */
+@7   = ~I'll be on my way.~
+@8   = ~Excuse me - who are you and how did you come in here?~
+@9   = ~I don't see a point in discussing this with you. Leave now, before I call the guards.~

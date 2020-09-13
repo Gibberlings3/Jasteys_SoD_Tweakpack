@@ -7,7 +7,7 @@ It deals with some tweaks that I found useful for my own game.
 DESCRIPTION
 
 
-1 Ending Independent of PC Replies
+1 Ending Independent on PC Replies
 -----------------------------------
 This component prevents the "assassin escape" ending to trigger if the deeds of the PC qualify for the "ducal release" ending, independent on whether the PC lists all of his/her deeds at the final hearing. This is also for players who don't want to click through more reply options than necessary. 
 
@@ -53,14 +53,18 @@ If an NPC wasn't in the group for a longer time, the dialogues will cue and fire
 3 Skip Korlasz's Dungeon
 -----------------------------------
 This component adds a non-4th wall breaking possibility to skip the dungeon and head right on to the Duchal Palace. As soon as Imoen finished her introduction to Korlasz' Dungeon, Arkanis from Candlekeep (or, in case he's dead Biff the Understudy!) will approach the PC and offer to do it instead.
-The PC can accept either with the request of Korlasz being killed or spared, or can tell Arkanis/Bill to wait. If told to wait, Arkanis/Bill will remain at the dungeon's entrance and the player can play on as normal and ask him again later. Once the help is accepted, the original game's transition to the Duchal Palace will trigger including Imoen's dialogue about "it's finally over". All useful items from the dungeon will be transferred to the bedside table in the PC's quarters in the Duchal Palce. There will be no gold transferred.
+The PC can accept either with the request of Korlasz being killed or spared, or can tell Arkanis/Bill to wait. If told to wait, Arkanis/Bill will remain at the dungeon's entrance and the player can play on as normal and ask him again later. Once the help is accepted, the original game's transition to the Duchal Palace will trigger including Imoen's dialogue about "it's finally over". All useful items from the dungeon will be transferred to the bedside table in the PC's quarters in the Duchal Palce in SoD. There will be no gold transferred.
 
-Note: The transfer of items will happen after Imoen woke the player and left. This will take a few minutes during which the game might lagg heavily. Once the item transfer is done, the game will be back to normal.
-From the bedside table, the transferred items will not be moved with the PC's possessions along the campaign. They need to be put into the PC's chest by hand for this to happen.
+Note: The transfer of items will happen after Imoen woke the player and left and will take a few minutes during which the game might lagg heavily. Once the item transfer is done, the game will be back to normal.
+From the bedside table, the transferred items will *not* be moved with the PC's possessions along the campaign. They need to be put into the PC's chest by hand for this to happen.
 
-Also: After accepting the help and Arkanis/Bill telling it's done, there is a short moment before Imoen initiates the final "it is over" dialogue which will transfer to the Duchal Palace. In this moment, the player has full control over the game since some original game scripts are executed to initiate the transfer. Starting a dialogue with one of the characters should be ok and not break anything at this moment but best you are patient and just let it play out. The final dialogue with Imoen leading to the area transition will start by itself after Arkanis/Bill reported their success. 
+Also: After accepting the help and Arkanis/Bill telling it's done, there is a short moment before Imoen initiates the final "it is over" dialogue which will transfer to the Duchal Palace. In this moment, the player has full control over the game since some original game scripts are executed to initiate the transfer. Starting a dialogue with one of the characters should be ok and not break anything at this moment but best you are patient and just let it play out. The final dialogue with Imoen leading to the area transition should start by itself after Arkanis/Bill reported their success, although this didn't work for me always and I had to initiate dialogue with Imoen. Just make sure you'll wait a moment for the scripts to catch up. 
 
 The transition from the items from the dungeon into the Duchal Palace is done using slightly adapted code from Argent77's "Skip Chateau Irenicus" mod with many thanks!
+
+Compatibility Note: The mod Transitions moves Korlasz' Dungeon into the "BG1 wolrd". The tweak to skip it will still work, but with the two restrictions:
+-the items will still only be available after the transition to SoD in the 3rd floor of the Ducal Palace in the bedside table.
+-Imoen will not have a "final dialogue" that is in any way important and the game will not advance into the Ducal Palace after Korlasz' Crypt is cleared by Arkanis and his team.
 
 
 
@@ -71,7 +75,11 @@ The component tries to preserve the original game ideas: e.g. if an information 
 
 So far, the following instances are considered:
 
--in Ducal Palace Dungeon: the PC will have more reply options that will lead to quest relevant information about the other prisoner.
+-Shorten the repetitive dialogue with Duke Eltan in the Palace.
+
+-More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor.
+
+-In Ducal Palace Dungeon: the PC will have more reply options that will lead to quest relevant information about the other prisoner.
 
 -For the "Traitors in Camp" quest, Miszena doesn't need to be bullied with the brutal physical threats needed currently to provide the needed information.
 
@@ -185,7 +193,15 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
+Version 4
+- Russian translation added, by yota13
+-"Skip Korlasz' Dungeon": compatibility with Transitions added
+-"More Dialogue Choices & Prevent Dead Ends": new contents: 
+	--More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor.
+	--More reply options to shorten the repetitive dialogue with Duke Eltan in the Palace.
+
 Version 3.1
+
 -English version proof read by Lauriel.
 
 Version 3

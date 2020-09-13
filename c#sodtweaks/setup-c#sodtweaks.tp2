@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v3.1~
+VERSION ~v4~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -64,6 +64,11 @@ LANGUAGE ~Deutsch~
          ~german~   
          ~c#sodtweaks/Translations/german/setup.tra~
 	 ~c#sodtweaks/Translations/german/game.tra~
+
+LANGUAGE ~Russian~
+         ~russian~   
+         ~c#sodtweaks/Translations/russian/setup.tra~
+	 ~c#sodtweaks/Translations/russian/game.tra~
 
 
 /* ~Jastey's SoD Tweaks for SoD and EET~ */
@@ -360,6 +365,7 @@ EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/bd0103.baf~ EVALUATE_BUFFER
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthel1.baf~
 
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthelp.d~
+
 
 ////////////////////////////////////////////////////////////////////////
 //////

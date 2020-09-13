@@ -5,8 +5,8 @@
 @4   = ~Vielleicht bringe ich lieber Euch ein paar Manieren bei, Klerikerin?~
 @5   = ~Bitte was? Langsam denke ich, dass eine Lektion in Benehmen mehr als angebracht wäre!~
 @6   = ~Wie wär's, wenn Ihr das versucht, Klerikerin, und dann zeige ich Euch mal, was das für Euch bedeuten würde!~
-/*
-@7   = 
-@8   = 
-@9   = 
-*/
+
+/* new for v4 */
+@7   = ~Ich mache mich wieder auf den Weg.~
+@8   = ~Wer bitte seid Ihr und wie seid Ihr hier reingekommen?~
+@9   = ~Ich sehe keinen Anlass, das mit Euch zu diskutieren. Verlasst den Palast, bevor ich die Wachen rufe.~

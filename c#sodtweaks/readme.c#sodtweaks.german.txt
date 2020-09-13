@@ -53,13 +53,19 @@ Hierzu tritt direkt am Eingang der Gruft Arkanis aus Kerzenburg (oder, sollte di
 Dieses Angebot kann angenommen werden, wobei die Wahl besteht, Korlasz und ihre Anhänger entweder am Leben oder alle töten zu lassen.
 Das Angebot kann auch zunächst abgelehnt werden, in diesem Fall wartet Arkanis am Eingang und kann später noch angesprochen werden. Sobald man Korlasz selbst entgegentritt, verschwindet Arkanis.
 
-Sobald die Hilfe angenommen wurde, erfolgt der normale Übergang in den Herzogspalast mit nachfolgender Spielsequenz wie im normalen Spiel. Hierz erfolgt Imoens normaler Dialog, dass es nun endlich vorbei ist, wie im Originalspiel. Alle Gegenstände werden in den Nachttisch neben dem Bett in CHARNAMEs Zimmer transferiert - aber kein Gold. Letzteres hat mit der Originalgeschichte von SoD zu tun.
+Sobald die Hilfe angenommen wurde, erfolgt der normale Übergang in den Herzogspalast mit nachfolgender Spielsequenz wie im normalen Spiel. Hierzu erfolgt Imoens normaler Dialog, dass es nun endlich vorbei ist, wie im Originalspiel. Alle Gegenstände werden in den Nachttisch neben dem Bett in CHARNAMEs Zimmer transferiert - aber kein Gold. Letzteres hat mit der Originalgeschichte von SoD zu tun.
 
-Hinweis: Das Transferieren der Gegenstände erfolgt, sobald Imoen den HC im Herzogspalast geweckt hat und wieder gegangen ist. Das Transferieren dauert seine Zeit, in der das Spiel sehr laggt (bei mir mehr als eine Minute). Sobald das Transferieren erledigt ist, läuft das Spiel wieder normal.
+Hinweis: Das Transferieren der Gegenstände erfolgt, sobald Imoen den HC im Herzogspalast geweckt hat und wieder gegangen ist. Das Transferieren dauert seine Zeit, in der das Spiel *sehr* laggt (bei mir mehr als eine Minute). Sobald das Transferieren erledigt ist, läuft das Spiel wieder normal.
+Die Gegenstände werden aus dem Nachttisch *nicht* im Spiel weitergetragen. Hierzu müssen sie erst von Euch in CHARNAMEs Kiste gelegt werden.
 
-Auch zu beachten: Kurz nachdem Arkanis einem berichtet, dass alles erledigt ist und Imoen daraufhin ihren "Nun ist es endlich vorbei"-Dialog beginnt, müssen einige Skripte des Originalspiels ablaufen. Daher kann es zu einer kleinen Verzögerung kommen, bevor Imoen ihren Dialog beginnt. Diesen am besten einfach abwarten.
+Auch zu beachten: Kurz nachdem Arkanis einem berichtet, dass alles erledigt ist und Imoen daraufhin ihren "Nun ist es endlich vorbei"-Dialog beginnt, müssen einige Skripte des Originalspiels ablaufen. Hier wartet Ihr am besten einen kleinen Moment. Sollte Imoen ihren "finalen" Dialog nicht von alleine starten, könnt Ihr sie dann einfach ansprechen, um den Transfer in den Palast zu triggern. 
 
 Das Transferieren der Gegenstände aus der Gruft zum Herzogpalast verwendet das Skripting von Argents "Skip Chateau Irenicus" Mod, vielen Dank!
+
+Hinweis zur Kompatibilität:
+Solltet Ihr die Mod "Transitions" installiert haben, dann wird Euch auch hier Arkanis seine Dienste anbieten. Allerdings gibt es folgendes zu beachten:
+1. die Gegenstände aus Korlasz' Crypta werden erst *nach* dem Übergang nach SoD wie im Originalspiel im Nachttisch des HCs zu finden sein.
+2. Es gibt keinen "finalen Dialog" von Imoen und keinen Übergang in den Palast etc.
 
 
 
@@ -70,6 +76,10 @@ Diese Komponente fügt an ein paar Stellen weitere Antwortmöglichkeiten hinzu, en
 Hierbei soll die ursprüngliche Idee erhalten bleiben, das heißt konret, dass wenn man zum Beispiel jemandem physisch Prügel androhen muss, um eine Information zu bekommen, dann versucht die neue Antwortmöglichkeit, sinnvoll dieselbe Reaktion des Spielcharakters zu provozieren, aber ohne, dass der HC sich erst wie ein brutaler Barbar verhalten muss.
 
 Bisher sind die folgenden Situationen berücksichtigt:
+
+-Verkürzen des repetitiven Dialogs mit Herzog Eltan durch zusätzliche Antwortoptinen.
+
+-Verkürzen des Dialogs mit dem Verhüllten Mann im Palast durch zusätzliche Antwortoptinen.
 
 -im Keller des Herzogpalastes: mehr Möglichkeiten eingefügt, wichtige Questinformationen zu dem letzten Gefangenen zu erhalten. Diese wurden ansonsten schnell übergangen.
 
@@ -173,7 +183,15 @@ SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrou
 
 VERSIONS-HISTORIE
 
+Version 4
+- Russian translation added, by yota13
+-"Skip Korlasz' Dungeon": compatibility with Transitions added
+-"More Dialogue Choices & Prevent Dead Ends": new contents: 
+	--More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor.
+	--More reply options to shorten the repetitive dialogue with Duke Eltan in the Palace.
+
 Version 3.1
+
 -English version proof read by Lauriel.
 
 Version 3

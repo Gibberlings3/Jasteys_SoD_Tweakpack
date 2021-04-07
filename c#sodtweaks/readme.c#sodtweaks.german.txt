@@ -161,7 +161,9 @@ Argent77: Codinghilfe
 CamDawg: Portraitdateien
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
+Lauriel: Ideen und Korrekturen
 Lava Del'Vortel: Ideen
+subteldoctor: Autor
 
 
 VERWENDETE TOOLS UND RESSOURCEN

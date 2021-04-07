@@ -83,6 +83,8 @@ So far, the following instances are considered:
 
 -For the "Traitors in Camp" quest, Miszena doesn't need to be bullied with the brutal physical threats needed currently to provide the needed information.
 
+-No reply options, but Jaheira and Dynaheir will say one more line at the end of SoD why they are joining the PC for fleeing the city. I always missed an actual explanation why they do that, now they state a motivation that explains their presence to me.
+
 
 
 5 Use Imoen's BG1 and SoD Portrait for BGII in EET&BGT
@@ -118,6 +120,27 @@ This component lets you chose the PC's starting XP at the beginning of a new SoD
 161,000
 
 Thank you to subtledoctor for providing this tweak.
+
+
+
+8 SoD Ending: jastey's Tweaks
+-----------------------------------
+This component gives 4 install choices, which all change the ending of SoD after the "slayer cutscene" and Bence Duncan found the PC on the floor.
+
+Option 1: "Revised Full Version"
+This option changes the overall public perception of the PC's role in what happened to Skie. It always bothered me that in the original, the PC is seen as the culprit although they are clearly laying on the floor when Bence Duncan enters, there is no weapon, and the whole scene can be played as such that the PC doesn't hit the "slayer" monster once. Still, everyone goes like "YoU MuRdErER!!!1!" which broke immersion for me because it's like everyone is kind of brain washed.
+My revised ending keeps all key moments: Bence Duncan and Corwin arrest the PC, there is a public scene were the PC's Bhaal heritage is announced publicly, the PC is held responsible for Skie's death because the attack was clearly addressed at the (Bhaalspawn) PC, Duke Belt wants the PC's head, the PC ends up in prison. The visit of the Hooded Man, Corwin and any romance interests will trigger as normal, although the murder accusations will be notched down a bit in their dialogues.
+There is no interrogation and the player doesn't have to click through any responses to trigger the nicer ending. Duke Belt will always come and explain the situation to the PC, no assassin murdering the officers with this ending. Players who want to have a look around the sewers and fight off Bence Duncan and Corwin at the waterfall can still do so, just tell the guard who is supposed to lead the PC to the exit that the PC will go on their own.
+
+Option 2: "Revised Streamlined Version"
+This option has all the (changed) content of my revised ending in option 1, but all intermediate cutscenes are removed: no walk through the masses, no cutscene at the public hearing of people walking to and fro. It's basically a series of dialogues and fade-to-blacks until the PC is in prison. There the normal flow (of Option 1) kicks in, with all visits by the Hooded Man, Corwin, the romance interests, and Duke Belt.
+
+Option 3: "Original Streamlined Version"
+This option keeps all the original dialogues as they were, but removes all intermediate cutscenes. No walk through the masses, no cutscene at the public hearing of people walking to and fro. It's basically a series of dialogues and fade-to-blacks until the PC is in prison. There the normal flow kicks in.
+To activate the nice ending with Duke Belt coming into the prison, you will have to klick through the repy option at the public trial or install component 1 of this tweak pack.
+
+Option 4: "Skipit Version"
+This option makes the ending really short. It's meant for players that did or are planning to play through the ending a lot of times. It jumps from Bence arresting the PC to Duke Belt explaining the situation in prison. Duke Belt will always come, no assassin ending with this option. After walking to the table were the items are, going through the trap door will bring the PC directly to the exit of the sewers were Imoen is.
 
 
 INSTALLATION
@@ -168,8 +191,9 @@ Argent77: coding help
 CamDawg: correctly sized Portrait files
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
+Lauriel: ideas and corrections
 Lava Del'Vortel: ideas
-subteldoctor: tweak component
+subteldoctor: author
 
 
 USED TOOLS AND RESSOURCES
@@ -192,6 +216,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 5
+. new component added: "SoD Ending: jastey's Tweaks"
 
 Version 4
 - Russian translation added, by yota13

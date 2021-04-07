@@ -62,7 +62,7 @@ ACTION_IF !FILE_EXISTS ~c#sodtweaks/install/c#sodtweaksinstall.mrk~ BEGIN
 
     LAF HANDLE_CHARSETS
       INT_VAR
-        infer_charset = 1
+        infer_charsets = 1
       STR_VAR
         tra_path = EVAL ~c#sodtweaks/Translations/autotra~
         noconvert_array = fl#noconvert

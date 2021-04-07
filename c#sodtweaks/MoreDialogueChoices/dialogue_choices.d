@@ -69,3 +69,20 @@ EXTEND_BOTTOM BDMIZHEN 66
 ++ @6 /* ~How about you try that, cleric, and I'll show you what this would mean for *you*!~ */ + 67
 END
 
+/* at the end, give a real reason why the default BGII crew is here */
+
+I_C_T3 BDIMOEN 102 C#st_IntroducingDefaultParty
+== BDDYNAHE IF ~InMyArea("DYNAHEIR") !StateCheck("DYNAHEIR",CD_STATE_NOTVALID)
+!InParty("DYNAHEIR")~ THEN @47
+== BDJAHEIR IF ~InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)
+!InParty("JAHEIRA")~ THEN @48
+END
+
+I_C_T3 BDIMOEN 119 C#st_IntroducingDefaultParty
+== BDDYNAHE IF ~InMyArea("DYNAHEIR") !StateCheck("DYNAHEIR",CD_STATE_NOTVALID)
+!InParty("DYNAHEIR")~ THEN @47
+== BDJAHEIR IF ~InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)
+!InParty("JAHEIRA")~ THEN @48
+END
+
+

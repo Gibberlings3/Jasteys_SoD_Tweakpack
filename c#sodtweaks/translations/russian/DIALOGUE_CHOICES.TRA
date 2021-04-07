@@ -10,3 +10,7 @@
 @7 = ~ Уже иду.~
 @8 = ~ Простите, но кто вы и как сюда попали?~
 @9 = ~ Я не вижу смысла обсуждать это с вами. Уходите, пока я не вызвал охрану.~
+
+/* new for v5 */
+@47   = ~[Dynaheir]Minsc and I have been sent by the Wychlaran to search for spawn of Bhaal. We will accompany you, now more than ever after the people call for your blood just because of your godly father.~
+@48   = ~[Jaheira]Khalid and I promised Gorion to watch over and protect you. We will not turn our backs now that you need it the most.~

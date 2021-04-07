@@ -218,7 +218,12 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 HISTORY
 
 Version 5
-. new component added: "SoD Ending: jastey's Tweaks"
+- new component added: "SoD Ending: jastey's Tweaks"
+- "More dialogue choices": added lines to Jaheira & Dynaheir at the end about their motivation to join the PC
+- added install order syntax for PI
+- Russian version now uses English setup.tra directly
+
+
 
 Version 4
 - Russian translation added, by yota13

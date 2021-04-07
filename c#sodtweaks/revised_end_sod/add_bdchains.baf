@@ -1,0 +1,57 @@
+IF
+	RandomNum(90,1)
+	Global("C#st_BD_STOP_OT","BD0112",1)  // Baldur's Gate East
+THEN
+	RESPONSE #3
+		DisplayStringHead(Myself,@100)
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@101)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@102)
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,44336)  // Skie Silvershield will be avenged!
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@103)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@104)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@105)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@106)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@107)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,44342)  // No mercy for Silvershield's slayer!
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@108)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #3
+		DisplayStringHead(Myself,@109)  
+		FaceObject(Player1)
+		Continue()
+	RESPONSE #60
+		FaceObject(Player1)
+		Continue()
+END
+

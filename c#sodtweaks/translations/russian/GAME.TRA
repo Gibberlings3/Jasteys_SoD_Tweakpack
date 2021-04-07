@@ -1,1 +1,16 @@
 @0 = ~ <CHARNAME>, позволь мне к тебе присоединиться, нам нужно поговорить!~
+
+/* new for v5 */
+@100 = ~You saved us!~
+@101 = ~Shame! Shame on whoever killed the Silvershield lass!~
+@102 = ~You saved Bridgefort from the crusade. You saved us all from Caelar!~
+@103 = ~Here comes our hero!~
+@104 = ~Be our hero! We don't need another Sarevok!~
+@105 = ~You saved us all!~
+@106 = ~Hooray to the victorious Flaming Fist!~
+@107 = ~May the gods have mercy on Skie's soul!~
+@108 = ~Caelar is gone! None shall mourn her passing!~
+@109 = ~Hooray to our hero!~
+@110 = ~What have you done to the Silvershield lass?~
+@111 = ~Bhaalchild! We do not trust you!~
+@112 = ~Are you another Sarevok? We will see through you, child of Bhaal!~

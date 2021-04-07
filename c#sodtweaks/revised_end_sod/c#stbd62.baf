@@ -1,0 +1,55 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(2)
+		ActionOverride("bdimoitm",MoveBetweenAreas("bd0104",[247.463],S))  // Flaming Fist HQ
+		ActionOverride(Player2,LeaveAreaLUA("bd0104","",[425.280],SW))  // Flaming Fist HQ
+		ActionOverride(Player3,LeaveAreaLUA("bd0104","",[405.300],SW))  // Flaming Fist HQ
+		ActionOverride(Player4,LeaveAreaLUA("bd0104","",[430.320],SW))  // Flaming Fist HQ
+		ActionOverride(Player5,LeaveAreaLUA("bd0104","",[455.340],SW))  // Flaming Fist HQ
+		ActionOverride(Player6,LeaveAreaLUA("bd0104","",[485.335],SW))  // Flaming Fist HQ
+		LeaveAreaLUAPanic("bd0104","",[400.355],SW)  // Flaming Fist HQ
+		LeaveAreaLUA("bd0104","",[400.355],SW)  // Flaming Fist HQ
+		MultiPlayerSync()
+		Wait(1)
+		ActionOverride("Equipment_p1",TakeCreatureItems("bdimoitm",ALL))  // No such index
+		ActionOverride("Equipment_p1",TakeCreatureItems(Player1,ALL))
+		ActionOverride("Equipment_party",TakeCreatureItems(Player2,ALL))
+		ActionOverride("Equipment_party",TakeCreatureItems(Player3,ALL))
+		ActionOverride("Equipment_party",TakeCreatureItems(Player4,ALL))
+		ActionOverride("Equipment_party",TakeCreatureItems(Player5,ALL))
+		ActionOverride("Equipment_party",TakeCreatureItems(Player6,ALL))
+		CloseDoor("door04")
+		Lock("door04")
+		Unlock("door01")
+		OpenDoor("door01")
+		CloseDoor("door02")
+		Unlock("door03")
+		OpenDoor("door03")
+		CloseDoor("door07")
+		CloseDoor("door08")
+		Lock("door02")
+		Lock("door07")
+		Lock("door08")
+		RemoveMapNote([575.750],67510)  // Tiax's Cell
+		RemoveMapNote([1738.1152],67486)  // Exit
+		TriggerActivation("InfoBDStairs",FALSE)
+		TriggerActivation("Infobdstairs_epilogue",TRUE)
+		TriggerActivation("Tranbd0105",FALSE)
+		TriggerActivation("C#Exbd6200",TRUE)
+		AddAreaType(0x80)
+		SetGlobal("bd_plot","global",615)
+		SetGlobal("bd_jail_visitors","bd0104",50)
+		CreateCreature("bdbelt",[345.420],NE)  // Belt
+		CreateCreature("bdff1709",[345.460],NE)  // Flaming Fist Mercenary
+		ReallyForceSpellRES("bdremove",Myself)  // No such index
+		FadeFromColor([20.0],0)
+		SmallWait(5)
+		Wait(2)
+		PlaySound("amb_d20")
+		SmallWait(5)
+		EndCutSceneMode()
+		ActionOverride("bdbelt",StartDialogNoSet(Player1))
+END

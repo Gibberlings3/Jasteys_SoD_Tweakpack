@@ -1,0 +1,20 @@
+IF
+	Global("C#st_RevisedTrial","GLOBAL",1)
+	!GlobalTimerNotExpired("bd_mdd1352_ot_timer","bd4100")
+	!Dead("CORWIN")  // Corwin
+	InMyArea("CORWIN")  // Corwin
+THEN
+	RESPONSE #100
+		ActionOverride("CORWIN",StartDialogNoSet(Player1))
+END
+
+IF
+	Global("C#st_RevisedTrial","GLOBAL",1)
+	!GlobalTimerNotExpired("bd_mdd1352_ot_timer","bd4100")
+	OR(2)
+		Dead("CORWIN")  // Corwin
+		!InMyArea("CORWIN")  // Corwin
+THEN
+	RESPONSE #100
+		ActionOverride("bdbence",StartDialogNoSet(Player1))
+END

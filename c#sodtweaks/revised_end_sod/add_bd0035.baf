@@ -1,0 +1,11 @@
+IF
+	Global("C#st_StartTrial","MYAREA",0)
+THEN
+	RESPONSE #100
+		ActionOverride("bdbelt",Face(SSW))
+		StartMusic(MISC0,QUICK_FADE)
+		FadeFromColor([20.0],0)
+		Wait(4)
+		SetGlobal("C#st_StartTrial","MYAREA",1)
+		ActionOverride("bdbelt",StartDialogNoSet("Commoner_talk1"))
+END

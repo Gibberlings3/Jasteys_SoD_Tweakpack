@@ -20,3 +20,11 @@
 @1015   = ~Set Starting XP to 125,000~
 @1016   = ~Set Starting XP to 161,000~
 
+/* new for v5 */
+@1017   = ~This component needs to be installed before EET_End.~
+@1018   = ~SoD Ending: jastey's Tweaks~
+@1019   = ~Revised Full Version~
+@1020   = ~Revised Streamlined Version~
+@1021   = ~Skipit Version~
+@1022   = ~Original Streamlined Version~
+

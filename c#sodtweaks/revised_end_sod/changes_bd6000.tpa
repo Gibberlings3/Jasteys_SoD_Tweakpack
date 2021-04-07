@@ -1,0 +1,36 @@
+/* FF soldier should not be here in case PC wanted to go alone */
+COPY_EXISTING ~bd6000.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+		SPRINT textToReplace ~\(!Dead("bdff1709")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~GlobalLT("C#st_RevisedTrial","GLOBAL",5)
+\1~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+/* edit bdwaterf.bcs so that Bence and Corwin spawn near the waterfall in bd6000.bcs */
+COPY_EXISTING ~bdwaterf.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+		SPRINT textToReplace ~\(Global("bd_player_exiled","global",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+/* FF soldiers in sewers should remain in bd6000.are */
+COPY_EXISTING ~bdfist60.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+		SPRINT textToReplace ~\(!Global("bd_player_exiled","global",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~False()~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES

@@ -1,6 +1,6 @@
-@0    = ~[Bence Duncan]What... what happend here?! Is that Skie? - Is she...? She is dead! The daughter of Duke Silvershield was killed here!~
+@0    = ~[Bence Duncan]What... what happend here?! Is that Skie? - Is she...? She is dead! The daughter of Duke Silvershield was killed!~
 @1    = ~[Corwin]What happened, <CHARNAME>?! Where you attacked?~
-@2    = ~[Bence Duncan]What do you recall, <CHARNAME>?~
+@2    = ~[Bence Duncan]Tell us what happened!~
 @3    = ~I don't know what happened - it's all a blur. But I believe to have been deceived to kill Skie. I am truly sorry.~
 @4    = ~It was a mighty illusion, by a new enemy who is stalking me for some time now. Skie got caught up in it when I tried to defend myself - I am sorry.~
 @5    = ~I didn't kill her, if that is what you think. This was a setup.~
@@ -17,7 +17,7 @@
 @16   = ~Why would I care?~
 @17   = ~[Duke Belt]Do not take this lightly, <CHARNAME>. Although I shouldn't be surprised by your reaction.~
 @18   = ~[Duke Belt]Skie's lost soul is grave news and changes your role in this significantly. Our calm approach to the situation was due to the assumption that the palace healers could revive her easily. This is no longer the case.~
-@19   = ~[Duke Belt]Yes, Corporal? Is there something you wish to say?~
+@19   = ~[Duke Belt]Yes, Corporal? Is there something you wish to say about <CHARNAME>?~
 @20   = ~[Duke Belt]<CHARNAME>, what was a mere rumor when you defeated Sarevok is a public knowledge now - that you, too, are a child of Bhaal.~
 @21   = ~There is nothing to deny about my Bhaal heritage. But I did not kill Skie.~
 @22   = ~I'm a child of Bhaal, but I am not Sarevok. I saved this city - saved Dragonspear Castle!~
@@ -30,7 +30,9 @@
 @29   = ~You really do not believe in my innocence, do you?~
 @30   = ~[Corwin]It is all a blur - your Bhaal heritage and the evil things happening... you have no idea how the city looks currently. People are fighting over you in the streets!~
 @31   = ~[Duke Belt]Although there is no conclusive evidence of you being the murderer, until the dagger is found, Skie revived, and your name cleared, we can't have you here. You are too much of a disruption. The town is ready to tear itself apart.~
-@32   = ~[Duke Belt]The evil godly heritage might not guide your actions as it did Sarevok, and it might not have been you, personally, who made the killing blow. But it was your godly heritage why you were attacked - and Skie killed. You are the reason Skie is no longer with us.~
+@32   = ~Disturbing Implications
+
+Duke Silvershield lost it when the Dukes informed me that Skie's soul is trapped and lost in a Soultaker dagger. He insists that I am to hold responsible for Skie's death as her murderer, and I was sent to prison!~
 @33   = ~[Duke Belt]Entar - Duke Silvershield is blinded by his grief. He wants you dead, no matter what, and he will find his means to achieve this. You will not be safe here until this is settled, <CHARNAME> - until the dagger is found and Skie's soul is freed.~
 @34   = ~Retrieving the dagger and freeing Skie is what honor dictates me to do. I will not rest until it is done.~
 @35   = ~Seems like this Hooded Man will not leave me in peace anyway, so I can as well go after him in persue of that dagger - and more.~

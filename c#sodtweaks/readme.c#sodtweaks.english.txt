@@ -127,16 +127,22 @@ Thank you to subtledoctor for providing this tweak.
 -----------------------------------
 This component gives 4 install choices, which all change the ending of SoD after the "slayer cutscene" and Bence Duncan found the PC on the floor.
 
+All options use as much original (voiced) lines as possible.
+
+Note to modders (and players): all options use the standard cutscene bdcut61.bcs which handles the leaving of NPCs out of the party. For some options the end of the cutscene is altered, but if you add a script block for your mod NPC as described in my "Modding Tutorial Part 2: Make Your NPC Comment and Move Along at the End of SoD" (link below), all SoD Ending options will be compatible with your NPC mod.
+Note: all options skip the setting of "Global("bd_plot","global",591)" which handles the "PC is murder supect NPC reactions" in bd4100.are.
+
 Option 1: "Revised Full Version"
 This option changes the overall public perception of the PC's role in what happened to Skie. It always bothered me that in the original, the PC is seen as the culprit although they are clearly laying on the floor when Bence Duncan enters, there is no weapon, and the whole scene can be played as such that the PC doesn't hit the "slayer" monster once. Still, everyone goes like "YoU MuRdErER!!!1!" which broke immersion for me because it's like everyone is kind of brain washed.
-My revised ending keeps all key moments: Bence Duncan and Corwin arrest the PC, there is a public scene were the PC's Bhaal heritage is announced publicly, the PC is held responsible for Skie's death because the attack was clearly addressed at the (Bhaalspawn) PC, Duke Silvershield wants the PC's head, the PC ends up in prison. The visit of the Hooded Man, Corwin and any romance interests will trigger as normal, although the murder accusations will be notched down a bit in their dialogues.
+My revised ending keeps all key moments: Bence Duncan and Corwin arrest the PC, there is a public scene were the PC's Bhaal heritage is announced publicly, the PC is held responsible for Skie's death by Duke Silvershield who wants the PC's head, so the PC ends up in prison. The visit of the Hooded Man, Corwin and any romance interests will trigger as normal, although the murder accusations will be notched down a bit in their dialogues.
+Basically, the atmosphere in this revised ending is changed in so far, as it is not the whole world, but only some people blaming the PC. Duke Silvershield being one of them, but also Bence Duncan's hatred for the PC and Corwin's strange request to take the blame were not changed.
 There is no interrogation and the player doesn't have to click through any responses to trigger the nicer ending. Duke Belt will always come and explain the situation to the PC, no assassin murdering the officers with this ending. Players who want to have a look around the sewers and fight off Bence Duncan and Corwin at the waterfall can still do so, just tell the guard who is supposed to lead the PC to the exit that the PC will go on their own.
 
 Option 2: "Revised Streamlined Version"
 This option has all the (changed) content of my revised ending in option 1, but all intermediate cutscenes are removed: no walk through the masses, no cutscene at the public hearing of people walking to and fro. It's basically a series of dialogues and fade-to-blacks until the PC is in prison. There the normal flow (of Option 1) kicks in, with all visits by the Hooded Man, Corwin, the romance interests, and Duke Belt.
 
 Option 3: "Original Streamlined Version"
-This option keeps all the original dialogues as they were, but removes all intermediate cutscenes. No walk through the masses, no cutscene at the public hearing of people walking to and fro. It's basically a series of dialogues and fade-to-blacks until the PC is in prison. There the normal flow kicks in.
+This option keeps all the original dialogues as they were, but removes all intermediate cutscenes. No walk through the masses, no small cutscenes at the public hearing of people walking to and fro one has to sit through. It's basically a series of dialogues and fade-to-blacks until the PC is in prison. There the normal flow kicks in.
 To activate the nice ending with Duke Belt coming into the prison, you will have to klick through the repy option at the public trial or install component 1 of this tweak pack.
 
 Option 4: "Skipit Version"
@@ -205,6 +211,9 @@ WeiDU					http://www.weidu.org
 grepWin			http://tools.stefankueng.com/grepWin.html
 
 Modding communities, tutorials and technical assistance:
+
+jastey's SoD NPC Modding Tutorials:
+https://www.gibberlings3.net/forums/topic/30139-jasteys-sod-npc-modding-tutorials/
 
 Kerzenburgforum				https://www.baldurs-gate.de/index.php
 The Gibberlings Three			http://gibberlings3.net

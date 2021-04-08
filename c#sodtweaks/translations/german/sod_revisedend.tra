@@ -1,6 +1,6 @@
-@0    = ~[Bence Duncan]Was... was ist hier geschehen?! Ist das Skie? - Ist sie...? Sie ist tot! Die Tochter des Herzogs Silberschild wurde hier ermordet!~
+@0    = ~[Bence Duncan]Was... was ist hier geschehen?! Ist das Skie? - Ist sie...? Sie ist tot! Die Tochter des Herzogs Silberschild wurde ermordet!~
 @1    = ~[Corwin]Was ist passiert, <CHARNAME>?! Wurdet Ihr angegriffen?~
-@2    = ~[Bence Duncan]Woran erinnert Ihr Euch, <CHARNAME>?~
+@2    = ~[Bence Duncan]Sagt uns, was hier geschehen ist, <CHARNAME>!~
 @3    = ~Ich weiß nicht genau, was geschehen ist - ich erinnere mich nur verschwommen. Ich glaube, ich wurde in die Irre geführt und habe ungewollt Skie erschlagen. Ich bin untröstlich!~
 @4    = ~Es war eine mächtige Illusion eines Feindes, der mich schon eine ganze Weile verfolgt. Skie ist wohl in die Schusslinie geraten, als ich mich verteidigt habe. Es tut mir Leid.~
 @5    = ~Ich habe sie nicht getötet, falls Ihr das meint. Es war eine Falle.~
@@ -17,7 +17,7 @@
 @16   = ~Das interessiert mich weswegen?~
 @17   = ~[Duke Belt]Nehmt dies nicht leichtfertig, <CHARNAME>. Obwohl mich Eure Reaktion nicht zu sehr erstaunen sollte.~
 @18   = ~[Duke Belt]Der Verlust von Skies Seele ist ein tragischer Umstand und verändert die Bewertung der Situation nachhaltig. Wir waren bisher davon ausgegangen, dass Skie wieder belebt werden kann und waren daher nicht sehr um sie besorgt. Dies ist jedoch nicht länger der Fall.~
-@19   = ~[Duke Belt]Ja, Hauptmann? Gibt es etwas, das Ihr sagen wollt?~
+@19   = ~[Duke Belt]Ja, Hauptmann? Gibt es etwas, das Ihr zu <CHARNAME> sagen wollt?~
 @20   = ~[Duke Belt]<CHARNAME>, was nach Eurem Siegt über Sarevok nur als Gerücht zu hören war ist nun allseits bekannt - dass auch Ihr ein Kind des Bhaal seid.~
 @21   = ~Meine Abstammung von Bhaal werde ich nicht verleugnen. Aber ich habe Skie nicht getötet.~
 @22   = ~Ich bin ein Kind des Bhaal - aber ich bin nicht Sarevok. Ich habe Baldurs Tor bewahrt - die Burg Drachenspeer gerettet!~
@@ -30,7 +30,9 @@
 @29   = ~Ihr glaubt wirklich nicht an meine Unschuld, oder?~
 @30   = ~[Corwin]Es ist alles so undurchschaubar - Euer Bhaalerbe und die ganzen üblen Dinge, die geschehen... Ihr habt ja keine Ahnung, wie es in der Stadt zugeht momentan! Die Leute bekämpfen sich Euretwegen auf offener Straße!~
 @31   = ~[Duke Belt]Obwohl es keine eindeutigen Hinweise auf Eure Schuld an Skies Tod gibt - solange der Dolch nicht gefunden, Skie wiederbelebt und Euer Name rehabilitiert wurde, sorgt Eure Anwesenheit hier für zu viel Aufruhr. Die Stadt ist kurz davor, sich selbst zu zerfleischen.~
-@32   = ~[Duke Belt]Das böse göttliche Erbe mag Eure Handlungen nicht so bestimmen wie es bei Sarevok der Fall war, und es wart wohl nicht Ihr persönlich, der Skie den tödlichen Hieb verpasste. Und doch war es Euer Bhaalerbe, das zu diesem Angriff auf Euch geführt hat - und dass Skie starb. Ihr seid der Grund dafür, dass Skie nicht mehr unter uns weilt.~
+@32   = ~Beunruhigende Verwicklungen
+
+Herzog Silberschild hat die Beherrschung verloren, als die Herzöge davon berichtet haben, dass Skies Seele in einem Seelenräuberdolch gefangen ist. Er hat darauf bestanden, dass ich für den Tod seiner Tochter verantwortlich bin, und ich wurde ins Gefängnis geworfen!~
 @33   = ~[Duke Belt]Entar - Herzog Silberschild ist blind vor Trauer. Er verlangt Euren Kopf, und er wird einen Weg finden, um dies zu erreichen. Ihr werdet hier nicht sicher sein, bis diese Situation geklärt ist, <CHARNAME> - bis der Dolch gefunden und Skies Seele frei ist.~
 @34   = ~Die Ehre gebietet es mir, den Dolch zu finden und Skies Seele frei zu setzen. Ich werde nicht eher ruhen, bis dies erledigt ist.~
 @35   = ~Es scheint, dass der verhüllte Magier sowieso nicht vor hat, mich in Ruhe zu lassen, also kann ich ihn auch wegen des Dolches verfolgen - unter anderem.~

@@ -86,17 +86,22 @@ CHAIN
 IF ~~ THEN BDBENCE revised_bence_04
 @10
 END
-IF ~~ THEN + revised_bence_05
+IF ~~ THEN + revised_bence_06
 
 CHAIN
 IF ~~ THEN BDBENCE revised_bence_05
 #%eet_2%44320 /* ~You know what I've got to do, <CHARNAME>.~ [BD44320] */
 = #%eet_2%44321 /* ~In the name of the Council of Four, you are under arrest for the murder of Skie Silvershield. You will return to Baldur's Gate to be tried for your crime.~ [BD44321] */
-== BDBENCE @11
 == BDCORWIN IF ~Global("bd_corwin_romanceactive","global",2)
 InMyArea("Corwin") !InParty("Corwin") !StateCheck("Corwin",CD_STATE_NOTVALID)~ THEN #%eet_2%39393 /* ~Well, you better figure out what happened and be quick about it. Duke Silvershield's justice may not wait on the law.~ */
 == BDCORWIJ IF ~Global("bd_corwin_romanceactive","global",2)
 InMyArea("Corwin") InParty("Corwin") !StateCheck("Corwin",CD_STATE_NOTVALID)~ THEN #%eet_2%39393 /* ~Well, you better figure out what happened and be quick about it. Duke Silvershield's justice may not wait on the law.~ */
+END
+IF ~~ THEN + revised_bence_04
+
+CHAIN
+IF ~~ THEN BDBENCE revised_bence_06
+@11
 END
 IF ~~ THEN DO ~SetGlobal("bd_plot","global",592) SetGlobal("C#st_RevisedTrial","GLOBAL",1)~ EXTERN BDBENCE 73
 /*
@@ -162,10 +167,33 @@ END
 ++ @22 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
 ++ @23 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
 
+EXTEND_BOTTOM BDENTAR 0
+IF ~GlobalGT("C#st_RevisedTrial","GLOBAL",0)~ THEN + revised_trialscene_04
+END
+
 CHAIN
-IF WEIGHT #-1
-~AreaCheck("bd0035") Global("C#st_RevisedTrial","GLOBAL",4)~ THEN BDBELT revised_trialscene_04
-@24
+IF ~~ THEN BDENTAR revised_trialscene_04
+#%eet_2%69804 /* ~The priests can do nothing... She's gone forever. My Skie...~ [BD69804] */
+= #%eet_2%69799 /* ~Tell me what you did with it, fiend! Before they send you to the gallows, tell me, what did you do with the dagger?~ [BD69799] */
+== BDBELT #%eet_2%69798 /* ~This is not the time—~ [BD69798] */
+END
+  IF ~~ THEN REPLY #69794 /* ~You must believe me, Duke Silvershield, I was not responsible for her death.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #69795 /* ~I don't know what happened to Skie. But I intend to find out.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #69796 /* ~Cease your whimpering, man. You're embarrassing yourself.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~  OR(2)
+CheckStatGT(Player1,16,INT)
+CheckStatGT(Player1,16,WIS)
+~ THEN REPLY #69800 /* ~Dagger...? There was a dagger, I remember. What became of it I do not know. ~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #69801 /* ~Please calm yourself, Duke Silvershield. I don't know what you're talking about.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #69802 /* ~What are you going on about? I know nothing of any dagger.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #69803 /* ~I have nothing to say to you.~ */ EXTERN BDENTAR revised_trialscene_entar
+
+CHAIN
+IF ~~ THEN BDENTAR revised_trialscene_entar
+#%eet_2%69797 /* ~You put on a good act, but I KNOW the truth. It wasn't enough to slay her bodily and leave me childless? You had to destroy her soul too?~ [BD69797] */
+== BDBELT #%eet_2%70374 /* ~You do not want to do this, Entar...~ [BD70374] */
+== BDENTAR #%eet_2%69793 /* ~Do not tell me what I want—I KNOW what I want. You! <CHARNAME>! MURDERER! You killed my little girl... my Skie...~ [BD69793] */
+== BDBELT @24
 END
 IF ~~ THEN EXTERN BDBELT 21
 IF ~Gender(Player1,MALE)~ THEN EXTERN BDBELT 20
@@ -173,9 +201,7 @@ IF ~Gender(Player1,MALE)~ THEN EXTERN BDBELT 20
 /* need to replace the journal entry and set SetGlobal("bd_player_exiled","global",1). */
 EXTEND_BOTTOM BDBELT 20
 IF ~GlobalGT("C#st_RevisedTrial","GLOBAL",0)~ THEN DO ~SetGlobal("bd_player_exiled","global",1)
-AddJournalEntry(%Disturbing Implications
-
-Duke Silvershield lost it when the Dukes informed me that Skie's soul is trapped and lost in a Soultaker dagger. He insists that I am to hold responsible for Skie's death as her murderer, and I was sent to prison!%,QUEST)
+AddJournalEntry(@32,INFO)
 AddJournalEntry(69817,INFO)
 StartCutSceneMode()
 StartCutSceneEx("bdcut62",FALSE)~ EXIT
@@ -183,9 +209,7 @@ END
 
 EXTEND_BOTTOM BDBELT 21
 IF ~GlobalGT("C#st_RevisedTrial","GLOBAL",0)~ THEN DO ~SetGlobal("bd_player_exiled","global",1)
-AddJournalEntry(%Disturbing Implications
-
-Duke Silvershield lost it when the Dukes informed me that Skie's soul is trapped and lost in a Soultaker dagger. He insists that I am to hold responsible for Skie's death as her murderer, and I was sent to prison!%,QUEST)
+AddJournalEntry(@32,INFO)
 AddJournalEntry(69817,INFO)
 StartCutSceneMode()
 StartCutSceneEx("bdcut62",FALSE)~ EXIT
@@ -308,7 +332,6 @@ END
  */
 INTERJECT BDBELT 28 C#st_ff_BDBELT_28
 == BDBELT IF ~Global("C#st_RevisedTrial","GLOBAL",4)~ THEN @31
-= @32
 = @33 
 END
 ++ @34 + revised_end_04

@@ -570,6 +570,8 @@ BEGIN @1019 /* ~Revised Full Version~ */ DESIGNATED 12
 SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 
+ADD_JOURNAL EXISTING TITLE (%eet_2%59626) @33 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/sod_revisedend.tra~
+
 EXTEND_BOTTOM ~bd4100.bcs~   ~c#sodtweaks/revised_end_sod/add_bd4100.baf~
 EVALUATE_BUFFER
 EXTEND_BOTTOM ~bdchains.bcs~   ~c#sodtweaks/revised_end_sod/add_bdchains.baf~
@@ -613,6 +615,8 @@ BEGIN @1020 /* ~Revised Streamlined Version~ */ DESIGNATED 13
 SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 
+ADD_JOURNAL EXISTING TITLE (%eet_2%59626) @33 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/sod_revisedend.tra~
+
 /* shorten the revised scene after Skie's death (takes out intermediate cutscene where Corwin and others appear */
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/revised_end_sod/sod_revisedend_streamlined_add.d~
 ~c#sodtweaks/revised_end_sod/sod_revisedend.d~
@@ -630,6 +634,7 @@ COMPILE EVALUATE_BUFFER ~c#sodtweaks/revised_end_sod/sod_original_streamlined.d~
 
 INCLUDE ~c#sodtweaks/revised_end_sod/streamline_changes.tpa~
 
+
 BEGIN @1021 /* ~Skipit Version~ */ DESIGNATED 15
 SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
@@ -640,7 +645,6 @@ COMPILE EVALUATE_BUFFER ~c#sodtweaks/revised_end_sod/sod_skipitend.d~
 
 COPY_EXISTING ~bdcut61.bcs~ ~override~
   DECOMPILE_AND_PATCH BEGIN
-
 		SPRINT textToReplace ~\(ActionOverride(Player2,LeaveAreaLUA("bd0112","",\[855\.370\],S))[%newline%]*ActionOverride(Player3,LeaveAreaLUA("bd0112","",\[950\.375\],S))[%newline%]*ActionOverride(Player4,LeaveAreaLUA("bd0112","",\[920\.305\],S))[%newline%]*ActionOverride(Player5,LeaveAreaLUA("bd0112","",\[1035\.315\],S))[%newline%]*ActionOverride(Player6,LeaveAreaLUA("bd0112","",\[1000\.255\],S))[%newline%]*LeaveAreaLUAPanic("bd0112","",\[984\.414\],SW)[%newline%]*LeaveAreaLUA("bd0112","",\[984\.414\],SW)\)~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN

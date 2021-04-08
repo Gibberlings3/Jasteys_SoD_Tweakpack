@@ -24,11 +24,10 @@ Wait(1)
 		DisableAI(Player5,TRUE)
 		DisableAI(Player6,TRUE)~
 		END
-		SPRINT textToReplace ~\(SetCursorState(TRUE)\)~
+		SPRINT textToReplace ~\(EndCutSceneMode()\)~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1
-		StartCutScene("bdcut61t")~
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~StartCutScene("bdcut61t")~
 		END
 	END
 BUT_ONLY_IF_IT_CHANGES

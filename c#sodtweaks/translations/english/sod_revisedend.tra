@@ -1,6 +1,6 @@
-@0    = ~[Bence Duncan]What... what happend here?! Is that Skie? - Is she...? She is dead! The daughter of Duke Silvershield was killed!~
+@0    = ~[Bence Duncan]What... what happend here?! Is that Skie? - Is she...? She is dead! The daughter of Duke Silvershield was killed!~ [c#ablank]
 @1    = ~[Corwin]What happened, <CHARNAME>?! Where you attacked?~
-@2    = ~[Bence Duncan]Tell us what happened!~
+@2    = ~[Bence Duncan]Tell us what happened!~ [c#ablank]
 @3    = ~I don't know what happened - it's all a blur. But I believe to have been deceived to kill Skie. I am truly sorry.~
 @4    = ~It was a mighty illusion, by a new enemy who is stalking me for some time now. Skie got caught up in it when I tried to defend myself - I am sorry.~
 @5    = ~I didn't kill her, if that is what you think. This was a setup.~
@@ -10,7 +10,7 @@
 @9    = ~[Bence Duncan]What?! I don't see anyone. Are you jesting about this?!~
 @10   = ~[Bence Duncan]This is affiliated to your evil godly heritage, I am sure of it. Just like Sarevok, all you bring to the people around you is destruction and death! Maybe it *was* you who killed Skie after all.~
 @11   = ~[Bence Duncan]Celebrations are over. This morning brings mornful events which leaves all of us sobered and with a bitter taste in the mouth despite the great victory you were crucial part in yesterday. We will depart immediately and bring Skie to the ducal clerics - and you will come with us, until the Dukes have decided how to proceed with the matter.~
-@12   = ~[Duke Belt]Citizens of Baldur's Gate! We are gathered to account for a great victory - and tell about a tragic tale. Caelar is defeated! With the help of <CHARNAME>, the hero of Baldur's Gate, her malicious plans were stopped and a hellmouth was closed! All hail the hero of Baldur's Gate - and Dragonspear Castle!~
+@12   = ~[Duke Belt]Citizens of Baldur's Gate! We are gathered to account for a great victory - and tell about a tragic tale. Caelar is defeated! With the help of <CHARNAME>, the hero of Baldur's Gate, her malicious plans were stopped and a hellmouth was closed! All hail the hero of Baldur's Gate - and Dragonspear Castle!~ [c#ablank]
 @13   = ~[Duke Belt]But there is a loss to be morned. Skie Silvershield, our Duke Silvershield's daughter was killed in mysterious circumstances. And - we have... aggravating news.~
 @14   = ~This is horrible! I am so sorry.~
 @15   = ~What will we do now?~

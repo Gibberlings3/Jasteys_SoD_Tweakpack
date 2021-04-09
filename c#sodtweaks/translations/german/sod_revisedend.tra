@@ -1,6 +1,6 @@
-@0    = ~[Bence Duncan]Was... was ist hier geschehen?! Ist das Skie? - Ist sie...? Sie ist tot! Die Tochter des Herzogs Silberschild wurde ermordet!~
+@0    = ~[Bence Duncan]Was... was ist hier geschehen?! Ist das Skie? - Ist sie...? Sie ist tot! Die Tochter des Herzogs Silberschild wurde ermordet!~ [c#ablank]
 @1    = ~[Corwin]Was ist passiert, <CHARNAME>?! Wurdet Ihr angegriffen?~
-@2    = ~[Bence Duncan]Sagt uns, was hier geschehen ist, <CHARNAME>!~
+@2    = ~[Bence Duncan]Sagt uns, was hier geschehen ist, <CHARNAME>!~ [c#ablank]
 @3    = ~Ich weiß nicht genau, was geschehen ist - ich erinnere mich nur verschwommen. Ich glaube, ich wurde in die Irre geführt und habe ungewollt Skie erschlagen. Ich bin untröstlich!~
 @4    = ~Es war eine mächtige Illusion eines Feindes, der mich schon eine ganze Weile verfolgt. Skie ist wohl in die Schusslinie geraten, als ich mich verteidigt habe. Es tut mir Leid.~
 @5    = ~Ich habe sie nicht getötet, falls Ihr das meint. Es war eine Falle.~
@@ -10,7 +10,7 @@
 @9    = ~[Bence Duncan]Was?! Ich sehe niemanden. Macht Ihr darüber Scherze?!~
 @10   = ~[Bence Duncan]Dies sind die Auswirkungen Eures dunklen Erbes, da bin ich mir sicher! Genau wie Sarevok bringt Ihr allen um Euch nur Zerstörung und Tod! Vielleicht wart Ihr es ja auch selbst, der Skie getötet hat.~
 @11   = ~[Bence Duncan]Die Feierlichkeiten sind vorüber. Dieser Morgen brachte uns einen tragischen Moment, die die Feierlaune schnell verfliegen ließ. Wir werden unverzüglich aufbrechen und Skie zu den Priestern des Palastes bringen - und Ihr werdet mit uns kommen, bis die Herzöge entschieden haben, wie weiter vorgegangen wird.~
-@12   = ~[Duke Belt]Bürger der Stadt Baldurs Tor! Wir haben uns versammelt, um von einem großen Sieg zu verkünden - und eine tragische Begebenheit bekannt zu machen. Caelar ist besiegt! Mit <CHARNAME>s Hilfe, dem Helden von Baldurs Tor, konnten wir ihre zerstörerischen Pläne stoppen und die Schwertküste vor einem Höllentor bewahren. Ein Hoch auf unseren Helden von Baldurs Tor - und Burg Drachenspeer!~ ~[Duke Belt]Bürger der Stadt Baldurs Tor! Wir haben uns versammelt, um von einem großen Sieg zu verkünden - und eine tragische Begebenheit bekannt zu machen. Caelar ist besiegt! Mit <CHARNAME>s Hilfe, der Heldin von Baldurs Tor, konnten wir ihre zerstörerischen Pläne stoppen und die Schwertküste vor einem Höllentor bewahren. Ein Hoch auf unsere Heldin von Baldurs Tor - und Burg Drachenspeer!~
+@12   = ~[Duke Belt]Bürger der Stadt Baldurs Tor! Wir haben uns versammelt, um von einem großen Sieg zu verkünden - und eine tragische Begebenheit bekannt zu machen. Caelar ist besiegt! Mit <CHARNAME>s Hilfe, dem Helden von Baldurs Tor, konnten wir ihre zerstörerischen Pläne stoppen und die Schwertküste vor einem Höllentor bewahren. Ein Hoch auf unseren Helden von Baldurs Tor - und Burg Drachenspeer!~ [c#ablank] ~[Duke Belt]Bürger der Stadt Baldurs Tor! Wir haben uns versammelt, um von einem großen Sieg zu verkünden - und eine tragische Begebenheit bekannt zu machen. Caelar ist besiegt! Mit <CHARNAME>s Hilfe, der Heldin von Baldurs Tor, konnten wir ihre zerstörerischen Pläne stoppen und die Schwertküste vor einem Höllentor bewahren. Ein Hoch auf unsere Heldin von Baldurs Tor - und Burg Drachenspeer!~ [c#ablank]
 @13   = ~[Duke Belt]Aber es gibt einen Verlust zu beklagen. Skie Silberschild, die Tochter unseres Herzogs Silberschild, wurde unter mysteriösen Umständen ermordet. Und - wir haben... schwerwiegende Neuigkeiten.~
 @14   = ~Das ist furchtbar! Das tut mir sehr Leid.~
 @15   = ~Was werden wir jetzt tun?~

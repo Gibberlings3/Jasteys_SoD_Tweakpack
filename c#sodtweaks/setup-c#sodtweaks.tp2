@@ -38,7 +38,7 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~eet_2~ ~~
 END
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
-  OUTER_SPRINT ~eet_22~ ~2~
+  OUTER_SPRINT ~eet_2~ ~2~
 END
 
 
@@ -579,6 +579,8 @@ EVALUATE_BUFFER
 EXTEND_TOP ~bdstone.bcs~   ~c#sodtweaks/revised_end_sod/add_bdstone.baf~
 EVALUATE_BUFFER
 
+COPY ~c#sodtweaks/revised_end_sod/c#ablank.wav~ ~override~
+
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/revised_end_sod/sod_revisedend.d~
 
 COPY_EXISTING ~bdcut61a.bcs~ ~override~
@@ -616,6 +618,8 @@ SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 
 ADD_JOURNAL EXISTING TITLE (%eet_2%59626) @33 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/sod_revisedend.tra~
+
+COPY ~c#sodtweaks/revised_end_sod/c#ablank.wav~ ~override~
 
 /* shorten the revised scene after Skie's death (takes out intermediate cutscene where Corwin and others appear */
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/revised_end_sod/sod_revisedend_streamlined_add.d~

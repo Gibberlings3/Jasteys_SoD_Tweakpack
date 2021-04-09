@@ -177,16 +177,16 @@ IF ~~ THEN BDENTAR revised_trialscene_04
 = #%eet_2%69799 /* ~Tell me what you did with it, fiend! Before they send you to the gallows, tell me, what did you do with the dagger?~ [BD69799] */
 == BDBELT #%eet_2%69798 /* ~This is not the time—~ [BD69798] */
 END
-  IF ~~ THEN REPLY #69794 /* ~You must believe me, Duke Silvershield, I was not responsible for her death.~ */ EXTERN BDENTAR revised_trialscene_entar
-  IF ~~ THEN REPLY #69795 /* ~I don't know what happened to Skie. But I intend to find out.~ */ EXTERN BDENTAR revised_trialscene_entar
-  IF ~~ THEN REPLY #69796 /* ~Cease your whimpering, man. You're embarrassing yourself.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #%eet_2%69794 /* ~You must believe me, Duke Silvershield, I was not responsible for her death.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #%eet_2%69795 /* ~I don't know what happened to Skie. But I intend to find out.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #%eet_2%69796 /* ~Cease your whimpering, man. You're embarrassing yourself.~ */ EXTERN BDENTAR revised_trialscene_entar
   IF ~  OR(2)
 CheckStatGT(Player1,16,INT)
 CheckStatGT(Player1,16,WIS)
-~ THEN REPLY #69800 /* ~Dagger...? There was a dagger, I remember. What became of it I do not know. ~ */ EXTERN BDENTAR revised_trialscene_entar
-  IF ~~ THEN REPLY #69801 /* ~Please calm yourself, Duke Silvershield. I don't know what you're talking about.~ */ EXTERN BDENTAR revised_trialscene_entar
-  IF ~~ THEN REPLY #69802 /* ~What are you going on about? I know nothing of any dagger.~ */ EXTERN BDENTAR revised_trialscene_entar
-  IF ~~ THEN REPLY #69803 /* ~I have nothing to say to you.~ */ EXTERN BDENTAR revised_trialscene_entar
+~ THEN REPLY #%eet_2%69800 /* ~Dagger...? There was a dagger, I remember. What became of it I do not know. ~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #%eet_2%69801 /* ~Please calm yourself, Duke Silvershield. I don't know what you're talking about.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #%eet_2%69802 /* ~What are you going on about? I know nothing of any dagger.~ */ EXTERN BDENTAR revised_trialscene_entar
+  IF ~~ THEN REPLY #%eet_2%69803 /* ~I have nothing to say to you.~ */ EXTERN BDENTAR revised_trialscene_entar
 
 CHAIN
 IF ~~ THEN BDENTAR revised_trialscene_entar
@@ -202,7 +202,7 @@ IF ~Gender(Player1,MALE)~ THEN EXTERN BDBELT 20
 EXTEND_BOTTOM BDBELT 20
 IF ~GlobalGT("C#st_RevisedTrial","GLOBAL",0)~ THEN DO ~SetGlobal("bd_player_exiled","global",1)
 AddJournalEntry(@32,INFO)
-AddJournalEntry(69817,INFO)
+AddJournalEntry(%eet_2%69817,INFO)
 StartCutSceneMode()
 StartCutSceneEx("bdcut62",FALSE)~ EXIT
 END
@@ -210,7 +210,7 @@ END
 EXTEND_BOTTOM BDBELT 21
 IF ~GlobalGT("C#st_RevisedTrial","GLOBAL",0)~ THEN DO ~SetGlobal("bd_player_exiled","global",1)
 AddJournalEntry(@32,INFO)
-AddJournalEntry(69817,INFO)
+AddJournalEntry(%eet_2%69817,INFO)
 StartCutSceneMode()
 StartCutSceneEx("bdcut62",FALSE)~ EXIT
 END

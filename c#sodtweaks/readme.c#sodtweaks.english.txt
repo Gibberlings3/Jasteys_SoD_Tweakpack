@@ -232,8 +232,6 @@ Version 5
 - added install order syntax for PI
 - Russian version now uses English setup.tra directly
 
-
-
 Version 4
 - Russian translation added, by yota13
 -"Skip Korlasz' Dungeon": compatibility with Transitions added

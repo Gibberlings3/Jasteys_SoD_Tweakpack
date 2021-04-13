@@ -2,7 +2,7 @@
 
 This tweak pack is mainly meant for the SoD part of BG:EE (except for the last component which introduces Imoen's SoD portrait into BGII). 
 It deals with some tweaks that I found useful for my own game.
-
+For EET, install the mod directly to your EET game.
 
 DESCRIPTION
 
@@ -125,11 +125,11 @@ Thank you to subtledoctor for providing this tweak.
 
 8 SoD Ending: jastey's Tweaks
 -----------------------------------
-This component gives 4 install choices, which all change the ending of SoD after the "slayer cutscene" and Bence Duncan found the PC on the floor.
+This component gives 4 install choices, which all change the ending of SoD, with Bence Duncan starting his dialogue after he found the PC and Skie on the floor after the "slayer cutscene".
 
 All options use as much original (voiced) lines as possible.
 
-Note to modders (and players): all options use the standard cutscene bdcut61.bcs which handles the leaving of NPCs out of the party. For some options the end of the cutscene is altered, but if you add a script block for your mod NPC as described in my "Modding Tutorial Part 2: Make Your NPC Comment and Move Along at the End of SoD" (link below), all SoD Ending options will be compatible with your NPC mod.
+Note to modders (and players): all options use the standard cutscene "bdcut61.bcs" which handles the leaving of NPCs out of the party. For some options the end of the cutscene is altered, but if you add a script block for your mod NPC as described in my "Modding Tutorial Part 2: Make Your NPC Comment and Move Along at the End of SoD" (link below), all SoD Ending options will be compatible with your NPC mod.
 Note: all options skip the setting of "Global("bd_plot","global",591)" which handles the "PC is murder supect NPC reactions" in bd4100.are.
 
 Option 1: "Revised Full Version"
@@ -143,7 +143,7 @@ This option has all the (changed) content of my revised ending in option 1, but 
 
 Option 3: "Original Streamlined Version"
 This option keeps all the original dialogues as they were, but removes all intermediate cutscenes. No walk through the masses, no small cutscenes at the public hearing of people walking to and fro one has to sit through. It's basically a series of dialogues and fade-to-blacks until the PC is in prison. There the normal flow kicks in.
-To activate the nice ending with Duke Belt coming into the prison, you will have to klick through the repy option at the public trial or install component 1 of this tweak pack.
+This also means, that like in the original game, to activate the nice ending with Duke Belt coming into the prison, you will have to klick through the repy option at the public trial or install component 1 of this tweak pack.
 
 Option 4: "Skipit Version"
 This option makes the ending really short. It's meant for players that did or are planning to play through the ending a lot of times. It jumps from Bence arresting the PC to Duke Belt explaining the situation in prison. Duke Belt will always come, no assassin ending with this option. After walking to the table were the items are, going through the trap door will bring the PC directly to the exit of the sewers were Imoen is.

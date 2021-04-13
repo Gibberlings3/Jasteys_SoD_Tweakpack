@@ -1,0 +1,46 @@
+IF
+	Global("bd_stop_ot","LOCALS",0)
+	!Name("Stone3",Myself)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_stop_ot","LOCALS",1)
+END
+
+IF
+	Global("bd_throw_stone","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("bd_throw_stone","LOCALS",1)
+END
+
+IF
+	Global("C#st_bd_stop_ot","LOCALS",0)
+	Name("Stone1",Myself)
+THEN
+	RESPONSE #100
+		Wait(1)
+		DisplayStringHead(Myself,@110)  
+		SetGlobal("C#st_bd_stop_ot","LOCALS",1)
+END
+
+IF
+	Global("C#st_bd_stop_ot","LOCALS",0)
+	Global("bd_bridgefort_surrendered","GLOBAL",1)
+	Name("Stone2",Myself)
+THEN
+	RESPONSE #100
+		Wait(3)
+		DisplayStringHead(Myself,@111)  
+		SetGlobal("C#st_bd_stop_ot","LOCALS",1)
+END
+
+IF
+	Global("C#st_bd_stop_ot","LOCALS",0)
+	Global("bd_bridgefort_surrendered","GLOBAL",1)
+	Name("Stone4",Myself)
+THEN
+	RESPONSE #100
+		Wait(3)
+		DisplayStringHead(Myself,@112)  
+		SetGlobal("C#st_bd_stop_ot","LOCALS",1)
+END

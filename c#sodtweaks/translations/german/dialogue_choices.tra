@@ -10,3 +10,7 @@
 @7   = ~Ich mache mich wieder auf den Weg.~
 @8   = ~Wer bitte seid Ihr und wie seid Ihr hier reingekommen?~
 @9   = ~Ich sehe keinen Anlass, das mit Euch zu diskutieren. Verlasst den Palast, bevor ich die Wachen rufe.~
+
+/* new for v5 */
+@47   = ~[Dynaheir]Minsk und ich wurden von den Wychlaran auf die Suche nach Bhaalkindern geschickt. Wir werden Euch begleiten, jetzt umso mehr, da so viele Leute nur aufgrund Eures göttlichen Vaters nach Eurem Leben trachten.~
+@48   = ~[Jaheira]Khalid und ich haben Gorion versprochen, Euch zu unterstützen und über Euch zu wachen. Wir werden Euch nicht in dem Moment im Stich lassen, wenn Ihr uns so dringend braucht.~

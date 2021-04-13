@@ -1,1 +1,16 @@
 @0   = ~<CHARNAME>, Lasst mich mit Euch reisen, ich möchte mit Euch sprechen!~
+
+/* new for v5 */
+@100 = ~Ihr habt uns gerettet!~
+@101 = ~Schande! Schande über den, der Skie Silberschild getötet hat!~
+@102 = ~Ihr habt Bridgefort vor dem Heer gerettet! Ihr habt uns alle vor Caelar bewahrt!~
+@103 = ~Hier kommt unser Held!~ ~Hier kommt unsere Heldin!~
+@104 = ~Seid unser Held! Wir brauchen keinen zweiten Sarevok!~ ~Seid unsere Heldin! Wir brauchen keinen zweiten Sarevok!~
+@105 = ~Ihr habt uns alle vor Schlimmem bewahrt!~
+@106 = ~Ein Hoch auf die siegreiche Flammende Faust!~
+@107 = ~Mögen die Götter sich Skies annehmen!~
+@108 = ~Caelar ist Vergangenheit! Niemand weint der eine Träne nach!~
+@109 = ~Ein Hoch auf unseren Helden!~ ~Ein Hoch auf unsere Heldin!~
+@110 = ~Was hattet Ihr mit Skies Tod zu tun?~
+@111 = ~Bhaalkind! Euch vertrauen wir nicht!~
+@112 = ~Seid Ihr ein zweiter Sarevok? Wir werden Euch durchschauen, Kind des Bhaal!~

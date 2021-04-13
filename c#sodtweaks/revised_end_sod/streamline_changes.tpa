@@ -1,0 +1,59 @@
+/* make Duke Belt initiate dialogue at public scene */
+EXTEND_BOTTOM ~bd4100.bcs~   ~c#sodtweaks/revised_end_sod/add_bd0035.baf~
+EVALUATE_BUFFER
+
+/* patch "bdcut61.bcs" so the PC is directly teleported to the public podest. No marching through the crowd cutscene */
+COPY_EXISTING ~bdcut61.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+		SPRINT textToReplace ~\(ActionOverride(Player2,LeaveAreaLUA("bd0112","",\[855\.370\],S))[%newline%]*ActionOverride(Player3,LeaveAreaLUA("bd0112","",\[950\.375\],S))[%newline%]*ActionOverride(Player4,LeaveAreaLUA("bd0112","",\[920\.305\],S))[%newline%]*ActionOverride(Player5,LeaveAreaLUA("bd0112","",\[1035\.315\],S))[%newline%]*ActionOverride(Player6,LeaveAreaLUA("bd0112","",\[1000\.255\],S))[%newline%]*LeaveAreaLUAPanic("bd0112","",\[984\.414\],SW)[%newline%]*LeaveAreaLUA("bd0112","",\[984\.414\],SW)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~CreateCreatureImpassable("bdimoitm",[735.235],S)
+ActionOverride("bdimoitm",TakeCreatureItems(Player1,WEAPONS))
+Wait(1)
+		ApplySpellRES("bdhide",Player2)  // No such index
+		ApplySpellRES("bdhide",Player3)  // No such index
+		ApplySpellRES("bdhide",Player4)  // No such index
+		ApplySpellRES("bdhide",Player5)  // No such index
+		ApplySpellRES("bdhide",Player6)  // No such index
+		DisableAI(Player1,TRUE)
+		DisableAI(Player2,TRUE)
+		DisableAI(Player3,TRUE)
+		DisableAI(Player4,TRUE)
+		DisableAI(Player5,TRUE)
+		DisableAI(Player6,TRUE)~
+		END
+		SPRINT textToReplace ~\(EndCutSceneMode()\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~StartCutScene("bdcut61t")~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bdcut61t.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(CreateCreatureImpassable("bdfistcc",\[72\.1042\],NE)[%newline%]*ApplySpellRES("bdslow","witness_guard")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+		SPRINT textToReplace ~\(ActionOverride("witness",MoveToPoint(\[743\.762\]))[%newline%]*SmallWait(30)[%newline%]*ActionOverride("witness",Face(N))[%newline%]*SmallWait(15)[%newline%]*ActionOverride("witness_guard",MoveToPoint(\[1069\.643\]))[%newline%]*SmallWait(2)[%newline%]*ActionOverride("witness",MoveToPoint(\[1069\.643\]))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+		SPRINT textToReplace ~\(ActionOverride("bdbelt",Face(SSW))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~ActionOverride("bdentar",JumpToPoint([741.721]))
+		ActionOverride("bdentar",Face(SW))
+		ActionOverride("bdbence",JumpToPoint([790.723]))
+		ActionOverride("bdbence",Face(SW))
+		ActionOverride("witness",DestroySelf())
+		ActionOverride("witness_guard",DestroySelf())
+		\1~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES

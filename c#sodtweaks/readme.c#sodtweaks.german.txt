@@ -121,6 +121,34 @@ Es besteht die Wahl zwischen:
 125,000
 161,000
 
+Danke an subtledoctor für diese Komponente.
+
+
+
+8 Ende von SoD: jasteys Überarbeitungen
+-----------------------------------
+Diese Komponente gibt vier veränderte Optionen für das Ende von SoD, angefangen mit Bence Duncans Dialog, nachdem er nach der "Schlächter Cutscene" in den Raum gekommen ist in dem der PC und Skie sich befinden.
+
+Alle Optionen verwenden so viele originale (vertonte) Textzeilen wie möglich.
+
+Hinweis an Modder (und Spieler): Alle vier Optionen verwenden die Standard-Cutscene "bdcut61.bcs", die das Verlassen der NPCs der Gruppe nach dem Vorfall händelt. Für manche Optionen ist das Ende dieser Cutscene angepasst worden, aber wenn Ihr wie in meinem SoD NPC Tutorial "Modding Tutorial Part 2: Make Your NPC Comment and Move Along at the End of SoD" beschrieben (Link unten) einen Skriptblock zur "bdcut61.bcs" für Euren NPC eingefügt habt, dann sind alle Optionen dieser Komponente kompatibel mit Eurem NPC Mod. 
+Weiterer Hinweis: alle Optionen überspringen das Setzen von "Global("bd_plot","global",591)", welches die Reaktionen der NPCs in "bd4100.are" auf den Vorwurf hervorruft, dass der PC ein Mörder ist. 
+
+Option 1: "Volle Überarbeitete Version"
+Diese Option ändert die im Originalende vorhandene öffentliche Wahrnehmung der Rolle des HCs in dem, was Skie geschieht. Es hat mich immer gestört, dass der HC eindeutig auf dem Boden liegt, wenn Duncan den Raum betritt, es keine Tatwaffe gibt und man die vorherige Kampfszene so spielen kann, dass man das Schlächtermonster nicht einmal schlägt. Von dem Umstand, dass der HC am Tag vorher die Schwertküste von einer Invasion aus Avernus gerettet hat ganz zu schweigen. Trotzdem reagiert *jeder* nach dem Vorfall mit einer absoluten Vorverurteilung des HC, die eindeutig beim Spielen meine Immersion gestört hat, da mir hier zu sehr das Skript der Devs durchscheint (dass der HC jetzt unbedingt gaaaanz doll fallen muss und das bitte höchstdramatisch.). 
+Mein überarbeitetes Ende behält alle Schlüsselmomente des originalen bei: Bence Duncan und Corwin nehmen den HC fest, es gibt eine Szene vor Publikum auf dem Podest in der Stadt, bei dem das Erbe des HC öffentlich gemacht wird und Herzog Silberschild seine Fassung verliert, den HC des Mordes bezichtigt und ins Gefängnis werfen lässt. Im Gefängnis finden alle im Originalspiel vorhandenen Besuche statt (Verhüllter Mann, Corwin, mögliche Romanzenpartner), nur die Mordvorwürfe und Zweifel an der Integrität des HC habe ich bei letzteren etwas zurückgenommen da sie hier nicht angemessen sind. 
+Im Großen und Ganzen behält das überarbeitete Ende den Fluss des originalen Endes bei, nur die Atmosphäre in dem es geschieht hat sich in sofern geändert, als dass es nicht plötzlich und über Nacht (und wegen - entschuldige Skie - eines so banalen Auslösers) die gesamte Welt ist, die den HC als mörderisches Bhaalkind verabscheut, sondern sich das Erheben der Vorwürfe auf einzelne Leute beschränkt. Herzog Silberschild ist einer davon, der mit seinem Einfluss den HC in echte Lebensgefahr bringt. Aber auch Bence Duncans irrationaler Hass auf den HC ist in dieser Fassung unverändert, als auch Corwins seltsame Erwartung, dass der HC sich für den "Frieden" der Stadt selbst opfern soll.
+Diese Version beinhaltet keine Anhörung, bei der der Spieler sich durch die Antwortoptionen klicken muss, um das angenehme Ende mit Herzog Belt freizuschalten. Herzog Belt kommt immer in das Gefängnis, um den HC freizugeben. Das Ende mit dem Assassinen kommt nie zustande. Trotzdem können Spieler, die das möchten, durch die Abwasserkanäle gehen und Bence Duncan und Corwin bekämpfen: sagt einfach dem Soldaten, der Euch zum Ausgang führen soll, dass Ihr den Weg alleine finden werdet.
+
+Option 2: "Überarbeitete Version: Fassung ohne extra Cutscenes"
+Diese Option setzt sich aus allen (veränderten) Inhalten der Option 1 zusammen, allerdings wurden alle "zwischen-Cutscenes" entfernt: kein Gang durch die Menge, keine Charaktere, die beim Hin- und Herlaufen gezeigt werden. Diese Option reiht alles als eine Sequenz von Dialogen mit kurzen Ausblendungen dazwischen zusammen, bis der HC im Gefängnis ist. Hier beginnt dann der normale Fluss mit den Besuchen des Verhüllten, Corwin, der Romanzenkandidaten und Herzog Belt.
+
+Option 3: "Originales Ende: Fassung ohne extra Cutscenes"
+Diese Option behält alle Dialoge unverändert aus dem Originalspiel bei, entfernt aber die "Zwischen-Cutscenes" dazwischen. Es gibt kein Gang durch die Menge, und es wird niemand gezeigt, wie er in- und herläuft. Alle Originalinhalte laufen als eine Sequenz von Dialogen mit kurzen Ausblendungen dazwischen ab, bis der HC im Gefängnis ist. Hier geht das Spiel unverändert weiter. 
+Dies heißt auch, dass wie im Originalspiel während der öffentlichen Anhörung alle Taten des HCs aufgelistet werden müssen, um das angenehme Ende mit Herzog Belt zu aktivieren (sofern Komponente 1 dieses Tweakpacks nicht installiert ist, mit der dies automatisch geschieht).
+
+Option 4: "Kurzes Ende"
+Diese Option verkürzt das Ende so, dass man vom Verhaftet werden durch Bence Duncan direkt ins Gefängnis zu Herzog Belt springt. Herzog Belt kommt in diesem Ende immer, um den HC freizulassen. Nachdem man zum Tisch mit den Items des HCs gehen konnte um diese aufzusammeln, führt einen die Falltür direkt zum Ausgang, wo Imoen wartet.
 
 
 
@@ -161,7 +189,9 @@ Argent77: Codinghilfe
 CamDawg: Portraitdateien
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
+Lauriel: Ideen und Korrekturen
 Lava Del'Vortel: Ideen
+subteldoctor: Autor
 
 
 VERWENDETE TOOLS UND RESSOURCEN
@@ -174,6 +204,9 @@ grepWin			http://tools.stefankueng.com/grepWin.html
 
 Modding Communitys, Tutorials und Moddinghilfe:
 
+jastey's SoD NPC Modding Tutorials:
+https://www.gibberlings3.net/forums/topic/30139-jasteys-sod-npc-modding-tutorials/
+
 Kerzenburgforum				https://www.baldurs-gate.de/index.php
 The Gibberlings Three			http://gibberlings3.net
 Pocket Plane Group			http://pocketplane.net
@@ -182,6 +215,12 @@ Spellhold Studios			http://www.shsforums.net/
 SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 5
+- new component added: "SoD Ending: jastey's Tweaks"
+- "More dialogue choices": added lines to Jaheira & Dynaheir at the end about their motivation to join the PC
+- added install order syntax for PI
+- Russian version now uses English setup.tra directly
 
 Version 4
 - Russian translation added, by yota13

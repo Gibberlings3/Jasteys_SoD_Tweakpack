@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v5~
+VERSION ~v5.1~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -50,8 +50,8 @@ ACTION_IF !FILE_EXISTS ~c#sodtweaks/install/c#sodtweaksinstall.mrk~ BEGIN
 
     /* Copies tra files into the autotra-folder (to leave the originals untouched) */
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
-      COPY ~c#sodtweaks/Translations/english~  ~c#sodtweaks/Translations/autotra/%LANGUAGE%~
-      COPY ~c#sodtweaks/Translations/%LANGUAGE%~  ~c#sodtweaks/Translations/autotra/%LANGUAGE%~
+      COPY ~c#sodtweaks/translations/english~  ~c#sodtweaks/translations/autotra/%LANGUAGE%~
+      COPY ~c#sodtweaks/translations/%LANGUAGE%~  ~c#sodtweaks/translations/autotra/%LANGUAGE%~
     END
 
     LAF autotra_workaround END
@@ -64,7 +64,7 @@ ACTION_IF !FILE_EXISTS ~c#sodtweaks/install/c#sodtweaksinstall.mrk~ BEGIN
       INT_VAR
         infer_charsets = 1
       STR_VAR
-        tra_path = EVAL ~c#sodtweaks/Translations/autotra~
+        tra_path = EVAL ~c#sodtweaks/translations/autotra~
         noconvert_array = fl#noconvert
         reload_array = fl#reload
     END
@@ -75,31 +75,31 @@ ACTION_IF !FILE_EXISTS ~c#sodtweaks/install/c#sodtweaksinstall.mrk~ BEGIN
 
 
 
-  COPY ~c#sodtweaks/Install/component.xx~ ~c#sodtweaks/install/c#sodtweaksinstall.mrk~
+  COPY ~c#sodtweaks/install/component.xx~ ~c#sodtweaks/install/c#sodtweaksinstall.mrk~
 
   END // c#sodtweaksinstall.mrk
 
  //reloading of tras:
-  LOAD_TRA ~c#sodtweaks/Translations/autotra/english/game.tra~
-  LOAD_TRA ~c#sodtweaks/Translations/autotra/%LANGUAGE%/game.tra~
+  LOAD_TRA ~c#sodtweaks/translations/autotra/english/game.tra~
+  LOAD_TRA ~c#sodtweaks/translations/autotra/%LANGUAGE%/game.tra~
 
 END //ALWAYS
 
 
 LANGUAGE ~English~
          ~english~   
-         ~c#sodtweaks/Translations/english/setup.tra~
-	 ~c#sodtweaks/Translations/english/game.tra~
+         ~c#sodtweaks/translations/english/setup.tra~
+	 ~c#sodtweaks/translations/english/game.tra~
 
 LANGUAGE ~Deutsch~
          ~german~   
-         ~c#sodtweaks/Translations/german/setup.tra~
-	 ~c#sodtweaks/Translations/german/game.tra~
+         ~c#sodtweaks/translations/german/setup.tra~
+	 ~c#sodtweaks/translations/german/game.tra~
 
 LANGUAGE ~Russian~
          ~russian~   
-         ~c#sodtweaks/Translations/english/setup.tra~
-	 ~c#sodtweaks/Translations/russian/game.tra~
+         ~c#sodtweaks/translations/english/setup.tra~
+	 ~c#sodtweaks/translations/russian/game.tra~
 
 
 /* ~Jastey's SoD Tweaks for SoD and EET~ */

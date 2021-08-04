@@ -194,12 +194,13 @@ If you have installation problems or encounter any bugs, please post your bug re
 CREDITS
 
 Argent77: coding help
-CamDawg: correctly sized Portrait files
+CamDawg: correctly sized portrait files
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
-Lauriel: ideas and corrections
+Lauriel: ideas and corrections, proof reading (v3.1)
 Lava Del'Vortel: ideas
 subteldoctor: author
+yota13: Russian translation (v5.1)
 
 
 USED TOOLS AND RESSOURCES
@@ -225,6 +226,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 5.1
+-completed Russian version (with new lines from v5), by yota13
 
 Version 5
 - new component added: "SoD Ending: jastey's Tweaks"

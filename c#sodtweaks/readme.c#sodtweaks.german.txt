@@ -189,9 +189,10 @@ Argent77: Codinghilfe
 CamDawg: Portraitdateien
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
-Lauriel: Ideen und Korrekturen
+Lauriel: Ideen und Korrekturen, Korrekturlesen (v3.1 englisch)
 Lava Del'Vortel: Ideen
 subteldoctor: Autor
+yota13: Russische Übersetzung (v5.1)
 
 
 VERWENDETE TOOLS UND RESSOURCEN
@@ -215,6 +216,9 @@ Spellhold Studios			http://www.shsforums.net/
 SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 5.1
+-completed Russian version (with new lines from v5), by yota13
 
 Version 5
 - new component added: "SoD Ending: jastey's Tweaks"

@@ -734,18 +734,23 @@ COMPILE EVALUATE_BUFFER ~c#sodtweaks/sodportal/c#stc59c.baf~
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/sodportal/close_portal_from_toril.d~ USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/portal_sod.tra~
 
 /* add animation of portal closing to bd4300.are */
+
 COPY_EXISTING bd4300.are override
   LPF fj_are_structure
     INT_VAR
     fj_loc_x       = 370
     fj_loc_y       = 290
-    fj_flags       = 0b00000000000000000011000101000000
+    fj_flags       = BIT6 | BIT8 | BIT12 | BIT13
     //not covered by wall, draw as background, shown in combat, EE: use wbm
     STR_VAR
     fj_structure_type = animation
     fj_name           = Portal_Closing
     fj_bam_resref     = bd4400pc
+    RET
+    fj_return_offset
   END
+  WRITE_SHORT fj_return_offset + 0x48 512 //width
+  WRITE_SHORT fj_return_offset + 0x4a 256 //height
 BUT_ONLY
 
 /* change journal entry */

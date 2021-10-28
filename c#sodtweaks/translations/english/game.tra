@@ -14,3 +14,20 @@
 @110 = ~What have you done to the Silvershield lass?~
 @111 = ~Bhaalchild! We do not trust you!~
 @112 = ~Are you another Sarevok? We will see through you, child of Bhaal!~
+
+/* new for v6 */
+/* in c#stc59c.baf */
+@120 = ~It is done. The gate is sealed. This is all that can be done for now.~
+/* in tp2 */
+/* #59853 changed */
+@121 = ~The Siege of Dragonspear
+
+Caelar has sacrificed herself to guard the portal in Avernus. 
+
+Caelar Argent has remained behind to guard the portal site. I was unable to stop her, and in truth, she seemed happy to lay down her life for the safety of the land.~
+/* #39315 changed */
+@122 = ~Here, take this key. I retrieved it back after Hephernaan took it from me for his master, but it is of no more importance to me. It will open the Dragonspear vault. I'll not be returning to Toril.~
+/* #39298 changed */
+@123 = ~This is where we part ways, friend. Here, take this key I found by the bodies. I know not what it opens, but I'm certain it's nothing in this infernal place.~
+/* #62441 changed */
+@124 = ~The portal glows with infernal light. It leads back to Dragonspear, but not to safety, not while Hephernaan holds the portal vault's key. To survive, you must find a way to seal this rift between planes.~

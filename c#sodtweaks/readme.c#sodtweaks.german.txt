@@ -152,6 +152,21 @@ Diese Option verkürzt das Ende so, dass man vom Verhaftet werden durch Bence Dun
 
 
 
+9 Das Portal muss in der Burg Drachenspeer geschlossen werden (Aun Silberweiß überlebt immer)
+-----------------------------------
+Diese Komponente sorgt dafür, dass das Portal in der Burg Drachenspeer mit dem Blut von Belhifet von Torils Seite aus geschlossen werden muss, was von Aun Silberweiß erledigt wird. Dadurch besteht die Möglichkeit, dass Aun Silberweiß gerettet werden kann, auch wenn Caelar im Kampf mit Belhifet gestorben ist.
+Wenn sie überlebt, bleibt Caelar trotzdem in Avernus, um den Ort des Portals zu bewachen. Die Komponente sollte daher mit möglichen Caelar NPC-Mods kompatibel sein.
+
+
+
+10 Ifearnan nimmt den Drachenspeer-Gruftschlüssel an sich
+-----------------------------------
+Mit dieser Komponente erübrigt sich die Frage, warum De Lancie einen Schlüssel zur Gruft mit dem Portal haben sollte, was für mich keinen Sinn ergibt.  
+Die Situation wird dahingehend geändert, dass es nur einen Gruftschlüssel gibt, der sich zunächst im Besitz von Caelar befindet. Hephernaan nimmt den Schlüssel dann mit nach Avernus und verriegelt die Tür, um seinem Meister mehr Zeit zu geben, seinen Angriff vorzubereiten, und auch um Caelar und den HC einzusperren, so dass sie ihm zu Belhifet folgen oder gegeneinander kämpfen müssen. 
+De Lancie sperrt den HC also nicht ein, um die Teufel von Avernus allein zu bekämpfen. Stattdessen können die Koalitionsoffiziere die Tür zu diesem Zeitpunkt nicht öffnen, selbst wenn sie es wollten.
+Dies ist eine kleine Änderung, die keinen wirklichen Einfluss auf das Spiel hat. Nach wie vor wird entweder Caelar oder Aun Silberweiß dem HC nach dem Kampf den Schlüssel übergeben, bevor die Gruppe zurückteleportiert wird.
+
+
 INSTALLATION
 
 Hinweis: Wenn Ihr eine frühere Version einer Mod installiert habt, dann deinstalliert diese immer erst und entfernt alle alten Moddateien aus dem Spielordner, bevor Ihr eine Neue Version installiert.
@@ -216,6 +231,13 @@ Spellhold Studios			http://www.shsforums.net/
 SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 6:
+-two new components: "Make Portal Close from Dragonspear Castle (Aun Argent survives always)" and "Hephernaan takes Dragonspear Vault Key".
+-Revised Ending: Neeras prison lovetalk should not loop; interjection of bystandr should play.
+-"More dialogue choices": lines of Jaheira & Dynaheir at the end about their motivation to join the PC are now added at a different point in Imoen's dialogue.
+-added globally unique LABELs to support Project Infinity.
+-added install checks for "Another fine Hell" Mod.
 
 Version 5.1
 -completed Russian version (with new lines from v5), by yota13

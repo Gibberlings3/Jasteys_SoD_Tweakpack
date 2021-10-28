@@ -1,6 +1,6 @@
 --- Jastey's Tweaks for SoD and EET (and BGT) ---
 
-This tweak pack is mainly meant for the SoD part of BG:EE (except for the last component which introduces Imoen's SoD portrait into BGII). 
+This tweak pack is mainly meant for the SoD part of BG:EE (except for the component which introduces Imoen's SoD portrait into BGII). 
 It deals with some tweaks that I found useful for my own game.
 For EET, install the mod directly to your EET game.
 
@@ -149,6 +149,24 @@ Option 4: "Skipit Version"
 This option makes the ending really short. It's meant for players that did or are planning to play through the ending a lot of times. It jumps from Bence arresting the PC to Duke Belt explaining the situation in prison. Duke Belt will always come, no assassin ending with this option. After walking to the table were the items are, going through the trap door will bring the PC directly to the exit of the sewers were Imoen is.
 
 
+
+9 Make Portal Close from Dragonspear Castle (Aun Argent survives always)
+-----------------------------------
+This component makes it so the blood of Belhifet has to be applied from Toril's side to close the portal at Dragonspear Castle, which will be done by Aun Argent. This gives the possibility that Aun Argent can be rescued even if Caelar died in the battle with Belhifet.
+Caelar will remain in Avernus to guard the place in case she survived, so this tweak should be compatible with any Caelar NPC mods.
+
+
+
+10 Hephernaan takes Dragonspear Vault Key
+-----------------------------------
+This component eliminates the question why De Lancie would have a key to that vault door, which doesn't make sense to me. 
+With this component, the story is changed so that there is only one vault door key which first is in possession of Caelar. Hephernaan will then take the key with him into Avernus, locking the door to give his master more time to prepare his attack and also to lock Caelar and the PC in so they'd have to follow him to Belhifet or fight each other. 
+Thus, De Lancie doesn't lock the PC in to fight the fiends of Avernus on their own. Instead, the coalition officers can't open the door at that time even if they wanted to.
+This is a small tweak which doesn't have any real influence on the game. It will still be either Caelar or Aun Argent who will hand the key to the PC after the fight before teleporting back.
+  
+
+
+
 INSTALLATION
 
 NOTE: If you've previously installed the mod, remove it before extracting a new version. To do this, uninstall all previously installed components and delete the mod folder and executables. 
@@ -226,6 +244,13 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 6:
+-two new components: "Make Portal Close from Dragonspear Castle (Aun Argent survives always)" and "Hephernaan takes Dragonspear Vault Key".
+-Revised Ending: Neeras prison lovetalk should not loop; interjection of bystandr should play.
+-"More dialogue choices": lines of Jaheira & Dynaheir at the end about their motivation to join the PC are now added at a different point in Imoen's dialogue.
+-added globally unique LABELs to support Project Infinity.
+-added install checks for "Another fine Hell" Mod.
 
 Version 5.1
 -completed Russian version (with new lines from v5), by yota13

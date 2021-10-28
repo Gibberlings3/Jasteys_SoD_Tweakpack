@@ -14,3 +14,14 @@
 /* new for v5 */
 @47 = ~[Dynaheir]Минск и я были посланы Виклараном на поиски порождений Баала. Теперь мы будем сопровождать тебя, даже больше, чем когда-либо, после того, как многие жаждут твоей крови только из-за твоего божественного отца.~
 @48 = ~[Jaheira]Мы с Халидом пообещали Горайону оберегать и защищать тебя. Мы не отвернемся от тебя и теперь, когда ты нуждаешься в этом больше всего.~
+
+/* new for v6 */
+@49   = ~[PC reply to Caelar]Ah, you mean "this is was the day that madwoman Caelar brought death and destruction upon the lands"?~
+@50   = ~[PC reply to Caelar]Well, it would be a change for sure. So far, all blood spilled was in service to you.~
+@51   = ~[PC reply to Caelar]Are you trying to ridicule the poison that put my friend Imoen out for days and after that made her hands a trembling fiasco? Am I supposed to be thankful it wasn't deadly or what are you implying?~
+@52   = ~[PC reply to Caelar]How, Caelar? How will you do that? Enlighten us.~
+@53   = ~[PC reply to Caelar]So that's what you will do then - march into the nine hells with your army. You are insane.~
+@54   = ~[PC reply to Caelar]Caelar... You are planning on marching into Avernus, which will mean you will open a way into it - giving the fiends a way out of it. I really do not see how this is a good idea. You need to be stopped!~
+@55   = ~[PC reply to Caelar]*Or* what you are planning will lead to hell breaking lose over the Sword Coast... again. I think you are the one needing "enlightenment" here.~
+@56   = ~[PC reply to Caelar]None of this madness was "worthwhile". You are delusional beyond recovery.~
+@57   = ~[PC Reply, referring to Caelar]All I've heard is a lunatic phrasing polemic exaggerations to get others to do their bidding.~

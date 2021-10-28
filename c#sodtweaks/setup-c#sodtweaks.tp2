@@ -3,13 +3,13 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v5.1~
+VERSION ~v6pre~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
 
 
-AUTO_TRA ~c#sodtweaks/Translations/autotra/%s~
+AUTO_TRA ~c#sodtweaks/translations/autotra/%s~
 
 ALWAYS
 
@@ -32,7 +32,10 @@ ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN 
   FAIL @1002 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
 END
 
+  INCLUDE ~c#sodtweaks/lib/extra_regexp_vars.tph~
   OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
+
+  OUTER_SET eet_200000 = GAME_IS ~eet~ ? 200000 : 0
 
 ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~eet_2~ ~~
@@ -114,7 +117,9 @@ LANGUAGE ~Russian~
 
 
 BEGIN @1003 /* ~Ending Independent on PC Replies~ */ DESIGNATED 1
+LABEL ~JasteySodTweaks-EndingIndependentReplies~
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~c#anotherfinehell.tp2~ ~0~ @1024 /* ~Another mod is making this component unneeded.~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
 
@@ -254,6 +259,7 @@ EXTEND_TOP ~bdcut61t.bcs~ ~...inlined/c#sodtweaks_trialend.baf~ EVALUATE_BUFFER
 
 
 BEGIN @1005 /* ~For NPCs in Party Only~ */ DESIGNATED 2
+LABEL ~JasteySodTweaks-DoNotMissDialogues_NPCInParty~
 SUBCOMPONENT @1004 /* ~Do Not Miss NPC-PC Dialogues~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
@@ -272,6 +278,7 @@ INCLUDE ~c#sodtweaks/MissedDialogues/lib/activate_partynpc.tpa~
 ////////////////////////////////////////////////////////////////////////
 
 BEGIN @1006 /* ~Activate All NPC-PC Dialogues Always~ */ DESIGNATED 3
+LABEL ~JasteySodTweaks-DoNotMissDialogues_All~
 SUBCOMPONENT @1004 /* ~Do Not Miss NPC-PC Dialogues~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
@@ -323,6 +330,7 @@ EXTEND_BOTTOM ~bdvoghil.bcs~ ~c#sodtweaks/MissedDialogues/c#st_bdvoghil_add.baf~
 
 
 BEGIN @1007 /* ~Skip Korlasz's Dungeon~ */ DESIGNATED 4
+LABEL ~JasteySodTweaks-SkipKorlaszDungeon~
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
@@ -423,11 +431,12 @@ COMPILE EVALUATE_BUFFER ~c#sodtweaks/MoreDialogueChoices/dialogue_choices.d~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// 5 ~Use Imoen's BG1 and SoD Portrait for BGII in EET&BGT~
+////// 5 ~Use Imoen's SoD Portrait for BGII in EET&BGT~
 //////
 ////////////////////////////////////////////////////////////////////////
 
 BEGIN @1009 /* ~Use Imoen's SoD Portrait for BGII in EET & BGT~ */ DESIGNATED 6
+LABEL ~JasteySodTweaks-ImoensSoDPortrait~
 REQUIRE_PREDICATE (GAME_IS ~eet bgt~) @1001  /* ~This component is only compatible with BGT and EET.~ */
 
 /* EET&BGT: Imoen in ID has script IMOEN.bcs */
@@ -472,9 +481,8 @@ EXTEND_TOP ~IMOEN.bcs~ ~...inlined/imoen_portrait.baf~
 //////
 ////////////////////////////////////////////////////////////////////////
 BEGIN @1011 /* ~Restore scripted Abduction Scene Fight~ */ DESIGNATED 7
+LABEL ~JasteySodTweaks-RestoreAbductionFight~
 REQUIRE_PREDICATE (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) @1010  /* ~This component is only compatible with SoD.~ */
-FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
-FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
 
 //BD6100.BCS
 COPY_EXISTING ~BD6100.BCS~ ~override~
@@ -533,6 +541,7 @@ EXTEND_TOP ~BD6100.BCS~ ~.../BD6100-et.baf~
 
 //---------------------------------
 BEGIN @1013 /* ~Set Starting XP to 65,000~ */ DESIGNATED 8
+LABEL ~JasteySodTweaks-AdjustStartingXP~
 SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 
@@ -567,10 +576,19 @@ LAF starting_xp INT_VAR value = 161000 END
 ////////////////////////////////////////////////////////////////////////
 
 BEGIN @1019 /* ~Revised Full Version~ */ DESIGNATED 12
+LABEL ~JasteySodTweaks-SoDEnding_RevisedFull~
 SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~c#anotherfinehell.tp2~ ~0~ @1023 /* ~Other optional ending is already installed.~ */
 
+/*
 ADD_JOURNAL EXISTING TITLE (%eet_2%59626) @33 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/sod_revisedend.tra~
+*/
+<<<<<<<< .../inlined/journal_33.tph
+>>>>>>>>
+OUTER_SET strref_journal = eet_200000 + 59626
+APPEND_OUTER - ~.../inlined/journal_33.tph~ "ADD_JOURNAL EXISTING TITLE (#%strref_journal%) @33 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/sod_revisedend.tra~"
+INCLUDE ~.../inlined/journal_33.tph~
 
 EXTEND_BOTTOM ~bd4100.bcs~   ~c#sodtweaks/revised_end_sod/add_bd4100.baf~
 EVALUATE_BUFFER
@@ -614,10 +632,19 @@ INCLUDE ~c#sodtweaks/revised_end_sod/changes_bd6000.tpa~
 
 ///////////////////////////
 BEGIN @1020 /* ~Revised Streamlined Version~ */ DESIGNATED 13
+LABEL ~JasteySodTweaks-SoDEnding_RevisedStreamlined~
 SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~c#anotherfinehell.tp2~ ~0~ @1023 /* ~Other optional ending is already installed.~ */
 
+/*
 ADD_JOURNAL EXISTING TITLE (%eet_2%59626) @33 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/sod_revisedend.tra~
+*/
+<<<<<<<< .../inlined/journal_33.tph
+>>>>>>>>
+OUTER_SET strref_journal = eet_200000 + 59626
+APPEND_OUTER - ~.../inlined/journal_33.tph~ "ADD_JOURNAL EXISTING TITLE (#%strref_journal%) @33 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/sod_revisedend.tra~"
+INCLUDE ~.../inlined/journal_33.tph~
 
 COPY ~c#sodtweaks/revised_end_sod/c#ablank.wav~ ~override~
 
@@ -631,8 +658,10 @@ INCLUDE ~c#sodtweaks/revised_end_sod/changes_bd6000.tpa~
 
 
 BEGIN @1022 /* ~Original Streamlined Version~ */ DESIGNATED 14
+LABEL ~JasteySodTweaks-SoDEnding_OriginalStreamlined~
 SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~c#anotherfinehell.tp2~ ~0~ @1023 /* ~Other optional ending is already installed.~ */
 
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/revised_end_sod/sod_original_streamlined.d~
 
@@ -640,8 +669,10 @@ INCLUDE ~c#sodtweaks/revised_end_sod/streamline_changes.tpa~
 
 
 BEGIN @1021 /* ~Skipit Version~ */ DESIGNATED 15
+LABEL ~JasteySodTweaks-SoDEnding_Skipit~
 SUBCOMPONENT @1018  /* ~SoD Ending: jastey's Tweaks~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~c#anotherfinehell.tp2~ ~0~ @1023 /* ~Other optional ending is already installed.~ */
 
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/revised_end_sod/c#stbd62.baf~
 
@@ -685,3 +716,159 @@ COPY_EXISTING ~bd0104.are~ ~override~
     fj_destination_area = EVAL ~bd6200~
     fj_destination_name = EVAL ~Exitbd6000~
   END
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 9 ~Make Portal Close from Dragonspear Castle (Aun Argent survives always)~
+////// 
+////////////////////////////////////////////////////////////////////////
+/* another idea for a tweak: make it so the blood of Belhifet has to be applied from Toril's side. Makes more sense and makes it also that Aun can be rescued even if Caelar died. */
+
+BEGIN @1026 /* ~Make Portal Close from Dragonspear Castle (Aun Argent survives always)~ */ DESIGNATED 20
+LABEL ~JasteySoDTweaks_PortalCloseToril~
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
+
+COMPILE EVALUATE_BUFFER ~c#sodtweaks/sodportal/c#stc59c.baf~
+COMPILE EVALUATE_BUFFER ~c#sodtweaks/sodportal/close_portal_from_toril.d~ USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/portal_sod.tra~
+
+/* add animation of portal closing to bd4300.are */
+COPY_EXISTING bd4300.are override
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 370
+    fj_loc_y       = 290
+    fj_flags       = 0b00000000000000000011000101000000
+    //not covered by wall, draw as background, shown in combat, EE: use wbm
+    STR_VAR
+    fj_structure_type = animation
+    fj_name           = Portal_Closing
+    fj_bam_resref     = bd4400pc
+  END
+BUT_ONLY
+
+/* change journal entry */
+/* #59853 ~The Siege of Dragonspear
+
+Caelar has sacrificed herself to close the portal to Avernus. 
+
+Caelar Argent has remained behind to seal the portal. I was unable to stop her, and in truth, she seemed happy to lay down her life for the safety of the land.~
+*/
+<<<<<<<< .../inlined/string_set_portaltoril.tph
+>>>>>>>>
+OUTER_SET strref_59853 = eet_200000 + 59853
+APPEND_OUTER - ~.../inlined/string_set_portaltoril.tph~ 
+"STRING_SET %strref_59853% @121"
+INCLUDE ~.../inlined/string_set_portaltoril.tph~
+
+
+COPY_EXISTING ~bdcut59.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(IF[%newline%]*!Dead("bdcaelar")[%newline%]*THEN[%newline%]*RESPONSE[%newline%]*#100[%newline%]*CutSceneId("bdcutid2")[%newline%]*ActionOverride("bdaun",MoveToPoint(\[1337\.1213\]))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("bdcutid2")
+		ActionOverride("bdaun",MoveToPoint([1337.1213]))~
+		END
+		SPRINT textToReplace ~\(IF[%newline%]*!Dead("bdcaelar")[%newline%]*THEN[%newline%]*RESPONSE[%newline%]*#100[%newline%]*CutSceneId("bdcutid2")[%newline%]*SmallWait(10)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~IF
+	False()
+
+THEN
+	RESPONSE #100
+		CutSceneId("bdcutid2")
+		SmallWait(10)~
+		END
+		SPRINT textToReplace ~\(IF[%newline%]*Dead("bdcaelar")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~IF
+	False()~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bdcut59b.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(!Dead("bdcaelar")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~True()~
+		END
+		SPRINT textToReplace ~\(TriggerActivation("portal",FALSE)[%newline%]*AmbientActivate("portal_visuals",FALSE)[%newline%]*AmbientActivate("portal_webm",FALSE)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+		SPRINT textToReplace ~\(EndCutSceneMode()\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~StartCutSceneEx("c#stc59c",TRUE)~
+		END
+		SPRINT textToReplace ~\(CloseDoor("Door04")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+/* Crossmod: if Another Fine Hell is installed, remove the closing of "Door04" (i.e. the portal animation) */
+
+ACTION_IF MOD_IS_INSTALLED ~c#anotherfinehell.tp2~ ~1~ THEN BEGIN
+  COPY_EXISTING ~c#stc59c.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(CloseDoor("Door04")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+    END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// 10 ~Hephernaan takes Dragonspear Vault Key~
+////// 
+////////////////////////////////////////////////////////////////////////
+/* New component: Hephernaan would take the vault key from Caelar with him. De Lancie wouldn't be the one responsible to lock the door, but would stand outside with no means to help the trapped PC in a timely fashion.
+*/
+
+BEGIN @1025 /* ~Hephernaan takes Dragonspear Vault Key~ */ DESIGNATED 21
+LABEL ~JasteySoDTweaks_HephernaanTakesKey~
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
+
+COMPILE EVALUATE_BUFFER ~c#sodtweaks/sodportal/hephernaan_takes_key.d~ USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/portal_sod.tra~
+
+/* Change line of Caelar about key */
+/* 
+#39315 /* ~Here, take this key. It will open the Dragonspear vault. I'll not be returning to Toril.~ [BD39315] */
+*/
+/* change line about key on Caelar's body in Aun's dialogue */
+/* 
+#39298 /* ~This is where we part ways, friend. Here, take this key I retrieved from Caelar's body. I know not what it opens, but I'm certain it's nothing in this infernal place.~ */
+*/
+/* change info line at portal bd4400 */
+/*
+DisplayString(Myself,62441)  // The portal glows with infernal light. It leads back to Dragonspear, but not to safety, not while Torsin de Lancie holds the portal vault's key. To survive, you must find a way to seal this rift between planes.
+*/
+<<<<<<<< .../inlined/string_set_caelarkey.tph
+>>>>>>>>
+OUTER_SET strref_39315 = eet_200000 + 39315
+OUTER_SET strref_39298 = eet_200000 + 39298
+OUTER_SET strref_62441 = eet_200000 + 62441
+APPEND_OUTER - ~.../inlined/string_set_caelarkey.tph~ 
+"STRING_SET %strref_39315% @122
+STRING_SET %strref_39298% @123
+STRING_SET %strref_62441% @124"
+INCLUDE ~.../inlined/string_set_caelarkey.tph~

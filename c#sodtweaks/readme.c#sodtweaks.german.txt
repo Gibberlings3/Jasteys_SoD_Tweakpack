@@ -198,6 +198,13 @@ Wenn bei der Installation Probleme auftreten oder Ihr beim Spielen Bugs bemerkt,
 
 
 
+HINWEIS AN SPIELER DER DEUTSCHEN VERSION
+
+Die deutsche Modversion orientiert sich an der deutschen Fanübersetzung "Deutsche Übersetzung für SoD". Dies bedeutet, dass die im Spiel verwendeten Eigennamen und Übersetzungen der Örtlichkeiten etc. mit der Fanübersetzung konsistent sind und zur offiziellen SoD-Übersetzung Diskrepanzen bestehen, vor allem bei den Namen der Spielcharaktere. Installiert die Fanübersetzung für ein konsistentes Spielerlebnis.
+Download Link: https://baldurs-gate.de/index.php?resources/deutsche-%C3%9Cbersetzung-f%C3%BCr-sod.49/
+
+
+
 DANKSAGUNGEN
 
 Argent77: Codinghilfe

@@ -16,12 +16,12 @@
 @48 = ~[Jaheira]Мы с Халидом пообещали Горайону оберегать и защищать тебя. Мы не отвернемся от тебя и теперь, когда ты нуждаешься в этом больше всего.~
 
 /* new for v6 */
-@49   = ~[PC reply to Caelar]Ah, you mean "this is was the day that madwoman Caelar brought death and destruction upon the lands"?~
-@50   = ~[PC reply to Caelar]Well, it would be a change for sure. So far, all blood spilled was in service to you.~
-@51   = ~[PC reply to Caelar]Are you trying to ridicule the poison that put my friend Imoen out for days and after that made her hands a trembling fiasco? Am I supposed to be thankful it wasn't deadly or what are you implying?~
-@52   = ~[PC reply to Caelar]How, Caelar? How will you do that? Enlighten us.~
-@53   = ~[PC reply to Caelar]So that's what you will do then - march into the nine hells with your army. You are insane.~
-@54   = ~[PC reply to Caelar]Caelar... You are planning on marching into Avernus, which will mean you will open a way into it - giving the fiends a way out of it. I really do not see how this is a good idea. You need to be stopped!~
-@55   = ~[PC reply to Caelar]*Or* what you are planning will lead to hell breaking lose over the Sword Coast... again. I think you are the one needing "enlightenment" here.~
-@56   = ~[PC reply to Caelar]None of this madness was "worthwhile". You are delusional beyond recovery.~
-@57   = ~[PC Reply, referring to Caelar]All I've heard is a lunatic phrasing polemic exaggerations to get others to do their bidding.~
+@49   = ~[PC reply to Caelar]Аа, это значит "в этот день безумица Каэлар принесла смерть и разрушение в эти земли"?~
+@50   = ~[PC reply to Caelar]Ну, это, конечно, было бы нечто новое. До сих пор вся пролитая кровь была в угоду тебе.~
+@51   = ~[PC reply to Caelar]Ты что ж, пытаешься насмехнуться над ядом, который на несколько дней вывел из строя мою подругу Имоен и после этого превратил ее руки в жалкое нечто? Полагаю, мне следует благодарить тебя за то, что он не был смертельным, или на что ты намекаешь?~
+@52   = ~[PC reply to Caelar]Как, Каэлар? Как ты это делаешь? Просвети нас.~
+@53   = ~[PC reply to Caelar]Вот что ты сделаешь - отправишься в девять адов со своей армией. Ты безумна.~
+@54   = ~[PC reply to Caelar]Каэлар... Ты планируешь идти в Авернус, а это значит, что ты откроешь доступ к нему, тем самым позволив чудовищам выбраться из него. Я действительно не вижу в этом ничего хорошего. Тебя нужно остановить!~
+@55   = ~[PC reply to Caelar]*Или* то, что ты планируешь, приведет к тому, что на Побережье Мечей начнется ад... снова. Я думаю, это тебе нужно "просвещение" в этот раз.~
+@56   = ~[PC reply to Caelar]Ни в одном из этих безумств не было "смысла". Ты заблуждаешься до невозможности.~
+@57   = ~[PC Reply, referring to Caelar]Все, что мне довелось услышать, это то, что сумасшедшая формулирует полемические преувеличения, чтобы заставить других выполнять свои приказы.~

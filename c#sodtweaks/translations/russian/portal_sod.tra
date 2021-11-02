@@ -1,14 +1,14 @@
 /* close_portal_drom_toril.d */
-@0  = ~[Aun Argent]Child, this will not be necessary. The portal can be closed from the Material Prime, and I know the ritual to do it.~
-@1  = ~[Caelar]Someone must stand guard. What will linger here from Avernus's connection to Toril will continue to attract fiends on the search for a way to the Material Plane. I will await them. It will be Caelar Argent who will stand guard for Toril, for all eternity if need be.~
-@2  = ~[Aun Argent]This is it, then. I have the blood of Belhifet I will need to perform the closing ritual.~
-@3  = ~[Aun Argent]Here, take this key I found with the bodies. I know not what it opens, but I'm certain it's nothing in this infernal place.~
-@4  = ~[Aun Argent]The portal has to be closed from the Prime Material Plane - and I know how to do it. But... I should remain here to guard the door to Hell - to hold the hordes of Avernus at bay should the rift between planes be opened again.~
-@5  = ~[PC Reply]I will not leave you here, especially not if by your own words you know how to seal this rift from Toril's side.~
-@6  = ~[Aun Argent]A generous offer, but one I will not accept. If at all, it should be me remaining, in the frantic desire to in some way redeem the Argent name...~
-@7  = ~[Aun Argent]I fear, my desire to pay for Caelar's evil doing will not hold me in this forsaken place, as much as it grieves me to leave this place unguarded from this side.~
-@8  = ~[Aun Argent]Few outside the Order of the Aster can perform the closing ritual. Closing it quickly is more important than this old paladin's urge for redemption. Let us go back from whence you came, I beg you, before Avernus's legions attack - or I might make a decision that would be as foolish as it would be noble.~
-@9  = ~[Aun Argent]And an honorable one it would be, alas... (sigh)~
+@0  = ~[Aun Argent]Дитя, в этом нет необходимости. Портал можно закрыть из Прайма, и я знаю ритуал, как это сделать.~
+@1  = ~[Caelar]Кто-то должен быть на страже. То, что останется здесь после соединения Авернуса с Торилом, будет продолжать привлекать чудовищ, жаждущих попасть на Материальную Плоскость. Я буду ожидать их. Лишь Каэлар Аргент будет стоять на страже Торила, и если понадобится, целую вечность.~
+@2  = ~[Aun Argent]Вот и все. У меня есть кровь Белхифет, которая понадобится мне для проведения ритуала закрытия.~
+@3  = ~[Aun Argent]Вот, возьми этот ключ, который мне удалось найти среди тел. Я не знаю, что он открывает, но наверняка ничего в этом адском месте.~
+@4  = ~[Aun Argent]Портал должен быть закрыт из Прайма - и я знаю, как это сделать. Но... мне следует остаться здесь, чтобы охранять дверь в Ад - сдерживать орды Авернуса, если разлом между плоскостями снова откроется.~
+@5  = ~[PC Reply]Я не оставлю тебя здесь, особенно если по твоим словам ты знаешь, как запечатать этот разлом со стороны Торила.~
+@6  = ~[Aun Argent]Щедрое предложение, но я его не приму. Если уж на то пошло, то останусь я, в неистовом желании хоть как-то искупить вину рода Аргент...~
+@7  = ~[Aun Argent]Боюсь, мое желание расплатиться за злодеяния Каэлар не удержит меня в этом проклятом месте, как бы ни было мне горько оставлять это место без охраны с этой стороны.~
+@8  = ~[Aun Argent]Немногие вне Ордена Астера могут провести ритуал закрытия. Быстрое закрытие важнее, чем желание этого старого паладина искупить свою вину. Позволь нам вернуться в то место, откуда тебя принесло, умоляю тебя, прежде чем легионы Авернуса нападут - иначе я могу принять решение, которое будет столь же глупым, сколь и благородным.~
+@9  = ~[Aun Argent]И благородным оно было бы, увы...(вздох)~
 /*
 @10  =
 @11  =
@@ -33,8 +33,8 @@
 */
 
 /* hephernaan_takes_key.d */
-@30  = ~I will also take this - you don't need the key to this vault any more, Caelar. From now on, this door will stay closed until my master is ready to use it.~
-@31  = ~Not that we would have the means to open the door currently. Caelar obviously prepared strong magic to keep the door shut after being closed. We are working on finding a way to open it, but it might be quicker if you find a key on Caelar herself.~
+@30  = ~Я также возьму это - тебе больше не нужен ключ от этого хранилища, Каэлар. Отныне эта дверь будет заперта до тех пор, пока мой хозяин не будет готов ею воспользоваться.~
+@31  = ~Не то чтобы у нас были средства, чтобы открыть дверь в настоящее время. Каэлар, очевидно, разработала сильную магию, чтобы дверь оставалась запертой после того, как была закрыта. Мы пытаемся найти способ открыть ее, но это будет быстрее, если ты достанешь ключ у самой Каэлар.~
 /*
 @32  = 
 @33  = 

@@ -1,0 +1,48 @@
+/* close_portal_drom_toril.d */
+@0  = ~[Aun Argent]Child, this will not be necessary. The portal can be closed from the Material Prime, and I know the ritual to do it.~
+@1  = ~[Caelar]Someone must stand guard. What will linger here from Avernus's connection to Toril will continue to attract fiends on the search for a way to the Material Plane. I will await them. It will be Caelar Argent who will stand guard for Toril, for all eternity if need be.~
+@2  = ~[Aun Argent]This is it, then. I have the blood of Belhifet I will need to perform the closing ritual.~
+@3  = ~[Aun Argent]Here, take this key I found with the bodies. I know not what it opens, but I'm certain it's nothing in this infernal place.~
+@4  = ~[Aun Argent]The portal has to be closed from the Prime Material Plane - and I know how to do it. But... I should remain here to guard the door to Hell - to hold the hordes of Avernus at bay should the rift between planes be opened again.~
+@5  = ~[PC Reply]I will not leave you here, especially not if by your own words you know how to seal this rift from Toril's side.~
+@6  = ~[Aun Argent]A generous offer, but one I will not accept. If at all, it should be me remaining, in the frantic desire to in some way redeem the Argent name...~
+@7  = ~[Aun Argent]I fear, my desire to pay for Caelar's evil doing will not hold me in this forsaken place, as much as it grieves me to leave this place unguarded from this side.~
+@8  = ~[Aun Argent]Few outside the Order of the Aster can perform the closing ritual. Closing it quickly is more important than this old paladin's urge for redemption. Let us go back from whence you came, I beg you, before Avernus's legions attack - or I might make a decision that would be as foolish as it would be noble.~
+@9  = ~[Aun Argent]And an honorable one it would be, alas... (sigh)~
+/*
+@10  =
+@11  =
+@12  =
+@13  =
+@14  =
+@15  =
+@16  =
+@17  =
+@18  =
+@19  =
+@20  =
+@21  =
+@22  =
+@23  =
+@24  =
+@25  =
+@26  =
+@27  =
+@28  =
+@29  =
+*/
+
+/* hephernaan_takes_key.d */
+@30  = ~I will also take this - you don't need the key to this vault any more, Caelar. From now on, this door will stay closed until my master is ready to use it.~
+@31  = ~Not that we would have the means to open the door currently. Caelar obviously prepared strong magic to keep the door shut after being closed. We are working on finding a way to open it, but it might be quicker if you find a key on Caelar herself.~
+/*
+@32  = 
+@33  = 
+@34  = 
+@35  = 
+@36  = 
+@37  = 
+@38  = 
+@39  = 
+@40  = 
+*/

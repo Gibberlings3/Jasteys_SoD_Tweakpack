@@ -14,3 +14,20 @@
 @110 = ~Was hattet Ihr mit Skies Tod zu tun?~
 @111 = ~Bhaalkind! Euch vertrauen wir nicht!~
 @112 = ~Seid Ihr ein zweiter Sarevok? Wir werden Euch durchschauen, Kind des Bhaal!~
+
+/* new for v6 */
+/* in c#stc59c.baf */
+@120 = ~Es ist geschafft - das Tor ist geschlossen. Dies ist alles, was wir hier jetzt machen können.~
+/* in tp2 */
+/* #59853 changed */
+@121 = ~Die Belagerung von Drachenspeer
+
+Caelar hat sich selbst aufgeopfert, um das Portal in Avernus zu bewachen.
+
+Caelar Silberweiß ist zurückgeblieben, um den Ort des Portals zu bewachen. Ich war nicht in der Lage sie aufzuhalten und fürwahr schien sie glücklich damit, ihr Leben zu geben, um für die Sicherheit des Landes zu sorgen.~
+/* #39315 changed */
+@122 = ~Hier, nehmt diesen Schlüssel. Ich habe ihn von Ifearnan zurückgenommen, nachdem er ihn mir für seinen Meister abgenommen hatte, aber er hat keinerlei Bedeutung mehr für mich. Er öffnet die Drachenspeer-Gruft. Ich werde nicht nach Toril zurückkehren.~
+/* #39298 changed */
+@123 = ~Hier trennen sich unsere Wege, Freund. Da, nehmt diesen Schlüssel, den ich bei den Toten gefunden habe. Ich weiß nicht, was er öffnet, aber ich bin sicher, dass es nichts an diesem infernalischen Ort ist.~ ~Hier trennen sich unsere Wege, Freundin. Da, nehmt diesen Schlüssel, den ich bei den Toten gefunden habe. Ich weiß nicht, was er öffnet, aber ich bin sicher, dass es nichts an diesem infernalischen Ort ist.~
+/* #62441 changed */
+@124 = ~Das Portal glüht in einem infernalischen Licht. Es führt zurück nach Drachenspeer, aber solange Ifearnan den Schlüssel zum Portalraum in Besitz hat, führt es nicht in Sicherheit. Um zu überleben, müsst Ihr einen Weg finden, diesen Riss zwischen den Ebenen zu versiegeln.~

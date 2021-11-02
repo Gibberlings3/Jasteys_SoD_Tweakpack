@@ -160,8 +160,8 @@ END
 CHAIN
 IF ~~ THEN BDBELT revised_trialscene_03 
 @20
-= #%eet_2%69768 /* ~Is there anything you wish to say in your defense?~ 
-== BDNOBL90 #%eet_2%69812[BD69768] */
+= #%eet_2%69768 /* ~Is there anything you wish to say in your defense?~ */
+== BDNOBL90 #%eet_2%69812 /* Guilty, I say! GUILTY! [BD69768] */
 END
 ++ @21 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
 ++ @22 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
@@ -292,7 +292,8 @@ END BDNEERA 122
 ADD_TRANS_TRIGGER BDNEERA 120 ~Global("C#st_RevisedTrial","GLOBAL",0)~
 
 EXTEND_BOTTOM BDNEERA 120
-IF ~GlobalGT("C#st_RevisedTrial","GLOBAL",0)~ THEN + 122
+IF ~GlobalGT("C#st_RevisedTrial","GLOBAL",0)~ THEN DO ~SetGlobal("bd_jail_visitors","bd0104",6)
+SetGlobal("bd_visit_player","locals",1)~ + 122
 END
 
 /* Rasaad - no changes needed */

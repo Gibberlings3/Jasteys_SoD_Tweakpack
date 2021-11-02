@@ -28,3 +28,9 @@
 @1021   = ~Skipit Version~
 @1022   = ~Original Streamlined Version~
 
+/* new for v6 */
+@1023   = ~Other optional ending for SoD is already installed.~
+@1024   = ~Another mod is making this component unneeded.~
+@1025   = ~Hephernaan takes Dragonspear Vault Key~
+@1026   = ~Make Portal Close from Dragonspear Castle (Aun Argent survives always)~
+

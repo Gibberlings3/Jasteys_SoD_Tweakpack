@@ -28,3 +28,9 @@
 @1020   = ~Ueberarbeitete Version: Fassung ohne extra Cutscenes~
 @1021   = ~Kurzes Ende~
 @1022   = ~Originales Ende: Fassung ohne extra Cutscenes~
+
+/* new for v6 */
+@1023   = ~Ein anderes optionales Ende fuer SoD ist bereits installiert.~
+@1024   = ~Durch eine andere installierte ist diese Komponente unnötig.~
+@1025   = ~Ifearnan nimmt den Drachenspeer-Gruftschluessel an sich~
+@1026   = ~Das Portal muss in der Burg Drachenspeer geschlossen werden (Aun Silberweiss ueberlebt immer)~

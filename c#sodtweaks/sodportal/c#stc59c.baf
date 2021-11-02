@@ -1,0 +1,21 @@
+IF
+	True() 
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)  
+		SmallWait(10)
+		ActionOverride("bdaun",ForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT))  // SPPR214.SPL (Draw Upon Holy Might)
+		ActionOverride("bdaun",ForceSpell(Myself,CLERIC_HOLY_POWER))  // SPPR412.SPL (Holy Power)
+		SmallWait(100)
+		AmbientActivate("Portal_Closing",TRUE) 
+		AmbientActivate("portal_visuals",FALSE)
+		AmbientActivate("portal_webm",FALSE)
+		SmallWait(60)
+		AmbientActivate("Portal_Closing",FALSE)
+		CloseDoor("Door04")
+		TriggerActivation("portal",FALSE)
+		SmallWait(40)
+		DisplayStringHead("bdaun",@120)
+		Wait(1)
+		EndCutSceneMode()
+END

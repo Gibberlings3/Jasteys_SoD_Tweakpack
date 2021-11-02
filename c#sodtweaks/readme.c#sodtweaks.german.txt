@@ -241,7 +241,7 @@ VERSIONS-HISTORIE
 
 Version 6:
 -two new components: "Make Portal Close from Dragonspear Castle (Aun Argent survives always)" and "Hephernaan takes Dragonspear Vault Key".
--Revised Ending: Neeras prison lovetalk should not loop; interjection of bystander should play.
+-Revised Ending: Neeras prison lovetalk should not loop; interjection of bystander should play; journal entries should be sorted for the correct title.
 -"More dialogue choices": lines of Jaheira & Dynaheir at the end about their motivation to join the PC are now added at a more sensible point in Imoen's dialogue and only show for the "Duke Belt" ending.
 -added globally unique LABELs to support Project Infinity.
 -added install checks for "Another fine Hell" Mod.

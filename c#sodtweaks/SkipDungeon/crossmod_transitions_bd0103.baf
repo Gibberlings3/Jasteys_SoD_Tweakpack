@@ -1,0 +1,11 @@
+/* Ducal Palace - transfer items from PC's quarters in Transitions */
+
+
+IF
+  Global("C#st_TransferItems_#LBD0103","GLOBAL",1)
+  Global("C#st_TI_Transitions","MYAREA",0)
+THEN
+  RESPONSE #100
+    MoveContainerContents("#LBD0103*c#st0001","bd0103*c#st0001")
+    SetGlobal("C#st_TI_Transitions","MYAREA",1)
+END

@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v6~
+VERSION ~v7pre~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -12,6 +12,15 @@ README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sod
 AUTO_TRA ~c#sodtweaks/translations/autotra/%s~
 
 ALWAYS
+
+/* read in general definitions */
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  INCLUDE ~c#sodtweaks/lib/g3_bgee_cpmvars.tpa~
+END
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+END
 
 /* from subtledoctor */
  DEFINE_ACTION_FUNCTION starting_xp INT_VAR value = 64000 BEGIN
@@ -362,15 +371,13 @@ END
 
 // Creating container in Duchal Palce 3rd level for dungeon items
 COPY_EXISTING ~bd0103.ARE~ ~override~
-
-
   LPF fj_are_structure
   INT_VAR
     fj_loc_x          = 175
     fj_loc_y          = 430
-    fj_type           = 8
+    fj_type           = 3
     fj_lock_diff      = 0
-    fj_flags          = (1 << 5)  // initially disabled
+//    fj_flags          = (1 << 5)  // initially disabled
     fj_trap_remove_diff = 0
     fj_box_left       = 132
     fj_box_top        = 388
@@ -386,9 +393,6 @@ COPY_EXISTING ~bd0103.ARE~ ~override~
     fj_name           = "c#st0001"
   END
 BUT_ONLY
-
-
-
 
 /* Arkanis will offer to do the work */
 COPY_EXISTING ~ARKANI3.cre~ ~override/c#st0001.cre~
@@ -407,12 +411,105 @@ WRITE_EVALUATED_ASCII 0x260 ~wtarsgt~ #8   // General script
 
 EXTEND_BOTTOM ~bd0120.bcs~ ~c#sodtweaks/SkipDungeon/bd0120.baf~ EVALUATE_BUFFER
 EXTEND_BOTTOM ~bd0130.bcs~ ~c#sodtweaks/SkipDungeon/bd0130.baf~ EVALUATE_BUFFER
-EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/bd0103.baf~ EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/bd0103_1.baf~ EVALUATE_BUFFER
+OUTER_TEXT_SPRINT dstContainer ~c#st0001~
+OUTER_TEXT_SPRINT pc_chest ~PlayerChest00~
+OUTER_TEXT_SPRINT target_area ~bd0103~
+EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/item_transfer.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/bd0103_2.baf~ EVALUATE_BUFFER
 
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthel1.baf~
 
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthelp.d~
 
+
+/* Crossmod with Another fine Hell - copy contents of bedside table into custom PC's chamber and back into bd0103 */
+ACTION_IF ((MOD_IS_INSTALLED ~c#anotherfinehell.tp2~ ~0~) AND (MOD_IS_INSTALLED ~c#anotherfinehell.tp2~ ~2~)) THEN BEGIN
+PRINT @1027 /* ~Patching item transfer into custom PC's palace residence from Another fine Hell mod.~ */
+
+COPY_EXISTING ~c#afh3.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 175
+    fj_loc_y          = 430
+    fj_type           = 3
+    fj_lock_diff      = 0
+//    fj_flags          = (1 << 5)  // initially disabled
+    fj_trap_remove_diff = 0
+    fj_box_left       = 132
+    fj_box_top        = 388
+    fj_box_right      = 160
+    fj_box_bottom     = 407
+    fj_vertex_0       = 132 + (400 << 16)
+    fj_vertex_1       = 151 + (388 << 16)
+    fj_vertex_2       = 160 + (395 << 16)
+    fj_vertex_3       = 144 + (407 << 16)
+//    fj_vertex_4       = 132 + (400 << 16)
+  STR_VAR
+    fj_structure_type = container
+    fj_name           = "c#st0001"
+  END
+BUT_ONLY
+
+EXTEND_BOTTOM ~c#afh3.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_anotherfinehell_c#afh3.baf~ 
+EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_anotherfinehell_bd0103.baf~ EVALUATE_BUFFER
+
+END //Another fine Hell
+
+
+/* Crossmod with EndlessBG1: place items into PC's bedside table if Korlasz Dungeon is in BG1 and Palace Residence are installed */
+
+ACTION_IF ((MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~1~) AND (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~)) THEN BEGIN
+PRINT @1028 /* ~Patching item transfer from Korlasz Dungeon into PC's palace residence from EndlessBG1.~ */
+
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_ebg1_ar0110_1.baf~ EVALUATE_BUFFER
+OUTER_TEXT_SPRINT dstContainer ~Container3~
+OUTER_TEXT_SPRINT pc_chest ~Container1~
+OUTER_TEXT_SPRINT target_area ~%NBaldursGate_DucalPalace_L3%~
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~c#sodtweaks/SkipDungeon/item_transfer.baf~ EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_ebg1_bd0103.baf~ EVALUATE_BUFFER
+
+END //EndlessBG1
+
+/* Transitions */
+ACTION_IF (MOD_IS_INSTALLED ~transitions.tp2~ ~0~) THEN BEGIN
+PRINT @1029 /* ~Patching item transfer from Korlasz Dungeon into PC's palace residence from Transitions.~ */
+
+COPY_EXISTING ~#LBD0103.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 175
+    fj_loc_y          = 430
+    fj_type           = 3
+    fj_lock_diff      = 0
+//    fj_flags          = (1 << 5)  // initially disabled
+    fj_trap_remove_diff = 0
+    fj_box_left       = 132
+    fj_box_top        = 388
+    fj_box_right      = 160
+    fj_box_bottom     = 407
+    fj_vertex_0       = 132 + (400 << 16)
+    fj_vertex_1       = 151 + (388 << 16)
+    fj_vertex_2       = 160 + (395 << 16)
+    fj_vertex_3       = 144 + (407 << 16)
+//    fj_vertex_4       = 132 + (400 << 16)
+  STR_VAR
+    fj_structure_type = container
+    fj_name           = "c#st0001"
+  END
+BUT_ONLY
+
+EXTEND_BOTTOM ~#LPCROOM.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_transitions_#LBD0103_1.baf~ EVALUATE_BUFFER
+OUTER_TEXT_SPRINT dstContainer ~c#st0001~
+OUTER_TEXT_SPRINT pc_chest ~PlayerChest00~
+OUTER_TEXT_SPRINT target_area ~#LBD0103~
+EXTEND_BOTTOM ~#LPCROOM.bcs~ ~c#sodtweaks/SkipDungeon/item_transfer.baf~ EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_transitions_bd0103.baf~ EVALUATE_BUFFER
+
+END //Transitions
 
 ////////////////////////////////////////////////////////////////////////
 //////

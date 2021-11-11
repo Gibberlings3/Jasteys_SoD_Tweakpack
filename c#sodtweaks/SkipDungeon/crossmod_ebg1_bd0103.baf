@@ -1,0 +1,11 @@
+/* Ducal Palace - transfer items from PC's quarters in EndlessBG1 */
+
+
+IF
+  Global("C#st_TransferItems_ar0110","GLOBAL",1)
+  Global("C#st_TransferItems_EBG1","MYAREA",0)
+THEN
+  RESPONSE #100
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container3","bd0103*c#st0001")
+    SetGlobal("C#st_TransferItems_EBG1","MYAREA",1)
+END

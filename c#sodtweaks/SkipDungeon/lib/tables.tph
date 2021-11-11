@@ -79,6 +79,7 @@ END
 OUTER_FOR (idxArea = 0; idxArea < supported_areas; idxArea += 1) BEGIN
   OUTER_TEXT_SPRINT srcArea $EVAL supported_areas("%idxArea%")
   // This part is still hardcoded
+/*
   ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~bd0120~) BEGIN
     OUTER_TEXT_SPRINT dstContainer ~c#st0001~
   END ELSE ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~bd0130~) BEGIN
@@ -86,6 +87,7 @@ OUTER_FOR (idxArea = 0; idxArea < supported_areas; idxArea += 1) BEGIN
   END ELSE BEGIN
     OUTER_TEXT_SPRINT dstContainer ~c#st0001~
   END
+*/
 
   COPY_EXISTING - ~%srcArea%.ARE~ ~override~
     READ_LONG 0x70 ofsContainers
@@ -96,7 +98,7 @@ OUTER_FOR (idxArea = 0; idxArea < supported_areas; idxArea += 1) BEGIN
       INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~~ END
       LPF TABLE_MATCH_CONTAINER STR_VAR area = EVAL ~%SOURCE_RES%~ container = EVAL ~%name%~ RET row END
       PATCH_IF (row < 0) BEGIN
-        TEXT_SPRINT container_contents ~%container_contents% MoveContainerContents("%SOURCE_RES%*%name%","bd0103*%dstContainer%")~
+        TEXT_SPRINT container_contents ~%container_contents% MoveContainerContents("%SOURCE_RES%*%name%","%target_area%*%dstContainer%")~
       END ELSE BEGIN
         PATCH_LOG ~DEBUG: Excluding container "%SOURCE_RES%*%name%"~
       END
@@ -110,7 +112,8 @@ OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
     READ_2DA_ENTRY_FORMER "control_table" idx 0 action
     READ_2DA_ENTRY_FORMER "control_table" idx 1 area
 
-    // determining target container
+/*
+// determining target container
     PATCH_IF (~%area%~ STRING_EQUAL_CASE ~bd0120~) BEGIN
       TEXT_SPRINT dstContainer ~c#st0001~
     END ELSE PATCH_IF (~%area%~ STRING_EQUAL_CASE ~bd0130~) BEGIN
@@ -118,6 +121,7 @@ OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
     END ELSE BEGIN
       TEXT_SPRINT dstContainer ~c#st0001~
     END
+*/
 
     PATCH_IF (~%action%~ STRING_EQUAL ~CREATE_ITEM~) BEGIN
       READ_2DA_ENTRY_FORMER "control_table" idx 2 res
@@ -127,8 +131,7 @@ OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
       READ_2DA_ENTRY_FORMER "control_table" idx 6 charge3
 
       PATCH_IF (unique) BEGIN
-        TEXT_SPRINT item_create_unique ~%item_create_unique%%LNL%IF Global("C#st_ShortcutEnabled", "GLOBAL", 1) Global("C#st_TransferItems", "MYAREA", 0) 
-!PartyHasItem("%res%") !HasItem("%res%","PlayerChest00") THEN RESPONSE #100 ActionOverride("%dstContainer%", CreateItem("%res%", %charge1%, %charge2%, %charge3%)) Continue() END~
+        TEXT_SPRINT item_create_unique ~%item_create_unique%%LNL%IF AreaCheck("%target_area%") Global("C#st_ShortcutEnabled", "GLOBAL", 1) Global("C#st_TransferItems", "GLOBAL", 0) !PartyHasItem("%res%") !HasItem("%res%","%pc_chest%") THEN RESPONSE #100 ActionOverride("%dstContainer%", CreateItem("%res%", %charge1%, %charge2%, %charge3%)) Continue() END~
       END ELSE BEGIN
         TEXT_SPRINT item_create ~%item_create%%LNL%ActionOverride("%dstContainer%", CreateItem("%res%", %charge1%, %charge2%, %charge3%))~
       END
@@ -139,7 +142,7 @@ OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
 
       TEXT_SPRINT item_destroy_party ~%item_destroy_party%%LNL%TakePartyItemAll("%res%")~
       PATCH_IF (invOnly = 0) BEGIN
-        TEXT_SPRINT item_destroy ~%item_destroy%%LNL%ActionOverride("%dstContainer%", DestroyItem("%res%"))ActionOverride("PlayerChest00",DestroyItem("%res%"))~
+        TEXT_SPRINT item_destroy ~%item_destroy%%LNL%ActionOverride("%dstContainer%", DestroyItem("%res%"))ActionOverride("%pc_chest%",DestroyItem("%res%"))~
       END
     END
   END

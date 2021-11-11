@@ -25,13 +25,16 @@ END
 
 
 IF
+	InMyArea("%IMOEN_DV%")
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+	Global("bd_Imoen_farewell","bd0120",0)
 	Global("C#st_ShortcutEnabled", "GLOBAL", 1)
 	Global("C#st_KorlaszHelp","GLOBAL",4)
 	!InMyArea("c#sthelp")
 THEN
   RESPONSE #100
 	SetGlobal("C#st_KorlaszHelp","GLOBAL",5)
-	ActionOverride("%IMOEN_DV_SOD%",StartDialogNoSet(Player1))
+	ActionOverride("%IMOEN_DV%",StartDialogOverride("bdimoen",Player1))
 END
 
 /* In case player did fight Korlasz himself, helper will be gone */

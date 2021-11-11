@@ -1,0 +1,9 @@
+/* Set variables so it's clear the items are here */
+
+IF
+  Global("C#st_TransferItems_c#afh3","GLOBAL",0)
+THEN
+  RESPONSE #100
+    MoveContainerContents("bd0103*c#st0001","c#afh3*c#st0001")
+    SetGlobal("C#st_TransferItems_c#afh3","GLOBAL",1)
+END

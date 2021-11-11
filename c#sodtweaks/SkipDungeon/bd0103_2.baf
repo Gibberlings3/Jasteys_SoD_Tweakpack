@@ -1,0 +1,10 @@
+// Removing unneeded items from containers in second pass
+IF
+  Global("C#st_TransferItems_bd0103","GLOBAL",1)
+  Global("C#st_TransferItems", "GLOBAL", 2)
+  Global("C#st_DestroyGold","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("C#st_DestroyGold","MYAREA",1)
+    ActionOverride("c#st0001",DestroyAllFragileEquipment(GOLD))
+END

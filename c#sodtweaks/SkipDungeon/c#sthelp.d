@@ -40,7 +40,9 @@ END
 CHAIN
 IF ~Global("C#st_KorlaszHelp","GLOBAL",2)~ THEN ~c#sthelp~ help_04
 @9 /* ~It is done.~ */
-== ~c#sthelp~ IF ~!Global("#L_BG1SarevokDead","GLOBAL",1)~ THEN @10
+== ~c#sthelp~ IF ~InMyArea("%IMOEN_DV%")
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+!Global("#L_BG1SarevokDead","GLOBAL",1)~ THEN @10
 /* ~I think Imoen wants to talk to you, best you wait here until she is ready to approach you.~ */
 == ~c#sthelp~ @11 /* ~We wish you well.~ */
 END

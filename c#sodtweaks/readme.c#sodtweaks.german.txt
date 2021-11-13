@@ -63,9 +63,17 @@ Auch zu beachten: Kurz nachdem Arkanis einem berichtet, dass alles erledigt ist 
 Das Transferieren der Gegenstände aus der Gruft zum Herzogpalast verwendet das Skripting von Argents "Skip Chateau Irenicus" Mod, vielen Dank!
 
 Hinweis zur Kompatibilität:
-Solltet Ihr die Mod "Transitions" installiert haben, dann wird Euch auch hier Arkanis seine Dienste anbieten. Allerdings gibt es folgendes zu beachten:
-1. die Gegenstände aus Korlasz' Crypta werden erst *nach* dem Übergang nach SoD wie im Originalspiel im Nachttisch des HCs zu finden sein.
-2. Es gibt keinen "finalen Dialog" von Imoen und keinen Übergang in den Palast etc.
+
+Another fine Hell mit "PC's and Imoen's chest in Palace should have their content":
+Ist die Komponente "PC's and Imoen's chest in Palace should have their content" der Mod Another finde Hell installiert, dann werden die Gegenstände, die Arkanis für den HC in seinen Nachttisch gelegt hat, auch am Ende von SoD im Nachttisch zu finden sein.
+
+EndlessBG1 mit "Korlasz' Dungeon ist in BG1":
+Diese Komponente von EndlessBG1 transferiert den Dungeon in die "BG1 Welt". Arkanis wird Euch auch hier seine Dienste anbieten. Allerdings gibt es folgendes zu beachten: Nachdem er und seine Leute den Dungeon beendet haben und dieser verlassen wurde, sind die Eingänge versiegelt. Der Dungeon kann also nicht noch einmal betreten werden. Der Grund dafür ist technischer Natur, da ich nicht überprüfen kann, wieviele Seitenquests im Dungeon gemacht wurden oder nicht. Da die Idee des Tweaks ist, dass der Dungeon komplett erledigt ist, ohne das der HC es selbst tun muss, ist ein Zugang zum Dungeon danach aber auch spieltechnisch nicht mehr nötig.
+Die Items werden in den Nachttisch im Quartier des HC im Palast in BG1 transferiert, wenn der HC im obersten Stockwerk des Palastes bezogen hat. Auch in SoD wird der Inhalt weiterhin im Nachttisch zu finden sein.
+
+Transitions Mod:
+Solltet Ihr die Mod "Transitions" installiert haben, dann wird der Dungeon in die "BG1 Welt" transferiert. Arkanis wird Euch auch hier seine Dienste anbieten. Da Transitions Imoens Dialoge und Bemerkungen im Dungeon entfernt, gibt es in diesem Fall allerdings keinen "finalen Dialog" von Imoen, wenn er Arkanis erledigt ist.
+Die Items werden in den Nachttisch im Quartier des HC im Palast in BG1 transferiert, wenn der HC im obersten Stockwerk des Palastes bezogen hat. Auch in SoD wird der Inhalt weiterhin im Nachttisch zu finden sein.
 
 
 
@@ -238,6 +246,10 @@ Spellhold Studios			http://www.shsforums.net/
 SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 7:
+-"Skip Korlasz' Dungeon": optimized scripting and general handling; Imoen should initiate dialogue, but only if she's present, and not if Transition is installed.
+-"Skip Korlasz' Dungeon": crossmod with Transitions, Endless BG1, and Another fine Hell mod: items from Korlasz Dungeon should be transferred to PC's current bedsise table in all cases. Entrance to Korlasz Dungeon from EndlessBG1 will be sealed if Dungeon is done via this tweak.
 
 Version 6:
 -two new components: "Make Portal Close from Dragonspear Castle (Aun Argent survives always)" and "Hephernaan takes Dragonspear Vault Key".

@@ -1,6 +1,5 @@
-// Removing unneeded items from containers in second pass
+// Removing unneeded items from containers: destroy transferred gold (Ophyllis has it all)
 IF
-  Global("C#st_TransferItems_bd0103","GLOBAL",1)
   Global("C#st_TransferItems", "GLOBAL", 2)
   Global("C#st_DestroyGold","MYAREA",0)
 THEN

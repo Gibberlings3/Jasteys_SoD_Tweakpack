@@ -413,10 +413,16 @@ EXTEND_BOTTOM ~bd0120.bcs~ ~c#sodtweaks/SkipDungeon/bd0120.baf~ EVALUATE_BUFFER
 EXTEND_BOTTOM ~bd0130.bcs~ ~c#sodtweaks/SkipDungeon/bd0130.baf~ EVALUATE_BUFFER
 
 EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/bd0103_1.baf~ EVALUATE_BUFFER
-OUTER_TEXT_SPRINT dstContainer ~c#st0001~
-OUTER_TEXT_SPRINT pc_chest ~PlayerChest00~
-OUTER_TEXT_SPRINT target_area ~bd0103~
-EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/item_transfer.baf~ EVALUATE_BUFFER
+ 
+LAF CREATE_TRANSFER_DATA
+STR_VAR
+  dstContainer  = ~c#st0001~
+  pc_chest      = ~PlayerChest00~
+  target_area   = ~bd0103~
+  target_area_script   = ~bd0103~
+RET
+  item_destroy_party 
+END
 EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/bd0103_2.baf~ EVALUATE_BUFFER
 
 COMPILE EVALUATE_BUFFER ~c#sodtweaks/SkipDungeon/c#sthel1.baf~
@@ -464,10 +470,14 @@ ACTION_IF ((MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~1~) AND (MOD_IS_INSTALLED ~c#en
 PRINT @1028 /* ~Patching item transfer from Korlasz Dungeon into PC's palace residence from EndlessBG1.~ */
 
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_ebg1_ar0110_1.baf~ EVALUATE_BUFFER
-OUTER_TEXT_SPRINT dstContainer ~Container3~
-OUTER_TEXT_SPRINT pc_chest ~Container1~
-OUTER_TEXT_SPRINT target_area ~%NBaldursGate_DucalPalace_L3%~
-EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~c#sodtweaks/SkipDungeon/item_transfer.baf~ EVALUATE_BUFFER
+
+LAF CREATE_TRANSFER_DATA
+STR_VAR
+  dstContainer  = ~Container3~
+  pc_chest      = ~Container1~
+  target_area   = EVAL ~%NBaldursGate_DucalPalace_L3%~
+  target_area_script   = EVAL ~%NBaldursGate_DucalPalace_L3%~
+END
 
 EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_ebg1_bd0103.baf~ EVALUATE_BUFFER
 
@@ -502,14 +512,19 @@ COPY_EXISTING ~#LBD0103.ARE~ ~override~
 BUT_ONLY
 
 EXTEND_BOTTOM ~#LPCROOM.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_transitions_#LBD0103_1.baf~ EVALUATE_BUFFER
-OUTER_TEXT_SPRINT dstContainer ~c#st0001~
-OUTER_TEXT_SPRINT pc_chest ~PlayerChest00~
-OUTER_TEXT_SPRINT target_area ~#LBD0103~
-EXTEND_BOTTOM ~#LPCROOM.bcs~ ~c#sodtweaks/SkipDungeon/item_transfer.baf~ EVALUATE_BUFFER
+
+LAF CREATE_TRANSFER_DATA
+STR_VAR
+  dstContainer  = ~c#st0001~
+  pc_chest      = ~PlayerChest00~
+  target_area   = ~#LBD0103~
+  target_area_script   = ~#LPCROOM~
+END
 
 EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_transitions_bd0103.baf~ EVALUATE_BUFFER
 
 END //Transitions
+
 
 ////////////////////////////////////////////////////////////////////////
 //////

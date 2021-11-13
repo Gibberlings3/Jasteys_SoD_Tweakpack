@@ -1,30 +1,3 @@
-/* This is the adapted version from Argent's "Skip Chateau Irenicus" version.
-Main difference: all items from Player inventory will be moved to the PlayerChest00 in BD0103.are upon transition from Korlasz Dungeon. Hence, all items in this chest need to be considered, too. 
-So far, all items from Korlasz Dungeon will be moved to the mod container "c#st0001" (bedside table in BD0103.are, PC's chamber). The code would allow for different containers to be used for items from the different areas in Korlasz Dungeon. 
-If other containers are used, make sure to add the destruction of the gold in these containers as it is done in the bd0103.baf. */
-
-
-// *** Prepares item control tables ***
-
-LOG ~DEBUG: Starting parsing item control tables...~
-
-OUTER_TEXT_SPRINT table_data ~~
-
-ACTION_BASH_FOR ~%MOD_FOLDER%/SkipDungeon/tables~ ~^.+\.2da$~ BEGIN
-  LOG ~DEBUG: Loading table "%BASH_FOR_FILE%"...~
-
-  COPY - ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_FILESPEC%~
-    PATCH_IF (SOURCE_SIZE > 0) BEGIN
-      READ_ASCII 0 data (SOURCE_SIZE)
-      TEXT_SPRINT table_data ~%table_data%%LNL%%data%~
-    END
-END
-
-// "control_table" contains all available item and container definitions
-OUTER_PATCH ~%table_data%~ BEGIN
-  READ_2DA_ENTRIES_NOW ~control_table~ 7
-END
-
 // Helper function: Returns the row of a matching container name. Returns -1 if not found.
 DEFINE_PATCH_FUNCTION TABLE_MATCH_CONTAINER
 STR_VAR
@@ -48,7 +21,50 @@ BEGIN
   END
 END
 
-LOG ~DEBUG: Finished parsing item control tables...~
+DEFINE_ACTION_FUNCTION CREATE_TRANSFER_DATA
+STR_VAR
+  dstContainer = ~~
+  pc_chest      = ~~
+  target_area   = ~~
+  target_area_script   = ~~
+RET
+//  supported_areas
+//  item_create_unique
+//  item_create
+//  item_destroy
+//  container_contents
+  item_destroy_party //we only need this outside
+BEGIN
+
+
+/* This is the adapted version from Argent's "Skip Chateau Irenicus" version.
+Main difference: all items from Player inventory will be moved to the PlayerChest00 in BD0103.are upon transition from Korlasz Dungeon. Hence, all items in this chest need to be considered, too. 
+So far, all items from Korlasz Dungeon will be moved to the mod container "c#st0001" (bedside table in BD0103.are, PC's chamber). The code would allow for different containers to be used for items from the different areas in Korlasz Dungeon. 
+If other containers are used, make sure to add the destruction of the gold in these containers as it is done in the bd0103.baf. 
+I made this a function so I can use it for different target areas in case EndlessBG1 or Transitions are installed. */
+
+// *** Prepares item control tables ***
+
+//LOG ~DEBUG: Starting parsing item control tables...~
+
+OUTER_TEXT_SPRINT table_data ~~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/SkipDungeon/tables~ ~^.+\.2da$~ BEGIN
+  LOG ~DEBUG: Loading table "%BASH_FOR_FILE%"...~
+
+  COPY - ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_FILESPEC%~
+    PATCH_IF (SOURCE_SIZE > 0) BEGIN
+      READ_ASCII 0 data (SOURCE_SIZE)
+      TEXT_SPRINT table_data ~%table_data%%LNL%%data%~
+    END
+END
+
+// "control_table" contains all available item and container definitions
+OUTER_PATCH ~%table_data%~ BEGIN
+  READ_2DA_ENTRIES_NOW ~control_table~ 7
+END
+
+//LOG ~DEBUG: Finished parsing item control tables...~
 
 
 // Variables containing script portions for handling items and containers
@@ -147,3 +163,7 @@ OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
     END
   END
 END
+
+EXTEND_BOTTOM ~%target_area_script%.bcs~ ~c#sodtweaks/SkipDungeon/item_transfer.baf~ EVALUATE_BUFFER
+
+END //CREATE_TRANSFER_DATA

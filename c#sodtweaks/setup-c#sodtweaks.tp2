@@ -463,6 +463,60 @@ EXTEND_BOTTOM ~bd0103.bcs~ ~c#sodtweaks/SkipDungeon/crossmod_anotherfinehell_bd0
 
 END //Another fine Hell
 
+/* Crossmod with EndlessBG1: prevent script from opening the travel trigger if "Korlasz Dungeon is in BG1" is installed - Tomb is now cleared and sealed. */
+
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) THEN BEGIN
+PRINT @1030 /* ~Patching travel triggers for entrance to Korlasz' Crypt from EndlessBG1.~ */
+/* deactivate travel trigger into Korlasz' Dungeon if it was cleared by Arkanis/Biff and crew */
+
+/* BG1 part: Central BG area AR0700 */
+/* prevent script from opening the travel trigger (to be safe) */
+
+COPY_EXISTING ~%CentralBaldursGate%.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(GlobalLT("C#EBG1_ChangeTriggerKD","%CentralBaldursGate%",2)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 Global("C#st_ShortcutEnabled", "GLOBAL", 0)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+/* close travel trigger */
+<<<<<<<< .../ar0700_kd_done.baf
+/* deactivate travel trigger */
+IF
+	Global("C#st_ShortcutEnabled", "GLOBAL", 1)
+	Global("C#st_CloseKorlaszDungeon","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("C#EBG1_TranBD0120",FALSE)
+		TriggerActivation("c#ebg1korlasz",TRUE)
+		SetGlobal("C#st_CloseKorlaszDungeon","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_kd_done.baf~ EVALUATE_BUFFER 
+
+/* SoD part: Ironthrone HQ area bd0050 */
+/* close travel trigger */
+<<<<<<<< .../bd0050_kd_done.baf
+/* deactivate travel trigger */
+IF
+	Global("C#st_ShortcutEnabled", "GLOBAL", 1)
+	Global("C#st_CloseKorlaszDungeon","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("C#EBG1_TranBD0120",FALSE)
+		TriggerActivation("c#ebg1korlasz",TRUE)
+		SetGlobal("C#st_CloseKorlaszDungeon","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd0050.bcs~ ~.../bd0050_kd_done.baf~ EVALUATE_BUFFER
+
+END
 
 /* Crossmod with EndlessBG1: place items into PC's bedside table if Korlasz Dungeon is in BG1 and Palace Residence are installed */
 

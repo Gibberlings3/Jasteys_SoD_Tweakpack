@@ -34,17 +34,16 @@ SAY @8 /* ~On our way.~ */
 IF ~~ THEN DO ~SetGlobal("C#st_KorlaszHelp","GLOBAL",2)
 	ClearAllActions()
 	StartCutSceneMode()
-	StartCutScene("c#sthel1")~ EXIT
+	StartCutSceneEx("c#sthel1",TRUE)~ EXIT
 END
 
 CHAIN
 IF ~Global("C#st_KorlaszHelp","GLOBAL",2)~ THEN ~c#sthelp~ help_04
 @9 /* ~It is done.~ */
-== ~c#sthelp~ IF ~!Global("#L_BG1SarevokDead","GLOBAL",1)~ THEN @10
+== ~c#sthelp~ IF ~InMyArea("%IMOEN_DV%")
+	!StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+!Global("#L_BG1SarevokDead","GLOBAL",1)~ THEN @10
 /* ~I think Imoen wants to talk to you, best you wait here until she is ready to approach you.~ */
 == ~c#sthelp~ @11 /* ~We wish you well.~ */
 END
-IF ~~ THEN DO ~SetGlobal("bd_plot","global",40)
-SetGlobal("C#st_KorlaszHelp","GLOBAL",3)~ EXIT
-/* Transitions */
-IF ~GlobalGT("#L_BG1SarevokDead","GLOBAL",0)~ THEN DO ~SetGlobal("C#st_KorlaszHelp","GLOBAL",3)~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#st_KorlaszHelp","GLOBAL",3)~ EXIT

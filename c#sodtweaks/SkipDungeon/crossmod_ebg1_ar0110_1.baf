@@ -1,0 +1,22 @@
+/* Set variables so it's clear the items are here */
+
+IF
+	Global("C#st_ShortcutEnabled", "GLOBAL", 1)
+	Global("C#st_HeroOfBG","GLOBAL",1)
+	Global("C#st_UnlockNighttable","MYAREA",0)
+THEN
+	RESPONSE #100
+		Unlock("Container 3")
+		SetGlobal("C#st_UnlockNighttable","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("C#st_ShortcutEnabled", "GLOBAL", 1)
+  Global("C#st_TransferItems", "GLOBAL", 0)
+  Global("C#st_TransferItems_ar0110","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("C#st_TransferItems_ar0110","GLOBAL",1)
+    Continue()
+END

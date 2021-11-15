@@ -1,0 +1,10 @@
+/* Ducal Palace - transfer items from PC's quarters in Another fine Hell */
+
+
+IF
+  Global("C#st_TransferItems_c#afh3","GLOBAL",1)
+THEN
+  RESPONSE #100
+    MoveContainerContents("c#afh3*c#st0001","bd0103*c#st0001")
+    SetGlobal("C#st_TransferItems_c#afh3","GLOBAL",2)
+END

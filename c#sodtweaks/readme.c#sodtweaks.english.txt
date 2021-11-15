@@ -53,7 +53,7 @@ If an NPC wasn't in the group for a longer time, the dialogues will cue and fire
 3 Skip Korlasz's Dungeon
 -----------------------------------
 This component adds a non-4th wall breaking possibility to skip the dungeon and head right on to the Duchal Palace. As soon as Imoen finished her introduction to Korlasz' Dungeon, Arkanis from Candlekeep (or, in case he's dead Biff the Understudy!) will approach the PC and offer to do it instead.
-The PC can accept either with the request of Korlasz being killed or spared, or can tell Arkanis/Bill to wait. If told to wait, Arkanis/Bill will remain at the dungeon's entrance and the player can play on as normal and ask him again later. Once the help is accepted, the original game's transition to the Duchal Palace will trigger including Imoen's dialogue about "it's finally over". All useful items from the dungeon will be transferred to the bedside table in the PC's quarters in the Duchal Palce in SoD. There will be no gold transferred.
+The PC can accept either with the request of Korlasz being killed or spared, or can tell Arkanis/Bill to wait. If told to wait, Arkanis/Bill will remain at the dungeon's entrance and the player can play on as normal and ask him again later. Once the help is accepted, the original game's transition to the Duchal Palace will trigger including Imoen's dialogue about "it's finally over". All useful items from the dungeon will be transferred to the bedside table in the PC's quarters in the Duchal Palace in SoD. There will be no gold transferred.
 
 Note: The transfer of items will happen after Imoen woke the player and left and will take a few minutes during which the game might lagg heavily. Once the item transfer is done, the game will be back to normal.
 From the bedside table, the transferred items will *not* be moved with the PC's possessions along the campaign. They need to be put into the PC's chest by hand for this to happen.
@@ -62,9 +62,20 @@ Also: After accepting the help and Arkanis/Bill telling it's done, there is a sh
 
 The transition from the items from the dungeon into the Duchal Palace is done using slightly adapted code from Argent77's "Skip Chateau Irenicus" mod with many thanks!
 
-Compatibility Note: The mod Transitions moves Korlasz' Dungeon into the "BG1 wolrd". The tweak to skip it will still work, but with the two restrictions:
--the items will still only be available after the transition to SoD in the 3rd floor of the Ducal Palace in the bedside table.
--Imoen will not have a "final dialogue" that is in any way important and the game will not advance into the Ducal Palace after Korlasz' Crypt is cleared by Arkanis and his team.
+Compatibility Note: 
+
+Another fine Hell with "PC's and Imoen's chest in Palace should have their content":
+If Another fine Hell with component "PC's and Imoen's chest in Palace should have their content" is installed, all items inside the bedside table will also be available at the end of SoD.
+
+EndlessBG1 "Korlasz Dungeon is in BG1": 
+This component of EndlessBG1 moves the Dungeon into the "BG1 world". This tweak to skip it will still work, but with the restriction that the entrance to the Tomb will be sealed afterwards. Reason is technical only because I can't check how many of the sidequests inside Korlasz' Dungeon were done. Also, the idea of this tweak is to finish Korlasz' Dungeon without having to do any of it, so access to the areas is not really needed afterwards, anyway.
+The items will be transferred to the bedside table inside the HC's quarters in the palace in BG1 if the HC has moved into the top floor of the palace. 
+In SoD, the contents will also be inside the PC's bedside table.
+
+Transitions mod: 
+The mod Transitions moves Korlasz' Dungeon into the "BG1 world". The tweak to skip it will still work, but with the restriction that Imoen will not have a "final dialogue" that is in any way important and the game will not advance into the Ducal Palace after Korlasz' Crypt is cleared by Arkanis and his team.
+The items will be transferred to the bedside table inside the HC's quarters in the palace in BG1 if the HC has moved into the top floor of the palace. 
+In SoD, the contents will also be inside the PC's bedside table.
 
 
 
@@ -244,6 +255,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 7:
+-"Skip Korlasz' Dungeon": optimized scripting and general handling; Imoen should initiate dialogue, but only if she's present, and not if Transition is installed.
+-"Skip Korlasz' Dungeon": crossmod with Transitions, Endless BG1, and Another fine Hell mod: items from Korlasz Dungeon should be transferred to PC's current bedsise table in all cases. Entrance to Korlasz Dungeon from EndlessBG1 will be sealed if Dungeon is done via this tweak.
 
 Version 6:
 -two new components: "Make Portal Close from Dragonspear Castle (Aun Argent survives always)" and "Hephernaan takes Dragonspear Vault Key".

@@ -1,0 +1,32 @@
+/* transfer items from Korlasz Dungeon - general script */
+
+
+// Unique items are handled separately
+%item_create_unique%
+
+// Transferring items from dungeon
+IF
+  AreaCheck("%target_area%")
+  Global("C#st_ShortcutEnabled", "GLOBAL", 1)
+  Global("C#st_TransferItems", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    // adding special items not found in containers
+    %item_create%
+    // transferring container contents
+    %container_contents%
+    SetGlobal("C#st_TransferItems", "GLOBAL", 1)
+    Continue()
+END
+
+// Removing unneeded items from containers in second pass
+IF
+  AreaCheck("%target_area%")
+  Global("C#st_ShortcutEnabled", "GLOBAL", 1)
+  Global("C#st_TransferItems", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    %item_destroy%
+    SetGlobal("C#st_TransferItems", "GLOBAL", 2)
+    Continue()
+END

@@ -15,10 +15,10 @@ THEN
 	AddXPObject(Player5,5000)
 	AddXPObject(Player6,5000)
 	SetGlobal("BDSH_Imoen_Floor","GLOBAL",3)
-	SetGlobal("bd_Imoen_farewell","bd0120",1)
+//	SetGlobal("bd_Imoen_farewell","bd0120",1)
 	SetGlobal("C#st_ShortcutEnabled", "GLOBAL", 1)
         Wait(1)
-        FadeFromColor([20.0],0)
+//        FadeFromColor([20.0],0)
 //	EndcutSceneMode()
 //      ActionOverride("c#sthelp",StartDialogNoSet(Player1))
 END
@@ -57,7 +57,7 @@ IF
 THEN
     RESPONSE #100
         CutSceneId(Player1)
-//        FadeFromColor([20.0],0)
+        FadeFromColor([20.0],0)
 //	EndcutSceneMode()
         ActionOverride("c#sthelp",StartDialogNoSet(Player1))
 END

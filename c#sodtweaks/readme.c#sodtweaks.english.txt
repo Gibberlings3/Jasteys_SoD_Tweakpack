@@ -258,6 +258,7 @@ HISTORY
 
 Version 7.1:
 -"Skip Korlasz' Dungeon": updated compatibility with upcoming version 9 of EndlessBG1.
+-"Skip Korlasz' Dungeon": Arkanis should initiate dialogue.
 
 Version 7:
 -"Skip Korlasz' Dungeon": optimized scripting and general handling; Imoen should initiate dialogue, but only if she's present, and not if Transition is installed.

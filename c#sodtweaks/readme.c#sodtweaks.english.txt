@@ -256,6 +256,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
+Version 7.1:
+-"Skip Korlasz' Dungeon": updated compatibility with upcoming version 9 of EndlessBG1.
+-"Skip Korlasz' Dungeon": Arkanis should initiate dialogue.
+
 Version 7:
 -"Skip Korlasz' Dungeon": optimized scripting and general handling; Imoen should initiate dialogue, but only if she's present, and not if Transition is installed.
 -"Skip Korlasz' Dungeon": crossmod with Transitions, Endless BG1, and Another fine Hell mod: items from Korlasz Dungeon should be transferred to PC's current bedsise table in all cases. Entrance to Korlasz Dungeon from EndlessBG1 will be sealed if Dungeon is done via this tweak.

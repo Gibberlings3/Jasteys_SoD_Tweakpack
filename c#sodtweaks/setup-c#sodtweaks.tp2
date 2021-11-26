@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v7pre~
+VERSION ~v7.1~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -398,7 +398,8 @@ BUT_ONLY
 COPY_EXISTING ~ARKANI3.cre~ ~override/c#st0001.cre~
 WRITE_EVALUATED_ASCII 0x280 ~c#sthelp~ #8   // Death variable
 WRITE_EVALUATED_ASCII 0x2cc ~c#sthelp~ #8   // dialogue
-WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
+WRITE_EVALUATED_ASCII 0x248 ~~ #8   // Override script
+WRITE_EVALUATED_ASCII 0x268 ~initmain~ #8   // Default script
 
 /* if Arkanis is dead, Biff the Understudy will take over */
 COPY_EXISTING ~DIALOGMO.cre~ ~override/c#st0002.cre~
@@ -474,7 +475,7 @@ PRINT @1030 /* ~Patching travel triggers for entrance to Korlasz' Crypt from End
 
 COPY_EXISTING ~%CentralBaldursGate%.BCS~ ~override~
 	DECOMPILE_AND_PATCH BEGIN
-		SPRINT textToReplace ~\(GlobalLT("C#EBG1_ChangeTriggerKD","%CentralBaldursGate%",2)\)~
+		SPRINT textToReplace ~\(GlobalLT("C#EBG1_ChangeTriggerKD","MYAREA",2)\)~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
 			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 Global("C#st_ShortcutEnabled", "GLOBAL", 0)~
@@ -491,15 +492,34 @@ BUT_ONLY
 IF
 	Global("C#st_ShortcutEnabled", "GLOBAL", 1)
 	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
-	Global("C#st_CloseKorlaszDungeon","MYAREA",0)
+	Global("C#st_CloseKD","MYAREA",0)
 THEN
 	RESPONSE #100
 		TriggerActivation("C#EBG1_TranBD0120",FALSE)
 		TriggerActivation("c#ebg1korlasz",TRUE)
-		SetGlobal("C#st_CloseKorlaszDungeon","MYAREA",1)
+		SetGlobal("C#st_CloseKD","MYAREA",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_kd_done.baf~ EVALUATE_BUFFER 
+
+/* BG1 part: Docks area AR1200 */
+/* prevent script from opening the travel trigger (to be safe) */
+
+COPY_EXISTING ~%BaldursGateDocks%.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(GlobalLT("C#EBG1_ChangeTriggerKD","MYAREA",2)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 Global("C#st_ShortcutEnabled", "GLOBAL", 0)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+/* close travel trigger */
+EXTEND_BOTTOM ~%BaldursGateDocks%.bcs~ ~.../ar0700_kd_done.baf~ EVALUATE_BUFFER 
 
 /* SoD part: Ironthrone HQ area bd0050 */
 /* close travel trigger */
@@ -508,12 +528,12 @@ EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_kd_done.baf~ EVALUATE_BUFFE
 IF
 	Global("C#st_ShortcutEnabled", "GLOBAL", 1)
 	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
-	Global("C#st_CloseKorlaszDungeon","MYAREA",0)
+	Global("C#st_CloseKD","MYAREA",0)
 THEN
 	RESPONSE #100
 		TriggerActivation("C#EBG1_TranBD0120",FALSE)
 		TriggerActivation("c#ebg1korlasz",TRUE)
-		SetGlobal("C#st_CloseKorlaszDungeon","MYAREA",1)
+		SetGlobal("C#st_CloseKD","MYAREA",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~bd0050.bcs~ ~.../bd0050_kd_done.baf~ EVALUATE_BUFFER

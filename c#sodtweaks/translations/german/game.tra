@@ -1,7 +1,8 @@
 // game: Jastey's SoD Tweakpack
-// date: 2021-11-30, 00:12
+// date: 2021-11-30, 01:05
 // Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
 
+@0   = ~<CHARNAME>, lasst mich mit Euch reisen, ich möchte mit Euch sprechen!~
 @100 = ~Ihr habt uns gerettet!~
 @101 = ~Schande! Schande über die Person, die das Silberschild-Mädchen getötet hat!~
 @102 = ~Ihr habt die Brückenfeste vor dem Kreuzzug gerettet! Ihr habt uns alle vor Caelar bewahrt!~

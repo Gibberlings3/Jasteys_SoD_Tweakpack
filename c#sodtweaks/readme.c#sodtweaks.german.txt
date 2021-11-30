@@ -1,6 +1,6 @@
 --- Jasteys Tweaks für SoD und EET (und BGT) ---
 
-Dieser Tweakpack ist vornehmlich für die Erweiterung Siege of Dragonspear (SoD) selbst gedacht (auch in EET), hat aber auch Komponeten, die (nur) für BGT und/oder EET kompatibel sind.
+Dieser Tweakpack ist vornehmlich für die Erweiterung Siege of Dragonspear (SoD) selbst gedacht (auch in EET), hat aber auch Komponenten, die (nur) für BGT und/oder EET kompatibel sind.
 Die beinhalteten Tweaks fand ich für mein eigenes Spiel hilfreich.
 
 Die Mod lässt sich direkt auf EET installieren.
@@ -11,43 +11,43 @@ INHALT
 
 1. Ende unabhängig von den HC-Antworten 
 -----------------------------------
-Diese Komonente ermöglicht es, das sehr viel stimmigere und nicht so abgrundtief böse Ende von SoD zu sehen, wenn man entsprechend viele gute oder eben böse Taten getan hat - unabhängig davon, was der/die HC während der Anhörung für Antworten gibt.
-Das böse "Meuchelmörder"-Ende wird hierbei explizit überschrieben, wenn es die Taten zulassen.
+Diese Komonente ermöglicht es, das sehr viel stimmigere und nicht so abgrundtief böse Ende von SoD zu sehen, wenn man entsprechend viele gute oder eben böse Taten getan hat - unabhängig davon, was der HC während der Anhörung für Antworten gibt.
+Das böse "Meuchelmörder"-Ende wird hierbei explizit überschrieben, wenn die Taten es zulassen.
 
-Installiert den Tweak nicht, wenn Ihr Euch im Spiel (über die Antworten des/der HC) die Wahl lassen wollt, welches Ende Ihr seht.
+Installiert den Tweak nicht, wenn Ihr Euch im Spiel (über die Antworten des HCs) die Wahl lassen wollt, welches Ende Ihr seht.
 
 
 
 2. Keine HC-NPC-Dialoge verpassen
 -----------------------------------
-Diese Komponente entstand aufgrund der Art, wie in SoD die HC-NPC-Dialoge ausgelöst werden: kurz gesagt, muss man sich mit dem richtigen NPC in der Gruppe im richtigen Gebiet mit dem/der HC auf einem bestimmten Bereich befinden, damit diese ausgelöst werden. Ist man entweder nicht mit dem NPC in der Gruppe in diesem Gebiet, oder steht nicht der/die HC auf diesem Bereich, dann wird der Dialog auch später nicht mehr ausgelöst. Da die Dialoge (meist für eine Romanze) aber eine bestimmte Reihenfolge haben und nur nacheinander ablaufen, kann man somit die Romanze entweder ganz verpassen oder steckenbleiben und keine weiteren Dialoge für diesen NPC mehr sehen, wenn man entweder diesen/diese NPC nicht immer in der Gruppe hat oder das Gebiet nicht mit dem/der HC erkundet.
-Da SoD gleichzeitig die Möglichkeit gibt, alle NPCs im Camp zu versammeln und so eigentlich die Voraussetzung gegegen ist, dass man leicht zwischen NPC hin- und herwechselt, kann das dazu führen, dass man so gut wie keine HC-NPC-Dialoge zu sehen kriegt. Diese "Ungünstigkeit" des Originalskripting wird durch diesen Tweak abgeschwächt bzw. behoben. 
+Diese Komponente entstand aufgrund der Art, wie in SoD die HC-NPC-Dialoge ausgelöst werden: Kurz gesagt, muss man sich mit dem richtigen NPC in der Gruppe im richtigen Gebiet mit dem HC auf einem bestimmten Bereich befinden, damit diese ausgelöst werden. Ist man entweder nicht mit dem NPC in der Gruppe in diesem Gebiet, oder steht nicht der HC auf diesem Bereich, dann wird der Dialog auch später nicht mehr ausgelöst. Da die Dialoge (meist für eine Romanze) aber eine bestimmte Reihenfolge haben und nur nacheinander ablaufen, kann man somit die Romanze entweder ganz verpassen oder stecken bleiben und keine weiteren Dialoge für diesen NPC mehr sehen, wenn man entweder diesen NPC nicht immer in der Gruppe hat oder das Gebiet nicht mit dem HC erkundet.
+Da SoD gleichzeitig die Möglichkeit gibt, alle NPCs im Camp zu versammeln und so eigentlich die Voraussetzung gegeben ist, dass man leicht zwischen NPC hin- und herwechselt, kann das dazu führen, dass man so gut wie keine HC-NPC-Dialoge zu sehen kriegt. Diese "Ungünstigkeit" des Originalskripting wird durch diesen Tweak abgeschwächt bzw. behoben. 
 
-Die Komponente ermöglicht auch einen nicht-romantischen Dialog von Corwin, der über einen Gebietstrigger ausgelöst wird.
+Die Komponente ermöglicht auch einen nicht-romantischen Dialog mit Corwin, der über einen Gebietstrigger ausgelöst wird.
 
-Hinwis: Diese Komponente verändert nicht die eigentliche Voraussetzung der Dialoge, also z.B. ob eine Romanze überhaupt in Frage kommt oder dass sich die Romanzen gegenseitig "ausstechen".
+Hinwis: Diese Komponente verändert nicht die eigentliche Voraussetzung der Dialoge, also z. B. ob eine Romanze überhaupt infrage kommt oder dass sich die Romanzen gegenseitig "ausstechen".
 
 Die Komponente hat zwei Installationsmöglichkeiten:
 
 	2.A Nur für NPCs in der Gruppe
 	------
-Bei dieser Auswahl muss der/die NPC nach wie vor in der Gruppe sein, aber der Dialog wird auch dann ausgelöst, wenn ein anderes Gruppenmitglied auf den Gebietstrigger "tritt", so dass das Gebiet z.B. mit dem Dieb ausgekundschaftet werden kann und danach nicht noch einmal mit der kompletten Gruppe abgeklappert werden muss, ohne HC-NPC-Dialoge zu verpassen.
+Bei dieser Auswahl muss der NPC nach wie vor in der Gruppe sein, aber der Dialog wird auch dann ausgelöst, wenn ein anderes Gruppenmitglied auf den Gebiets-Trigger "tritt", so dass das Gebiet z. B. mit dem Dieb ausgekundschaftet werden kann und danach nicht noch einmal mit der kompletten Gruppe abgeklappert werden muss, ohne HC-NPC-Dialoge zu verpassen.
 
 	2.B. Immer alle HC-NPC-Dialoge ermöglichen
 	------
-Bei dieser Auswahl werden die Dialoge auch dann ermöglicht, wenn sich der/die NPC gerade nicht in der Gruppe befindet. Zusätzlich wird wie bei Auswahl A der Dialog auch unabhängig davon gemacht, wer aus der Gruppe den Gebietstrigger betritt.
-Der Dialog wird dann nachgeholt, sobald der/die NPC wieder in die Gruppe aufgenommen wird.
+Bei dieser Auswahl werden die Dialoge auch dann ermöglicht, wenn sich der NPC gerade nicht in der Gruppe befindet. Zusätzlich wird wie bei Auswahl A der Dialog auch unabhängig davon gemacht, wer aus der Gruppe den Gebiets-Trigger betritt.
+Der Dialog wird dann nachgeholt, sobald der NPC wieder in die Gruppe aufgenommen wird.
  
-Damit man weiß, ob es neue Dialoge für die NPCs gibt, die nicht in der Gruppe sind, machen diese darauf aufmerksam, wenn der/die HC nahe bei ihnen ist: es erscheint dann der Text "Lasst mich mit Euch reisen, ich möchte mit Euch sprechen!" über ihren Köpfen. Um zu überprüfen, ob es neue Dialoge gibt, also einfach mit dem/der HC nahe an den NPC vorbeigehen, die im Camp stehen.
+Damit man weiß, ob es neue Dialoge für die NPCs gibt, die nicht in der Gruppe sind, machen diese darauf aufmerksam, wenn der HC nahe bei ihnen ist: Es erscheint dann der Text "Lasst mich mit Euch reisen, ich möchte mit Euch sprechen!" über ihren Köpfen. Um zu überprüfen, ob es neue Dialoge gibt, also einfach mit dem HC nahe an den NPC vorbeigehen, die im Camp stehen.
 
 War ein NPC länger nicht mehr in der Gruppe und es sind mehrere Dialoge, die warten, dann werden diese ohne Pause hintereinander ausgelöst.
 
-Hinweis: So gut wie alle NPC haben einen Dialog, der in einer Höhle triggern sollte, und daher mit einer Bemerkung darüber beginnen. Dies könnte etwas seltsam wirken, wenn der Dialog erst später unter freiem Himmel im Camp erfolgt.
+Hinweis: So gut wie alle NPCs haben einen Dialog, der in einer Höhle triggern sollte, und daher mit einer Bemerkung darüber beginnen. Dies könnte etwas seltsam wirken, wenn der Dialog erst später unter freiem Himmel im Camp erfolgt.
 
 
 3. Skip Korlaszs Dungeon
 -----------------------------------
-Diese Komponente ermöglicht es ohne Immersionsbruch, den Anfangsdungeon von SoD (Korlaszs Gruft) auszulassen und direkt weiter in den Herzogspalast zu springen.
+Diese Komponente ermöglicht es ohne Immersionsbruch, den Anfangs-Dungeon von SoD (Korlaszs Gruft) auszulassen und direkt weiter in den Herzogspalast zu springen.
 
 Hierzu tritt direkt am Eingang der Gruft Arkanis aus Kerzenburg (oder, sollte dieser tot sein, Biff der Ersatzdarsteller!) auf einen zu und bietet an, das Räumen der Gruft für den HC zu erledigen. 
 Dieses Angebot kann angenommen werden, wobei die Wahl besteht, Korlasz und ihre Anhänger entweder am Leben oder alle töten zu lassen.
@@ -60,19 +60,19 @@ Die Gegenstände werden aus dem Nachttisch *nicht* im Spiel weitergetragen. Hierz
 
 Auch zu beachten: Kurz nachdem Arkanis einem berichtet, dass alles erledigt ist und Imoen daraufhin ihren "Nun ist es endlich vorbei"-Dialog beginnt, müssen einige Skripte des Originalspiels ablaufen. Hier wartet Ihr am besten einen kleinen Moment. Sollte Imoen ihren "finalen" Dialog nicht von alleine starten, könnt Ihr sie dann einfach ansprechen, um den Transfer in den Palast zu triggern. 
 
-Das Transferieren der Gegenstände aus der Gruft zum Herzogpalast verwendet das Skripting von Argents "Skip Chateau Irenicus" Mod, vielen Dank!
+Das Transferieren der Gegenstände aus der Gruft zum Herzogpalast verwendet das Skripting von Argents "Skip Chateau Irenicus"-Mod, vielen Dank!
 
 Hinweis zur Kompatibilität:
 
-Another fine Hell mit "PC's and Imoen's chest in Palace should have their content":
-Ist die Komponente "PC's and Imoen's chest in Palace should have their content" der Mod Another finde Hell installiert, dann werden die Gegenstände, die Arkanis für den HC in seinen Nachttisch gelegt hat, auch am Ende von SoD im Nachttisch zu finden sein.
+"Another fine Hell" mit "PC's and Imoen's chest in Palace should have their content":
+Ist die Komponente "PC's and Imoen's chest in Palace should have their content" der Mod "Another fine Hell" installiert, dann werden die Gegenstände, die Arkanis für den HC in seinen Nachttisch gelegt hat, auch am Ende von SoD im Nachttisch zu finden sein.
 
 EndlessBG1 mit "Korlasz' Dungeon ist in BG1":
-Diese Komponente von EndlessBG1 transferiert den Dungeon in die "BG1 Welt". Arkanis wird Euch auch hier seine Dienste anbieten. Allerdings gibt es folgendes zu beachten: Nachdem er und seine Leute den Dungeon beendet haben und dieser verlassen wurde, sind die Eingänge versiegelt. Der Dungeon kann also nicht noch einmal betreten werden. Der Grund dafür ist technischer Natur, da ich nicht überprüfen kann, wieviele Seitenquests im Dungeon gemacht wurden oder nicht. Da die Idee des Tweaks ist, dass der Dungeon komplett erledigt ist, ohne das der HC es selbst tun muss, ist ein Zugang zum Dungeon danach aber auch spieltechnisch nicht mehr nötig.
+Diese Komponente von EndlessBG1 transferiert den Dungeon in die BG1-Welt. Arkanis wird Euch auch hier seine Dienste anbieten. Allerdings gibt es folgendes zu beachten: Nachdem er und seine Leute den Dungeon beendet haben und dieser verlassen wurde, sind die Eingänge versiegelt. Der Dungeon kann also nicht noch einmal betreten werden. Der Grund dafür ist technischer Natur, da ich nicht überprüfen kann, wie viele Neben-Quests im Dungeon gemacht wurden oder nicht. Da die Idee des Tweaks ist, dass der Dungeon komplett erledigt ist, ohne das der HC es selbst tun muss, ist ein Zugang zum Dungeon danach aber auch spieltechnisch nicht mehr nötig.
 Die Items werden in den Nachttisch im Quartier des HC im Palast in BG1 transferiert, wenn der HC im obersten Stockwerk des Palastes bezogen hat. Auch in SoD wird der Inhalt weiterhin im Nachttisch zu finden sein.
 
-Transitions Mod:
-Solltet Ihr die Mod "Transitions" installiert haben, dann wird der Dungeon in die "BG1 Welt" transferiert. Arkanis wird Euch auch hier seine Dienste anbieten. Da Transitions Imoens Dialoge und Bemerkungen im Dungeon entfernt, gibt es in diesem Fall allerdings keinen "finalen Dialog" von Imoen, wenn er Arkanis erledigt ist.
+Transitions-Mod:
+Solltet Ihr die Mod "Transitions" installiert haben, dann wird der Dungeon in die BG1-Welt transferiert. Arkanis wird Euch auch hier seine Dienste anbieten. Da "Transitions" Imoens Dialoge und Bemerkungen im Dungeon entfernt, gibt es in diesem Fall allerdings keinen "finalen Dialog" von Imoen, wenn er von Arkanis erledigt wurde.
 Die Items werden in den Nachttisch im Quartier des HC im Palast in BG1 transferiert, wenn der HC im obersten Stockwerk des Palastes bezogen hat. Auch in SoD wird der Inhalt weiterhin im Nachttisch zu finden sein.
 
 
@@ -85,13 +85,13 @@ Hierbei soll die ursprüngliche Idee erhalten bleiben, das heißt konret, dass wen
 
 Bisher sind die folgenden Situationen berücksichtigt:
 
--Verkürzen des repetitiven Dialogs mit Herzog Eltan durch zusätzliche Antwortoptinen.
+- Verkürzen des repetitiven Dialogs mit Herzog Eltan durch zusätzliche Antwortoptionen.
 
--Verkürzen des Dialogs mit dem Verhüllten Mann im Palast durch zusätzliche Antwortoptinen.
+- Verkürzen des Dialogs mit dem vermummten Mann im Palast durch zusätzliche Antwortoptionen.
 
--im Keller des Herzogpalastes: mehr Möglichkeiten eingefügt, wichtige Questinformationen zu dem letzten Gefangenen zu erhalten. Diese wurden ansonsten schnell übergangen.
+- im Keller des Herzogpalastes: mehr Möglichkeiten eingefügt, wichtige Questinformationen zu dem letzten Gefangenen zu erhalten. Diese wurden ansonsten schnell übergangen.
 
--Für die "Traitors in Camp (Verräter im Lager)" Quest (Safana) muss der/die HC keinen Schlagabtausch mehr mit Miszena darüber machen, wer dem anderen die brutaleren Verletzungen zufügt, um questrelevante Informationen zu erhalten.
+- Für die "Traitors in Camp (Verräter im Lager)" Quest (Safana) muss der HC keinen Schlagabtausch mehr mit Mizhena darüber machen, wer dem anderen die brutaleren Verletzungen zufügt, um quest-relevante Informationen zu erhalten.
 
 
 
@@ -103,17 +103,17 @@ Dies gilt auch für ein in BGT und EET neu gestartetes BGII-Spiel.
 Achtung: bei Verwendung dieser Komponente wird der für Imoen verwendete Portraitname verändert. Deinstallation dieser Komponente ändert dies auch nicht mehr für ein laufendes Spiel wieder zurück. 
 
 Die geänderten Portrait-Dateinamen sind:
-BGT: kleines Portrait: c#stimos; medium Portrait: c#stimom. Für das ToB Epilogportrait pilogue, wird das Originalportrait nimoenl.bmp mit einer SoD-Version überschrieben.
+BGT: kleines Portrait: c#stimos; medium Portrait: c#stimom. Für das ToB-Epilogportrait pilogue wird das Originalportrait nimoenl.bmp mit einer SoD-Version überschrieben.
 
 EET: kleines Portrait: c#stimom.bmp, großes Portrait: c#stimol.bmp
 
-Die Portraitdateien sind aus CamDawg's "Continuous NPC Portraits" Mod genommen, so dass ich Zeit gespart habe, die für die alte Engine nötigen Größen zu erstellen.
+Die Portraitdateien sind aus CamDawgs "Continuous NPC Portraits"-Mod genommen, sodass ich Zeit gespart habe, die für die alte Engine nötigen Größen zu erstellen.
 
 
 
 6. Geskripteten Kampf am Ende von SoD wiederherstellen
 -----------------------------------
-Diese Komponente schaltet den in SoD vorhandenen aber von den Entwicklern dann doch nicht verwendeten, geskripteten "Kampf" am Ende von SoD frei. Die Szene erfolgt, nachdem der Abspannfilm mit der bechriebenen Entführung gelaufen ist. Sie besteht aus einem nicht gewinnbaren Kampf, der damit endet, dass die gesamte Gruppe ohnmächtig von verhüllten Gestalten verschleppt wird. Danach endet das Spiel wie normal. 
+Diese Komponente schaltet den in SoD vorhandenen, aber von den Entwicklern dann doch nicht verwendeten geskripteten "Kampf" am Ende von SoD frei. Die Szene erfolgt, nachdem der Abspannfilm mit der beschriebenen Entführung gelaufen ist. Sie besteht aus einem nicht gewinnbaren Kampf, der damit endet, dass die gesamte Gruppe ohnmächtig von vermummten Gestalten verschleppt wird. Danach endet das Spiel wie normal. 
 Diese Komponente ist nur mit SoD kompatibel, da in EET diese Szene standardmäßig wiederhergestellt ist.
 
 Danke an k4thos für das Templat hierzu, das ich aus EET übernommen habe.
@@ -124,10 +124,10 @@ Danke an k4thos für das Templat hierzu, das ich aus EET übernommen habe.
 -----------------------------------
 Mit dieser Komponente können die EP zu Beginn einer SoD-Kampagne angepasst werden.
 Es besteht die Wahl zwischen:
-65,000
-90,000
-125,000
-161,000
+65.000
+90.000
+125.000
+161.000
 
 Danke an subtledoctor für diese Komponente.
 
@@ -135,28 +135,28 @@ Danke an subtledoctor für diese Komponente.
 
 8 Ende von SoD: jasteys Überarbeitungen
 -----------------------------------
-Diese Komponente gibt vier veränderte Optionen für das Ende von SoD, angefangen mit Bence Duncans Dialog, nachdem er nach der "Schlächter Cutscene" in den Raum gekommen ist in dem der PC und Skie sich befinden.
+Diese Komponente gibt vier veränderte Optionen für das Ende von SoD, angefangen mit Bence Duncans Dialog, nachdem er nach der Schlächter-Cutscene in den Raum gekommen ist, in dem sich der HC und Skie befinden.
 
 Alle Optionen verwenden so viele originale (vertonte) Textzeilen wie möglich.
 
-Hinweis an Modder (und Spieler): Alle vier Optionen verwenden die Standard-Cutscene "bdcut61.bcs", die das Verlassen der NPCs der Gruppe nach dem Vorfall händelt. Für manche Optionen ist das Ende dieser Cutscene angepasst worden, aber wenn Ihr wie in meinem SoD NPC Tutorial "Modding Tutorial Part 2: Make Your NPC Comment and Move Along at the End of SoD" beschrieben (Link unten) einen Skriptblock zur "bdcut61.bcs" für Euren NPC eingefügt habt, dann sind alle Optionen dieser Komponente kompatibel mit Eurem NPC Mod. 
-Weiterer Hinweis: alle Optionen überspringen das Setzen von "Global("bd_plot","global",591)", welches die Reaktionen der NPCs in "bd4100.are" auf den Vorwurf hervorruft, dass der PC ein Mörder ist. 
+Hinweis an Modder (und Spieler): Alle vier Optionen verwenden die Standard-Cutscene "bdcut61.bcs", die das Verlassen der NPCs der Gruppe nach dem Vorfall händelt. Für manche Optionen ist das Ende dieser Cutscene angepasst worden, aber wenn Ihr wie in meinem SoD-NPC-Tutorial "Modding Tutorial Part 2: Make Your NPC Comment and Move Along at the End of SoD" beschrieben (Link unten) einen Skriptblock zur "bdcut61.bcs" für Euren NPC eingefügt habt, dann sind alle Optionen dieser Komponente kompatibel mit Eurer NPC-Mod. 
+Weiterer Hinweis: Alle Optionen überspringen das Setzen von "Global("bd_plot","global",591)", welches die Reaktionen der NPCs in "bd4100.are" auf den Vorwurf hervorruft, dass der HC ein Mörder ist. 
 
 Option 1: "Volle Überarbeitete Version"
-Diese Option ändert die im Originalende vorhandene öffentliche Wahrnehmung der Rolle des HCs in dem, was Skie geschieht. Es hat mich immer gestört, dass der HC eindeutig auf dem Boden liegt, wenn Duncan den Raum betritt, es keine Tatwaffe gibt und man die vorherige Kampfszene so spielen kann, dass man das Schlächtermonster nicht einmal schlägt. Von dem Umstand, dass der HC am Tag vorher die Schwertküste von einer Invasion aus Avernus gerettet hat ganz zu schweigen. Trotzdem reagiert *jeder* nach dem Vorfall mit einer absoluten Vorverurteilung des HC, die eindeutig beim Spielen meine Immersion gestört hat, da mir hier zu sehr das Skript der Devs durchscheint (dass der HC jetzt unbedingt gaaaanz doll fallen muss und das bitte höchstdramatisch.). 
-Mein überarbeitetes Ende behält alle Schlüsselmomente des originalen bei: Bence Duncan und Corwin nehmen den HC fest, es gibt eine Szene vor Publikum auf dem Podest in der Stadt, bei dem das Erbe des HC öffentlich gemacht wird und Herzog Silberschild seine Fassung verliert, den HC des Mordes bezichtigt und ins Gefängnis werfen lässt. Im Gefängnis finden alle im Originalspiel vorhandenen Besuche statt (Verhüllter Mann, Corwin, mögliche Romanzenpartner), nur die Mordvorwürfe und Zweifel an der Integrität des HC habe ich bei letzteren etwas zurückgenommen da sie hier nicht angemessen sind. 
-Im Großen und Ganzen behält das überarbeitete Ende den Fluss des originalen Endes bei, nur die Atmosphäre in dem es geschieht hat sich in sofern geändert, als dass es nicht plötzlich und über Nacht (und wegen - entschuldige Skie - eines so banalen Auslösers) die gesamte Welt ist, die den HC als mörderisches Bhaalkind verabscheut, sondern sich das Erheben der Vorwürfe auf einzelne Leute beschränkt. Herzog Silberschild ist einer davon, der mit seinem Einfluss den HC in echte Lebensgefahr bringt. Aber auch Bence Duncans irrationaler Hass auf den HC ist in dieser Fassung unverändert, als auch Corwins seltsame Erwartung, dass der HC sich für den "Frieden" der Stadt selbst opfern soll.
-Diese Version beinhaltet keine Anhörung, bei der der Spieler sich durch die Antwortoptionen klicken muss, um das angenehme Ende mit Herzog Belt freizuschalten. Herzog Belt kommt immer in das Gefängnis, um den HC freizugeben. Das Ende mit dem Assassinen kommt nie zustande. Trotzdem können Spieler, die das möchten, durch die Abwasserkanäle gehen und Bence Duncan und Corwin bekämpfen: sagt einfach dem Soldaten, der Euch zum Ausgang führen soll, dass Ihr den Weg alleine finden werdet.
+Diese Option ändert die im Originalende vorhandene öffentliche Wahrnehmung der Rolle des HCs in dem, was Skie geschieht. Es hat mich immer gestört, dass der HC eindeutig auf dem Boden liegt, wenn Duncan den Raum betritt, es keine Tatwaffe gibt und man die vorherige Kampfszene so spielen kann, dass man das Schlächtermonster nicht einmal schlägt. Von dem Umstand, dass der HC am Tag vorher die Schwertküste von einer Invasion aus Avernus gerettet hat, ganz zu schweigen. Trotzdem reagiert *jeder* nach dem Vorfall mit einer absoluten Vorverurteilung des HCs, die eindeutig beim Spielen meine Immersion gestört hat, da mir hier zu sehr das Skript der Devs durchscheint (dass der HC jetzt unbedingt gaaaanz doll fallen muss und das bitte höchstdramatisch). 
+Mein überarbeitetes Ende behält alle Schlüsselmomente des originalen bei: Bence Duncan und Corwin nehmen den HC fest, es gibt eine Szene vor Publikum auf dem Podest in der Stadt, bei dem das Erbe des HCs öffentlich gemacht wird und Herzog Silberschild seine Fassung verliert, den HC des Mordes bezichtigt und ins Gefängnis werfen lässt. Im Gefängnis finden alle im Originalspiel vorhandenen Besuche statt (Vermummter Mann, Corwin, mögliche Romanzenpartner), nur die Mordvorwürfe und Zweifel an der Integrität des HCs habe ich bei letzteren etwas zurückgenommen, da sie hier nicht angemessen sind. 
+Im Großen und Ganzen behält das überarbeitete Ende den Fluss des originalen Endes bei, nur die Atmosphäre, in dem es geschieht, hat sich insofern geändert, als dass es nicht plötzlich und über Nacht (und wegen - entschuldige Skie - eines so banalen Auslösers) die gesamte Welt ist, die den HC als mörderisches Bhaalkind verabscheut, sondern sich das Erheben der Vorwürfe auf einzelne Leute beschränkt. Herzog Silberschild ist einer davon, der mit seinem Einfluss den HC in echte Lebensgefahr bringt. Aber auch Bence Duncans irrationaler Hass auf den HC ist in dieser Fassung unverändert, als auch Corwins seltsame Erwartung, dass der HC sich für den "Frieden" der Stadt selbst opfern soll.
+Diese Version beinhaltet keine Anhörung, bei der der Spieler sich durch die Antwortoptionen klicken muss, um das angenehme Ende mit Herzog Belt freizuschalten. Herzog Belt kommt immer in das Gefängnis, um den HC freizugeben. Das Ende mit dem Assassinen kommt nie zustande. Trotzdem können Spieler, die das möchten, durch die Abwasserkanäle gehen und Bence Duncan und Corwin bekämpfen: Sagt einfach dem Soldaten, der Euch zum Ausgang führen soll, dass Ihr den Weg alleine finden werdet.
 
 Option 2: "Überarbeitete Version: Fassung ohne extra Cutscenes"
-Diese Option setzt sich aus allen (veränderten) Inhalten der Option 1 zusammen, allerdings wurden alle "zwischen-Cutscenes" entfernt: kein Gang durch die Menge, keine Charaktere, die beim Hin- und Herlaufen gezeigt werden. Diese Option reiht alles als eine Sequenz von Dialogen mit kurzen Ausblendungen dazwischen zusammen, bis der HC im Gefängnis ist. Hier beginnt dann der normale Fluss mit den Besuchen des Verhüllten, Corwin, der Romanzenkandidaten und Herzog Belt.
+Diese Option setzt sich aus allen (veränderten) Inhalten der Option 1 zusammen, allerdings wurden alle "Zwischen-Cutscenes" entfernt: kein Gang durch die Menge, keine Charaktere, die beim Hin- und Herlaufen gezeigt werden. Diese Option reiht alles als eine Sequenz von Dialogen mit kurzen Ausblendungen dazwischen zusammen, bis der HC im Gefängnis ist. Hier beginnt dann der normale Fluss mit den Besuchen des vermummten Mannes, Corwin, der Romanzenkandidaten und Herzog Belt.
 
 Option 3: "Originales Ende: Fassung ohne extra Cutscenes"
-Diese Option behält alle Dialoge unverändert aus dem Originalspiel bei, entfernt aber die "Zwischen-Cutscenes" dazwischen. Es gibt kein Gang durch die Menge, und es wird niemand gezeigt, wie er in- und herläuft. Alle Originalinhalte laufen als eine Sequenz von Dialogen mit kurzen Ausblendungen dazwischen ab, bis der HC im Gefängnis ist. Hier geht das Spiel unverändert weiter. 
+Diese Option behält alle Dialoge unverändert aus dem Originalspiel bei, entfernt aber die "Zwischen-Cutscenes" dazwischen. Es gibt keinen Gang durch die Menge und es wird niemand gezeigt, wie er hin- und herläuft. Alle Originalinhalte laufen als eine Sequenz von Dialogen mit kurzen Ausblendungen dazwischen ab, bis der HC im Gefängnis ist. Hier geht das Spiel unverändert weiter. 
 Dies heißt auch, dass wie im Originalspiel während der öffentlichen Anhörung alle Taten des HCs aufgelistet werden müssen, um das angenehme Ende mit Herzog Belt zu aktivieren (sofern Komponente 1 dieses Tweakpacks nicht installiert ist, mit der dies automatisch geschieht).
 
 Option 4: "Kurzes Ende"
-Diese Option verkürzt das Ende so, dass man vom Verhaftet werden durch Bence Duncan direkt ins Gefängnis zu Herzog Belt springt. Herzog Belt kommt in diesem Ende immer, um den HC freizulassen. Nachdem man zum Tisch mit den Items des HCs gehen konnte um diese aufzusammeln, führt einen die Falltür direkt zum Ausgang, wo Imoen wartet.
+Diese Option verkürzt das Ende so, dass man vom Verhaftetwerden durch Bence Duncan direkt ins Gefängnis zu Herzog Belt springt. Herzog Belt kommt in diesem Ende immer, um den HC freizulassen. Nachdem man zum Tisch mit den Items des HCs gehen konnte um diese aufzusammeln, führt einen die Falltür direkt zum Ausgang, wo Imoen wartet.
 
 
 
@@ -170,19 +170,19 @@ Wenn sie überlebt, bleibt Caelar trotzdem in Avernus, um den Ort des Portals zu 
 10 Ifearnan nimmt den Drachenspeer-Gruftschlüssel an sich
 -----------------------------------
 Mit dieser Komponente erübrigt sich die Frage, warum De Lancie einen Schlüssel zur Gruft mit dem Portal haben sollte, was für mich keinen Sinn ergibt.  
-Die Situation wird dahingehend geändert, dass es nur einen Gruftschlüssel gibt, der sich zunächst im Besitz von Caelar befindet. Hephernaan nimmt den Schlüssel dann mit nach Avernus und verriegelt die Tür, um seinem Meister mehr Zeit zu geben, seinen Angriff vorzubereiten, und auch um Caelar und den HC einzusperren, so dass sie ihm zu Belhifet folgen oder gegeneinander kämpfen müssen. 
-De Lancie sperrt den HC also nicht ein, um die Teufel von Avernus allein zu bekämpfen. Stattdessen können die Koalitionsoffiziere die Tür zu diesem Zeitpunkt nicht öffnen, selbst wenn sie es wollten.
+Die Situation wird dahingehend geändert, dass es nur einen Gruftschlüssel gibt, der sich zunächst im Besitz von Caelar befindet. Ifearnan nimmt den Schlüssel dann mit nach Avernus und verriegelt die Tür, um seinem Meister mehr Zeit zu geben, seinen Angriff vorzubereiten, und auch um Caelar und den HC einzusperren, sodass sie ihm zu Belhifet folgen oder gegeneinander kämpfen müssen. 
+De Lancie sperrt den HC also nicht ein, um die Teufel von Avernus allein zu bekämpfen. Stattdessen können die Bündnisoffiziere die Tür zu diesem Zeitpunkt nicht öffnen, selbst wenn sie es wollten.
 Dies ist eine kleine Änderung, die keinen wirklichen Einfluss auf das Spiel hat. Nach wie vor wird entweder Caelar oder Aun Silberweiß dem HC nach dem Kampf den Schlüssel übergeben, bevor die Gruppe zurückteleportiert wird.
 
 
 INSTALLATION
 
-Hinweis: Wenn Ihr eine frühere Version einer Mod installiert habt, dann deinstalliert diese immer erst und entfernt alle alten Moddateien aus dem Spielordner, bevor Ihr eine Neue Version installiert.
-Wenn Ihr unter Windows eine Mod installiert oder deinstalliert, dann schließt das DOS Fenster nicht über das X-Fensterchen, sondern so wie im Fenster angegeben durch Drücken der Entertaste, wenn das Programm fertig ist.
+Hinweis: Wenn Ihr eine frühere Version einer Mod installiert habt, dann deinstalliert diese immer erst und entfernt alle alten Moddateien aus dem Spielordner, bevor Ihr eine neue Version installiert.
+Wenn Ihr unter Windows eine Mod installiert oder deinstalliert, dann schließt das DOS-Fenster nicht über die X-Schaltfläche, sondern so wie im Fenster angegeben durch Drücken der Entertaste, wenn das Programm fertig ist.
 
 
 BG:EE
-Wenn Ihr SoD von GOG oder Steam habt, dann müsst Ihr das Spiel vor der Installation von Mods erst vorbereiten. Hierzu Argents DLC Merger als erstes wie eine normale Mod installieren:
+Wenn Ihr SoD von GOG oder Steam habt, dann müsst Ihr das Spiel vor der Installation von Mods erst vorbereiten. Hierzu Argents DLC-Merger als erstes wie eine normale Mod installieren:
 https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
 
  
@@ -190,7 +190,7 @@ Für alle Versionen (Windown, Mac OS X, Linux):
 
 Zur Sicherheit sei das Anfertigen von Backups Eurer Installation empfohlen.
 
-Extrahiert den Inhalt des Mod-Archivs in das Hauptverzeichnis des Spieles (SoD, EET oder BGT. Die Erkennung bei der Installation geschieht automatisch.) 
+Extrahiert den Inhalt des Mod-Archivs in das Hauptverzeichnis des Spieles (SoD, EET oder BGT, die Erkennung bei der Installation geschieht automatisch). 
 
 ACHTUNG: Bei der Enhanced Edition ist es wichtig, dass die Mod für die Sprachversion installiert wird, in der Ihr das Spiel spielt. Ansonsten seht Ihr nicht die Modtexte im Spiel, sondern Fehlermeldungen.
 
@@ -233,7 +233,7 @@ Near Infinity				https://github.com/Argent77/NearInfinity/releases/latest
 WeiDU					http://www.weidu.org
 grepWin			http://tools.stefankueng.com/grepWin.html
 
-Modding Communitys, Tutorials und Moddinghilfe:
+Modding-Communitys, Tutorials und Moddinghilfe:
 
 jastey's SoD NPC Modding Tutorials:
 https://www.gibberlings3.net/forums/topic/30139-jasteys-sod-npc-modding-tutorials/
@@ -243,7 +243,7 @@ The Gibberlings Three			http://gibberlings3.net
 Pocket Plane Group			http://pocketplane.net
 Spellhold Studios			http://www.shsforums.net/
 
-SoD Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
+SoD-Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
 

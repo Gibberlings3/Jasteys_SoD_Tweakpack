@@ -1,15 +1,16 @@
-/* close_portal_drom_toril.d */
-@0  = ~[Aun Argent]Mein Kind, das ist nicht vonnöten. Das Portal kann von der Materiellen Ebene geschlossen werden, und ich weiß das dafür nötige Ritual.~
-@1  = ~[Caelar]Jemand muss Wache halten. Die einstige Verbindung zu Toril wird Teufel anziehen, die versuchen werden, den Übergang zur Materiellen Ebene wieder zu öffnen. Ich werde sie erwarten. Es wird Caelar Silberweiß sein, die die Tore zu Toril bewacht, und das bis in alle Ewigkeit, sollte es das Schicksal erfordern.~
-@2  = ~[Aun Argent]Es ist woweit. Ich habe das Blut Belhifets, das für das Ritual zum Verschließen des Portals benötigt wird.~
-@3  = ~[Aun Argent]Da, nehmt diesen Schlüssel, den ich bei den Toten gefunden habe. Ich weiß nicht, was er öffnet, aber ich bin sicher, dass es nichts an diesem infernalischen Ort ist.~ 
-@4  = ~[Aun Argent]Das Portal muss von der Materiellen Ebene aus geschlossen werden... Aber ich sollte hier verweilen, um das ehemalige Tor in die Höllen zu bewachen, und die Horden der Teufel in Schach zu halten, sollte sich das Portal nach Toril je wieder öffnen.~
-@5  = ~[PC Reply]Ich werde Euch nicht hier zurück lassen! Schon gar nicht, wenn Euren Worten nach das Portal von Toril aus geschlossen werden muss.~
-@6  = ~[Aun Argent]Ein großzügiges Angebot, aber eines, das für mich nicht in Frage kommt. Nach allem was geschehen ist sollte ich es sein, der hier verbleibt, mit dem verzweifelten Bemühen, den Namen Silberweiß wenigstens wieder etwas reinzuwaschen...~
-@7  = ~[Aun Argent]Ich fürchte, dass mein Bestreben, für Caelars böse Taten zu bezahlen mich nicht an diesem verdammten Ort halten werden - so sehr es mich auch grämt, ihn ohne Bewachung auf dieser Seite zurückzulassen.~
-@8  = ~[Aun Argent]Nur wenige außerhalb des Ordens der Aster können das Schließungsritual durchführen. Es so bald wie möglich zu verschließen ist nun wichtiger als das Verlangen dieses alten Paladins nach Erlösung. Lasst uns dahin zurückkehren, woher Ihr gekommen seid, ich bitte Euch. Bevor Avernus' Legionen angreifen - oder ich eine Entscheidung träfe, die ebenso töricht wie nobel wäre.~
-@9  = ~[Aun Argent]Und eine ehrbare wäre es, und doch... (seufz)~
+// game: Jastey's SoD Tweakpack
+// date: 2021-11-30, 00:12
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
 
-/* hephernaan_takes_key.d */
-@30  = ~Ich nehme auch dies an mich - Ihr braucht den Schlüssel zu dieser Gruft nicht mehr, Caelar. Ab jetzt werden diese Türen verschlossen bleiben, bis mein Meister bereit ist, sie zu öffnen.~
-@31  = ~Nicht, dass wir derzeit die Mittel hätten, die Tür zu öffnen. Caelar hat offensichtlich starke Magie vorbereitet, um die Tür verschlossen zu halten. Wir arbeiten daran, einen Weg zu finden, sie zu öffnen, aber es könnte schneller gehen, wenn Ihr einen Schlüssel bei Caelar selbst findet.~
+@0  = ~[Aun Argent]Mein Kind, das ist nicht vonnöten. Das Portal kann von der Materiellen Ebene aus geschlossen werden, und ich kenne das dafür nötige Ritual.~
+@1  = ~[Caelar]Jemand muss Wache halten. Die einstige Verbindung zu Toril wird Teufel anziehen, die versuchen werden, den Übergang zur Materiellen Ebene wieder zu öffnen. Ich werde sie erwarten. Es wird Caelar Silberweiß sein, die die Tore zu Toril bewacht, und das bis in alle Ewigkeit, sollte es das Schicksal erfordern.~
+@2  = ~[Aun Argent]Es ist soweit. Ich habe das Blut Belhifets, das für das Ritual zum Verschließen des Portals benötigt wird.~
+@3  = ~[Aun Argent]Da, nehmt diesen Schlüssel, den ich bei den Toten gefunden habe. Ich weiß nicht, was er öffnet, aber ich bin sicher, dass es nichts an diesem infernalischen Ort ist.~
+@4  = ~[Aun Argent]Das Portal muss von der Materiellen Ebene aus geschlossen werden … Aber ich sollte hier verweilen, um das ehemalige Tor in die Höllen zu bewachen, und die Horden der Teufel in Schach zu halten, sollte sich das Portal nach Toril je wieder öffnen.~
+@5  = ~[PC Reply]Ich werde Euch nicht hier zurücklassen! Schon gar nicht, wenn Euren Worten nach das Portal von Toril aus geschlossen werden muss.~
+@6  = ~[Aun Argent]Ein großzügiges Angebot, aber eines, das für mich nicht in Frage kommt. Nach allem, was geschehen ist, sollte ich es sein, der hier verbleibt, mit dem verzweifelten Bemühen, den Namen Silberweiß wenigstens wieder etwas reinzuwaschen …~
+@7  = ~[Aun Argent]Ich fürchte, dass mein Bestreben, für Caelars böse Taten zu bezahlen, mich nicht an diesem verlorenen Ort halten wird – so sehr es mich auch grämt, ihn ohne Bewachung auf dieser Seite zurückzulassen.~
+@8  = ~[Aun Argent]Nur wenige außerhalb des Ordens der Aster können das Schließungsritual durchführen. Es so bald wie möglich zu verschließen, ist nun wichtiger als das Verlangen dieses alten Paladins nach Erlösung. Lasst uns dahin zurückkehren, woher Ihr gekommen seid, ich bitte Euch. Bevor Avernus’ Legionen angreifen – oder ich eine Entscheidung träfe, die ebenso töricht wie nobel wäre.~
+@9  = ~[Aun Argent]Und eine ehrbare wäre es, und doch … (seufz)~
+@30 = ~Ich nehme auch dies an mich – Ihr braucht den Schlüssel zu dieser Gruft nicht mehr, Caelar. Ab jetzt werden diese Türen verschlossen bleiben, bis mein Meister bereit ist, sie zu öffnen.~
+@31 = ~Nicht, dass wir derzeit die Mittel hätten, die Tür zu öffnen. Caelar hat offensichtlich starke Magie vorbereitet, um die Tür verschlossen zu halten. Wir arbeiten an einem Weg, sie zu öffnen, aber es könnte schneller gehen, wenn Ihr einen Schlüssel bei Caelar selbst findet.~

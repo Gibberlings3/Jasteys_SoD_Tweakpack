@@ -2,24 +2,24 @@
 // date: 2021-11-30, 00:56
 // Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
 
-@0  = ~Gibt es sonst noch etwas, das ich Ã¼ber die anderen Gefangenen hier wissen sollte? Irgendein Risiko, dass sich sowas nochmal wiederholt?~
-@1  = ~Ich hoffe doch nicht! Der einzige andere besondere Gefangene ist der DoppelgÃ¤nger in der hinteren nordÃ¶stlichen Zelle, aber der sollte keine solchen Zauber wirken kÃ¶nnen.~
-@2  = ~Ich bin nicht der Dieb, und das wisst Ihr sehr wohl. Tut nicht so blÃ¶d, Mizhena.~ ~Ich bin nicht die Diebin, und das wisst Ihr sehr wohl. Tut nicht so blÃ¶d, Mizhena.~
+@0  = ~Gibt es sonst noch etwas, das ich über die anderen Gefangenen hier wissen sollte? Irgendein Risiko, dass sich sowas nochmal wiederholt?~
+@1  = ~Ich hoffe doch nicht! Der einzige andere besondere Gefangene ist der Doppelgänger in der hinteren nordöstlichen Zelle, aber der sollte keine solchen Zauber wirken können.~
+@2  = ~Ich bin nicht der Dieb, und das wisst Ihr sehr wohl. Tut nicht so blöd, Mizhena.~ ~Ich bin nicht die Diebin, und das wisst Ihr sehr wohl. Tut nicht so blöd, Mizhena.~
 @3  = ~Es ist Eure Kerze, also habe ich Euch danach befragt. Was soll ich sonst machen, Eurer Meinung nach?~
 @4  = ~Vielleicht bringe ich lieber Euch ein paar Manieren bei, Klerikerin.~
-@5  = ~Bitte was? Langsam denke ich, dass eine Lektion in Benehmen mehr als angebracht wÃ¤re!~
-@6  = ~Wie wÃ¤rs, wenn Ihr das versucht, Klerikerin, und ich zeige Euch dann mal, was das fÃ¼r Euch bedeuten wÃ¼rde!~
+@5  = ~Bitte was? Langsam denke ich, dass eine Lektion in Benehmen mehr als angebracht wäre!~
+@6  = ~Wie wärs, wenn Ihr das versucht, Klerikerin, und ich zeige Euch dann mal, was das für Euch bedeuten würde!~
 @7  = ~Ich mache mich wieder auf den Weg.~
 @8  = ~Wer bitte seid Ihr und wie seid Ihr hier reingekommen?~
 @9  = ~Ich sehe keinen Grund, das mit Euch zu diskutieren. Verlasst den Palast, bevor ich die Wachen rufe!~
-@47 = ~[Dynaheir]Minsk und ich wurden von den Wychlaran auf die Suche nach Bhaalkindern geschickt. Wir werden Euch begleiten, jetzt umso mehr, da so viele Leute nur aufgrund Eures gÃ¶ttlichen Vaters nach Eurem Leben trachten.~
-@48 = ~[Jaheira]Khalid und ich haben Gorion versprochen, Euch zu unterstÃ¼tzen und Ã¼ber Euch zu wachen. Wir werden Euch nicht in dem Moment im Stich lassen, wenn Ihr uns so dringend braucht.~
-@49 = ~Ah, Ihr meint â€Dies war der Tag, an dem die VerrÃ¼ckte Caelar Tod und Verderben Ã¼ber das Land gebracht hatâ€œ?~
-@50 = ~Nun, das wÃ¤re zumindest mal eine Abwechslung. Bisher war all das Blut, welches vergossen wurde, in Eurem Namen.~
-@51 = ~Wollt Ihr das Gift kleinreden, dass meine Freundin Imoen fÃ¼r Tage auÃŸer Gefecht gesetzt hat und danach ihre HÃ¤nde in zitternde Katastrophen verwandelte? Soll ich jetzt dankbar sein, dass es nicht tÃ¶dlich war, oder worauf wollt Ihr hinaus?~
+@47 = ~[Dynaheir]Minsk und ich wurden von den Wychlaran auf die Suche nach Bhaalkindern geschickt. Wir werden Euch begleiten, jetzt umso mehr, da so viele Leute nur aufgrund Eures göttlichen Vaters nach Eurem Leben trachten.~
+@48 = ~[Jaheira]Khalid und ich haben Gorion versprochen, Euch zu unterstützen und über Euch zu wachen. Wir werden Euch nicht in dem Moment im Stich lassen, wenn Ihr uns so dringend braucht.~
+@49 = ~Ah, Ihr meint „Dies war der Tag, an dem die Verrückte Caelar Tod und Verderben über das Land gebracht hat“?~
+@50 = ~Nun, das wäre zumindest mal eine Abwechslung. Bisher war all das Blut, welches vergossen wurde, in Eurem Namen.~
+@51 = ~Wollt Ihr das Gift kleinreden, dass meine Freundin Imoen für Tage außer Gefecht gesetzt hat und danach ihre Hände in zitternde Katastrophen verwandelte? Soll ich jetzt dankbar sein, dass es nicht tödlich war, oder worauf wollt Ihr hinaus?~
 @52 = ~Wie, Caelar? Wie wollt Ihr das erreichen? Erleuchtet uns!~
-@53 = ~Also ist es das, was Ihr tun werdetÂ â€“ mit Eurer Armee in die Neun HÃ¶llen marschieren. Ihr habt den Verstand verloren.~
-@54 = ~CaelarÂ â€¦ Ihr habt vor, nach Avernus zu marschierenÂ â€“ was bedeutet, dass Ihr einen Weg dorthin Ã¶ffnetÂ â€¦ und damit den Unholden einen Weg hinaus. Ich sehe wirklich nicht, was daran eine gute Idee sein soll. Ihr mÃ¼sst aufgehalten werden!~
-@55 = ~ODER was Ihr plant, wird dazu fÃ¼hren, dass die HÃ¶llen sprichwÃ¶rtlich Ã¼ber uns hereinbrechenÂ â€“ und das erneut. Ich denke ernsthaft, dass Ihr es seid, die hier etwas â€Erleuchtungâ€œ braucht.~
-@56 = ~Nichts an diesem Irrsin war â€den Aufwand wertâ€œ. Ihr seid komplett dem Wahn verfallen.~
-@57 = ~Alles, was ich gehÃ¶rt habe, ist eine VerrÃ¼ckte, die polemische Ãœbertreibungen formuliert, um andere dazu zu bringen, nach ihrer Pfeife zu tanzen.~
+@53 = ~Also ist es das, was Ihr tun werdet – mit Eurer Armee in die Neun Höllen marschieren. Ihr habt den Verstand verloren.~
+@54 = ~Caelar … Ihr habt vor, nach Avernus zu marschieren – was bedeutet, dass Ihr einen Weg dorthin öffnet … und damit den Unholden einen Weg hinaus. Ich sehe wirklich nicht, was daran eine gute Idee sein soll. Ihr müsst aufgehalten werden!~
+@55 = ~ODER was Ihr plant, wird dazu führen, dass die Höllen sprichwörtlich über uns hereinbrechen – und das erneut. Ich denke ernsthaft, dass Ihr es seid, die hier etwas „Erleuchtung“ braucht.~
+@56 = ~Nichts an diesem Irrsin war „den Aufwand wert“. Ihr seid komplett dem Wahn verfallen.~
+@57 = ~Alles, was ich gehört habe, ist eine Verrückte, die polemische Übertreibungen formuliert, um andere dazu zu bringen, nach ihrer Pfeife zu tanzen.~

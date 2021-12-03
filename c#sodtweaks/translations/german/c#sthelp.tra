@@ -2,15 +2,15 @@
 // date: 2021-11-30, 00:14
 // Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
 
-@0  = ~Sagt bitte <CHARNAME>, dass ich ihn sprechen will. Ich habe ein Angebot fÃ¼r ihn.~ ~Sagt bitte <CHARNAME>, dass ich sie sprechen will. Ich habe ein Angebot fÃ¼r sie.~
-@1  = ~Seid gegrÃ¼ÃŸt, <CHARNAME>. Ich bin hier, um Euch Hilfe bei Eurem Unterfangen anzubieten. Lasst meine Kameraden und mich uns um Korlasz und ihre AnhÃ¤nger kÃ¼mmern. Es gibt keinen Grund, warum der Held von Baldurs Tor durch jedes Verlies selbst kriechen mÃ¼sste.~ ~Seid gegrÃ¼ÃŸt, <CHARNAME>. Ich bin hier, um Euch Hilfe bei Eurem Unterfangen anzubieten. Lasst meine Kameraden und mich uns um Korlasz und ihre AnhÃ¤nger kÃ¼mmern. Es gibt keinen Grund, warum die Heldin von Baldurs Tor durch jedes Verlies selbst kriechen mÃ¼sste.~
-@2  = ~Wenn Ihr unsere Hilfe annehmt, dann kÃ¼mmern wir uns um diese Gruft und Ihr kehrt unverzÃ¼glich zurÃ¼ck in den Herzogspalast. Wir Euch werden alle GegenstÃ¤nde Ã¼bergeben, die wir finden. Ihr werdet sie in Eurem privaten Quartier vorfinden und kÃ¶nnt Euch dann aussuchen, welche Ihr behalten wollt.~
-@3  = ~Das klingt groÃŸartig. Tut das, und nehmt keine Gefangenen! Korlasz verdient den Tod.~
+@0  = ~Sagt bitte <CHARNAME>, dass ich ihn sprechen will. Ich habe ein Angebot für ihn.~ ~Sagt bitte <CHARNAME>, dass ich sie sprechen will. Ich habe ein Angebot für sie.~
+@1  = ~Seid gegrüßt, <CHARNAME>. Ich bin hier, um Euch Hilfe bei Eurem Unterfangen anzubieten. Lasst meine Kameraden und mich uns um Korlasz und ihre Anhänger kümmern. Es gibt keinen Grund, warum der Held von Baldurs Tor durch jedes Verlies selbst kriechen müsste.~ ~Seid gegrüßt, <CHARNAME>. Ich bin hier, um Euch Hilfe bei Eurem Unterfangen anzubieten. Lasst meine Kameraden und mich uns um Korlasz und ihre Anhänger kümmern. Es gibt keinen Grund, warum die Heldin von Baldurs Tor durch jedes Verlies selbst kriechen müsste.~
+@2  = ~Wenn Ihr unsere Hilfe annehmt, dann kümmern wir uns um diese Gruft und Ihr kehrt unverzüglich zurück in den Herzogspalast. Wir Euch werden alle Gegenstände übergeben, die wir finden. Ihr werdet sie in Eurem privaten Quartier vorfinden und könnt Euch dann aussuchen, welche Ihr behalten wollt.~
+@3  = ~Das klingt großartig. Tut das, und nehmt keine Gefangenen! Korlasz verdient den Tod.~
 @4  = ~Einverstanden, aber lasst Korlasz und ihre Vasallen am Leben, wenn sie sich ergeben.~
 @5  = ~Ich schaue mich erstmal um. Ich sage Euch Bescheid, wenn ich Eure Dienste brauche.~
 @6  = ~In Ordnung. Ich werde hier warten.~
-@7  = ~Seid erneut gegrÃ¼ÃŸt. Und, seid Ihr es leid, alles selbst erledigen zu mÃ¼ssen?~
+@7  = ~Seid erneut gegrüßt. Und, seid Ihr es leid, alles selbst erledigen zu müssen?~
 @8  = ~Wir sind unterwegs.~
 @9  = ~Es ist erledigt.~
-@10 = ~Imoen mÃ¶chte noch einmal mit Euch sprechen, also wartet am besten einen kurzen Moment, bis sie Euch anspricht.~
-@11 = ~Ich wÃ¼nsche Euch alles Gute.~
+@10 = ~Imoen möchte noch einmal mit Euch sprechen, also wartet am besten einen kurzen Moment, bis sie Euch anspricht.~
+@11 = ~Ich wünsche Euch alles Gute.~

@@ -1,8 +1,6 @@
-// game: Jastey's SoD Tweakpack
-// date: 2021-11-30, 01:05
-// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
-
 @0   = ~<CHARNAME>, lasst mich mit Euch reisen, ich möchte mit Euch sprechen!~
+
+/* new for v5 */
 @100 = ~Ihr habt uns gerettet!~
 @101 = ~Schande! Schande über die Person, die das Silberschild-Mädchen getötet hat!~
 @102 = ~Ihr habt die Brückenfeste vor dem Kreuzzug gerettet! Ihr habt uns alle vor Caelar bewahrt!~
@@ -16,7 +14,12 @@
 @110 = ~Was hattet Ihr mit Skies Tod zu tun?~
 @111 = ~Bhaalkind! Wir vertrauen Euch nicht!~
 @112 = ~Seid Ihr ein zweiter Sarevok? Wir werden Euch durchschauen, Bhaalbrut!~
+
+/* new for v6 */
+/* in c#stc59c.baf */
 @120 = ~Es ist geschafft – das Tor ist geschlossen. Dies ist alles, was wir hier jetzt machen können.~
+/* in tp2 */
+/* #59853 changed */
 @121 = ~Die Belagerung von Drachenspeer
 
 Caelar hat sich selbst aufgeopfert, um das Portal in Avernus zu bewachen.

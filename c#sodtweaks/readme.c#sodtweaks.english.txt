@@ -223,11 +223,13 @@ If you have installation problems or encounter any bugs, please post your bug re
 CREDITS
 
 Argent77: coding help
+Arkie: Russian translation (v7.1)
 CamDawg: correctly sized portrait files
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lauriel: ideas and corrections, proof reading (v3.1)
 Lava Del'Vortel: ideas
+Shai-Hulud: proof reading (v7.1 German)
 subteldoctor: author
 yota13: Russian translation (v5.1)
 
@@ -259,6 +261,7 @@ HISTORY
 Version 7.1:
 -"Skip Korlasz' Dungeon": updated compatibility with upcoming version 9 of EndlessBG1.
 -"Skip Korlasz' Dungeon": Arkanis should initiate dialogue.
+-German version: Proofread by Shai-Hulud.
 
 Version 7:
 -"Skip Korlasz' Dungeon": optimized scripting and general handling; Imoen should initiate dialogue, but only if she's present, and not if Transition is installed.

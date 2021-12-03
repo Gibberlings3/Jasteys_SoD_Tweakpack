@@ -216,11 +216,13 @@ Download Link: https://baldurs-gate.de/index.php?resources/deutsche-%C3%9Cberset
 DANKSAGUNGEN
 
 Argent77: Codinghilfe
+Arkie: Russische Übersetzung (v7.1)
 CamDawg: Portraitdateien
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
 Lauriel: Ideen und Korrekturen, Korrekturlesen (v3.1 englisch)
 Lava Del'Vortel: Ideen
+Shai-Hulud: Korrekturlesen (v7.1 deutsch)
 subteldoctor: Autor
 yota13: Russische Übersetzung (v5.1)
 
@@ -250,6 +252,7 @@ VERSIONS-HISTORIE
 Version 7.1:
 -"Skip Korlasz' Dungeon": updated compatibility with upcoming version 9 of EndlessBG1.
 -"Skip Korlasz' Dungeon": Arkanis should initiate dialogue.
+-German version: Proofread by Shai-Hulud.
 
 Version 7:
 -"Skip Korlasz' Dungeon": optimized scripting and general handling; Imoen should initiate dialogue, but only if she's present, and not if Transition is installed.

@@ -1,7 +1,3 @@
-// game: Jastey's SoD Tweakpack
-// date: 2021-11-30, 00:14
-// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
-
 @0  = ~Sagt bitte <CHARNAME>, dass ich ihn sprechen will. Ich habe ein Angebot für ihn.~ ~Sagt bitte <CHARNAME>, dass ich sie sprechen will. Ich habe ein Angebot für sie.~
 @1  = ~Seid gegrüßt, <CHARNAME>. Ich bin hier, um Euch Hilfe bei Eurem Unterfangen anzubieten. Lasst meine Kameraden und mich uns um Korlasz und ihre Anhänger kümmern. Es gibt keinen Grund, warum der Held von Baldurs Tor durch jedes Verlies selbst kriechen müsste.~ ~Seid gegrüßt, <CHARNAME>. Ich bin hier, um Euch Hilfe bei Eurem Unterfangen anzubieten. Lasst meine Kameraden und mich uns um Korlasz und ihre Anhänger kümmern. Es gibt keinen Grund, warum die Heldin von Baldurs Tor durch jedes Verlies selbst kriechen müsste.~
 @2  = ~Wenn Ihr unsere Hilfe annehmt, dann kümmern wir uns um diese Gruft und Ihr kehrt unverzüglich zurück in den Herzogspalast. Wir Euch werden alle Gegenstände übergeben, die wir finden. Ihr werdet sie in Eurem privaten Quartier vorfinden und könnt Euch dann aussuchen, welche Ihr behalten wollt.~

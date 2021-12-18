@@ -217,6 +217,12 @@ NOTE: BG(II):EE are actively supported games. Please note that every patch updat
 If you have installation problems or encounter any bugs, please post your bug report in one of the forum threads.
 
 
+NOTE TO GERMAN PLAYERS
+
+The German version is consistent to the fan-made "Deutsche Übersetzung für SoD". This means, that names and terms could differ from the official German version shipped with the game. Install "Deutsche Übersetzung für SoD" for a consistent game experience.
+Download Link: https://baldurs-gate.de/index.php?resources/deutsche-%C3%9Cbersetzung-f%C3%BCr-sod.49/
+
+
 +++++++++++++++Please do not translate below here ++++++++++++++++++++++++
 
 

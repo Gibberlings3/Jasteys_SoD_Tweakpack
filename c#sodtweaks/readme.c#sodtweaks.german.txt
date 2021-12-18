@@ -216,11 +216,13 @@ Download Link: https://baldurs-gate.de/index.php?resources/deutsche-%C3%9Cberset
 DANKSAGUNGEN
 
 Argent77: Codinghilfe
+Arkie: Russische Übersetzung (v7.1)
 CamDawg: Portraitdateien
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
 Lauriel: Ideen und Korrekturen, Korrekturlesen (v3.1 englisch)
 Lava Del'Vortel: Ideen
+Shai-Hulud: Korrekturlesen (v7.1 deutsch)
 subteldoctor: Autor
 yota13: Russische Übersetzung (v5.1)
 
@@ -246,6 +248,9 @@ Spellhold Studios			http://www.shsforums.net/
 SoD-Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 7.2:
+-German version: Proofread by Shai-Hulud.
 
 Version 7.1:
 -"Skip Korlasz' Dungeon": updated compatibility with upcoming version 9 of EndlessBG1.

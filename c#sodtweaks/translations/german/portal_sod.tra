@@ -1,7 +1,4 @@
-// game: Jastey's SoD Tweakpack
-// date: 2021-11-30, 00:12
-// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
-
+/* close_portal_drom_toril.d */
 @0  = ~[Aun Argent]Mein Kind, das ist nicht vonnöten. Das Portal kann von der Materiellen Ebene aus geschlossen werden, und ich kenne das dafür nötige Ritual.~
 @1  = ~[Caelar]Jemand muss Wache halten. Die einstige Verbindung zu Toril wird Teufel anziehen, die versuchen werden, den Übergang zur Materiellen Ebene wieder zu öffnen. Ich werde sie erwarten. Es wird Caelar Silberweiß sein, die die Tore zu Toril bewacht, und das bis in alle Ewigkeit, sollte es das Schicksal erfordern.~
 @2  = ~[Aun Argent]Es ist soweit. Ich habe das Blut Belhifets, das für das Ritual zum Verschließen des Portals benötigt wird.~
@@ -12,5 +9,6 @@
 @7  = ~[Aun Argent]Ich fürchte, dass mein Bestreben, für Caelars böse Taten zu bezahlen, mich nicht an diesem verlorenen Ort halten wird – so sehr es mich auch grämt, ihn ohne Bewachung auf dieser Seite zurückzulassen.~
 @8  = ~[Aun Argent]Nur wenige außerhalb des Ordens der Aster können das Schließungsritual durchführen. Es so bald wie möglich zu verschließen, ist nun wichtiger als das Verlangen dieses alten Paladins nach Erlösung. Lasst uns dahin zurückkehren, woher Ihr gekommen seid, ich bitte Euch. Bevor Avernus’ Legionen angreifen – oder ich eine Entscheidung träfe, die ebenso töricht wie nobel wäre.~
 @9  = ~[Aun Argent]Und eine ehrbare wäre es, und doch … (seufz)~
+/* hephernaan_takes_key.d */
 @30 = ~Ich nehme auch dies an mich – Ihr braucht den Schlüssel zu dieser Gruft nicht mehr, Caelar. Ab jetzt werden diese Türen verschlossen bleiben, bis mein Meister bereit ist, sie zu öffnen.~
 @31 = ~Nicht, dass wir derzeit die Mittel hätten, die Tür zu öffnen. Caelar hat offensichtlich starke Magie vorbereitet, um die Tür verschlossen zu halten. Wir arbeiten an einem Weg, sie zu öffnen, aber es könnte schneller gehen, wenn Ihr einen Schlüssel bei Caelar selbst findet.~

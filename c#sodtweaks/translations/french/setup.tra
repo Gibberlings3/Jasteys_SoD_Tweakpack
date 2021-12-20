@@ -1,0 +1,41 @@
+@1000   = ~Ce composant est uniquement compatible avec SoD et EET.~
+@1001   = ~Ce composant est uniquement compatible avec BGT et EET.~ 
+@1002   = ~Modmerge ou DLC Merger d'Argent est necessaire avant que des mods puissent etre installes sur ce jeu.~
+@1003   = ~Final independant des reponses du PC~
+@1004   = ~Ne manquez pas de dialogues entre NPC-PC~
+@1005   = ~Pour les PNJ du groupe uniquement~
+@1006   = ~Toujours activer tout les dialogues entre PNJ-PC~
+@1007   = ~Ignorer le donjon de Korlasz~
+@1008   = ~Plus de choix de dialogue et eviter les situations sans issue~
+@1009   = ~Utiliser le portrait SoD d'Imoen pour BGII dans EET & BGT~
+
+/* new for v2 */
+@1010   = ~Ce composant est compatible uniquement avec SoD.~
+@1011   = ~Restaurer le script de la scene de combat lors de l'enlevement.~
+
+/* new for v3 */
+@1012   = ~Ajuster l'experience de depart du PC au debut de SoD, par Subtledoctor~
+@1013   = ~Regler l'experience de depart a 65,000~
+@1014   = ~Regler l'experience de depart a 90,000~
+@1015   = ~Regler l'experience de depart a 125,000~
+@1016   = ~Regler l'experience de depart a 161,000~
+
+/* new for v5 */
+@1017   = ~Ce composant doit etre installe avant EET_End.~
+@1018   = ~Final de SoD : jastey's Tweaks~
+@1019   = ~Version complete revisee~
+@1020   = ~Version revisee et simplifiee~
+@1021   = ~Sauter cette version~
+@1022   = ~Version originale simplifiee~
+
+/* new for v6 */
+@1023   = ~Un autre final pour SoD est deja installe.~
+@1024   = ~Un autre mod rend ce composant inutile.~
+@1025   = ~Hephernaan prend la cle de la voute du Chateau Paldragon.~
+@1026   = ~Fermer le portail depuis le Chateau Paldragon (Aun Argent survit toujours).~
+
+/* new for v7 */
+@1027   = ~Correction du transfert d'objets dans la residence du PC au palais personnalise par le mod Another fine Hell.~
+@1028   = ~Correction du transfert d'objets du donjon de Korlasz dans la residence du PC au palais par le mod EndlessBG1.~
+@1029   = ~Correction du transfert d'objets du donjon de Korlasz dans la residence du PC au palais par le mod Transitions.~
+@1030   = ~Correction des declencheurs de voyage pour l'entree de la crypte de Korlasz du mod EndlessBG1.~

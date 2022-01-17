@@ -221,10 +221,12 @@ CREDITS
 
 Argent77: coding help
 CamDawg: correctly sized portrait files
+JohnBob: French translation (v8)
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lauriel: ideas and corrections, proof reading (v3.1)
 Lava Del'Vortel: ideas
+Shai-Hulud: proof reading (v7.1 German)
 subteldoctor: author
 yota13: Russian translation (v5.1)
 

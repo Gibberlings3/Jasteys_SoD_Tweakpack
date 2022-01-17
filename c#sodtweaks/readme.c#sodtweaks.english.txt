@@ -266,7 +266,7 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 HISTORY
 
 Version 8:
--French version added, by JohnBob
+-French version added, by JohnBob.
 
 Version 7.2:
 -German version: Proofread by Shai-Hulud.

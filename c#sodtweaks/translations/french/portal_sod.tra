@@ -1,0 +1,48 @@
+/* close_portal_drom_toril.d */
+@0  = ~[Aun Argent]Mon enfant, ce ne sera pas nécessaire. Le portail peut être fermé depuis le Plan primaire, et je connais le rituel dont nous avons besoin.~
+@1  = ~[Caelar]Quelqu'un doit protéger nos arrières. La connexion d'Avernus à Toril continuera d'attirer des démons à la recherche d'un passage vers notre Plan. Moi, Caelar Argent je les attendrais et monterais la garde, pour l'éternité s'il le faut.~
+@2  = ~[Aun Argent]Enfin, nous y sommes. J'ai le sang de Belhifet nécessaire à l'accomplissement du rituel.~
+@3  = ~[Aun Argent]Tenez, prenez cette clé que j'ai trouvée sur les corps. Je ne sais pas à quoi elle sert, mais je suis certain qu'elle ne vient pas de cet endroit infernal.~
+@4  = ~[Aun Argent]Le portail doit être fermé depuis le Plan Matériel Primaire, et je sais comment. Mais... Je dois rester ici et défendre le passage vers les Enfers - afin de tenir à distance les hordes démoniaques si la brèche entre les plans devait s'ouvrir à nouveau.~
+@5  = ~[PC Reply]Je ne vous abandonnerai pas ici, d'autant plus que vous savez comment sceller cette brèche une fois de retour sur Toril.~
+@6  = ~[Aun Argent]Une offre généreuse, mais que je ne peux accepter. C'est à moi de rester, avec le profond désir de restaurer l'honneur des Argent...~
+@7  = ~[Aun Argent]Je crains que mon désir de racheter les fautes de Caelar ne sois pas suffisant pour me retenir dans ce lieu maudit, même si cela me désole de laisser cet endroit sans aucune protection.~
+@8  = ~[Aun Argent]Peu de gens n'appartenant pas à l'Ordre de l'Aster son capables d'accomplir ce rituel. Refermer le portail au plus vite est plus important que la rédemption d'un vieux paladin. Repartons immédiatement, je vous en conjure, avant que les légions d'Avernus ne lancent une attaque - ou je pourrais prendre une décision aussi noble que stupide.~
+@9  = ~[Aun Argent]Et elle serait honorable, hélas... (soupir)~
+/*
+@10  =
+@11  =
+@12  =
+@13  =
+@14  =
+@15  =
+@16  =
+@17  =
+@18  =
+@19  =
+@20  =
+@21  =
+@22  =
+@23  =
+@24  =
+@25  =
+@26  =
+@27  =
+@28  =
+@29  =
+*/
+
+/* hephernaan_takes_key.d */
+@30  = ~Je vais aussi prendre ça - vous n'aurez plus besoin de la clé de cette voûte, Caelar. Dorénavant, cette porte restera fermée jusqu'à ce que mon maître soit en mesure de l'utiliser.~
+@31  = ~Non pas que nous ayons les moyens d'ouvrir la porte dans l'immédiat. Caelar a manifestement utilisé une puissante magie pour sceller cette porte. Nous travaillons à trouver une façon de l'ouvrir, mais cela serait plus rapide si vous récupériez la clé que Caelar possède.~
+/*
+@32  = 
+@33  = 
+@34  = 
+@35  = 
+@36  = 
+@37  = 
+@38  = 
+@39  = 
+@40  = 
+*/

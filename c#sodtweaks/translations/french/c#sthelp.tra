@@ -1,0 +1,12 @@
+@0   = ~Dites à <CHARNAME> de venir me parler. J'ai une offre à lui faire.~
+@1   = ~Salutations, <CHARNAME>. Je suis ici pour t'offrir mon aide dans ta quête. Mes camarades et moi allons nous occuper de Korlasz et de ses partisans. Ce n'est pas au héros de la Porte de Baldur d'aller ramper dans n'importe quel donjon.~ ~Salutations, <CHARNAME>. Je suis ici pour t'offrir mon aide dans ta quête. Mes camarades et moi allons nous occuper de Korlasz et de ses partisans. Ce n'est pas à l'héroïne de la Porte de Baldur d'aller ramper dans n'importe quel donjon.~
+@2   = ~Si tu acceptes notre aide, nous nous occuperons de ce donjon pendant que tu retourneras au Palais Ducal. Nous rapporterons tous les objets que nous trouverons, et les déposerons dans tes quartiers privés. tu n'auras plus qu'à choisir ceux qui t'intéressent.~
+@3   = ~Ça ma l'air parfait. En avant, et ne faites pas de prisonniers. Korlasz mérite de mourir.~
+@4   = ~Entendu. Essayez d'épargner Korlasz et ses partisans, s'ils acceptent de se rendre.~
+@5   = ~Je vais d'abord jeter un coup d'œil. Je te ferai signe si j'ai besoin de vous.~
+@6   = ~Très bien. Je t'attends ici.~
+@7   = ~Rebonjour. Fatigué de toujours tout faire toi-même ?~
+@8   = ~Tout de suite.~
+@9   = ~C'est fait.~
+@10  = ~Je pense qu'Imoen souhaite te voir, il vaudrait mieux que tu attendes ici jusqu'à ce qu'elle soit prête à te parler.~
+@11  = ~Nous vous souhaitons bonne chance.~

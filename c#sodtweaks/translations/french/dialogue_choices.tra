@@ -2,9 +2,9 @@
 @1   = ~Espérons que non ! Le seul autre prisonnier particulier est le doppelganger dans la cellule située au nord-est, mais il ne devrait pas être capable de lancer ce genre de sorts !~
 @2   = ~Je ne suis pas le voleur et vous le savez très bien. Ne soyez pas stupide, Mizhena.~ ~Je ne suis pas la voleuse et vous le savez très bien. Ne soyez pas stupide, Mizhena.~
 @3   =  ~C'est votre bougie, je vous demande donc des informations. Qu'attendez-vous de moi à part de « faire ce que je fais le mieux » ?~
-@4   = ~Peut-être que je devrais vous apprendre les bonnes manières, prêtre ?~
+@4   = ~Peut-être que je devrais vous apprendre les bonnes manières, prêtresse ?~
 @5   = ~Excusez-moi ? Je pense qu'une leçon sur les bonnes manières serait des plus appropriées pour vous !~
-@6   = ~Que diriez-vous d'essayer ça, prêtre, et je vous montrerai ce que cela implique pour *vous* !~
+@6   = ~Que diriez-vous d'essayer ça, prêtresse, et je vous montrerai ce que cela implique pour *vous* !~
 
 /* new for v4 */
 @7   = ~Je vais m'en aller.~
@@ -12,17 +12,17 @@
 @9   = ~Je ne vois aucune raison de discuter avec vous. Partez maintenant, avant que j'appelle les gardes.~
 
 /* new for v5 */
-@47   = ~[Dynaheir]Minsc et moi avons été envoyés par les Wychlaran pour rechercher des Enfants de Bhaal, et la population en a après vous à cause du votre heritage divin. Cela fait deux bonnes raisons de vous accompagner.~
-@48   = ~[Jaheira]Khalid et moi avons promis à Gorion de veiller sur vous et de vous protéger. Nous n'allons pas vous tourner le dos au moment ou vous en avez le plus besoin.~
+@47   = ~[Dynaheir]Minsc et moi avons été envoyés par les Wychlarans pour rechercher des enfants de Bhaal, et la population en a après toi à cause de ton héritage divin. Cela fait deux bonnes raisons de t'accompagner.~
+@48   = ~[Jaheira]Khalid et moi avons promis à Gorion de veiller sur toi et de te protéger. Nous n'allons pas te tourner le dos au moment où tu en as le plus besoin.~
 
 /* new for v6 */
-@49   = ~[PC reply to Caelar]Ah, vous voulez dire « en ce jour Caelar la démente semât la mort et la destruction sur la Côte des Épées » ?~
+@49   = ~[PC reply to Caelar]Ah, vous voulez dire « en ce jour Caelar la démente sema la mort et la destruction sur la Côte des Épées » ?~
 @50   = ~[PC reply to Caelar]Eh bien, ce serait un changement ça c'est sûr. Jusqu'à présent, le sang a été versé pour vous.~
-@51   = ~[PC reply to Caelar]Essayez-vous de minimiser l'empoisonnement de mon amie Imoen, celui qui l'a clouée au lit pendant plusieurs jours et a laissé ses mains fébriles ? Je suis censé vous être reconnaissant pour sa survie ou vous ai-je mal comprise ?~ ~Essayez-vous de minimiser l'empoisonnement de mon amie Imoen, celui qui l'a clouée au lit pendant plusieurs jours et a laissé ses mains fébriles ? Je suis censé vous être reconnaissante pour sa survie ou vous ai-je mal comprise ?~
-@52   = ~[PC reply to Caelar]Comment, Caelar ? Comment allez-vous faire ça ? Eclairez-nous.~
+@51   = ~[PC reply to Caelar]Essayez-vous de minimiser l'empoisonnement de mon amie Imoen, celui qui l'a clouée au lit pendant plusieurs jours et a laissé ses mains fébriles ? Je suis censé vous être reconnaissant pour sa survie ou vous ai-je mal comprise ?~ ~Essayez-vous de minimiser l'empoisonnement de mon amie Imoen, celui qui l'a clouée au lit pendant plusieurs jours et a laissé ses mains fébriles ? Je suis censée vous être reconnaissante pour sa survie ou vous ai-je mal comprise ?~
+@52   = ~[PC reply to Caelar]Comment, Caelar ? Comment allez-vous faire ça ? Éclairez-nous.~
 @53   = ~[PC reply to Caelar]Alors c'est ce que vous comptez faire - pénétrer dans les neuf enfers avec votre armée. Vous êtes folle.~
 @54   = ~[PC reply to Caelar]Caelar... Vous projetez de marcher sur Avernus, vous allez donc ouvrir un passage pour y entrer, et ainsi donner aux démons un moyen d'en sortir. Je ne vois pas du tout en quoi c'est une bonne idée. Vous devez cesser cette folie !~
 @55   = ~[PC reply to Caelar]*Ou bien* votre petit projet va déchaîner les enfers sur la Côte des Épées... encore. Je pense que vous êtes celle qui aurait besoin d'être plus « éclairée ».~
-@56   = ~[PC reply to Caelar]Aucuns de vos actes insensés n'était « justifié ». Vous êtes complètement irrationnelle.~
+@56   = ~[PC reply to Caelar]Aucun de vos actes insensés n'était « justifié ». Vous êtes complètement irrationnelle.~
 @57   = ~[PC Reply, referring to Caelar]Tout ce que j'ai entendu, c'est une cinglée déclamant une propagande fanatique afin d'inciter les autres à accomplir ses volontés.~
 

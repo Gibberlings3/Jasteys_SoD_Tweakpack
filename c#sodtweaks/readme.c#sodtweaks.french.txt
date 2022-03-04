@@ -1,220 +1,220 @@
 --- Jastey's Tweaks pour SoD et EET (et BGT) ---
 
-Ce pack de tweaks est principalement destiné à la partie SoD de BG:EE (à l'exception du composant qui introduit le portrait SoD d'Imoen dans BGII). 
-Il contient quelques modifications que j'ai trouvées pertinentes pour mon propre jeu.
-Pour EET, installez le mod après EET et avant EET_End.
+Ce pack de tweaks est principalement destinÃ© Ã  la partie SoD de BG:EE (Ã  l'exception du composant qui introduit le portrait SoD d'Imoen dans BGII). 
+Il contient quelques modifications que j'ai trouvÃ©es pertinentes pour mon propre jeu.
+Pour EET, installez le mod aprÃ¨s EET et avant EET_End.
 
 Description
 
 
-1 Final independant des reponses du PC.
+1 Fin indÃ©pendante des rÃ©ponses du PC.
 -----------------------------------
-Ce composant empêche le final "l'assassin en fuite" de se déclencher si les actes du PC lui permettent d'être éligible au final "libération par les ducs", indépendamment du fait que le PC énumère tous ses actes lors de son audience, ou non. Ce composant est aussi pour les joueurs qui ne veulent pas cliquer sur plus d'options de réponse que nécessaire. 
+Ce composant empÃªche le final "l'assassin en fuite" de se dÃ©clencher si les actes du PC lui permettent d'accÃ©der au final "libÃ©ration par les ducs", indÃ©pendamment du fait que le PC Ã©numÃ¨re tous ses actes lors de son audience, ou non. Ce composant est aussi pour les joueurs qui ne veulent pas cliquer sur plus d'options de rÃ©ponse que nÃ©cessaire. 
 
-Note : avec ce tweak, le final "libération par les ducs" aura toujours la priorité si les actes du PC lui permettent d'y être éligible, sans possibilité de déclencher le final "l'assassin en fuite" par ses choix de réponse au cours du procès.
-N'installez pas ce tweak si vous voulez être en mesure de voir le final "l'assassin en fuite" (le final dépendra du comportement du PC lors du procès).
+Note : avec ce tweak, le final "libÃ©ration par les ducs" aura toujours la prioritÃ© si les actes du PC lui permettent d'y Ãªtre Ã©ligible. Il n'est alors plus possible de dÃ©clencher le final "l'assassin en fuite" par les choix de rÃ©ponse au cours du procÃ¨s.
+N'installez pas ce tweak si vous voulez Ãªtre en mesure de lancer le final "l'assassin en fuite" (oÃ¹ la fin ne dÃ©pend que du comportement du PC lors du procÃ¨s).
 
 
 
 2 Ne manquez pas de dialogues entre NPC-PC.
 -----------------------------------
-Ce composant traite de la manière dont les conversations romantiques sont déclenchées dans SoD, elles ne sont pas chronométrées mais déclenchées par la présence du PC et du PNJ sur telle ou telle carte. 
-Si l'une d'elles est manqué, les dialogues suivants ne se déclencheront pas non plus. (Exception pour Glint où le premier dialogue peut se déclencher dans trois zones). 
+Ce composant traite de la maniÃ¨re dont les conversations romantiques sont dÃ©clenchÃ©es dans SoD, elles ne sont pas chronomÃ©trÃ©es mais dÃ©clenchÃ©es lorsque le PC entre dans des zones spÃ©cifiques et que le personnage romancÃ© fait partie du groupe. 
+Si l'une d'elles est manquÃ©e, les dialogues suivants ne se dÃ©clencheront pas non plus. (Exception pour Glint oÃ¹ le premier dialogue peut se dÃ©clencher dans trois zones). 
 
-Le joueur est obligé de visiter toute la carte avec le PC car les conversations romantiques ne seront pas déclenchées si un autre PNJ est utilisé pour explorer la zone. De plus, le PNJ concerné par les conversations romantiques doit se trouver dans le groupe lors de l'exploration.
+Le joueur est obligÃ© de visiter toute la carte avec le personnage romancÃ© car les conversations romantiques ne seront pas dÃ©clenchÃ©es si c'est un autre PNJ qui est utilisÃ© pour explorer la zone. De plus, le personnage romancÃ© doit se trouver dans le groupe lors de l'exploration.
 
-Cela peut mener à une situation où, en changeant de PNJ tout au long de la campagne dans l'espoir de voir autant de dialogues que possible, le joueur peut finir par n'en voir *aucun*. 
+Cela peut mener Ã  une situation oÃ¹, en changeant de PNJ tout au long de la campagne dans l'espoir de voir autant de dialogues que possible, le joueur peut finir par n'en voir *aucun*. 
 
-Ce composant déclenche également les dialogues non-romantiques des PNJ s'ils sont déclenchés par des déclencheurs de zone (un pour Corwin).
+Ce composant dÃ©clenche Ã©galement les dialogues non-romantiques des PNJ s'ils sont dÃ©clenchÃ©s par des dÃ©clencheurs de zone (un pour Corwin).
 
-Ce composant ne change pas le fait qu'une romances en annule une autre.
+Ce composant ne change pas la faÃ§on dont les romances s'annulent entres elles.
 
 Remarque :
-Pour Neera, certaines de ses conversations amoureuses sont censées se déclencher pendant sa quête lorsque elle est active et seront ignorées si la quête est déjà terminée (selon la conception originale).
+Pour Neera, certaines de ses conversations amoureuses sont censÃ©es se dÃ©clencher pendant sa quÃªte lorsqu'elle est active et seront ignorÃ©es si la quÃªte est dÃ©jÃ  terminÃ©e (selon la conception originale).
 
-Ce composant a deux options d'installation. Notez que le composant "B" inclut également les modifications apportées par le "A".
+Ce composant a deux options d'installation. Notez que le composant "B" inclut Ã©galement les modifications apportÃ©es par le "A".
 
 	2.A Pour les PNJ du groupe uniquement.
 	------
-Cela change le déclenchement des dialogues romantiques de " Player1 " à quelque chose de plus général, afin qu'ils soient également activés par la présence de n'importe quel PNJ du groupe et pas uniquement par le PC, c'est-à-dire qu'il est possible d'explorer la zone avec n'importe quel PNJ et d'obtenir quand même les dialogues romantiques. 
-Ce composant interfère moins avec le design original que le composant suivant. Il ne change pas le fait que les dialogues ne sont activés que si le PNJ concerné est dans le groupe à ce moment-là.
+Cela change le dÃ©clenchement des dialogues romantiques de "Player1" Ã  quelque chose de plus gÃ©nÃ©ral, afin qu'ils soient Ã©galement activÃ©s par la prÃ©sence de n'importe quel PNJ du groupe et pas uniquement par le PC, c'est-Ã -dire qu'il est possible d'explorer la zone avec n'importe quel PNJ et d'obtenir quand mÃªme les dialogues romantiques. 
+Ce composant est celui qui modifie le moins le design original du mod (Du moins, par rapport au composant B). Il ne change pas le fait que les dialogues ne seront activÃ©s que si le PNJ romancÃ© est dans le groupe Ã  ce moment-lÃ .
 
-	2.B Toujours activer tout les dialogues entre PNJ-PC.
+	2.B Toujours activer tous les dialogues entre PNJ-PC.
 	------
-Avec ce composant, les PNJ romançables n'ont pas besoin d'être dans le groupe dans des zones spécifiques pour que les dialogues romantiques soient activés. Si l'un d'eux était censé se déclencher dans une zone, il se déclenchera plus tard si le PNJ en question rejoint le groupe. De même, il suffit que n'importe quel PNJ du groupe marche sur le déclencheur de zone. Seule exception : Lorsque vous passez le portail dans le château Paldragon, le PNJ romancé doit être dans le groupe pour déclenché la conversation romantique final.
+Avec ce composant, les PNJ romanÃ§ables n'ont pas besoin d'Ãªtre dans le groupe et dans des zones spÃ©cifiques pour que les dialogues romantiques soient activÃ©s. Si l'un d'eux Ã©tait censÃ© se dÃ©clencher dans une zone, il se dÃ©clenchera plus tard si le PNJ en question rejoint le groupe. De mÃªme, il suffit que n'importe quel PNJ du groupe marche sur le dÃ©clencheur de zone. Seule exception : Lorsque vous passez le portail dans le chÃ¢teau Paldragon, le PNJ romancÃ© doit Ãªtre dans le groupe pour dÃ©clencher la derniÃ¨re conversation amoureuse.
 
-Les PNJ qui ne font pas partie du groupe mais qui ont un dialogue possible afficheront une ligne de texte, une fois, si le PC est proche d'eux, indiquant qu'un nouveau dialogue pourrait être expérimenté si le PNJ rejoignait le groupe.
+Les PNJ qui ne font pas partie du groupe mais qui ont un dialogue possible afficheront une ligne de texte, une fois, si le PC est proche d'eux, indiquant qu'un nouveau dialogue pourrait Ãªtre expÃ©rimentÃ© si le PNJ rejoignait le groupe.
 
-Note : Presque tous les PNJ ont un dialogue personnel qui commence par une référence à une grotte sombre, ce qui pourrait être un peu incongru s'il était déclenché ailleurs.
-Si un PNJ n'a pas fait partie du groupe pendant un certain temps, les dialogues se déclencheront les uns après les autres après qu'il ait rejoint le groupe.
+Note : Presque tous les PNJ ont un dialogue personnel qui commence par une rÃ©fÃ©rence Ã  une grotte sombre, ce qui pourrait Ãªtre un peu incongru s'ils Ã©taient dÃ©clenchÃ©s ailleurs.
+Si un PNJ n'a pas fait partie du groupe pendant un certain temps, les dialogues se dÃ©clencheront les uns aprÃ¨s les autres, une fois que le PNJ aura rejoint le groupe.
 
 
 
 3 Ignorer le donjon de Korlasz.
 -----------------------------------
-Ce composant permet de sauter le donjon de Korlasz et de se rendre directement au palais ducal sans briser le quatrième mur. Après l'introduction d'Imoen, Arkanis de Château-Suif (ou, au cas où celui-ci serait mort, Biff l'Inculte) s'approchera du PC et lui proposera de s'en charger pour lui.
-Le PC peut accepter et demander que Korlasz et ses sbires soit tué ou épargné, ou demander à Arkanis/Bill d'attendre. Si on lui dit d'attendre, Arkanis/Bill restera à l'entrée du donjon et le joueur pourra continuer à jouer normalement et lui demander à nouveau plus tard. Une fois l'aide acceptée, la transition du jeu original vers le palais ducal se déclenchera, y compris le dialogue d'Imoen disant "c'est enfin terminé". Tous les objets utiles du donjon seront transférés sur la table de chevet dans les quartiers du PC au Palais ducal dans SoD. il n'y aura pas de transfert d'or.
+Ce composant permet de sauter le donjon de Korlasz et de se rendre directement au Palais Ducal sans briser l'immersion du joueur. AprÃ¨s l'introduction d'Imoen, Arkanis de ChÃ¢teau-Suif (ou, au cas oÃ¹ celui-ci serait mort, Biff la Doublure) s'approchera du PC et lui proposera de s'en charger pour lui.
+Le PC peut accepter et demander que Korlasz et ses sbires soient tuÃ©s ou Ã©pargnÃ©s, ou demander Ã  Arkanis/Bill d'attendre. Si on lui dit d'attendre, Arkanis/Bill restera Ã  l'entrÃ©e du donjon et le joueur pourra continuer Ã  jouer normalement et lui demander Ã  nouveau plus tard. Une fois l'aide acceptÃ©e, la transition du jeu original vers le Palais Ducal se dÃ©clenchera, y compris le dialogue d'Imoen disant "c'est enfin terminÃ©". Tous les objets utiles du donjon seront transfÃ©rÃ©s sur la table de chevet dans les quartiers du PC au Palais Ducal dans SoD. Il n'y aura pas de transfert d'or.
 
-Remarque : le transfert d'objets se fera après le réveil du PC et le départ d'Imoen, le transfert prendra quelques minutes pendant lesquelles le jeu pourrait être très lent. Une fois le transfert d'objets achevé, la vitesse du jeu reviendra à la normale.
-Une fois dans la table de chevet, les objets transférés ne seront *pas* déplacés avec les possessions du PC au cours de la campagne. Ils doivent être mis dans le coffre du PC à la main pour que cela se produise.
+Remarque : le transfert d'objets se fera aprÃ¨s le rÃ©veil du PC et le dÃ©part d'Imoen, le transfert prendra quelques minutes pendant lesquelles le jeu pourrait Ãªtre trÃ¨s lent. Une fois le transfert d'objets achevÃ©, la vitesse du jeu reviendra Ã  la normale.
+Une fois dans la table de chevet, les objets transfÃ©rÃ©s ne seront *pas* dÃ©placÃ©s avec les possessions du PC au cours de la campagne. Ils doivent Ãªtre mis dans le coffre du PC Ã  la main pour que cela se produise.
 
-Aussi : Après avoir accepté l'aide d'Arkanis/Bill et son retour victorieux, il y a un court moment avant qu'Imoen n'initie le dialogue final "c'est terminé", dialogue qui entraînera le transfert vers le Palais ducal. À ce moment-là, le joueur a le contrôle total du jeu pendant que certains scripts originaux du jeu sont exécutés afin d'initier le transfert. Commencer un dialogue avec l'un des personnages ne devrait pas poser de problème en attendant, mais il est préférable d'être patient et de laisser le jeu se poursuivre. Le dialogue final avec Imoen menant à la transition de zone devrait commencer par lui-même après qu'Arkanis/Bill aient rapporté le succès de la mission, bien que cela n'ait pas toujours fonctionné pour moi, et j'ai dû initier le dialogue avec Imoen par moi-même. Assurez-vous simplement d'avoir attendu un moment pour que les scripts aient le temps de se terminer.
+Aussi : AprÃ¨s avoir acceptÃ© l'aide d'Arkanis/Bill et son retour victorieux, il y a un court moment avant qu'Imoen n'initie le dialogue final "c'est terminÃ©", dialogue qui entraÃ®nera le transfert vers le Palais Ducal. Ã€ ce moment-lÃ , le joueur a le contrÃ´le total du jeu pendant que certains scripts originaux du jeu sont exÃ©cutÃ©s afin d'initier le transfert. Commencer un dialogue avec l'un des personnages ne devrait pas poser de problÃ¨me en attendant, mais il est prÃ©fÃ©rable d'Ãªtre patient et de laisser le jeu se poursuivre. Le dialogue final avec Imoen menant Ã  la transition de zone devrait commencer par lui-mÃªme aprÃ¨s qu'Arkanis/Bill ait rapportÃ© le succÃ¨s de la mission, bien que cela n'ait pas toujours fonctionnÃ© pour moi, et j'ai dÃ» initier le dialogue avec Imoen par moi-mÃªme. Assurez-vous simplement d'avoir attendu un moment pour que les scripts aient le temps de se terminer.
 
-La transition entre les objets du donjon de Korlasz et le Palais Ducal est faite en utilisant un code légèrement modifié du mod "Skip Chateau Irenicus" d'Argent77, un très grand merci !
+La transition entre les objets du donjon de Korlasz et le Palais Ducal est faite en utilisant un code lÃ©gÃ¨rement modifiÃ© du mod "Skip Chateau Irenicus" d'Argent77, un trÃ¨s grand merci !
 
-..............Remarque sur la compatibilité: 
+.............. Remarque sur la compatibilitÃ© : 
 
-..Si le mod Another fine Hell et son composant "3. Les coffres du PC et d'Imoen dans le Palais devrait garder leur contenu." est installé, tous les objets contenus dans la table de chevet seront également disponibles à la fin de SoD.
+- Si le mod Another fine Hell et son composant "3. Les coffres du PC et d'Imoen dans le Palais devrait garder leur contenu." est installÃ©, tous les objets contenus dans la table de chevet seront Ã©galement disponibles Ã  la fin de SoD.
 
-..Si le mod EndlessBG1 et son composant "14 Le donjon de Korlaz se trouve dans BG1" : 
-Ce composant de EndlessBG1 déplace le donjon dans la "partie BG1" du jeu. Cette modification pour le sauter fonctionnera toujours, mais l'entrée de la Tombe sera scellée par la suite. La raison est technique, je ne peux pas vérifier combien de quêtes secondaires ont été faites dans le donjon de Korlasz. De plus, l'idée de cette modification est de terminer le donjon de Korlasz sans avoir à le faire vous même, donc l'accès aux zones n'est pas vraiment nécessaire, de toute façon.
-Les objets seront transférés dans la table de chevet à l'intérieur des quartiers du PC dans le palais Ducal de BG1 si le PC a emménagé au dernier étage du palais. 
-Dans SoD, le contenu sera également dans la table de chevet du PC.
+- Si le mod EndlessBG1 et son composant "14 Le donjon de Korlaz se trouve dans BG1" : 
+Ce composant de EndlessBG1 dÃ©place le donjon dans la "partie BG1" du jeu. Cette modification pour le sauter fonctionnera toujours, mais l'entrÃ©e de la Tombe sera scellÃ©e par la suite. La raison est technique, je ne peux pas vÃ©rifier combien de quÃªtes secondaires ont Ã©tÃ© faites dans le donjon de Korlasz. De plus, l'idÃ©e de cette modification est de terminer le donjon de Korlasz sans avoir Ã  le faire vous-mÃªme, donc l'accÃ¨s aux zones n'est pas vraiment nÃ©cessaire, de toute faÃ§on.
+Les objets seront transfÃ©rÃ©s dans la table de chevet Ã  l'intÃ©rieur des quartiers du PC dans le Palais Ducal de BG1 si le PC a emmÃ©nagÃ© au dernier Ã©tage du palais. 
+Dans SoD, le contenu sera Ã©galement dans la table de chevet du PC.
 
-..mod Transitions: 
-Le mod Transitions déplace le donjon de Korlasz dans la "partie BG1" du jeu. La modification permettant de le sauter fonctionnera toujours, mais Imoen n'aura pas de "dialogue final", le jeu n’effectuera pas de transition au Palais Ducal après que la crypte de Korlasz ait été nettoyée par Arkanis et son équipe.
-Les objets seront transférés dans la table de chevet à l'intérieur des quartiers du PC dans le palais Ducal de BG1 si le PC a emménagé au dernier étage du palais. 
-Dans SoD, le contenu sera également dans la table de chevet du PC.
+Mod Transitions: 
+Le mod Transitions dÃ©place le donjon de Korlasz dans la "partie BG1" du jeu. La modification permettant de le sauter fonctionnera toujours, mais Imoen n'aura pas de "dialogue final", le jeu n'effectuera pas de transition au Palais Ducal aprÃ¨s que la crypte de Korlasz ait Ã©tÃ© nettoyÃ©e par Arkanis et son Ã©quipe.
+Les objets seront transfÃ©rÃ©s dans la table de chevet Ã  l'intÃ©rieur des quartiers du PC dans le Palais Ducal de BG1 si le PC a emmÃ©nagÃ© au dernier Ã©tage du palais. 
+Dans SoD, le contenu sera Ã©galement dans la table de chevet du PC.
 
 
 
-4 Plus de choix de dialogue et eviter les situations sans issue.
+4 Plus de choix de dialogue et Ã©viter les situations sans issue.
 -----------------------------------
-Ce composant ajoute des options de réponse ou des lignes de dialogue supplémentaires aux personnages des quêtes, afin d'éviter que le joueur ne rate la *seule* possibilité de demander une information importante ou qu'il soit obligé de dire quelque chose qui ne correspond pas à la personnalité de son personnage pour pouvoir poursuivre la quête.
-Le composant tente de préserver les idées du jeu original : par exemple, si une information ne pouvait être reçue qu'en brutalisant quelqu'un dans le jeu original, les options de réponse ajoutées refléteront toujours cela tout en donnant la possibilité de procéder sans avoir à agir comme une brute totale.
+Ce composant ajoute des options de rÃ©ponse ou des lignes de dialogue supplÃ©mentaires aux personnages des quÃªtes, afin d'Ã©viter que le joueur ne rate la *seule* possibilitÃ© de demander une information importante ou qu'il soit obligÃ© de dire quelque chose qui ne correspond pas Ã  la personnalitÃ© de son personnage pour pouvoir poursuivre la quÃªte.
+Le composant tente de prÃ©server les idÃ©es du jeu original : par exemple, si une information ne pouvait Ãªtre reÃ§ue qu'en brutalisant quelqu'un dans le jeu original, les options de rÃ©ponse ajoutÃ©es reflÃ©teront toujours cela tout en donnant la possibilitÃ© de procÃ©der sans avoir Ã  agir comme une brute totale.
 
-Jusqu'à présent, les cas suivants ont été traités :
+Jusqu'Ã  prÃ©sent, les cas suivants ont Ã©tÃ© traitÃ©s :
 
--Raccourcir le dialogue répétitif avec le Duc Eltan dans le Palais.
+- Raccourcir le dialogue rÃ©pÃ©titif avec le Duc Eltan dans le Palais.
 
--Plus d'options de réponse pour raccourcir le dialogue avec l'homme à la capuche au 3ème étage du Palais.
+- Plus d'options de rÃ©ponse pour raccourcir le dialogue avec l'homme Ã  la capuche au 3Ã¨me Ã©tage du Palais.
 
--Dans le donjon du Palais Ducal : le PC aura plus d'options de réponse qui mèneront à des informations plus pertinentes sur la quête de l'autre prisonnier.
+- Dans le donjon du Palais Ducal : le PC aura plus d'options de rÃ©ponse qui mÃ¨neront Ã  des informations plus pertinentes sur la quÃªte de l'autre prisonnier.
 
--Pour la quête "des Traîtres dans le camp", Mizhena n'a plus besoin d'être intimidée avec des menaces de brutalité physique, comme c'est le cas actuellement, pour fournir les informations nécessaires.
+- Pour la quÃªte "des TraÃ®tres dans le camp", Mizhena n'a plus besoin d'Ãªtre intimidÃ©e avec des menaces de brutalitÃ© physique, comme c'est le cas actuellement, pour fournir les informations nÃ©cessaires.
 
--Aucune option de réponse, mais Jaheira et Dynaheir diront une ligne de plus à la fin de SoD, a propos des raisons pour lesquelles elles rejoignent le PC dans sa fuite. Il m'a toujours semblé qu'il manquait une explication, maintenant elles énoncent une motivation qui explique leur présence à mes yeux.
+- Aucune option de rÃ©ponse, mais Jaheira et DynahÃ©ir diront une ligne de plus Ã  la fin de SoD, Ã  propos des raisons pour lesquelles elles rejoignent le PC dans sa fuite. Il m'a toujours semblÃ© qu'il manquait une explication, maintenant elles Ã©noncent une motivation qui explique leur prÃ©sence Ã  mes yeux.
 
 
 5 Utiliser le portrait SoD d'Imoen pour BGII dans EET & BGT.
 -----------------------------------
-Ce composant échangera le portrait d'Imoen dans BGII avec celui du SoD. Le composant est seulement compatible avec BGT et EET. Il changera également le portrait pour une nouvelle partie de BGII dans BGT ou EET.
+Ce composant Ã©changera le portrait d'Imoen dans BGII avec celui du SoD. Le composant est seulement compatible avec BGT et EET. Il changera Ã©galement le portrait pour une nouvelle partie de BGII dans BGT ou EET.
 
-Remarque : le portrait est modifié en assignant un nouveau portrait (c'est-à-dire un nom de fichier différent) à Imoen au début de BGII. ce composant ne sera pas réversible le désinstallant simplement de votre jeu en cours. Il n'est donc pas compatible avec tout autre mod qui changerait le portrait d'Imoen dans BGII (de manière définitive).
+Remarque : le portrait est modifiÃ© en assignant un nouveau portrait (c'est-Ã -dire un nom de fichier diffÃ©rent) Ã  Imoen au dÃ©but de BGII. Ce composant ne sera pas rÃ©versible en le dÃ©sinstallant simplement de votre jeu en cours. Il n'est donc pas compatible avec tout autre mod qui changerait le portrait d'Imoen dans BGII (de maniÃ¨re dÃ©finitive).
 
-Les noms des fichiers modifiés sont les suivants :
-BGT: small portrait: c#stimos; medium portrait: c#stimom. Pour l'épilogue de ToB, le portrait original nimoenl.bmp sera remplacé par le version de SoD et portera ce nom.
+Les noms des fichiers modifiÃ©s sont les suivants :
+BGT: small portrait: c#stimos; medium portrait: c#stimom. Pour l'Ã©pilogue de ToB, le portrait original nimoenl.bmp sera remplacÃ© par la version de SoD et portera ce nom.
 
 EET: small portrait: c#stimom.bmp, large portrait: c#stimol.bmp
 
-Les portraits sont tirés du mod "Continuous NPC Portraits" de CamDawg pour m'épargner le temps d'ajuster la taille des portraits au format de l'ancien moteur du jeu.
+Les portraits sont tirÃ©s du mod "Continuous NPC Portraits" de CamDawg pour m'Ã©pargner le temps d'ajuster la taille des portraits au format de l'ancien moteur du jeu.
 
 
 
-6 Restaurer le script de la scene de combat lors de l'enlevement.
+6 Restaurer le script de la scÃ¨ne de combat lors de l'enlÃ¨vement.
 -----------------------------------
-Ce composant réactivera la scène désactivée du "combat impossible à gagner" à la fin de SoD. La scène n'a pas été modifiée par rapport à ce qui est  (caché) dans le jeu original. La scène aura lieu après le film sur l'enlèvement et comprendra un combat impossible à gagner et la scène finale avec les personnages non identifiés qui emmènent le groupe inconscient. Après cela, le jeu se termine et le générique de fin est affiché.
-Ce composant est uniquement compatible avec SoD, car EET restaure déjà cette scène par défaut.
+Ce composant rÃ©activera la scÃ¨ne dÃ©sactivÃ©e du "combat impossible Ã  gagner" Ã  la fin de SoD. La scÃ¨ne n'a pas Ã©tÃ© modifiÃ©e par rapport Ã  ce qui est (cachÃ©) dans le jeu original. La scÃ¨ne aura lieu aprÃ¨s le film sur l'enlÃ¨vement et comprendra un combat impossible Ã  gagner et la scÃ¨ne finale avec les personnages non identifiÃ©s qui emmÃ¨nent le groupe inconscient. AprÃ¨s cela, le jeu se termine et le gÃ©nÃ©rique de fin est affichÃ©.
+Ce composant est uniquement compatible avec SoD, car EET restaure dÃ©jÃ  cette scÃ¨ne par dÃ©faut.
 
-Merci à k4thos pour le modèle de restauration de la (des) scène(s), qui a été emprunté à EET.
+Merci Ã  k4thos pour le modÃ¨le de restauration de la (des) scÃ¨ne(s), qui a Ã©tÃ© empruntÃ© Ã  EET.
 
 
 
-7 Ajuster l'experience de depart du PC au debut de SoD, par Subtledoctor.
+7 Ajuster l'expÃ©rience de dÃ©part du PC au dÃ©but de SoD, par Subtledoctor.
 -----------------------------------
-Ce composant vous permet de choisir l'expérience de départ du PC au début d'une nouvelle partie de SoD. Les choix sont les suivants:
+Ce composant vous permet de choisir l'expÃ©rience de dÃ©part du PC au dÃ©but d'une nouvelle partie de SoD. Les choix sont les suivants:
 65,000
 90,000
 125,000
 161,000
 
-Merci à subtledoctor pour avoir créer ce tweak.
+Merci Ã  Subtledoctor pour avoir crÃ©Ã© ce tweak.
 
 
 
-8 Final de SoD : jastey's Tweaks.
+8 Final de SoD : Jastey's Tweaks.
 -----------------------------------
-Ce composant donne 4 choix d'installation, qui changent tous la fin de SoD,  Bence Duncan qui commencera son dialogue après avoir trouvé le PC et Skie sur le sol suite à la séquence du "rêve avec l'Écorcheur".
+Ce composant donne 4 choix d'installation, qui changent tous la fin de SoD, Bence Duncan qui commencera son dialogue aprÃ¨s avoir trouvÃ© le PC et Skie sur le sol suite Ã  la sÃ©quence du "rÃªve avec l'Ã‰corcheur".
 
 Toutes les options utilisent autant de lignes originales (avec doublage vocal) que possible.
 
-Note aux moddeurs (et aux joueurs) : toutes les options utilisent la séquence standard "bdcut61.bcs" qui gère le départ des PNJ du groupe. Pour certaines options, la fin de la séquence est modifiée, mais si vous ajoutez un bloc de script pour votre mod NPC comme décrit dans mon "Modding Tutorial Part 2 : Make Your NPC Comment and Move Along at the End of SoD" (lien ci-dessous), toutes les options de fin de SoD seront compatibles avec votre mod NPC.
-Note : toutes les options ignorent le réglage de "Global("bd_plot", "global",591)" qui gère le "PC est suspecté de meurtre et les réactions des PNJ" dans bd4100.are.
+Note aux moddeurs (et aux joueurs) : toutes les options utilisent la sÃ©quence standard "bdcut61.bcs" qui gÃ¨re le dÃ©part des PNJ du groupe. Pour certaines options, la fin de la sÃ©quence est modifiÃ©e, mais si vous ajoutez un bloc de script pour votre mod NPC comme dÃ©crit dans mon "Modding Tutorial Part 2 : Make Your NPC Comment and Move Along at the End of SoD" (lien ci-dessous), toutes les options de fin de SoD seront compatibles avec votre mod NPC.
+Note : toutes les options ignorent le rÃ©glage de "Global("bd_plot", "global",591)" qui gÃ¨re le "PC est suspectÃ© de meurtre et les rÃ©actions des PNJ" dans bd4100.are.
 
-Option 1: "Version complete revisee"
-Cette option change la perception générale de la population quant au rôle du PC dans l'assassinat de Skie. Cela m'a toujours dérangé que dans l'original, le PC soit considéré comme le coupable alors qu'il est clairement étendu sur le sol lorsque Bence Duncan entre, qu'il n'y a pas d'arme et que toute la scène peut être jouée sans que le PC ne touche une seule fois le monstre "l’Écorcheur". Pourtant, tout le monde pense     c'est "tOi le MeUrTrIeR!!!1 !", ce qui a brisé l'immersion pour moi, en donnant l'impression que tout le monde a subi un lavage de cerveau.
-Ma fin révisée conserve tous les moments clés : Bence Duncan et Corwin arrêtent le PC, il y a une scène publique où son héritage divin de Bhaal est annoncé à tous, le PC est tenu responsable de la mort de Skie par le Duc Entar Ecudargent qui veut sa tête, le PC finit en prison. La visite de l'Homme à la Capuche, de Corwin et de toute relation romantique se déclenchera normalement, bien que les accusations de meurtre soient un peu atténuées dans les dialogues.
-En fait, l'atmosphère de cette fin alternative est modifiée dans une certaine mesure, ce n'est plus le monde entier, mais seulement certaines personnes qui accusent le PC. Le Duc Entar Ecudargent est l'un d'entre eux, Bence Duncan ressent toujours de la haine pour le PC et l'étrange demande de sacrifice de Corwin n'a pas changé.
-Il n'y a plus d'interrogatoire et le joueur n'a pas à cliquer sur des réponses pour déclencher la fin plus agréable "libération par les ducs" . Duke Belt viendra toujours expliquer la situation au PC, aucun assassin ne tue les officiers dans cette fin. Les joueurs qui veulent jeter un coup d'oeil aux égouts et combattre Bence Duncan et Corwin à la cascade peuvent toujours le faire, il suffit de dire au garde qui est censé guider le PC vers la sortie que le PC se débrouillera tout seul.
+Option 1: "Version complÃ¨te rÃ©visÃ©e"
+Cette option change la perception gÃ©nÃ©rale de la population quant au rÃ´le du PC dans l'assassinat de Skie. Dans la version originale, cela m'a toujours dÃ©rangÃ©e que le PC soit considÃ©rÃ© comme le coupable (alors qu'il est clairement Ã©tendu sur le sol lorsque Bence Duncan entre), qu'il n'y a pas d'arme et que toute la scÃ¨ne peut Ãªtre jouÃ©e sans que le PC ne touche une seule fois le monstre "l'Ã‰corcheur". Pourtant, tout le monde pense : Â« C'est tOi le MeUrTrIeR !!!!! Â»", ce qui a brisÃ© l'immersion pour moi, en donnant l'impression que tout le monde a subi un lavage de cerveau.
+Ma fin rÃ©visÃ©e conserve tous les moments clÃ©s : Bence Duncan et Corwin arrÃªtent le PC, il y a une scÃ¨ne publique oÃ¹ son hÃ©ritage divin de Bhaal est annoncÃ© Ã  tous, le PC est tenu responsable de la mort de Skie par le Duc Entar Ecudargent qui veut sa tÃªte, le PC finit en prison. La visite de l'Homme Ã  la Capuche, de Corwin et de toute relation romantique se dÃ©clenchera normalement, bien que les accusations de meurtre soient un peu attÃ©nuÃ©es dans les dialogues.
+En fait, l'atmosphÃ¨re de cette fin alternative est modifiÃ©e dans une certaine mesure, ce n'est plus le monde entier, mais seulement certaines personnes qui accusent le PC. Le Duc Entar Ecudargent est l'un d'entre eux, Bence Duncan ressent toujours de la haine pour le PC et l'Ã©trange demande de sacrifice de Corwin n'a pas changÃ©.
+Il n'y a plus d'interrogatoire et le joueur n'a pas Ã  cliquer sur des rÃ©ponses pour dÃ©clencher la fin plus agrÃ©able "libÃ©ration par les ducs". Le Duc Belt viendra toujours expliquer la situation au PC, aucun assassin ne tue les officiers dans cette fin. Les joueurs qui veulent jeter un coup d'Å“il aux Ã©gouts et combattre Bence Duncan et Corwin Ã  la cascade peuvent toujours le faire, il suffit de dire au garde qui est censÃ© guider le PC vers la sortie que le PC se dÃ©brouillera tout seul.
 
-Option 2: "Version revisee et simplifiee"
-Cette option a tout le contenu (modifié) de ma fin révisée dans l'option 1, mais supprime toutes les cinématiques intermédiaires. Il n'y a pas de marche à travers la foule, pas de petites cinématiques pendant l'audience publique avec des gens qui vont et viennent. Il s'agit essentiellement d'une série de dialogues et de fondus en noir jusqu'à ce que le PC soit en prison. Là, le déroulement normal (de l'option 1) se remet en place, avec toutes les visites de l'homme à la capuche, de Corwin, des amoureux ou amoureuses et du Duke Belt.
+Option 2: "Version rÃ©visÃ©e et simplifiÃ©e"
+Cette option a tout le contenu (modifiÃ©) de ma fin rÃ©visÃ©e dans l'option 1, mais supprime toutes les cinÃ©matiques intermÃ©diaires. Il n'y a pas de marche Ã  travers la foule, pas de petites cinÃ©matiques pendant l'audience publique avec des gens qui vont et viennent. Il s'agit essentiellement d'une sÃ©rie de dialogues et de fondus en noir jusqu'Ã  ce que le PC soit en prison. LÃ , le dÃ©roulement normal (de l'option 1) se remet en place, avec toutes les visites de l'homme Ã  la capuche, de Corwin, des amoureux ou amoureuses du PC et du Duc Belt.
 
-Option 3: "Version originale simplifiee"
-Cette option conserve tous les dialogues originaux tels qu'ils étaient, mais supprime toutes les cinématiques intermédiaires. Il n'y a pas de marche à travers la foule, pas de petites cinématiques pendant l'audience publique avec des gens qui vont et viennent. Il s'agit essentiellement d'une série de dialogues et de fondus en noir jusqu'à ce que le PC soit en prison. Là, le déroulement normal se remet en place.
-Cela signifie également que, comme dans le jeu original, pour activer la fin "libération par les ducs" avec le Duke Belt entrant dans la prison, vous devrez cliquer sur l'option de réponse nécessaire lors du procès public ou installer le composant "1 Final independant des reponses du PC." de ce tweak pack.
+Option 3: "Version originale simplifiÃ©e"
+Cette option conserve tous les dialogues originaux tels qu'ils Ã©taient, mais supprime toutes les cinÃ©matiques intermÃ©diaires. Il n'y a pas de marche Ã  travers la foule, pas de petites cinÃ©matiques pendant l'audience publique avec des gens qui vont et viennent. Il s'agit essentiellement d'une sÃ©rie de dialogues et de fondus en noir jusqu'Ã  ce que le PC soit en prison. LÃ , le dÃ©roulement normal se remet en place.
+Cela signifie Ã©galement que, comme dans le jeu original, pour activer la fin "libÃ©ration par les ducs" avec le Duc Belt entrant dans la prison, vous devrez cliquer sur l'option de rÃ©ponse nÃ©cessaire lors du procÃ¨s public ou installer le composant "1 Fin indÃ©pendante des rÃ©ponses du PC." de ce tweak pack.
 
-Option 4: "Version tres tres simplifiee"
-Cette option rend la fin très courte. Elle est destinée aux joueurs qui ont joué ou prévoient de jouer la fin plusieurs fois. Elle passe de l'arrestation du PC par Bence à l'explication du Duke Belt à l'interieur de la prison. Le Duke Belt viendra toujours, pas de fin "l'assassin en fuite" avec cette option. Après avoir marché jusqu'à la table où se trouvent les objets, passer par la trappe amènera le PC directement à la sortie des égouts où se trouve Imoen.
+Option 4: "Version trÃ¨s trÃ¨s simplifiÃ©e"
+Cette option rend la fin trÃ¨s courte. Elle est destinÃ©e aux joueurs qui ont jouÃ© ou prÃ©voient de jouer la fin plusieurs fois. Elle passe de l'arrestation du PC par Bence Ã  l'explication du Duc Belt Ã  l'intÃ©rieur de la prison. Le Duc Belt viendra toujours, pas de fin "l'assassin en fuite" avec cette option. AprÃ¨s avoir marchÃ© jusqu'Ã  la table oÃ¹ se trouvent les objets, passer par la trappe amÃ¨nera le PC directement Ã  la sortie des Ã©gouts oÃ¹ se trouve Imoen.
 
 
 
-9 Fermer le portail depuis le château de Paldragon (Aun Argent survit toujours).
+9 Fermer le portail depuis le chÃ¢teau de Paldragon (Aun Argent survit toujours).
 -----------------------------------
-Ce composant fait en sorte que le sang de Belhifet soit utilisé, du côté de Toril, pour fermer le portail du château de Paldragon, ce qui sera fait par Aun Argent. Cela donne la possibilité à Aun Argent d'être secouru même si Caelar est morte dans la bataille avec Belhifet.
-Caelar restera en Avernus pour garder les lieux dans le cas où elle survit, donc ce tweak devrait être compatible avec tous les mods ajoutant Caelar comme PNJ.
+Ce composant fait en sorte que le sang de Belhifet soit utilisÃ©, du cÃ´tÃ© de Toril, pour fermer le portail du chÃ¢teau de Paldragon, ce qui sera fait par Aun Argent. Cela donne la possibilitÃ© Ã  Aun Argent d'Ãªtre secouru mÃªme si Caelar est morte dans la bataille avec Belhifet.
+Caelar restera en Avernus pour garder les lieux dans le cas oÃ¹ elle survit, donc ce tweak devrait Ãªtre compatible avec tous les mods ajoutant Caelar comme PNJ.
 
 
 
-10 Hephernaan prend la clé du coffre du château Paldragon de la lance du dragon.
+10 Hephernaan prend la clÃ© de la crypte du chÃ¢teau Paldragon.
 -----------------------------------
-Cet élément résout une question, à savoir pourquoi De Lancie aurait-il la clé de la voûte, ce qui n'a aucun sens à mes yeux. 
-Avec ce composant, l'histoire est modifiée de façon à ce qu'il n'y ait qu'une seule clé de la voûte, d'abord en possession de Caelar. Hephernaan emportera ensuite la clé avec lui en Avernus, verrouillant la porte pour donner à son maître plus de temps pour préparer son attaque ainsi que pour piégé Caelar et le PC afin qu'ils soient obligés de de se battre entre eux ou de le suivre jusqu'à Belhifet. 
-De cete manière, De Lancie n'enferme pas le PC pour qu'il combatte seul les monstres de l'Avernus. Au contraire, les officiers de la coalition ne pourraient pas ouvrir la porte à ce moment-là, même s'ils le voulaient.
-Il s'agit d'une petite modification qui n'a pas de réelle influence sur le jeu. Ce sera toujours Caelar ou Aun Argent qui remettra la clé au PC après le combat avant de repartir par le portail.
+Cet Ã©lÃ©ment rÃ©sout une question, Ã  savoir : pourquoi De Lancie aurait-il la clÃ© de la crypte ? (Ce qui n'a aucun sens Ã  mes yeux). 
+Avec ce composant, l'histoire est modifiÃ©e de faÃ§on Ã  ce qu'il n'y ait qu'une seule clÃ© de la crypte, d'abord en possession de Caelar puis d'Hephernaan. Ensuite celui-ci emportera la clÃ© avec lui en Avernus, verrouillant la porte et donnant ainsi Ã  son maÃ®tre plus de temps pour prÃ©parer son attaque (tout en piÃ©geant Caelar et le PC pour les contraindre Ã  se battre entre eux ou les amener Ã  le suivre jusqu'Ã  Belhifet). 
+De cette maniÃ¨re, De Lancie n'enferme pas le PC pour qu'il combatte seul les monstres de l'Avernus. Car en effet, les officiers de la coalition ne pourraient pas ouvrir la porte Ã  ce moment-lÃ , mÃªme s'ils le voulaient.
+Il s'agit d'une petite modification qui n'a pas de rÃ©elle influence sur le jeu. Ce sera toujours Caelar ou Aun Argent qui remettra la clÃ© au PC aprÃ¨s le combat avant de repartir par le portail.
   
 
 
 
 Installation
 
-NOTE: Si vous avez déjà installé le mod, supprimez-le avant d'extraire une nouvelle version. Pour cela: désinstallez tous les composants installés précédemment via le setup, et supprimez le dossier du mod ainsi que les exécutables. 
+NOTE: Si vous avez dÃ©jÃ  installÃ© le mod, supprimez-le avant d'extraire une nouvelle version. Pour cela: dÃ©sinstallez tous les composants installÃ©s prÃ©cÃ©demment via le setup, et supprimez le dossier du mod ainsi que les exÃ©cutables. 
 
-Quand vous installez ou désinstallez le mod, ne fermez pas la fenêtre DOS en cliquant sur la croix ! Au lieu de ça, appuyez sur "entrer" quand cela est demandé.
+Quand vous installez ou dÃ©sinstallez le mod, ne fermez pas la fenÃªtre DOS en cliquant sur la croix ! Au lieu de Ã§a, appuyez sur "entrer" quand cela est demandÃ©.
 
 
 BG:EE
-Si vous utilisez SoD depuis GoG ou Steam, vous devez préparer votre jeu avec DLC Merger ou modmerge avant d'installer n'importe quel mod:
+Si vous utilisez SoD depuis GoG ou Steam, vous devez prÃ©parer votre jeu avec DLC Merger ou modmerge avant d'installer n'importe quel mod:
 DLC Merger par argent77 :
 https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
 
-modmerge (en cas de doute, utilisez le DLC Merger à la place):
+modmerge (en cas de doute, utilisez le DLC Merger Ã  la place):
 https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1
 
  
-Général (Windows, Mac OS X, and Linux)
+GÃ©nÃ©ral (Windows, Mac OS X, and Linux)
 
 Extrayez le contenu de l'archive du mod dans le dossier de votre jeu. 
-NOTE: Pour les Enhanced Edition, il est important d'installer les mods dans le langage que vous utilisez dans le jeu. Autrement, les dialogues provenant des mods seront affichés sous forme de messages d'erreurs.
+NOTE: Pour les Enhanced Edition, il est important d'installer les mods dans le langage que vous utilisez dans le jeu. Autrement, les dialogues provenant des mods seront affichÃ©s sous forme de messages d'erreurs.
 
 
 Windows
-Après extraction, vous devriez trouver dans votre dossier de jeu: un dossier "c#endlessbg1" et un fichier "setup-c#endlessbg1.exe". Pour installer le mod, double-cliquez sur setup-c#endlessbg1.exe et suivez les instructions à l'écran.
-Lancez setup-c#endlessbg1.exe dans votre dossier de jeu pour réinstaller, désinstaller ou changer des composants.
+AprÃ¨s extraction, vous devriez trouver dans votre dossier de jeu : un dossier "c#endlessbg1" et un fichier "setup-c#endlessbg1.exe". Pour installer le mod, double-cliquez sur setup-c#endlessbg1.exe et suivez les instructions Ã  l'Ã©cran.
+Lancez setup-c#endlessbg1.exe dans votre dossier de jeu pour rÃ©installer, dÃ©sinstaller ou changer des composants.
 
 Mac OS X
-Le Tweak Pack est compressé et installé avec WeiDU. Pour l'installer, extrayez l'archive du mod, puis copiez le contenu du dossier dans votre dossier de jeu (le dossier qui contient le fichier CHITIN.KEY). Si l'extraction se passe correctement, vous devriez avoir un dossier "c#endlessbg1", setup-c#endlessbg1, et setup-c#endlessbg1.command dans votre dossier de jeu. Pour installer le mod, il suffit de double-cliquer sur setup-c#endlessbg1.command et de suivre les instructions à l'écran.
+Le Tweak Pack est compressÃ© et installÃ© avec WeiDU. Pour l'installer, extrayez l'archive du mod, puis copiez le contenu du dossier dans votre dossier de jeu (le dossier qui contient le fichier CHITIN.KEY). Si l'extraction se passe correctement, vous devriez avoir un dossier "c#endlessbg1", setup-c#endlessbg1, et setup-c#endlessbg1.command dans votre dossier de jeu. Pour installer le mod, il suffit de double-cliquer sur setup-c#endlessbg1.command et de suivre les instructions Ã  l'Ã©cran.
 
 Linux
-Extrayez le contenu du mod dans le dossier de votre jeu que vous souhaitez modifier. Téléchargez la dernière version de WeiDU pour Linux depuis https://github.com/WeiDUorg/weidu/releases et copiez WeiDU et WeInstall vers /usr/bin. Ensuite, ouvrez un terminal et accédez au répertoire d'installation de BG(2), exécutez "tolower" et répondez Y aux deux questions. Vous pouvez éviter d'exécuter la deuxième option (linux.ini) si vous l'avez déjà exécutée une fois dans le même répertoire. Si vous n'êtes pas sûr, lancer tolower et choisir les deux options est la meilleure solution. 
-Exécutez WeInstall c#endlessbg1 dans votre dossier de jeu pour installer le mod. Exécutez ensuite le Wine BGMain.exe et commencez à jouer.
+Extrayez le contenu du mod dans le dossier de votre jeu que vous souhaitez modifier. TÃ©lÃ©chargez la derniÃ¨re version de WeiDU pour Linux depuis https://github.com/WeiDUorg/weidu/releases et copiez WeiDU et WeInstall vers /usr/bin. Ensuite, ouvrez un terminal et accÃ©dez au rÃ©pertoire d'installation de BG(2), exÃ©cutez "tolower" et rÃ©pondez Y aux deux questions. Vous pouvez Ã©viter d'exÃ©cuter la deuxiÃ¨me option (linux.ini) si vous l'avez dÃ©jÃ  exÃ©cutÃ©e une fois dans le mÃªme rÃ©pertoire. Si vous n'Ãªtes pas sÃ»r, lancer tolower et choisir les deux options est la meilleure solution. 
+ExÃ©cutez WeInstall c#endlessbg1 dans votre dossier de jeu pour installer le mod. ExÃ©cutez ensuite le Wine BGMain.exe et commencez Ã  jouer.
 
-NOTE: BG(II):EE sont des jeux qui sont mis à jour régulièrement. Sachez qu'à chaque nouvelle mise à jour, votre jeu ne reconnaîtra plus les mods installés ! Si vous êtes au milieu d'une partie avec des mods, il est préférable de retarder la mise à jour car même après avoir réinstallé les mods, vous ne pourrez peut-être pas continuer avec vos anciennes sauvegardes. 
+NOTE: BG(II):EE sont des jeux qui sont mis Ã  jour rÃ©guliÃ¨rement. Sachez qu'Ã  chaque nouvelle mise Ã  jour, votre jeu ne reconnaÃ®tra plus les mods installÃ©s ! Si vous Ãªtes au milieu d'une partie avec des mods, il est prÃ©fÃ©rable de retarder la mise Ã  jour car mÃªme aprÃ¨s avoir rÃ©installÃ© les mods, vous ne pourrez peut-Ãªtre pas continuer avec vos anciennes sauvegardes. 
 
-Si vous avez des problèmes d'installation ou rencontrez des bugs, veuillez poster votre rapport de bug dans sur le forum.
+Si vous avez des problÃ¨mes d'installation ou rencontrez des bugs, veuillez poster votre rapport de bug sur le forum.
 
 
-+++++++++++++++Please do not translate below here ++++++++++++++++++++++++
++++++++++++++++ Please do not translate below here ++++++++++++++++++++++++
 
 
 CREDITS
@@ -226,7 +226,8 @@ Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lauriel: ideas and corrections, proof reading (v3.1)
 Lava Del'Vortel: ideas
-Shai-Hulud: proof reading (v7.1 German)
+MachiavÃ©lique: proofreading (v8.1 French)
+Shai-Hulud: proofreading (v7.1 German)
 subteldoctor: author
 yota13: Russian translation (v5.1)
 
@@ -255,8 +256,11 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
+Version 8.1:
+-French version proofread by MachiavÃ©lique.
+
 Version 8:
--added French version, by JohnBob.
+-French version added, by JohnBob.
 
 Version 7.1:
 -"Skip Korlasz' Dungeon": updated compatibility with upcoming version 9 of EndlessBG1.
@@ -309,6 +313,6 @@ Version Alpha_181105 (version 1)
 
 
 =================================================================================
-Jastey's SoD Tweaks for SoD is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+Jastey's SoD Tweaks for SoD is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. Â©Wizards of the Coast LLC.
 This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 =================================================================================

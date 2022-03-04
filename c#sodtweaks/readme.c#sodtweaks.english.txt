@@ -236,7 +236,8 @@ Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lauriel: ideas and corrections, proof reading (v3.1)
 Lava Del'Vortel: ideas
-Shai-Hulud: proof reading (v7.1 German)
+Machiavélique: proofreading (v8.1 French)
+Shai-Hulud: proofreading (v7.1 German)
 subteldoctor: author
 yota13: Russian translation (v5.1)
 
@@ -264,6 +265,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 8.1:
+-French version proofread by Machiavélique.
 
 Version 8:
 -French version added, by JohnBob.

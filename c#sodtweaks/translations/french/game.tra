@@ -1,15 +1,15 @@
-@0   = ~<CHARNAME>, laissez-moi me joindre à vous, je veux vous parler !~
+@0   = ~<CHARNAME>, il me faut rejoindre le groupe, nous avons à nous parler !~
 
 /* new for v5 */
 @100 = ~Vous nous avez sauvés !~
 @101 = ~Quelle infamie ! Honte à celui qui a assassiné la jeune Écudargent !~ ~Quelle infamie ! Honte à celle qui a assassiné la jeune Écudargent !~
-@102 = ~Vous avez sauvé Bridgefort de la croisade. Vous nous avez tous sauvés de Caelar !~
+@102 = ~Vous avez sauvé Fort-du-Pont de la croisade. Vous nous avez tous sauvés de Caelar !~
 @103 = ~Et voilà notre héros !~ ~Et voilà notre héroïne !~
-@104 = ~Soyez notre héros ! Nous n'avons pas besoin d'un nouveau Sarevok !~ ~Soyez notre héroïne ! Nous n'avons pas besoin d'une nouvelle Sarevok !~
+@104 = ~Soyez notre héros ! Nous n'avons pas besoin d'un nouveau Sarevok !~ ~Soyez notre héroïne ! Nous n'avons pas besoin d'un nouveau Sarevok !~
 @105 = ~Vous nous avez tous sauvés !~
 @106 = ~Hourra pour la victoire du Poing Enflammé !~
 @107 = ~Que les dieux aient pitié de l'âme de Skie !~
-@108 = ~Caelar est perdu ! Personne ne devrait la pleurer !~
+@108 = ~Caelar est perdue ! Personne ne devrait la pleurer !~
 @109 = ~Hourra pour notre héros !~ ~Hourra pour notre héroïne !~
 @110 = ~Qu'avez-vous fait à la jeune Écudargent !~
 @111 = ~Fils de Bhaal ! Nous ne vous faisons pas confiance !~ ~Fille de Bhaal ! Nous ne vous faisons pas confiance !~
@@ -22,12 +22,12 @@
 /* #59853 changed */
 @121 = ~Le siège du Chateau Paldragon
 
-Caelar s'est sacrifié pour défendre le portail en Avernus. 
+Caelar s'est sacrifiée pour défendre le portail en Avernus. 
 
-Caelar Argent est resté derrière pour défendre le portail. Je n'ai pas pu la dissuader, elle semblait vraiment heureuse de sacrifier sa vie pour protéger Toril.~
+Caelar Argent est restée derrière pour défendre le portail. Je n'ai pas pu la dissuader, elle semblait vraiment heureuse de sacrifier sa vie pour protéger Toril.~
 /* #39315 changed */
-@122 = ~Tenez, prenez cette clé. Je l'ai récupérée après qu'Hephernaan me l'ait prise pour la donner à son maître, mais elle ne me servira plus. Elle ouvre la voûte du Chateau Paldragon et je ne retournerai pas sur Toril.~
+@122 = ~Tenez, prenez cette clé. Je l'ai récupérée après qu'Hephernaan me l'ait prise pour la donner à son maître, mais elle ne me servira plus. Elle ouvre la crypte du Château Paldragon et je ne retournerai pas sur Toril.~
 /* #39298 changed */
 @123 = ~C'est ici que nos chemins se séparent, mon ami. Tenez, prenez cette clé que j'ai trouvée sur les corps. Je ne sais pas à quoi elle sert, mais je suis certain qu'elle ne vient pas de cet endroit infernal.~ ~C'est ici que nos chemins se séparent, mon amie. Tenez, prenez cette clé que j'ai trouvée sur les corps. Je ne sais pas à quoi elle sert, mais je suis certain qu'elle ne vient pas de cet endroit infernal.~
 /* #62441 changed */
-@124 = ~Le portail rayonne d'une lueur infernale. Il ramène au Chateau Paldragon, mais personne ne sera en sécurité, pas tant qu'Hephernaan détiendra la clé de la voûte. Pour survivre, vous devez trouver un moyen de sceller le passage entre les plans.~
+@124 = ~Le portail rayonne d'une lueur infernale. Il ramène au Château Paldragon, mais personne ne sera en sécurité, pas tant qu'Hephernaan détiendra la clé de la voûte. Pour survivre, vous devez trouver un moyen de sceller le passage entre les plans.~

@@ -223,6 +223,7 @@ Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
 Lauriel: Ideen und Korrekturen, Korrekturlesen (v3.1 englisch)
 Lava Del'Vortel: Ideen
+Machiavélique: Korrekturlesen (v8.1 französisch)
 Shai-Hulud: Korrekturlesen (v7.1 deutsch)
 subteldoctor: Autor
 yota13: Russische Übersetzung (v5.1)
@@ -249,6 +250,9 @@ Spellhold Studios			http://www.shsforums.net/
 SoD-Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 8.1:
+-French version proofread by Machiavélique.
 
 Version 8:
 -French version added, by JohnBob.

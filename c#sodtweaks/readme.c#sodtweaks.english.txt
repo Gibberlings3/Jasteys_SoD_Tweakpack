@@ -272,6 +272,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
+Version 9.1:
+-Russian version completed, by yota13.
+
 Version 9:
 -new reply options ("More Dialogue Choices & Prevent Dead Ends").
 -imoen should initiate correct dialogue when Korlasz' Dungeon was cleared by helpers ("Skip Korlasz's Dungeon").

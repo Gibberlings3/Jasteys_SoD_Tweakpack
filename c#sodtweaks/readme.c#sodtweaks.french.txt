@@ -53,12 +53,12 @@ Si un PNJ n'a pas fait partie du groupe pendant un certain temps, les dialogues 
 3 Ignorer le donjon de Korlasz.
 -----------------------------------
 Ce composant permet de sauter le donjon de Korlasz et de se rendre directement au Palais Ducal sans briser l'immersion du joueur. Après l'introduction d'Imoen, Arkanis de Château-Suif (ou, au cas où celui-ci serait mort, Biff la Doublure) s'approchera du PC et lui proposera de s'en charger pour lui.
-Le PC peut accepter et demander que Korlasz et ses sbires soient tués ou épargnés, ou demander à Arkanis/Bill d'attendre. Si on lui dit d'attendre, Arkanis/Bill restera à l'entrée du donjon et le joueur pourra continuer à jouer normalement et lui demander à nouveau plus tard. Une fois l'aide acceptée, la transition du jeu original vers le Palais Ducal se déclenchera, y compris le dialogue d'Imoen disant "c'est enfin terminé". Tous les objets utiles du donjon seront transférés sur la table de chevet dans les quartiers du PC au Palais Ducal dans SoD. Il n'y aura pas de transfert d'or.
+Le PC peut accepter et demander que Korlasz et ses sbires soient tués ou épargnés, ou demander à Arkanis/Biff d'attendre. Si on lui dit d'attendre, Arkanis/Biff restera à l'entrée du donjon et le joueur pourra continuer à jouer normalement et lui demander à nouveau plus tard. Une fois l'aide acceptée, la transition du jeu original vers le Palais Ducal se déclenchera, y compris le dialogue d'Imoen disant "c'est enfin terminé". Tous les objets utiles du donjon seront transférés sur la table de chevet dans les quartiers du PC au Palais Ducal dans SoD. Il n'y aura pas de transfert d'or.
 
 Remarque : le transfert d'objets se fera après le réveil du PC et le départ d'Imoen, le transfert prendra quelques minutes pendant lesquelles le jeu pourrait être très lent. Une fois le transfert d'objets achevé, la vitesse du jeu reviendra à la normale.
 Une fois dans la table de chevet, les objets transférés ne seront *pas* déplacés avec les possessions du PC au cours de la campagne. Ils doivent être mis dans le coffre du PC à la main pour que cela se produise.
 
-Aussi : Après avoir accepté l'aide d'Arkanis/Bill et son retour victorieux, il y a un court moment avant qu'Imoen n'initie le dialogue final "c'est terminé", dialogue qui entraînera le transfert vers le Palais Ducal. À ce moment-là, le joueur a le contrôle total du jeu pendant que certains scripts originaux du jeu sont exécutés afin d'initier le transfert. Commencer un dialogue avec l'un des personnages ne devrait pas poser de problème en attendant, mais il est préférable d'être patient et de laisser le jeu se poursuivre. Le dialogue final avec Imoen menant à la transition de zone devrait commencer par lui-même après qu'Arkanis/Bill ait rapporté le succès de la mission, bien que cela n'ait pas toujours fonctionné pour moi, et j'ai dû initier le dialogue avec Imoen par moi-même. Assurez-vous simplement d'avoir attendu un moment pour que les scripts aient le temps de se terminer.
+Aussi : Après avoir accepté l'aide d'Arkanis/Biff et son retour victorieux, il y a un court moment avant qu'Imoen n'initie le dialogue final "c'est terminé", dialogue qui entraînera le transfert vers le Palais Ducal. À ce moment-là, le joueur a le contrôle total du jeu pendant que certains scripts originaux du jeu sont exécutés afin d'initier le transfert. Commencer un dialogue avec l'un des personnages ne devrait pas poser de problème en attendant, mais il est préférable d'être patient et de laisser le jeu se poursuivre. Le dialogue final avec Imoen menant à la transition de zone devrait commencer par lui-même après qu'Arkanis/Biff ait rapporté le succès de la mission, bien que cela n'ait pas toujours fonctionné pour moi, et j'ai dû initier le dialogue avec Imoen par moi-même. Assurez-vous simplement d'avoir attendu un moment pour que les scripts aient le temps de se terminer.
 
 La transition entre les objets du donjon de Korlasz et le Palais Ducal est faite en utilisant un code légèrement modifié du mod "Skip Chateau Irenicus" d'Argent77, un très grand merci !
 
@@ -85,6 +85,8 @@ Le composant tente de préserver les idées du jeu original : par exemple, si un
 
 Jusqu'à présent, les cas suivants ont été traités :
 
+-Corwin after the palace attack: some reply options when she asks whether all foes are defeated, because how should the PC know.
+
 - Raccourcir le dialogue répétitif avec le Duc Eltan dans le Palais.
 
 - Plus d'options de réponse pour raccourcir le dialogue avec l'homme à la capuche au 3ème étage du Palais.
@@ -93,7 +95,13 @@ Jusqu'à présent, les cas suivants ont été traités :
 
 - Pour la quête "des Traîtres dans le camp", Mizhena n'a plus besoin d'être intimidée avec des menaces de brutalité physique, comme c'est le cas actuellement, pour fournir les informations nécessaires.
 
-- Aucune option de réponse, mais Jaheira et Dynahéir diront une ligne de plus à la fin de SoD, à propos des raisons pour lesquelles elles rejoignent le PC dans sa fuite. Il m'a toujours semblé qu'il manquait une explication, maintenant elles énoncent une motivation qui explique leur présence à mes yeux.
+-Dragonspear Castle: the PC can tell Daeros in all cases that he met the dragon.
+
+-More reply options to Caelar at Coast Way Crossing and later.
+
+-No reply options, but Jaheira and Dynaheir will say one more line at the end of SoD why they are joining the PC for fleeing the city. I always missed an actual explanation why they do that, now they state a motivation that explains their presence to me. The new lines are only available for the "hero" ending.
+
+- Aucune option de réponse, mais Jaheira et Dynahéir diront une ligne de plus à la fin de SoD, à propos des raisons pour lesquelles elles rejoignent le PC dans sa fuite. Il m'a toujours semblé qu'il manquait une explication, maintenant elles énoncent une motivation qui explique leur présence à mes yeux.  The new lines are only available for the "hero" ending.
 
 
 5 Utiliser le portrait SoD d'Imoen pour BGII dans EET & BGT.
@@ -255,6 +263,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 9:
+-new reply options ("More Dialogue Choices & Prevent Dead Ends").
+-imoen should initiate correct dialogue when Korlasz' Dungeon was cleared by helpers ("Skip Korlasz's Dungeon").
 
 Version 8.1:
 -French version proofread by Machiavélique.

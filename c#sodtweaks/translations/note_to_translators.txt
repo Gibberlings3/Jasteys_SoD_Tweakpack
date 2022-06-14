@@ -1,0 +1,7 @@
+New for v9:
+
+in DIALOGUE_CHOICES.TRA:
+lines @58, @59
+
+Readme update: 
+-description of component "More Dialogue Choices & Prevent Dead Ends" extended.

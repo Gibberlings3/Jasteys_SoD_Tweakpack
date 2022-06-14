@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v8.1~
+VERSION ~v9~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -1070,3 +1070,8 @@ APPEND_OUTER - ~.../inlined/string_set_caelarkey.tph~
 STRING_SET %strref_39298% @123
 STRING_SET %strref_62441% @124"
 INCLUDE ~.../inlined/string_set_caelarkey.tph~
+
+
+
+
+

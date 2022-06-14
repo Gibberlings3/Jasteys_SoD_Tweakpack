@@ -1,4 +1,4 @@
-// c#sthel1.baf - Korlasz will be killed
+// c#sthel1.baf 
 
 IF
     True()
@@ -16,6 +16,7 @@ THEN
 	AddXPObject(Player6,5000)
 	SetGlobal("BDSH_Imoen_Floor","GLOBAL",3)
 //	SetGlobal("bd_Imoen_farewell","bd0120",1)
+	SetGlobal("bd_plot","global",11)
 	SetGlobal("C#st_ShortcutEnabled", "GLOBAL", 1)
         Wait(1)
 //        FadeFromColor([20.0],0)
@@ -44,6 +45,7 @@ IF
 THEN
     RESPONSE #100
         CutSceneId(Player1)
+	SetGlobal("C#st_EnteredBD0130","GLOBAL",2)
 	AddXPObject(Player1,3000)
 	AddXPObject(Player2,3000)
 	AddXPObject(Player3,3000)

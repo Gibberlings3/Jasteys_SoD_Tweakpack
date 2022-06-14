@@ -85,13 +85,21 @@ Hierbei soll die ursprüngliche Idee erhalten bleiben, das heißt konret, dass wen
 
 Bisher sind die folgenden Situationen berücksichtigt:
 
+- Wenn Corwin nach der Attacke im Palast fragt, ob alle Eindringlinge erledigt sind. Woher soll der HC das wissen...
+
 - Verkürzen des repetitiven Dialogs mit Herzog Eltan durch zusätzliche Antwortoptionen.
 
 - Verkürzen des Dialogs mit dem vermummten Mann im Palast durch zusätzliche Antwortoptionen.
 
 - im Keller des Herzogpalastes: mehr Möglichkeiten eingefügt, wichtige Questinformationen zu dem letzten Gefangenen zu erhalten. Diese wurden ansonsten schnell übergangen.
 
-- Für die "Traitors in Camp (Verräter im Lager)" Quest (Safana) muss der HC keinen Schlagabtausch mehr mit Mizhena darüber machen, wer dem anderen die brutaleren Verletzungen zufügt, um quest-relevante Informationen zu erhalten.
+- Für die "Traitors in Camp (Verräter im Lager)" Quest (Safana) muss der HC keinen Schlagabtausch mehr mit Mizhena darüber machen, wer dem anderen die brutaleren Verletzungen zufügt, um quest-relevante Informationen zu erhalten. 
+
+-Burg Drachenspeer: Der HC kann Daeros nun für jeden Dialogpfad von seinem Drachen erzählen.
+
+-Weitere Antwortoptionen im Dialog mit Caelar beim ersten Treffen beim Coast Way Crossing und bei späteren Treffen.
+
+-Keine Antwortoptionen, aber jeweils eine neue Zeile für Jaheira und Dynaheir am Ende von SoD, warum sie sich wieder dem HC anschließen, um mit ihm zu fliehen. Ich hatte im Originalspiel eine gute Begründung vermisst. Die neuen Zeilen erscheinen nur für das "Helden"-Ende.
 
 
 
@@ -250,6 +258,10 @@ Spellhold Studios			http://www.shsforums.net/
 SoD-Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 9:
+-new reply options ("More Dialogue Choices & Prevent Dead Ends").
+-imoen should initiate correct dialogue when Korlasz' Dungeon was cleared by helpers ("Skip Korlasz's Dungeon").
 
 Version 8.1:
 -French version proofread by Machiavélique.

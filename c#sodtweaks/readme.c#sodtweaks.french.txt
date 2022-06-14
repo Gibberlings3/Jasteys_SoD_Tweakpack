@@ -8,7 +8,7 @@ Description
 
 
 1 Fin indépendante des réponses du PC.
------------------------------------
+--------------------------------------
 Ce composant empêche le final "l'assassin en fuite" de se déclencher si les actes du PC lui permettent d'accéder au final "libération par les ducs", indépendamment du fait que le PC énumère tous ses actes lors de son audience, ou non. Ce composant est aussi pour les joueurs qui ne veulent pas cliquer sur plus d'options de réponse que nécessaire. 
 
 Note : avec ce tweak, le final "libération par les ducs" aura toujours la priorité si les actes du PC lui permettent d'y être éligible. Il n'est alors plus possible de déclencher le final "l'assassin en fuite" par les choix de réponse au cours du procès.
@@ -17,7 +17,7 @@ N'installez pas ce tweak si vous voulez être en mesure de lancer le final "l'as
 
 
 2 Ne manquez pas de dialogues entre NPC-PC.
------------------------------------
+-------------------------------------------
 Ce composant traite de la manière dont les conversations romantiques sont déclenchées dans SoD, elles ne sont pas chronométrées mais déclenchées lorsque le PC entre dans des zones spécifiques et que le personnage romancé fait partie du groupe. 
 Si l'une d'elles est manquée, les dialogues suivants ne se déclencheront pas non plus. (Exception pour Glint où le premier dialogue peut se déclencher dans trois zones). 
 
@@ -35,12 +35,12 @@ Pour Neera, certaines de ses conversations amoureuses sont censées se déclench
 Ce composant a deux options d'installation. Notez que le composant "B" inclut également les modifications apportées par le "A".
 
 	2.A Pour les PNJ du groupe uniquement.
-	------
+	---------------------------------------
 Cela change le déclenchement des dialogues romantiques de "Player1" à quelque chose de plus général, afin qu'ils soient également activés par la présence de n'importe quel PNJ du groupe et pas uniquement par le PC, c'est-à-dire qu'il est possible d'explorer la zone avec n'importe quel PNJ et d'obtenir quand même les dialogues romantiques. 
 Ce composant est celui qui modifie le moins le design original du mod (Du moins, par rapport au composant B). Il ne change pas le fait que les dialogues ne seront activés que si le PNJ romancé est dans le groupe à ce moment-là.
 
 	2.B Toujours activer tous les dialogues entre PNJ-PC.
-	------
+	------------------------------------------------------
 Avec ce composant, les PNJ romançables n'ont pas besoin d'être dans le groupe et dans des zones spécifiques pour que les dialogues romantiques soient activés. Si l'un d'eux était censé se déclencher dans une zone, il se déclenchera plus tard si le PNJ en question rejoint le groupe. De même, il suffit que n'importe quel PNJ du groupe marche sur le déclencheur de zone. Seule exception : Lorsque vous passez le portail dans le château Paldragon, le PNJ romancé doit être dans le groupe pour déclencher la dernière conversation amoureuse.
 
 Les PNJ qui ne font pas partie du groupe mais qui ont un dialogue possible afficheront une ligne de texte, une fois, si le PC est proche d'eux, indiquant qu'un nouveau dialogue pourrait être expérimenté si le PNJ rejoignait le groupe.
@@ -51,7 +51,7 @@ Si un PNJ n'a pas fait partie du groupe pendant un certain temps, les dialogues 
 
 
 3 Ignorer le donjon de Korlasz.
------------------------------------
+--------------------------------
 Ce composant permet de sauter le donjon de Korlasz et de se rendre directement au Palais Ducal sans briser l'immersion du joueur. Après l'introduction d'Imoen, Arkanis de Château-Suif (ou, au cas où celui-ci serait mort, Biff la Doublure) s'approchera du PC et lui proposera de s'en charger pour lui.
 Le PC peut accepter et demander que Korlasz et ses sbires soient tués ou épargnés, ou demander à Arkanis/Biff d'attendre. Si on lui dit d'attendre, Arkanis/Biff restera à l'entrée du donjon et le joueur pourra continuer à jouer normalement et lui demander à nouveau plus tard. Une fois l'aide acceptée, la transition du jeu original vers le Palais Ducal se déclenchera, y compris le dialogue d'Imoen disant "c'est enfin terminé". Tous les objets utiles du donjon seront transférés sur la table de chevet dans les quartiers du PC au Palais Ducal dans SoD. Il n'y aura pas de transfert d'or.
 
@@ -79,13 +79,13 @@ Dans SoD, le contenu sera également dans la table de chevet du PC.
 
 
 4 Plus de choix de dialogue et éviter les situations sans issue.
------------------------------------
+-----------------------------------------------------------------
 Ce composant ajoute des options de réponse ou des lignes de dialogue supplémentaires aux personnages des quêtes, afin d'éviter que le joueur ne rate la *seule* possibilité de demander une information importante ou qu'il soit obligé de dire quelque chose qui ne correspond pas à la personnalité de son personnage pour pouvoir poursuivre la quête.
 Le composant tente de préserver les idées du jeu original : par exemple, si une information ne pouvait être reçue qu'en brutalisant quelqu'un dans le jeu original, les options de réponse ajoutées refléteront toujours cela tout en donnant la possibilité de procéder sans avoir à agir comme une brute totale.
 
 Jusqu'à présent, les cas suivants ont été traités :
 
--Corwin after the palace attack: some reply options when she asks whether all foes are defeated, because how should the PC know.
+- Réponse de Corwin après l'attaque du palais : quelques modifications lorsqu'elle demande si tous les ennemis ont été vaincus, mais comment le PC pourrait-il savoir ?
 
 - Raccourcir le dialogue répétitif avec le Duc Eltan dans le Palais.
 
@@ -95,17 +95,15 @@ Jusqu'à présent, les cas suivants ont été traités :
 
 - Pour la quête "des Traîtres dans le camp", Mizhena n'a plus besoin d'être intimidée avec des menaces de brutalité physique, comme c'est le cas actuellement, pour fournir les informations nécessaires.
 
--Dragonspear Castle: the PC can tell Daeros in all cases that he met the dragon.
+- Château de Dragonspear : le PC peut dans tous les cas parler à Daeros de sa rencontre avec le dragon.
 
--More reply options to Caelar at Coast Way Crossing and later.
+- Plus d'options de réponse pour Caelar au pont de la Voie Côtière et autres.
 
--No reply options, but Jaheira and Dynaheir will say one more line at the end of SoD why they are joining the PC for fleeing the city. I always missed an actual explanation why they do that, now they state a motivation that explains their presence to me. The new lines are only available for the "hero" ending.
-
-- Aucune option de réponse, mais Jaheira et Dynahéir diront une ligne de plus à la fin de SoD, à propos des raisons pour lesquelles elles rejoignent le PC dans sa fuite. Il m'a toujours semblé qu'il manquait une explication, maintenant elles énoncent une motivation qui explique leur présence à mes yeux.  The new lines are only available for the "hero" ending.
+- Aucune option de réponse, mais Jaheira et Dynahéir diront une ligne de plus à la fin de SoD, à propos des raisons pour lesquelles elles rejoignent le PC dans sa fuite. Il m'a toujours semblé qu'il manquait une explication, maintenant elles énoncent une motivation qui explique leur présence à mes yeux. Les nouvelles lignes ne sont disponibles que pour la fin "libération par les ducs".
 
 
 5 Utiliser le portrait SoD d'Imoen pour BGII dans EET & BGT.
------------------------------------
+-------------------------------------------------------------
 Ce composant échangera le portrait d'Imoen dans BGII avec celui du SoD. Le composant est seulement compatible avec BGT et EET. Il changera également le portrait pour une nouvelle partie de BGII dans BGT ou EET.
 
 Remarque : le portrait est modifié en assignant un nouveau portrait (c'est-à-dire un nom de fichier différent) à Imoen au début de BGII. Ce composant ne sera pas réversible en le désinstallant simplement de votre jeu en cours. Il n'est donc pas compatible avec tout autre mod qui changerait le portrait d'Imoen dans BGII (de manière définitive).
@@ -120,7 +118,7 @@ Les portraits sont tirés du mod "Continuous NPC Portraits" de CamDawg pour m'é
 
 
 6 Restaurer le script de la scène de combat lors de l'enlèvement.
------------------------------------
+------------------------------------------------------------------
 Ce composant réactivera la scène désactivée du "combat impossible à gagner" à la fin de SoD. La scène n'a pas été modifiée par rapport à ce qui est (caché) dans le jeu original. La scène aura lieu après le film sur l'enlèvement et comprendra un combat impossible à gagner et la scène finale avec les personnages non identifiés qui emmènent le groupe inconscient. Après cela, le jeu se termine et le générique de fin est affiché.
 Ce composant est uniquement compatible avec SoD, car EET restaure déjà cette scène par défaut.
 
@@ -129,7 +127,7 @@ Merci à k4thos pour le modèle de restauration de la (des) scène(s), qui a ét
 
 
 7 Ajuster l'expérience de départ du PC au début de SoD, par Subtledoctor.
------------------------------------
+--------------------------------------------------------------------------
 Ce composant vous permet de choisir l'expérience de départ du PC au début d'une nouvelle partie de SoD. Les choix sont les suivants:
 65,000
 90,000
@@ -168,14 +166,14 @@ Cette option rend la fin très courte. Elle est destinée aux joueurs qui ont jo
 
 
 9 Fermer le portail depuis le château de Paldragon (Aun Argent survit toujours).
------------------------------------
+--------------------------------------------------------------------------------
 Ce composant fait en sorte que le sang de Belhifet soit utilisé, du côté de Toril, pour fermer le portail du château de Paldragon, ce qui sera fait par Aun Argent. Cela donne la possibilité à Aun Argent d'être secouru même si Caelar est morte dans la bataille avec Belhifet.
 Caelar restera en Avernus pour garder les lieux dans le cas où elle survit, donc ce tweak devrait être compatible avec tous les mods ajoutant Caelar comme PNJ.
 
 
 
 10 Hephernaan prend la clé de la crypte du château Paldragon.
------------------------------------
+--------------------------------------------------------------
 Cet élément résout une question, à savoir : pourquoi De Lancie aurait-il la clé de la crypte ? (Ce qui n'a aucun sens à mes yeux). 
 Avec ce composant, l'histoire est modifiée de façon à ce qu'il n'y ait qu'une seule clé de la crypte, d'abord en possession de Caelar puis d'Hephernaan. Ensuite celui-ci emportera la clé avec lui en Avernus, verrouillant la porte et donnant ainsi à son maître plus de temps pour préparer son attaque (tout en piégeant Caelar et le PC pour les contraindre à se battre entre eux ou les amener à le suivre jusqu'à Belhifet). 
 De cette manière, De Lancie n'enferme pas le PC pour qu'il combatte seul les monstres de l'Avernus. Car en effet, les officiers de la coalition ne pourraient pas ouvrir la porte à ce moment-là, même s'ils le voulaient.

@@ -53,12 +53,12 @@ If an NPC wasn't in the group for a longer time, the dialogues will cue and fire
 3 Skip Korlasz's Dungeon
 -----------------------------------
 This component adds a non-4th wall breaking possibility to skip the dungeon and head right on to the Duchal Palace. As soon as Imoen finished her introduction to Korlasz' Dungeon, Arkanis from Candlekeep (or, in case he's dead Biff the Understudy!) will approach the PC and offer to do it instead.
-The PC can accept either with the request of Korlasz being killed or spared, or can tell Arkanis/Bill to wait. If told to wait, Arkanis/Bill will remain at the dungeon's entrance and the player can play on as normal and ask him again later. Once the help is accepted, the original game's transition to the Duchal Palace will trigger including Imoen's dialogue about "it's finally over". All useful items from the dungeon will be transferred to the bedside table in the PC's quarters in the Duchal Palace in SoD. There will be no gold transferred.
+The PC can accept either with the request of Korlasz being killed or spared, or can tell Arkanis/Biff to wait. If told to wait, Arkanis/Biff will remain at the dungeon's entrance and the player can play on as normal and ask him again later. Once the help is accepted, the original game's transition to the Duchal Palace will trigger including Imoen's dialogue about "it's finally over". All useful items from the dungeon will be transferred to the bedside table in the PC's quarters in the Duchal Palace in SoD. There will be no gold transferred.
 
 Note: The transfer of items will happen after Imoen woke the player and left and will take a few minutes during which the game might lagg heavily. Once the item transfer is done, the game will be back to normal.
 From the bedside table, the transferred items will *not* be moved with the PC's possessions along the campaign. They need to be put into the PC's chest by hand for this to happen.
 
-Also: After accepting the help and Arkanis/Bill telling it's done, there is a short moment before Imoen initiates the final "it is over" dialogue which will transfer to the Duchal Palace. In this moment, the player has full control over the game since some original game scripts are executed to initiate the transfer. Starting a dialogue with one of the characters should be ok and not break anything at this moment but best you are patient and just let it play out. The final dialogue with Imoen leading to the area transition should start by itself after Arkanis/Bill reported their success, although this didn't work for me always and I had to initiate dialogue with Imoen. Just make sure you'll wait a moment for the scripts to catch up. 
+Also: After accepting the help and Arkanis/Biff telling it's done, there is a short moment before Imoen initiates the final "it is over" dialogue which will transfer to the Duchal Palace. In this moment, the player has full control over the game since some original game scripts are executed to initiate the transfer. Starting a dialogue with one of the characters should be ok and not break anything at this moment but best you are patient and just let it play out. The final dialogue with Imoen leading to the area transition should start by itself after Arkanis/Biff reported their success, although this didn't work for me always and I had to initiate dialogue with Imoen. Just make sure you'll wait a moment for the scripts to catch up. 
 
 The transition from the items from the dungeon into the Duchal Palace is done using slightly adapted code from Argent77's "Skip Chateau Irenicus" mod with many thanks!
 
@@ -86,6 +86,8 @@ The component tries to preserve the original game ideas: e.g. if an information 
 
 So far, the following instances are considered:
 
+-Corwin after the palace attack: some reply options when she asks whether all foes are defeated, because how should the PC know.
+
 -Shorten the repetitive dialogue with Duke Eltan in the Palace.
 
 -More reply options to shorten the dialogue with the 'Hooded Man' in Palace 3rd floor.
@@ -94,7 +96,11 @@ So far, the following instances are considered:
 
 -For the "Traitors in Camp" quest, Miszena doesn't need to be bullied with the brutal physical threats needed currently to provide the needed information.
 
--No reply options, but Jaheira and Dynaheir will say one more line at the end of SoD why they are joining the PC for fleeing the city. I always missed an actual explanation why they do that, now they state a motivation that explains their presence to me.
+-Dragonspear Castle: the PC can tell Daeros in all cases that he met the dragon.
+
+-More reply options to Caelar at Coast Way Crossing and later.
+
+-No reply options, but Jaheira and Dynaheir will say one more line at the end of SoD why they are joining the PC for fleeing the city. I always missed an actual explanation why they do that, now they state a motivation that explains their presence to me. The new lines are only available for the "hero" ending.
 
 
 
@@ -265,6 +271,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 9:
+-new reply options ("More Dialogue Choices & Prevent Dead Ends").
+-imoen should initiate correct dialogue when Korlasz' Dungeon was cleared by helpers ("Skip Korlasz's Dungeon").
 
 Version 8.1:
 -French version proofread by Machiavélique.

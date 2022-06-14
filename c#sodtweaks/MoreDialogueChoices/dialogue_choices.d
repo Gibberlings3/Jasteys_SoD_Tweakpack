@@ -1,3 +1,9 @@
+/* bdschael - after fight in second level of the palace */
+EXTEND_BOTTOM BDSCHAEL 13
+++ @58 /* ~I'd need to check the floor first before I can answer that.~ */ + 14
+++ @59 /* ~You tell me, you've been longer down here.~ */ + 14
+END
+
 /* BDFIST1a - ask about the other prisoner (doppelganger) in the prison cell */
 
 EXTEND_BOTTOM BDFIST1A 2

@@ -237,7 +237,7 @@ CREDITS
 Argent77: coding help
 Arkie: Russian translation (v7.1)
 CamDawg: correctly sized portrait files
-JohnBob: French translation (v8)
+JohnBob: French translation (v9.2)
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lauriel: ideas and corrections, proof reading (v3.1)
@@ -245,7 +245,7 @@ Lava Del'Vortel: ideas
 Machiavélique: proofreading (v8.1 French)
 Shai-Hulud: proofreading (v7.1 German)
 subteldoctor: author
-yota13: Russian translation (v5.1)
+yota13: Russian translation (v5.1; v9.1)
 
 
 USED TOOLS AND RESSOURCES
@@ -271,6 +271,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 9.2:
+-French version completed, by JohnBob.
 
 Version 9.1:
 -Russian version completed, by yota13.

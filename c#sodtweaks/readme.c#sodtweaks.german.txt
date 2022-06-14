@@ -226,7 +226,7 @@ DANKSAGUNGEN
 Argent77: Codinghilfe
 Arkie: Russische Übersetzung (v7.1)
 CamDawg: Portraitdateien
-JohnBob: French translation (v8)
+JohnBob: French translation (v9.2)
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
 Lauriel: Ideen und Korrekturen, Korrekturlesen (v3.1 englisch)
@@ -234,7 +234,7 @@ Lava Del'Vortel: Ideen
 Machiavélique: Korrekturlesen (v8.1 französisch)
 Shai-Hulud: Korrekturlesen (v7.1 deutsch)
 subteldoctor: Autor
-yota13: Russische Übersetzung (v5.1)
+yota13: Russische Übersetzung (v5.1, 9.1)
 
 
 VERWENDETE TOOLS UND RESSOURCEN
@@ -258,6 +258,9 @@ Spellhold Studios			http://www.shsforums.net/
 SoD-Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
 VERSIONS-HISTORIE
+
+Version 9.2:
+-French version completed, by JohnBob.
 
 Version 9.1:
 -Russian version completed, by yota13.

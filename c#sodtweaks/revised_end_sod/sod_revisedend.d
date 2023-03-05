@@ -164,7 +164,7 @@ IF ~~ THEN BDBELT revised_trialscene_03
 == BDNOBL90 #%eet_2%69812 /* Guilty, I say! GUILTY! [BD69768] */
 END
 ++ @21 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
-++ @22 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
+++ @22 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
 ++ @23 DO ~SetGlobal("C#st_RevisedTrial","GLOBAL",4)~ + 13
 
 EXTEND_BOTTOM BDENTAR 0

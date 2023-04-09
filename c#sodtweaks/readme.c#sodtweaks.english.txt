@@ -100,7 +100,7 @@ So far, the following instances are considered:
 
 -More reply options to Caelar at Coast Way Crossing and later.
 
--No reply options, but Jaheira and Dynaheir will say one more line at the end of SoD why they are joining the PC for fleeing the city. I always missed an actual explanation why they do that, now they state a motivation that explains their presence to me. The new lines are only available for the "hero" ending.
+-No reply options, but Jaheira and Dynaheir will say one more line at the end of SoD why they are joining the PC for fleeing the city. I always missed an actual explanation why they do that, now they state a motivation that explains their presence to me. The new lines are only available for the "hero" ending. 
 
 
 
@@ -271,6 +271,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 10:
+-more reply options with officers in bd3000.
+-deactivate Story Mode for the endscene fight component.
 
 Version 9.2:
 -French version completed, by JohnBob.

@@ -30,3 +30,17 @@
 @58   = ~Je dois d'abord inspecter tout l'étage avant de pouvoir vous répondre.~
 @59   = ~A vous de me le dire, vous êtes là depuis plus longtemps.~
 
+/* new for v10 */
+@60  = ~You are torturing the prisoners?~
+@61  = ~That's one of the reasons why it's a questionable concept to gain answers, but I'm not here to argue about this. What now?~
+@62  = ~Yes, I will.~
+@63  = ~I guess I don't have much choice.~
+@64  = ~Yes, but as Marshal Nederlok just pointed out it's not even guaranteed that it will!~
+@65  = ~Fine. What now?~
+@66  = ~Poison? Are we so desperate that we have to take measures for our foe to die in their beds?~
+@67  = ~I am sure you have good reasons to suggest this. Let me hear them.~
+@68  = ~[PC reply]I am allowed to come by and restock, or am I mistaken, your highness?~
+@69  = ~[PC reply]...Says the captain while she is standing idle in the safe camp.~
+@70  = ~[PC reply]The officers entrusted me with this task, so you better trust me in how I'm performing it, Corwin.~
+
+

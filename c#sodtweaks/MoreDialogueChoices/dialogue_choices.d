@@ -151,3 +151,93 @@ END
 EXTEND_BOTTOM bdcrus10 7
 ++ @57 /* ~All I've heard is a lunatic phrasing polemic exaggerations to get others to do their bidding.~ */ + 10
 END
+
+/* BDPATRES - dialogue shouldn't cycle through the same choices every time. */
+ADD_STATE_TRIGGER BDPATRES 0 ~NumTimesTalkedTo(0)~
+ADD_STATE_TRIGGER BDPATRES 4 ~OR(2) AreaCheck("bd4300") NumTimesTalkedToGT(0)~
+
+/* dialogue with the officers in bd3000: the topic about torture. Add some straight forward lines */
+/*
+BDNEDERL
+IF ~~ THEN BEGIN 27 // from:
+  SAY #37538 /* ~That's assuming the information we have is accurate. Torture usually gets you answers, but it doesn't always get you the truth.~ [BD37538] */
+  IF ~~ THEN REPLY #60878 /* ~Torture? Tell me this isn't true. Are we so afraid of Caelar Argent, are our principles truly so weak that we stoop to such vile deeds?~ */ EXTERN ~BDDELANC~ 9
+  IF ~~ THEN REPLY #60879 /* ~I didn't come here to listen to others argue moral issues. What do you want of me?~ */ GOTO 28
+  IF ~  IsValidForPartyDialogue("DORN")
+~ THEN REPLY #60880 /* ~It gets you an enemy broken in body and spirit. That alone makes it a worthy pursuit.~ */ EXTERN ~BDDORNJ~ 41
+  IF ~  !IsValidForPartyDialogue("DORN")
+~ THEN REPLY #60880 /* ~It gets you an enemy broken in body and spirit. That alone makes it a worthy pursuit.~ */ GOTO 28
+END
+*/
+
+EXTEND_BOTTOM BDNEDERL 27
+++ @60 /* ~You are torturing the prisoners?~ */ EXTERN BDDELANC 10
+++ @61 /* ~That's one of the reasons why it's a questionable concept to gain answers, but I'm not here to argue about this. What now?~ */ + 28
+END
+
+/* BDNEDERL
+IF ~~ THEN BEGIN 29 // from:
+  SAY #60901 /* ~That is what needs doing. Will you do it?~ [BD60901] */
+  IF ~~ THEN REPLY #60902 /* ~I'd be lying if I told you I wasn't... unsettled, knowing how you came by your intelligence. But the Shining Lady is the greater danger. She must be dealt with. I will do as you ask.~ */ EXTERN ~BDSTONEH~ 20
+  IF ~~ THEN REPLY #60903 /* ~You had me at "go spelunking to find a way to break into our enemy's stronghold to learn more about her and her advisors."~ */ EXTERN ~BDSTONEH~ 19
+  IF ~~ THEN REPLY #60904 /* ~There is little I wouldn't do to see Caelar's light snuffed out now and for all time.~ */ EXTERN ~BDSTONEH~ 20
+END
+*/
+EXTEND_BOTTOM BDNEDERL 29
+++ @62 /* ~Yes, I will.~ */ EXTERN BDSTONEH 20
+++ @63 /* ~I guess I don't have much choice.~ */ EXTERN BDSTONEH 19
+END
+
+/* BDDELANC
+IF ~~ THEN BEGIN 9 // from:
+  SAY #60881 /* ~I'd stoop lower than that if it meant saving the life of a single soldier under my command.~ [BD60881] */
+  IF ~~ THEN REPLY #60882 /* ~A noble sentiment for an unforgivable crime.~ */ GOTO 10
+  IF ~~ THEN REPLY #60883 /* ~Does this sort of talk make anyone else uncomfortable? Because my skin is crawling right now.~ */ GOTO 10
+  IF ~~ THEN REPLY #60884 /* ~A hollow excuse—and an unnecessary one. You have information regarding the crusade. Tell me what it is, and what you would have me do with it.~ */ EXTERN ~BDNEDERL~ 28
+END
+*/
+EXTEND_BOTTOM BDDELANC 9
+++ @64 /* ~Yes, but as Marshal Nederlok just pointed out it's not even guaranteed that it will!~ */ + 10
+++ @65 /* ~Fine. What now?~ */ EXTERN BDNEDERL 28
+END
+
+
+/* De Lancie suggested poisoning the crusaders' provisions. Add some more netral reply options */
+/* BDDELANC
+IF ~~ THEN BEGIN 22 // from: 21.0
+  SAY #60925 /* ~We know Dragonspear is being supplied via the caverns you'll be visiting shortly, if all goes as planned. If you put a few drops of this in the enemy food supplies and water, we would have an edge when we finally confront the Shining Lady.~ [BD60925] */
+  IF ~~ THEN REPLY #60926 /* ~Poison an enemy army? You sicken me, de Lancie. Is this the honor of the Waterdhavian guard?~ */ GOTO 23
+  IF ~~ THEN REPLY #60929 /* ~What? Explosives are one thing, but poison is too much. I'll hear no more of this.~ */ DO ~SetGlobal("bd_MDD1001_morale","global",1)
+~ GOTO 25
+  IF ~~ THEN REPLY #60927 /* ~That would give us a significant advantage, but managing it would entail significant risk. Which means I'll want a significant reward.~ */ DO ~SetGlobal("bd_MDD1001_morale","global",-1)
+~ GOTO 28
+  IF ~~ THEN REPLY #60928 /* ~I will show the Shining Lady's followers the same mercy they would have shown me. Give me the poison.~ */ DO ~SetGlobal("bd_MDD1001_morale","global",-1)
+~ GOTO 24
+END
+*/
+EXTEND_BOTTOM BDDELANC 22
+++ @66 /* ~Poison? Are we so desperate that we have to take measures for our foe to die in their beds?~ */ + 23
+++ @67 /* ~I am sure you have good reasons to suggest this. Let me hear them.~ */ + 23
+END
+
+/* Corwin bd3000 */
+/*
+IF ~  Global("bd_plot","global",313)
+AreaCheck("bd3000")
+~ THEN BEGIN 38 // from:
+  SAY #44112 /* ~Surprised to see you here. I thought you'd been sent to penetrate Dragonspear from below.~ [BD44112] */
+  IF ~~ THEN REPLY #44113 /* ~I'll be heading there soon.~ */ DO ~SetGlobal("bd_plot","global",315)
+~ GOTO 42
+  IF ~~ THEN REPLY #44114 /* ~A fool's errand. I doubt these supposed caverns even exist.~ */ DO ~SetGlobal("bd_plot","global",315)
+~ GOTO 39
+  IF ~~ THEN REPLY #44115 /* ~I do not jump and run at Torsin de Lancie or anyone else's command.~ */ DO ~SetGlobal("bd_plot","global",315)
+~ GOTO 43
+END
+*/
+EXTEND_BOTTOM BDCORWIN 38
+++ @68 /* ~I am allowed to come by and restock, or am I mistaken, your highness?~ */ DO ~SetGlobal("bd_plot","global",315)~ + 40
+++ @69 /* ~...Says the captain while she is standing idle in the safe camp.~ */ DO ~SetGlobal("bd_plot","global",315)~ + 40
+++ @70 /* ~The officers entrusted me with this task, so you better trust me in how I'm performing it, Corwin.~ */ DO ~SetGlobal("bd_plot","global",315)~ + 40
+END
+
+

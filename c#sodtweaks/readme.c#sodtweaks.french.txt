@@ -226,6 +226,7 @@ Si vous avez des problèmes d'installation ou rencontrez des bugs, veuillez post
 CREDITS
 
 Argent77: coding help
+Arkie: Russian translation (v7.1)
 CamDawg: correctly sized portrait files
 JohnBob: French translation (v9.2)
 Kaliesto: tweak idea
@@ -261,6 +262,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 10:
+-more reply options with officers in bd3000.
+-deactivate Story Mode for the endscene fight component.
 
 Version 9.2:
 -French version completed, by JohnBob.

@@ -259,6 +259,10 @@ SoD-Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrou
 
 VERSIONS-HISTORIE
 
+Version 10:
+-more reply options with officers in bd3000.
+-deactivate Story Mode for the endscene fight component.
+
 Version 9.2:
 -French version completed, by JohnBob.
 

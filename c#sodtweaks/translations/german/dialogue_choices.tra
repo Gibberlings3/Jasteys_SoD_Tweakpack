@@ -29,3 +29,17 @@
 /* new for v9 */
 @58   = ~Die Frage kann ich erst beantworten, wenn ich mich hier umgesehen habe.~
 @59   = ~Sagt Ihr's mir - Ihr seid schon länger hier unten als ich.~
+
+/* new for v10 */
+@60  = ~Ihr foltert die Gefangenen?~
+@61  = ~Das ist einer der Gründe, warum es ein sehr fragwürdiges Konzept ist, aber ich will mich jetzt nicht darüber streiten. Wie geht es weiter?~
+@62  = ~Ja, das werde ich.~
+@63  = ~Ich habe wohl keine andere Wahl.~
+@64  = ~Ja, aber wie Marschall Nederlock gerade gesagt hat gibt es keine Garantie, dass es wirklich hilft!~
+@65  = ~Nun gut. Was nun?~
+@66  = ~Gift? Sind wir so verzweifelt, dass wir Methoden wählen müssen mit denen unsere Feinde in ihren Betten sterben?~
+@67  = ~Ihr habt sicher gute Gründe für diesen Vorschlag. Ich würde sie gerne hören.~
+@68  = ~[PC reply]Es ist mir aber gestattet das Lager zu betreten um meine Vorräte aufzustocken, oder irre ich mich da etwa, Euer Durchlaucht?~
+@69  = ~[PC reply]...Sagt der Hauptmann, während sie selbst untätig im sicheren Lager sitzt.~
+@70  = ~[PC reply]Die Offiziere haben mich mit diesem Auftrag betraut, Corwin. Ihr vertraut mir besser damit, wie ich ihn auszuführen gedenke.~
+

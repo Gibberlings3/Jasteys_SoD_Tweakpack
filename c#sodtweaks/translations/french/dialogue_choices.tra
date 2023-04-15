@@ -31,16 +31,16 @@
 @59   = ~A vous de me le dire, vous êtes là depuis plus longtemps.~
 
 /* new for v10 */
-@60  = ~You are torturing the prisoners?~
-@61  = ~That's one of the reasons why it's a questionable concept to gain answers, but I'm not here to argue about this. What now?~
-@62  = ~Yes, I will.~
-@63  = ~I guess I don't have much choice.~
-@64  = ~Yes, but as Marshal Nederlok just pointed out it's not even guaranteed that it will!~
-@65  = ~Fine. What now?~
-@66  = ~Poison? Are we so desperate that we have to take measures for our foe to die in their beds?~
-@67  = ~I am sure you have good reasons to suggest this. Let me hear them.~
-@68  = ~[PC reply]I am allowed to come by and restock, or am I mistaken, your highness?~
-@69  = ~[PC reply]...Says the captain while she is standing idle in the safe camp.~
-@70  = ~[PC reply]The officers entrusted me with this task, so you better trust me in how I'm performing it, Corwin.~
+@60  = ~[PC reply]Vous torturez les prisonniers ?~
+@61  = ~[PC reply]C'est l'une des raisons pour lesquelles cette méthode est discutable, mais je ne suis pas là pour remettre vos décisions en question. Alors, qu'avez-vous appris ?~
+@62  = ~[PC reply]Ce sera fait.~
+@63  = ~[PC reply]J'imagine que je n'ai pas vraiment le choix.~
+@64  = ~[PC reply]Certes, mais comme le maréchal Nederlok vient de le souligner, nous n'avons aucune certitude !~
+@65  = ~[PC reply]Si vous le dites. Et maintenant ?~
+@66  = ~[PC reply]Du poison ? Sommes-nous vraiment désespérés au point d'assassiner nos ennemis pendant leur sommeil ?~
+@67  = ~[PC reply]J'ose espérer que vous avez de très bonnes raisons pour suggérer un tel procédé. Expliquez-vous.~
+@68  = ~[PC reply to Corwin]Je crois être autorisé à venir me ravitailler, ou bien me suis-je fourvoyé, votre altesse ?~
+@69  = ~[PC reply to Corwin]...dit le capitaine pendant qu'elle se tient à l'écart dans le camp en toute sécurité.~
+@70  = ~[PC reply to Corwin]Les officiers m'ont chargé d'accomplir cette tâche, Corwin, alors vous feriez mieux de me faire confiance quant à la marche à suivre.~
 
 

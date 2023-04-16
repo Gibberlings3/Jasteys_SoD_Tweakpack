@@ -4,6 +4,10 @@ This tweak pack is mainly meant for the SoD part of BG:EE (except for the compon
 It deals with some tweaks that I found useful for my own game.
 For EET, install the mod directly to your EET game.
 
+Please note: albeit being called tweak pack, the mod should be treated like a quest mod for install order, i.e. install jastey's SoD Tweak Pack before NPC mods that add content to SoD, like all my NPC mods and the SoD components of Imoen4Ever. More details please refer to section COMPATIBILITY NOTE.
+
+
+
 DESCRIPTION
 
 
@@ -63,6 +67,11 @@ Also: After accepting the help and Arkanis/Biff telling it's done, there is a sh
 The transition from the items from the dungeon into the Duchal Palace is done using slightly adapted code from Argent77's "Skip Chateau Irenicus" mod with many thanks!
 
 Compatibility Note: 
+
+Install this component after (see below for more details): 
+-Another fine Hell
+-EndlessBG1
+-Transitions
 
 Another fine Hell with "PC's and Imoen's chest in Palace should have their content":
 If Another fine Hell with component "PC's and Imoen's chest in Palace should have their content" is installed, all items inside the bedside table will also be available at the end of SoD.
@@ -180,6 +189,19 @@ This component eliminates the question why De Lancie would have a key to that va
 With this component, the story is changed so that there is only one vault door key which first is in possession of Caelar. Hephernaan will then take the key with him into Avernus, locking the door to give his master more time to prepare his attack and also to lock Caelar and the PC in so they'd have to follow him to Belhifet or fight each other. 
 Thus, De Lancie doesn't lock the PC in to fight the fiends of Avernus on their own. Instead, the coalition officers can't open the door at that time even if they wanted to.
 This is a small tweak which doesn't have any real influence on the game. It will still be either Caelar or Aun Argent who will hand the key to the PC after the fight before teleporting back.
+
+
+
+COMPATIBILITY NOTE
+
+Install at least the component "Skip Korlasz Dungeon" after the following mods (see above for more details): 
+-Another fine Hell
+-EndlessBG1
+-Transitions
+
+Install at least all components that add or change content in SoD before the following mods:
+-NPC mods that add content to SoD, including the SoD components from Imoen4Ever. 
+The reason is that NPCs might want to react to the new content, but also that their interjections might be moved to less fitting dialogue instances due to the new content added by jastey's SoD Tweakpack.
   
 
 
@@ -268,9 +290,16 @@ Spellhold Studios			http://www.shsforums.net/
 
 SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
+DeepL Online Translator
+www.DeepL.com/Translator
+
 
 
 HISTORY
+
+Version 10.1:
+-Russian version completed, by yota13.
+-Added info regarding install order to readme: install jastey's SoD Tweak Pack after EndlessBg1, Transitions, Another fine Hell, but before NPC mods that add contents to SoD including Imoen4Ever.
 
 Version 10:
 -more reply options with officers in bd3000.

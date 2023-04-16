@@ -5,6 +5,9 @@ Die beinhalteten Tweaks fand ich für mein eigenes Spiel hilfreich.
 
 Die Mod lässt sich direkt auf EET installieren.
 
+Bitte beachten: Obwohl die Mod als Tweak Pack bezeichnet wird, sollte sie in Bezug auf die Installationsreihenfolge wie eine Quest-Mod behandelt werden, d.h. installiert jastey's SoD Tweak Pack vor NPC-Mods, die Inhalte zu SoD hinzufügen, wie alle meine NPC-Mods und die SoD-Komponenten von Imoen4Ever. Weitere Details im Abschnitt KOMPATIBILITÄTSHINWEIS.
+
+
 
 INHALT
 
@@ -63,6 +66,11 @@ Auch zu beachten: Kurz nachdem Arkanis einem berichtet, dass alles erledigt ist 
 Das Transferieren der Gegenstände aus der Gruft zum Herzogpalast verwendet das Skripting von Argents "Skip Chateau Irenicus"-Mod, vielen Dank!
 
 Hinweis zur Kompatibilität:
+
+Install this component after (see below for more details): 
+-Another fine Hell
+-EndlessBG1
+-Transitions
 
 "Another fine Hell" mit "PC's and Imoen's chest in Palace should have their content":
 Ist die Komponente "PC's and Imoen's chest in Palace should have their content" der Mod "Another fine Hell" installiert, dann werden die Gegenstände, die Arkanis für den HC in seinen Nachttisch gelegt hat, auch am Ende von SoD im Nachttisch zu finden sein.
@@ -183,6 +191,20 @@ De Lancie sperrt den HC also nicht ein, um die Teufel von Avernus allein zu bekä
 Dies ist eine kleine Änderung, die keinen wirklichen Einfluss auf das Spiel hat. Nach wie vor wird entweder Caelar oder Aun Silberweiß dem HC nach dem Kampf den Schlüssel übergeben, bevor die Gruppe zurückteleportiert wird.
 
 
+
+KOMPATIBILITÄTSHINWEIS
+
+Installiert mindestens die Komponente "Skip Korlasz Dungeon" nach den folgenden Mods (siehe oben für weitere Details): 
+-Another fine Hell
+-EndlessBG1
+-Transitions
+
+Installiert mindestens alle Komponenten, die Inhalte in SoD hinzufügen oder verändern, vor den folgenden Mods:
+-NPC-Mods, die Inhalte zu SoD hinzufügen, einschließlich der SoD-Komponenten von Imoen4Ever. 
+Der Grund dafür ist, dass die NPCs nur so auf die neuen Inhalte reagieren könnten, aber auch, dass ihre Einmischdialoge aufgrund der neuen Inhalte dieses Tweakpacks an weniger passende Dialogstellen verschoben werden könnten.
+
+
+
 INSTALLATION
 
 Hinweis: Wenn Ihr eine frühere Version einer Mod installiert habt, dann deinstalliert diese immer erst und entfernt alle alten Moddateien aus dem Spielordner, bevor Ihr eine neue Version installiert.
@@ -257,7 +279,14 @@ Spellhold Studios			http://www.shsforums.net/
 
 SoD-Walkthrough bei GameBanshee http://www.gamebanshee.com/baldursgate/walkthrough/sod-korlaszstomb.php
 
+DeepL Online Translator
+www.DeepL.com/Translator
+
 VERSIONS-HISTORIE
+
+Version 10.1:
+-Russian version completed, by yota13.
+-Added info regarding install order to readme: install jastey's SoD Tweak Pack after EndlessBg1, Transitions, Another fine Hell, but before NPC mods that add contents to SoD including Imoen4Ever.
 
 Version 10:
 -more reply options with officers in bd3000.

@@ -31,14 +31,14 @@
 @59 = ~Вот и скажи мне, тебе ведь пришлось дольше тут пробыть.~ 
 
 /* new for v10 */
-@60  = ~You are torturing the prisoners?~
-@61  = ~That's one of the reasons why it's a questionable concept to gain answers, but I'm not here to argue about this. What now?~
-@62  = ~Yes, I will.~
-@63  = ~I guess I don't have much choice.~
-@64  = ~Yes, but as Marshal Nederlok just pointed out it's not even guaranteed that it will!~
-@65  = ~Fine. What now?~
-@66  = ~Poison? Are we so desperate that we have to take measures for our foe to die in their beds?~
-@67  = ~I am sure you have good reasons to suggest this. Let me hear them.~
-@68  = ~[PC reply]I am allowed to come by and restock, or am I mistaken, your highness?~
-@69  = ~[PC reply]...Says the captain while she is standing idle in the safe camp.~
-@70  = ~[PC reply]The officers entrusted me with this task, so you better trust me in how I'm performing it, Corwin.~
+@60 = ~Ты пытаешь заключенных?~
+@61 = ~Это лишь один из способов получения ответов на вопросы, но я здесь не для того, чтобы спорить об этом. Ну и что дальше?~
+@62 = ~Да, я так и сделаю.~
+@63 = ~Полагаю, у меня нет особого выбора.~
+@64 = ~Да, но, как только что заметил маршал Недерлок, нет никакой гарантии, что так и будет!~
+@65 = ~Прекрасно. И что теперь?~
+@66 = ~ Отравление? Неужели мы настолько отчаялись, что вынуждены прибегать к помощи яда, чтобы наш враг помер в своей постели?~
+@67 = ~Безусловно, у тебя есть веские причины для этого. Давай я их выслушаю.~
+@68 = ~[PC reply]Мне разрешено наведываться и пополнять запасы, или я ошибаюсь, ваше высочество?~
+@69 = ~[PC reply]...Это говорит капитан, бездельничая в лагере.~
+@70 = ~[PC reply]Офицеры поручили мне это задание, так что лучше доверься мне в том, как я его выполню, Корвин.~ 

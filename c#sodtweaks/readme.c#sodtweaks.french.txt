@@ -4,22 +4,25 @@ Ce pack de tweaks est principalement destiné à la partie SoD de BG:EE (à l'ex
 Il contient quelques modifications que j'ai trouvées pertinentes pour mon propre jeu.
 Pour EET, installez le mod après EET et avant EET_End.
 
-Please note: albeit being called tweak pack, the mod should be treated like a quest mod for install order, i.e. install jastey's SoD Tweak Pack before NPC mods that add content to SoD, like all my NPC mods and the SoD components of Imoen4Ever. More details please refer to section COMPATIBILITY NOTE.
+Remarque : 
+
+Bien qu'il soit qualifié de tweak pack, ce mod doit être traité comme un mod de quête en ce qui concerne l'ordre d'installation, il faut donc installer Jastey's SoD Tweakpack avant les mods PNJ ajoutant du contenu pour SoD, par exemple tous mes mods PNJ ainsi que les composants pour SoD de Imoen4Ever. Pour plus de détails, veuillez vous référer à la section COMPATIBILITE.
 
 Description
 
 
 1 Fin indépendante des réponses du PC.
 --------------------------------------
+
 Ce composant empêche le final "l'assassin en fuite" de se déclencher si les actes du PC lui permettent d'accéder au final "libération par les ducs", indépendamment du fait que le PC énumère tous ses actes lors de son audience, ou non. Ce composant est aussi pour les joueurs qui ne veulent pas cliquer sur plus d'options de réponse que nécessaire. 
 
 Note : avec ce tweak, le final "libération par les ducs" aura toujours la priorité si les actes du PC lui permettent d'y être éligible. Il n'est alors plus possible de déclencher le final "l'assassin en fuite" par les choix de réponse au cours du procès.
 N'installez pas ce tweak si vous voulez être en mesure de lancer le final "l'assassin en fuite" (où la fin ne dépend que du comportement du PC lors du procès).
 
 
-
 2 Ne manquez pas de dialogues entre NPC-PC.
 -------------------------------------------
+
 Ce composant traite de la manière dont les conversations romantiques sont déclenchées dans SoD, elles ne sont pas chronométrées mais déclenchées lorsque le PC entre dans des zones spécifiques et que le personnage romancé fait partie du groupe. 
 Si l'une d'elles est manquée, les dialogues suivants ne se déclencheront pas non plus. (Exception pour Glint où le premier dialogue peut se déclencher dans trois zones). 
 
@@ -31,18 +34,21 @@ Ce composant déclenche également les dialogues non-romantiques des PNJ s'ils s
 
 Ce composant ne change pas la façon dont les romances s'annulent entres elles.
 
-Remarque :
-Pour Neera, certaines de ses conversations amoureuses sont censées se déclencher pendant sa quête lorsqu'elle est active et seront ignorées si la quête est déjà terminée (selon la conception originale).
+Note : pour Neera, certaines de ses conversations amoureuses sont censées se déclencher pendant sa quête lorsqu'elle est active et seront ignorées si la quête est déjà terminée (selon la conception originale).
 
 Ce composant a deux options d'installation. Notez que le composant "B" inclut également les modifications apportées par le "A".
 
+
 	2.A Pour les PNJ du groupe uniquement.
 	---------------------------------------
+	
 Cela change le déclenchement des dialogues romantiques de "Player1" à quelque chose de plus général, afin qu'ils soient également activés par la présence de n'importe quel PNJ du groupe et pas uniquement par le PC, c'est-à-dire qu'il est possible d'explorer la zone avec n'importe quel PNJ et d'obtenir quand même les dialogues romantiques. 
 Ce composant est celui qui modifie le moins le design original du mod (Du moins, par rapport au composant B). Il ne change pas le fait que les dialogues ne seront activés que si le PNJ romancé est dans le groupe à ce moment-là.
 
+
 	2.B Toujours activer tous les dialogues entre PNJ-PC.
 	------------------------------------------------------
+	
 Avec ce composant, les PNJ romançables n'ont pas besoin d'être dans le groupe et dans des zones spécifiques pour que les dialogues romantiques soient activés. Si l'un d'eux était censé se déclencher dans une zone, il se déclenchera plus tard si le PNJ en question rejoint le groupe. De même, il suffit que n'importe quel PNJ du groupe marche sur le déclencheur de zone. Seule exception : Lorsque vous passez le portail dans le château Paldragon, le PNJ romancé doit être dans le groupe pour déclencher la dernière conversation amoureuse.
 
 Les PNJ qui ne font pas partie du groupe mais qui ont un dialogue possible afficheront une ligne de texte, une fois, si le PC est proche d'eux, indiquant qu'un nouveau dialogue pourrait être expérimenté si le PNJ rejoignait le groupe.
@@ -51,13 +57,13 @@ Note : Presque tous les PNJ ont un dialogue personnel qui commence par une réf�
 Si un PNJ n'a pas fait partie du groupe pendant un certain temps, les dialogues se déclencheront les uns après les autres, une fois que le PNJ aura rejoint le groupe.
 
 
-
 3 Ignorer le donjon de Korlasz.
 --------------------------------
+
 Ce composant permet de sauter le donjon de Korlasz et de se rendre directement au Palais Ducal sans briser l'immersion du joueur. Après l'introduction d'Imoen, Arkanis de Château-Suif (ou, au cas où celui-ci serait mort, Biff la Doublure) s'approchera du PC et lui proposera de s'en charger pour lui.
 Le PC peut accepter et demander que Korlasz et ses sbires soient tués ou épargnés, ou demander à Arkanis/Biff d'attendre. Si on lui dit d'attendre, Arkanis/Biff restera à l'entrée du donjon et le joueur pourra continuer à jouer normalement et lui demander à nouveau plus tard. Une fois l'aide acceptée, la transition du jeu original vers le Palais Ducal se déclenchera, y compris le dialogue d'Imoen disant "c'est enfin terminé". Tous les objets utiles du donjon seront transférés sur la table de chevet dans les quartiers du PC au Palais Ducal dans SoD. Il n'y aura pas de transfert d'or.
 
-Remarque : le transfert d'objets se fera après le réveil du PC et le départ d'Imoen, le transfert prendra quelques minutes pendant lesquelles le jeu pourrait être très lent. Une fois le transfert d'objets achevé, la vitesse du jeu reviendra à la normale.
+Note : le transfert d'objets se fera après le réveil du PC et le départ d'Imoen, le transfert prendra quelques minutes pendant lesquelles le jeu pourrait être très lent. Une fois le transfert d'objets achevé, la vitesse du jeu reviendra à la normale.
 Une fois dans la table de chevet, les objets transférés ne seront *pas* déplacés avec les possessions du PC au cours de la campagne. Ils doivent être mis dans le coffre du PC à la main pour que cela se produise.
 
 Aussi : Après avoir accepté l'aide d'Arkanis/Biff et son retour victorieux, il y a un court moment avant qu'Imoen n'initie le dialogue final "c'est terminé", dialogue qui entraînera le transfert vers le Palais Ducal. À ce moment-là, le joueur a le contrôle total du jeu pendant que certains scripts originaux du jeu sont exécutés afin d'initier le transfert. Commencer un dialogue avec l'un des personnages ne devrait pas poser de problème en attendant, mais il est préférable d'être patient et de laisser le jeu se poursuivre. Le dialogue final avec Imoen menant à la transition de zone devrait commencer par lui-même après qu'Arkanis/Biff ait rapporté le succès de la mission, bien que cela n'ait pas toujours fonctionné pour moi, et j'ai dû initier le dialogue avec Imoen par moi-même. Assurez-vous simplement d'avoir attendu un moment pour que les scripts aient le temps de se terminer.
@@ -66,7 +72,8 @@ La transition entre les objets du donjon de Korlasz et le Palais Ducal est faite
 
 .............. Remarque sur la compatibilité : 
 
-Install this component after (see below for more details): 
+Installez ce composant après (voir la section COMPATIBILITÉ pour plus de détails) :
+
 -Another fine Hell
 -EndlessBG1
 -Transitions
@@ -87,6 +94,7 @@ Dans SoD, le contenu sera également dans la table de chevet du PC.
 
 4 Plus de choix de dialogue et éviter les situations sans issue.
 -----------------------------------------------------------------
+
 Ce composant ajoute des options de réponse ou des lignes de dialogue supplémentaires aux personnages des quêtes, afin d'éviter que le joueur ne rate la *seule* possibilité de demander une information importante ou qu'il soit obligé de dire quelque chose qui ne correspond pas à la personnalité de son personnage pour pouvoir poursuivre la quête.
 Le composant tente de préserver les idées du jeu original : par exemple, si une information ne pouvait être reçue qu'en brutalisant quelqu'un dans le jeu original, les options de réponse ajoutées refléteront toujours cela tout en donnant la possibilité de procéder sans avoir à agir comme une brute totale.
 
@@ -111,6 +119,7 @@ Jusqu'à présent, les cas suivants ont été traités :
 
 5 Utiliser le portrait SoD d'Imoen pour BGII dans EET & BGT.
 -------------------------------------------------------------
+
 Ce composant échangera le portrait d'Imoen dans BGII avec celui du SoD. Le composant est seulement compatible avec BGT et EET. Il changera également le portrait pour une nouvelle partie de BGII dans BGT ou EET.
 
 Remarque : le portrait est modifié en assignant un nouveau portrait (c'est-à-dire un nom de fichier différent) à Imoen au début de BGII. Ce composant ne sera pas réversible en le désinstallant simplement de votre jeu en cours. Il n'est donc pas compatible avec tout autre mod qui changerait le portrait d'Imoen dans BGII (de manière définitive).
@@ -123,18 +132,18 @@ EET: small portrait: c#stimom.bmp, large portrait: c#stimol.bmp
 Les portraits sont tirés du mod "Continuous NPC Portraits" de CamDawg pour m'épargner le temps d'ajuster la taille des portraits au format de l'ancien moteur du jeu.
 
 
-
 6 Restaurer le script de la scène de combat lors de l'enlèvement.
 ------------------------------------------------------------------
+
 Ce composant réactivera la scène désactivée du "combat impossible à gagner" à la fin de SoD. La scène n'a pas été modifiée par rapport à ce qui est (caché) dans le jeu original. La scène aura lieu après le film sur l'enlèvement et comprendra un combat impossible à gagner et la scène finale avec les personnages non identifiés qui emmènent le groupe inconscient. Après cela, le jeu se termine et le générique de fin est affiché.
 Ce composant est uniquement compatible avec SoD, car EET restaure déjà cette scène par défaut.
 
 Merci à k4thos pour le modèle de restauration de la (des) scène(s), qui a été emprunté à EET.
 
 
-
 7 Ajuster l'expérience de départ du PC au début de SoD, par Subtledoctor.
 --------------------------------------------------------------------------
+
 Ce composant vous permet de choisir l'expérience de départ du PC au début d'une nouvelle partie de SoD. Les choix sont les suivants:
 65,000
 90,000
@@ -144,9 +153,9 @@ Ce composant vous permet de choisir l'expérience de départ du PC au début d'u
 Merci à Subtledoctor pour avoir créé ce tweak.
 
 
-
 8 Final de SoD : Jastey's Tweaks.
 -----------------------------------
+
 Ce composant donne 4 choix d'installation, qui changent tous la fin de SoD, Bence Duncan qui commencera son dialogue après avoir trouvé le PC et Skie sur le sol suite à la séquence du "rêve avec l'Écorcheur".
 
 Toutes les options utilisent autant de lignes originales (avec doublage vocal) que possible.
@@ -171,16 +180,16 @@ Option 4: "Version très très simplifiée"
 Cette option rend la fin très courte. Elle est destinée aux joueurs qui ont joué ou prévoient de jouer la fin plusieurs fois. Elle passe de l'arrestation du PC par Bence à l'explication du Duc Belt à l'intérieur de la prison. Le Duc Belt viendra toujours, pas de fin "l'assassin en fuite" avec cette option. Après avoir marché jusqu'à la table où se trouvent les objets, passer par la trappe amènera le PC directement à la sortie des égouts où se trouve Imoen.
 
 
-
 9 Fermer le portail depuis le château de Paldragon (Aun Argent survit toujours).
 --------------------------------------------------------------------------------
+
 Ce composant fait en sorte que le sang de Belhifet soit utilisé, du côté de Toril, pour fermer le portail du château de Paldragon, ce qui sera fait par Aun Argent. Cela donne la possibilité à Aun Argent d'être secouru même si Caelar est morte dans la bataille avec Belhifet.
 Caelar restera en Avernus pour garder les lieux dans le cas où elle survit, donc ce tweak devrait être compatible avec tous les mods ajoutant Caelar comme PNJ.
 
 
-
 10 Hephernaan prend la clé de la crypte du château Paldragon.
 --------------------------------------------------------------
+
 Cet élément résout une question, à savoir : pourquoi De Lancie aurait-il la clé de la crypte ? (Ce qui n'a aucun sens à mes yeux). 
 Avec ce composant, l'histoire est modifiée de façon à ce qu'il n'y ait qu'une seule clé de la crypte, d'abord en possession de Caelar puis d'Hephernaan. Ensuite celui-ci emportera la clé avec lui en Avernus, verrouillant la porte et donnant ainsi à son maître plus de temps pour préparer son attaque (tout en piégeant Caelar et le PC pour les contraindre à se battre entre eux ou les amener à le suivre jusqu'à Belhifet). 
 De cette manière, De Lancie n'enferme pas le PC pour qu'il combatte seul les monstres de l'Avernus. Car en effet, les officiers de la coalition ne pourraient pas ouvrir la porte à ce moment-là, même s'ils le voulaient.
@@ -189,16 +198,19 @@ Il s'agit d'une petite modification qui n'a pas de réelle influence sur le jeu.
 
 
 
-COMPATIBILITY NOTE
+COMPATIBILITÉ :
 
-Install at least the component "Skip Korlasz Dungeon" after the following mods (see above for more details): 
+Installez au minimum le composant "Ignorer le donjon de Korlasz." après les mods suivants (voir ci-dessus le détail du composant pour plus de détails) :
+
 -Another fine Hell
 -EndlessBG1
 -Transitions
 
-Install at least all components that add or change content in SoD before the following mods:
--NPC mods that add content to SoD, including the SoD components from Imoen4Ever. 
-The reason is that NPCs might want to react to the new content, but also that their interjections might be moved to less fitting dialogue instances due to the new content added by jastey's SoD Tweakpack.
+Installez au minimum tous les composants de Jastey's SoD Tweakpack qui ajoutent ou modifient du contenu dans SoD avant les mods suivants :
+
+-Tous les mods PNJ qui ajoutent ou modifient du contenu pour SoD, ainsi que les composants pour SoD de Imoen4Ever 
+
+La principale raison est que ces PNJ pourraient vouloir interagir avec le nouveau contenu du mod, mais également car leurs interjections pourraient être déplacées vers des instances de dialogue moins appropriées en raison des ajouts de Jastey's SoD Tweakpack.
 
 
 

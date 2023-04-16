@@ -299,6 +299,7 @@ HISTORY
 
 Version 10.1:
 -Russian version completed, by yota13.
+-French version completed, by JohnBob.
 -Added info regarding install order to readme: install jastey's SoD Tweak Pack after EndlessBg1, Transitions, Another fine Hell, but before NPC mods that add contents to SoD including Imoen4Ever.
 
 Version 10:

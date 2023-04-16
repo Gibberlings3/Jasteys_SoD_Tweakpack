@@ -4,6 +4,8 @@ Ce pack de tweaks est principalement destiné à la partie SoD de BG:EE (à l'ex
 Il contient quelques modifications que j'ai trouvées pertinentes pour mon propre jeu.
 Pour EET, installez le mod après EET et avant EET_End.
 
+Please note: albeit being called tweak pack, the mod should be treated like a quest mod for install order, i.e. install jastey's SoD Tweak Pack before NPC mods that add content to SoD, like all my NPC mods and the SoD components of Imoen4Ever. More details please refer to section COMPATIBILITY NOTE.
+
 Description
 
 
@@ -63,6 +65,11 @@ Aussi : Après avoir accepté l'aide d'Arkanis/Biff et son retour victorieux, il
 La transition entre les objets du donjon de Korlasz et le Palais Ducal est faite en utilisant un code légèrement modifié du mod "Skip Chateau Irenicus" d'Argent77, un très grand merci !
 
 .............. Remarque sur la compatibilité : 
+
+Install this component after (see below for more details): 
+-Another fine Hell
+-EndlessBG1
+-Transitions
 
 - Si le mod Another fine Hell et son composant "3. Les coffres du PC et d'Imoen dans le Palais devrait garder leur contenu." est installé, tous les objets contenus dans la table de chevet seront également disponibles à la fin de SoD.
 
@@ -182,6 +189,20 @@ Il s'agit d'une petite modification qui n'a pas de réelle influence sur le jeu.
 
 
 
+COMPATIBILITY NOTE
+
+Install at least the component "Skip Korlasz Dungeon" after the following mods (see above for more details): 
+-Another fine Hell
+-EndlessBG1
+-Transitions
+
+Install at least all components that add or change content in SoD before the following mods:
+-NPC mods that add content to SoD, including the SoD components from Imoen4Ever. 
+The reason is that NPCs might want to react to the new content, but also that their interjections might be moved to less fitting dialogue instances due to the new content added by jastey's SoD Tweakpack.
+
+
+
+
 Installation
 
 NOTE: Si vous avez déjà installé le mod, supprimez-le avant d'extraire une nouvelle version. Pour cela: désinstallez tous les composants installés précédemment via le setup, et supprimez le dossier du mod ainsi que les exécutables. 
@@ -262,6 +283,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 10.1:
+-Russian version completed, by yota13.
+-Added info regarding install order to readme: install jastey's SoD Tweak Pack after EndlessBg1, Transitions, Another fine Hell, but before NPC mods that add contents to SoD including Imoen4Ever.
 
 Version 10:
 -more reply options with officers in bd3000.

@@ -296,6 +296,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
+Version 10.2:
+-All components should have LABELs.
+
 Version 10.1:
 -Russian version completed, by yota13.
 -French version completed, by JohnBob.

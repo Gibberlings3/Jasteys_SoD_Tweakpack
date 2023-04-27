@@ -297,6 +297,9 @@ www.DeepL.com/Translator
 
 HISTORY
 
+Version 10.2:
+-All components should have LABELs.
+
 Version 10.1:
 -Russian version completed, by yota13.
 -French version completed, by JohnBob.

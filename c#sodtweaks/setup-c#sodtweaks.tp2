@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v10.1~
+VERSION ~v10.2~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -615,6 +615,7 @@ END //Transitions
 
 
 BEGIN @1008 /* ~More Dialogue Choices & Prevent Dead Ends~ */ DESIGNATED 5
+LABEL ~JasteySodTweaks-MoreDialogueChoices_PreventDeadEnds~
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
@@ -760,6 +761,7 @@ LAF starting_xp INT_VAR value = 65000 END
 
 //---------------------------------
 BEGIN @1014 /* ~Set Starting XP to 90,000~ */ DESIGNATED 9
+LABEL ~JasteySodTweaks-AdjustStartingXP_90000~
 SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 
@@ -767,6 +769,7 @@ LAF starting_xp INT_VAR value = 90000 END
 
 //---------------------------------
 BEGIN @1015 /* ~Set Starting XP to 125,000~ */ DESIGNATED 10
+LABEL ~JasteySodTweaks-AdjustStartingXP_125000~
 SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 
@@ -774,6 +777,7 @@ LAF starting_xp INT_VAR value = 125000 END
 
 //---------------------------------
 BEGIN @1016 /* ~Set Starting XP to 161,000~ */ DESIGNATED 11
+LABEL ~JasteySodTweaks-AdjustStartingXP_161000~
 SUBCOMPONENT @1012 /* ~Change SoD Starting XP~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 

@@ -1,0 +1,50 @@
+/* close_portal_from_toril.d */
+@0  = ~[Aun Argent]Dziecko, to nie bêdzie konieczne. Portal mo¿na zamkn¹æ od strony Pierwszej Sfery Materialnej, a ja znam w³aœciwy rytua³.~
+@1  = ~[Caelar]Ktoœ musi stan¹æ na stra¿y. Cokolwiek pozostanie z po³¹czenia Avernusa z Torilem, wci¹¿ bêdzie przyci¹gaæ biesy poszukuj¹ce drogi do Sfery Materialnej. Bêdê na nie czekaæ. Caelar Srebrzysta obejmie wartê dla Torilu na ca³¹ wiecznoœæ, jeœli bêdzie trzeba.~
+@2  = ~[Aun Argent]To ju¿ koniec. Mam krew Belhifeta, której potrzeba do rytua³u zamkniêcia.~
+@3  = ~[Aun Argent]WeŸcie klucz, który znalaz³em przy cia³ach. Nie wiem, co otwiera, ale na pewno nie jest to nic z tego piekielnego miejsca.~
+@4  = ~[Aun Argent]Portal trzeba zamkn¹æ z Pierwszej Sfery Materialnej i wiem, jak to zrobiæ. Jednak¿e... powinienem pozostaæ tu na stra¿y wrót Piekie³, aby odeprzeæ hordy Avernusa, jeœli szczelina miêdzy sferami otworzy³aby siê na nowo.~
+@5  = ~[PC Reply]Nie zostawimy ciê tutaj, zw³aszcza ¿e, jak sam powiedzia³eœ, potrafisz zapieczêtowaæ szczelinê od strony Torilu.~
+@6  = ~[Aun Argent]To wspania³omyœlna oferta, ale nie mogê jej przyj¹æ. Jeœli ktokolwiek ma tu zostaæ, muszê to byæ ja i nie ustanê w wysi³kach, by w jakimkolwiek stopniu przywróciæ rodowi Srebrzystych dobre imiê...~
+@7  = ~[Aun Argent]Wygl¹da na to, ¿e pragnienie zadoœæuczynienia za z³o, które wyrz¹dzi³a Caelar, nie zatrzyma mnie w tym przeklêtym miejscu, mimo i¿ bolejê, pozostawiaj¹c je niestrze¿one od tej strony.~
+@8  = ~[Aun Argent]Niewielu spoza Zakonu Astra potrafi³oby przeprowadziæ rytua³ zamkniêcia. Portal nale¿y zamkn¹æ jak najszybciej, a pragnienie odkupienia win starego paladyna nie mo¿e byæ w tym przeszkod¹. Wracajmy tam, sk¹d przybyliœcie, b³agam, zanim legiony Avernusa rusz¹ do ataku. W przeciwnym razie mogê byæ zmuszony podj¹æ decyzjê równie szlachetn¹, co g³upi¹.~
+@9  = ~[Aun Argent]By³by to honorowy uczynek, niestety jednak... *wzdycha*~
+/*
+@10  =
+@11  =
+@12  =
+@13  =
+@14  =
+@15  =
+@16  =
+@17  =
+@18  =
+@19  =
+@20  =
+@21  =
+@22  =
+@23  =
+@24  =
+@25  =
+@26  =
+@27  =
+@28  =
+@29  =
+*/
+
+/* hephernaan_takes_key.d */
+@30  = ~Wezmê jeszcze to – tobie klucz do krypty ju¿ siê nie przyda, Caelar. Od tej pory drzwi pozostan¹ zamkniête, dopóki mój pan nie bêdzie gotów z nich skorzystaæ.~
+@31  = ~Poza tym nie mamy obecnie œrodków, które pozwoli³by na otwarcie drzwi. Caelar ewidentnie ob³o¿y³a je potê¿n¹ magi¹, aby pozosta³y zatrzaœniête. Poszukujemy sposobu na ich otwarcie, ale prêdzej mo¿e udaæ ci siê znaleŸæ klucz przy Caelar.~
+/*
+@32  = 
+@33  = 
+@34  = 
+@35  = 
+@36  = 
+@37  = 
+@38  = 
+@39  = 
+@40  = 
+*/
+
+

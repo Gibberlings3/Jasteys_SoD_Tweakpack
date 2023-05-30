@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v10.2~
+VERSION ~v11~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -117,6 +117,11 @@ LANGUAGE ~French~
          ~french~   
          ~c#sodtweaks/translations/french/setup.tra~
 	 ~c#sodtweaks/translations/french/game.tra~
+
+LANGUAGE ~Polish~
+         ~polish~   
+         ~c#sodtweaks/translations/polish/setup.tra~
+	 ~c#sodtweaks/translations/polish/game.tra~
 
 
 /* ~Jastey's SoD Tweaks for SoD and EET~ */

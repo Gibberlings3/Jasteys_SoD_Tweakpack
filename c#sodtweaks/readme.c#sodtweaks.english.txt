@@ -259,6 +259,7 @@ CREDITS
 Argent77: coding help
 Arkie: Russian translation (v7.1)
 CamDawg: correctly sized portrait files
+GoForTheEyes: Polish translation (v11)
 JohnBob: French translation (v9.2)
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
@@ -296,6 +297,9 @@ www.DeepL.com/Translator
 
 
 HISTORY
+
+Version 11:
+-Polish version added, by GoForTheEyes.
 
 Version 10.2:
 -All components should have LABELs.

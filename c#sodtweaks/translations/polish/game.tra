@@ -1,0 +1,38 @@
+@0   = ~<CHARNAME>, pozwól mi do was do³¹czyæ, chcê z tob¹ pomówiæ!~
+
+/* new for v5 */
+@100 = ~Ocali³eœ nas!~ ~Ocali³aœ nas!~
+@101 = ~Hañba! Hañba temu, kto zabi³ m³od¹ Srebrn¹ Tarczê!~
+@102 = ~Uratowa³eœ Fort przy Moœcie przed krucjat¹. Ocali³eœ nas przed Caelar!~ ~Uratowa³aœ Fort przy Moœcie przed krucjat¹. Ocali³aœ nas przed Caelar!~
+@103 = ~Oto nasz bohater!~ ~Oto nasza bohaterka!~
+@104 = ~B¹dŸ naszym bohaterem! Nie potrzebujemy kolejnego Sarevoka!~ ~B¹dŸ nasz¹ bohaterk¹! Nie potrzebujemy kolejnego Sarevoka!~
+@105 = ~Uratowa³eœ nas wszystkich!~ ~Uratowa³aœ nas wszystkich!~
+@106 = ~Wiwat zwyciêska P³omienna Piêœæ!~
+@107 = ~Niech bogowie zlituj¹ siê nad dusz¹ Skie!~
+@108 = ~Caelar zginê³a! Nikt po niej nie zap³acze!~
+@109 = ~Wiwat nasz bohater!~ ~Wiwat nasza bohaterka!~
+@110 = ~Coœ ty zrobi³ m³odej Srebrnej Tarczy?~ ~Coœ ty zrobi³a m³odej Srebrnej Tarczy?~
+@111 = ~Dzieciê Bhaala! Nie ufamy ci!~
+@112 = ~Jesteœ kolejnym Sarevokiem? Przejrzeliœmy ciê, dzieciê Bhaala!~
+
+/* new for v6 */
+/* in c#stc59c.baf */
+@120 = ~Ju¿ po wszystkim. Brama zosta³a zamkniêta. To wszystko, co mo¿na zrobiæ w tym momencie.~
+/* in tp2 */
+/* #59853 changed */
+@121 = ~Oblê¿enie Zamku Smoczej W³óczni
+
+Caelar poœwiêci³a ¿ycie, aby zamkn¹æ portal do Avernusa.
+
+Caelar Srebrzysta zosta³a w piekle, aby zapieczêtowaæ portal. Nie zdo³a³em jej powstrzymaæ. Wydawa³a siê cieszyæ, ¿e mo¿e oddaæ ¿ycie dla bezpieczeñstwa Torilu.~ ~Oblê¿enie Zamku Smoczej W³óczni
+
+Caelar poœwiêci³a ¿ycie, aby zamkn¹æ portal do Avernusa.
+
+Caelar Srebrzysta zosta³a w piekle, aby zapieczêtowaæ portal. Nie zdo³a³am jej powstrzymaæ. Wydawa³a siê cieszyæ, ¿e mo¿e oddaæ ¿ycie dla bezpieczeñstwa Torilu.~
+/* #39315 changed */
+@122 = ~WeŸcie ten klucz. Hephernaan odebra³ mi go, by przekazaæ go swemu panu. Odzyska³am go, ale dla mnie jest ju¿ bezwartoœciowy. Otworzycie nim kryptê w Zamku Smoczej W³óczni. Ja nie wracam na Toril.~
+/* #39298 changed */
+@123 = ~Tu siê rozstaniemy, przyjaciele. WeŸcie klucz, który znalaz³em przy cia³ach. Nie wiem, co otwiera, ale na pewno nie jest to nic z tego piekielnego miejsca.~
+/* #62441 changed */
+@124 = ~Portal jarzy siê piekielnym blaskiem. Mimo ¿e prowadzi on z powrotem do Zamku Smoczej W³óczni, nie stanowi ratunku, dopóki klucz do krypty pozostaje w rêkach Hephernaana. Aby prze¿yæ, musisz znaleŸæ sposób na zapieczêtowanie szczeliny miêdzy sferami.~ 
+

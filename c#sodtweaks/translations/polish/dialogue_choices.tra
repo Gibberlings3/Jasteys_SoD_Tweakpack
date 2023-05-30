@@ -1,0 +1,47 @@
+@0   = ~Czy powinienem wiedzieæ coœ jeszcze o tutejszych wiêŸniach? Jest szansa, ¿e coœ takiego siê powtórzy?~ ~Czy powinnam wiedzieæ coœ jeszcze o tutejszych wiêŸniach? Jest szansa, ¿e coœ takiego siê powtórzy?~
+@1   = ~Mam nadziejê, ¿e nie! Jedyny jeszcze specjalny wiêzieñ to ten sobowtórniak w dalszej, pó³nocnowschodniej celi, ale on nie powinien byæ w stanie rzuciæ takiego zaklêcia!~
+@2   = ~Nie jestem z³odziejem i doskonale o tym wiesz. Nie b¹dŸ g³upia, Mizheno.~ ~Nie jestem z³odziejk¹ i doskonale o tym wiesz. Nie b¹dŸ g³upia, Mizheno.~
+@3   = ~To twoja œwieca i pytam ciê o ni¹. Czego innego spodziewa³abyœ siê w miejsce tej „gimnastyki s³ownej”?~
+@4   = ~Mo¿e trzeba nauczyæ ciê manier, kap³anko?~
+@5   = ~Co proszê? S¹dzê, ¿e lekcja dobrych manier jest tu zdecydowanie wskazana!~
+@6   = ~Spróbuj tylko, kap³anko, a zobaczysz, jak to siê dla CIEBIE skoñczy!~
+
+/* new for v4 */
+@7   = ~Muszê ju¿ iœæ.~
+@8   = ~Zaraz – kim jesteœ i jak siê tu dosta³eœ?~
+@9   = ~Nie zamierzam z tob¹ o tym rozmawiaæ. Wynoœ siê, zanim wezwê stra¿e.~
+
+/* new for v5 */
+@47   = ~[Dynaheir]Wychlaran pos³a³y mnie i Minsca na poszukiwania pomiotów Bhaala. Bêdziemy waœci towarzyszyæ, szczególnie teraz, kiedy rzesze ¿¹daj¹ waœci g³owy li jedynie przez wzgl¹d na waœci boskiego rodziciela.~
+@48   = ~[Jaheira]Khalid i ja obiecaliœmy Gorionowi, ¿e bêdziemy ciê strzec i chroniæ. Nie zostawimy ciê w godzinie, w której najbardziej potrzebujesz wsparcia.~
+
+/* new for v6 */
+@49   = ~[PC reply to Caelar]Ach, chcesz powiedzieæ „Tego oto dnia ta wariatka Caelar sprowadzi³a œmieræ i zniszczenie na te ziemie”?~
+@50   = ~[PC reply to Caelar]To w istocie by³aby zmiana. Jak dot¹d, krew przelewano wy³¹cznie w s³u¿bie twoim celom.~
+@51   = ~[PC reply to Caelar]Próbujesz drwiæ z trucizny, która odjê³a si³y mojej przyjació³ce Imoen na ca³e dnie, a i potem jeszcze zmienia³a jej rêce w rozedrgane fiasko? Mam byæ wdziêczny, ¿e dawka nie by³a œmiertelna, czy co w³aœciwie sugerujesz?~ ~[PC reply to Caelar]Próbujesz drwiæ z trucizny, która odjê³a si³y mojej przyjació³ce Imoen na ca³e dnie, a i potem jeszcze zmienia³a jej rêce w rozedrgane fiasko? Mam byæ wdziêczna, ¿e dawka nie by³a œmiertelna, czy co w³aœciwie sugerujesz?~
+@52   = ~[PC reply to Caelar]Jak, Caelar? W jaki sposób chcesz to osi¹gn¹æ? Oœwieæ nas.~
+@53   = ~[PC reply to Caelar]A wiêc oto co uczynisz – wkroczysz do Dziewiêciu Piekie³ ze swoj¹ armi¹. Jesteœ niespe³na rozumu.~
+@54   = ~[PC reply to Caelar]Caelar... Planujesz wkroczyæ do Avernusa, co oznacza, ¿e otworzysz do niego drogê – daj¹c jednoczeœnie biesom mo¿liwoœæ wydostania siê. Nie wiem, jak mo¿na s¹dziæ, ¿e to dobry pomys³. Ktoœ musi ciê powstrzymaæ!~
+@55   = ~[PC reply to Caelar]ALBO twoje plany doprowadz¹ do tego, ¿e hordy piekielne opanuj¹ Wybrze¿e Mieczy... po raz kolejny. S¹dzê, ¿e to ty sama najbardziej potrzebujesz „oœwiecenia”..~
+@56   = ~[PC reply to Caelar]Nawet skrawek tego szaleñstwa nie jest niczego wart. Na twoje urojenia nie ma ju¿ lekarstwa..~
+@57   = ~[PC Reply, referring to Caelar]Wszystko, co dotar³o do moich uszu, to wy³¹cznie rozbuchane polemiki, którymi ob³¹kana kobieta chce sk³oniæ innych do wykonywania jej rozkazów.~
+
+/* new for v9 */
+@58   = ~Musia³bym sprawdziæ pierwsze piêtro, ¿eby móc odpowiedzieæ.~ ~Musia³abym sprawdziæ pierwsze piêtro, ¿eby móc odpowiedzieæ.~
+@59   = ~Ty mi powiedz, by³aœ tu d³u¿ej.~
+
+/* new for v10 */
+@60  = ~[PC reply]Torturujecie jeñców?~
+@61  = ~[PC reply]To miêdzy innymi dlatego jest to dyskusyjny sposób pozyskiwania odpowiedzi, ale nie jestem tu, by o tym debatowaæ. Co teraz?~
+@62  = ~[PC reply]Zrobiê to.~
+@63  = ~[PC reply]Chyba nie mam wyboru.~
+@64  = ~[PC reply]Tak, ale jak w³aœnie zauwa¿y³ Marsza³ek Nederlok, nie ma gwarancji, ¿e to poskutkuje!~
+@65  = ~[PC reply]W porz¹dku. Co teraz?~
+@66  = ~[PC reply]Trucizna? Czy jesteœmy a¿ tak zdesperowani, by siêgaæ po œrodki, które zabij¹ naszych wrogów we œnie?~
+@67  = ~[PC reply]Z pewnoœci¹ masz dobre powody, by sugerowaæ takie dzia³ania. Us³yszmy je.~
+@68  = ~[PC reply]Chyba wolno mi wróciæ i uzupe³niæ zapasy, czy te¿ siê mylê, wasza wielmo¿noœæ?~
+@69  = ~[PC reply]... Powiedzia³a kapitan, stercz¹c bezczynnie w bezpiecznym obozie.~
+@70  = ~[PC reply]Dowódcy zaufali mi, powierzaj¹c mi to zadanie, zatem ty lepiej ufaj, ¿e wiem, jak je wykonaæ, Corwin.~
+
+
+

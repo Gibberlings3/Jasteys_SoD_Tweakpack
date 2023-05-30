@@ -247,7 +247,8 @@ DANKSAGUNGEN
 
 Argent77: Codinghilfe
 Arkie: Russische Übersetzung (v7.1)
-CamDawg: Portraitdateien
+CamDawg: Portraitdateien im richtigen Format
+GoForTheEyes: Polish translation (v11)
 JohnBob: French translation (v9.2)
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
@@ -283,6 +284,9 @@ DeepL Online Translator
 www.DeepL.com/Translator
 
 VERSIONS-HISTORIE
+
+Version 11:
+-Polish version added, by GoForTheEyes.
 
 Version 10.2:
 -All components should have LABELs.

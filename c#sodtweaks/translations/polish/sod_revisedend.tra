@@ -1,0 +1,53 @@
+@0    = ~[Bence Duncan]Co... co tu siê sta³o?! Czy to Skie? Czy ona...? Ona nie ¿yje! Córka ksiêcia Srebrnej Tarczy zosta³a zamordowana!~ [c#ablank]
+@1    = ~[Corwin]Co siê sta³o, <CHARNAME>?! Zaatakowano was?~
+@2    = ~[Bence Duncan]Mów, co siê sta³o!~ [c#ablank]
+@3    = ~Nie wiem, co siê sta³o – wszystko jest takie mgliste. S¹dzê, ¿e zosta³em zmanipulowany, ¿eby zabiæ Skie. Tak mi przykro.~ ~Nie wiem, co siê sta³o – wszystko jest takie mgliste. S¹dzê, ¿e zosta³am zmanipulowana, ¿eby zabiæ Skie. Tak mi przykro.~
+@4    = ~To by³a potê¿na iluzja, dzie³o wroga, który szpieguje mnie od jakiegoœ czasu. Skie pad³a jej ofiar¹, kiedy usi³owa³em siê broniæ – przykro mi.~ ~To by³a potê¿na iluzja, dzie³o wroga, który szpieguje mnie od jakiegoœ czasu. Skie pad³a jej ofiar¹, kiedy usi³owa³am siê broniæ – przykro mi.~
+@5    = ~Nie zabi³em jej, jeœli to macie na myœli. Zosta³em wrobiony.~ ~Nie zabi³am jej, jeœli to macie na myœli. Zosta³am wrobiona.~
+@6    = ~Jakkolwiek to siê sta³o, wydaje siê, ¿e niebezpieczeñstwo zosta³o na razie za¿egnane.~
+@7    = ~Osoba odpowiedzialna za to stoi tam, za wami.~
+@8    = ~[Bence Duncan]Ty – to ty stoisz za ciosem, który j¹ zabi³?!~
+@9    = ~[Bence Duncan]Co?! Nikogo nie widzê. ¯arty sobie stroisz?!~
+@10   = ~[Bence Duncan]To ma zwi¹zek z twoim pochodzeniem, jestem tego pewien. Tak jak Sarevok, jedyne co przynosisz wszystkim wokó³ to zguba i œmieræ! Mo¿e to jednak TY sam zabi³eœ Skie.~ ~[Bence Duncan]To ma zwi¹zek z twoim pochodzeniem, jestem tego pewien. Tak jak Sarevok, jedyne co przynosisz wszystkim wokó³ to zguba i œmieræ! Mo¿e to jednak TY sama zabi³aœ Skie.~
+@11   = ~[Bence Duncan]Koniec œwiêtowania. Pomimo wczorajszej wspania³ej wiktorii, w której odegra³eœ kluczow¹ rolê, ponure wydarzenia dzisiejszego poranka otrzeŸwiaj¹ nas wszystkich gorzko. Wyruszamy niezw³ocznie, by oddaæ Skie w rêce ksi¹¿êcych kap³anów – a ty pójdziesz z nami i zaczekasz, a¿ ksi¹¿êta zadecyduj¹, co z tym wszystkim zrobiæ.~ ~[Bence Duncan]Koniec œwiêtowania. Pomimo wczorajszej wspania³ej wiktorii, w której odegra³aœ kluczow¹ rolê, ponure wydarzenia dzisiejszego poranka otrzeŸwiaj¹ nas wszystkich gorzko. Wyruszamy niezw³ocznie, by oddaæ Skie w rêce ksi¹¿êcych kap³anów – a ty pójdziesz z nami i zaczekasz, a¿ ksi¹¿êta zadecyduj¹, co z tym wszystkim zrobiæ.~
+@12   = ~[Duke Belt]Mieszkañcy Wrót Baldura! Zgromadziliœmy siê tu, by daæ œwiadectwo wielkiej wiktorii, ale i tragicznego wydarzenia. Caelar zosta³a pokonana! <CHARNAME>, S³awa Wrót Baldura, pomóg³ powstrzymaæ jej nikczemne plany i zamkn¹æ wrota piekie³. Niech ¿yje S³awa Wrót Baldura i Zamku Smoczej W³óczni!~ [c#ablank] ~[Duke Belt]Mieszkañcy Wrót Baldura! Zgromadziliœmy siê tu, by daæ œwiadectwo wielkiej wiktorii, ale i tragicznego wydarzenia. Caelar zosta³a pokonana! <CHARNAME>, S³awa Wrót Baldura, pomog³a powstrzymaæ jej nikczemne plany i zamkn¹æ wrota piekie³. Niech ¿yje S³awa Wrót Baldura i Zamku Smoczej W³óczni!~ [c#ablank]
+@13   = ~[Duke Belt]Ponieœliœmy jednak niepowetowan¹ stratê. Skie Srebrna Tarcza, córka naszego ksiêcia Srebrnej Tarczy, zginê³a w tajemniczych okolicznoœciach. Otrzymaliœmy te¿... zatrwa¿aj¹ce wieœci.~
+@14   = ~To straszne! Tak mi przykro.~
+@15   = ~Co my teraz zrobimy?~
+@16   = ~Co mnie to obchodzi?~
+@17   = ~[Duke Belt]Twoja niefrasobliwoœæ jest nie na miejscu, <CHARNAME>. Chocia¿ taka reakcja z twojej strony nie powinna mnie zaskakiwaæ.~
+@18   = ~[Duke Belt]Dusza Skie przepad³a, a ta pora¿aj¹ca wiadomoœæ znacz¹co odmienia twoj¹ rolê w tym wszystkim. Dot¹d nasza reakcja by³a wywa¿ona, poniewa¿ zak³adaliœmy, ¿e pa³acowi uzdrowiciele z ³atwoœci¹ j¹ wskrzesz¹. Teraz sytuacja jest zgo³a inna.~
+@19   = ~[Duke Belt]Tak, kapralu? Masz coœ do powiedzenia na temat tej osoby?~
+@20   = ~[Duke Belt]<CHARNAME>, to, co by³o zaledwie plotk¹, kiedy pokona³eœ Sarevoka, jest ju¿ wiedz¹ powszechn¹. Ty te¿ jesteœ dzieciêciem Bhaala.~  ~[Duke Belt]<CHARNAME>, to, co by³o zaledwie plotk¹, kiedy pokona³aœ Sarevoka, jest ju¿ wiedz¹ powszechn¹. Ty te¿ jesteœ dzieciêciem Bhaala.~
+@21   = ~Nie wyprê siê swojego pochodzenia. Jednak¿e to nie ja zabi³em Skie.~ ~Nie wyprê siê swojego pochodzenia. Jednak¿e to nie ja zabi³am Skie.~
+@22   = ~Jestem dzieciêciem Bhaala, ale nie jestem Sarevokiem. Ocali³em to miasto – tak jak i Zamek Smoczej W³óczni!~ ~Jestem dzieciêciem Bhaala, ale nie jestem Sarevokiem. Ocali³am to miasto – tak jak i Zamek Smoczej W³óczni!~
+@23   = ~Nie mam nic do dodania.~
+@24   = ~[Duke Belt]Jeœli to twoje ostatnie s³owo, Entarze, nie mam wyboru. Przykro mi, <CHARNAME>.~
+@25   = ~[Corwin]Obiecujê, ¿e nie ustaniemy w poszukiwaniach tego, kto, jak twierdzisz, zabi³ Skie – o ile to w istocie nie ty. Jednak to nie œmieræ Skie's jest przyczyn¹ chaosu w mieœcie. Jest ni¹ twoje pochodzenie. Ty, „S³awo” jesteœ pomiotem Bhaala, tak jak Sarevok, i masz na rêkach krew Skie. Wszelkie zapewnienia o niewinnoœci z twojej strony s¹ bez znaczenia.~
+@26   = ~Chyba ¿artujesz. Mam przyznaæ siê do winy i przyj¹æ wyrok œmierci tylko po to, ¿eby w twoim ukochanym mieœcie zrobi³o siê spokojniej?~
+@27   = ~Z³oczyñca, który tego dokona³, dysponuje wielk¹ moc¹, Corwin. Sam muszê ruszyæ za nim w poœcig!~ ~Z³oczyñca, który tego dokona³, dysponuje wielk¹ moc¹, Corwin. Sama muszê ruszyæ za nim w poœcig!~
+@29   = ~Naprawdê nie wierzysz w moj¹ niewinnoœæ?~
+@28   = ~Och, myœlisz sobie, ¿e kiedy siê mnie pozbêdziecie, moi wrogowie zostawi¹ miasto w spokoju, tak? Jak¿e sprytnie. Dla swojego miasta zrobisz wszystko, prawda?~
+@30   = ~[Corwin]Wszystko jest mgliste – twoje pokrewieñstwo z Bhaalem i ca³e z³o, które siê dzieje... Nie masz pojêcia, jak obecnie wygl¹da miasto. Z twojego powodu na ulicach wci¹¿ wybuchaj¹ walki!~
+@31   = ~[Duke Belt]Nie ma niezbitych dowodów na to, ¿e to ty jesteœ morderc¹. Mimo to, dopóki nie odnajdzie siê sztylet, Skie nie zostanie wskrzeszona, a ty nie odzyskasz dobrego imienia, nie mo¿esz tu przebywaæ. Twoja obecnoœæ tu powoduje zamêt. Miasto jest w rozsypce.~  ~[Duke Belt]Nie ma niezbitych dowodów, ¿e to ty jesteœ morderczyni¹. Mimo to, dopóki nie odnajdzie siê sztylet, Skie nie zostanie wskrzeszona, a ty nie odzyskasz dobrego imienia, nie mo¿esz tu przebywaæ. Twoja obecnoœæ tu powoduje zamêt. Miasto jest w rozsypce.~
+@32   = ~Niepokoj¹ce implikacje
+
+Entarowi Srebrnej Tarczy puœci³y nerwy, kiedy ksi¹¿êta og³osili, ¿e dusza Skie zosta³a uwiêziona w sztylecie zwanym Po¿eraczem Dusz. Upiera³ siê, ¿e to ja jestem za to odpowiedzialny i zosta³em wtr¹cony do lochu.~ ~Niepokoj¹ce implikacje
+
+Entarowi Srebrnej Tarczy puœci³y nerwy, kiedy ksi¹¿êta og³osili, ¿e dusza Skie zosta³a uwiêziona w sztylecie zwanym Po¿eraczem Dusz. Upiera³ siê, ¿e to ja jestem za to odpowiedzialna i zosta³em wtr¹cona do lochu.~
+@33   = ~[Duke Belt]Entar – ksi¹¿ê Srebrna Tarcza – jest zaœlepiony w swej zgryzocie. Domaga siê twojej œmierci, bez wzglêdu na wszystko, i dopnie swego. Nie bêdziesz tu bezpieczny, dopóki ta sprawa nie zostanie rozwi¹zana, <CHARNAME> – to znaczy, dopóki nie odnajdzie siê sztylet i dusza Skie nie zostanie uwolniona.~ ~[Duke Belt]Entar – ksi¹¿ê Srebrna Tarcza – jest zaœlepiony w swej zgryzocie. Domaga siê twojej œmierci, bez wzglêdu na wszystko, i dopnie swego. Nie bêdziesz tu bezpieczna, dopóki ta sprawa nie zostanie rozwi¹zana, <CHARNAME> – to znaczy, dopóki nie odnajdzie siê sztylet i dusza Skie nie zostanie uwolniona.~
+@34   = ~Honor nakazuje mi odnaleŸæ ten sztylet i oswobodziæ duszê Skie. Nie spocznê, póki to siê nie stanie.~
+@35   = ~Wygl¹da na to, ¿e ten zakapturzony i tak nie da mi spokoju, mogê wiêc równie dobrze ruszyæ za nim w poœcig – by odnaleŸæ ten sztylet, a mo¿e i coœ wiêcej.~
+@36   = ~Nie zrobi³em tego. Jestem gotowy na uczciwy proces – nie bêdê uciekaæ w sekrecie jak z³oczyñca.~ ~Nie zrobi³am tego. Jestem gotowa na uczciwy proces – nie bêdê uciekaæ w sekrecie jak z³oczyñca.~
+@37   = ~W ogóle mnie to nie rusza. Mam wprawê w poruszaniu siê po mieœcie, kiedy wszyscy traktuj¹ mnie jak wyrzutka.~
+@38   = ~[Duke Belt]Tym razem nie uda ci siê tu wróciæ. Zadbamy o to.~
+@39   = ~[Duke Belt]Nie... nie mogê ci zagwarantowaæ uczciwego procesu, <CHARNAME>. Twoje pochodzenie... ostatnie wydarzenia, to wszystko wla³o jad w serca wielu osób. Nie bêdzie przesad¹, jeœli powiem, ¿e miasto jest rozdarte pomiêdzy tymi, którzy ciê broni¹, i tymi, którzy ¿¹daj¹, byœ podzieli³ los Sarevoka.~ ~[Duke Belt]Nie... nie mogê ci zagwarantowaæ uczciwego procesu, <CHARNAME>. Twoje pochodzenie... ostatnie wydarzenia, to wszystko wla³o jad w serca wielu osób. Nie bêdzie przesad¹, jeœli powiem, ¿e miasto jest rozdarte pomiêdzy tymi, którzy ciê broni¹, i tymi, którzy ¿¹daj¹, byœ podzieli³a los Sarevoka.~
+@40   = ~[Duke Belt]Jeœli uda³oby siê uratowaæ Skie, zostaniesz zrehabilitowany i oczyszczony z wszelkich zarzutów. Nie mo¿emy odgórnie ustanowiæ opinii publicznej na temat twojego pochodzenia, ale kiedy dusza Skie bêdzie z powrotem z nami, odzyskasz dobre imiê i wolny wstêp do miasta.~ ~[Duke Belt]Jeœli uda³oby siê uratowaæ Skie, zostaniesz zrehabilitowana i oczyszczona z wszelkich zarzutów. Nie mo¿emy odgórnie ustanowiæ opinii publicznej na temat twojego pochodzenia, ale kiedy dusza Skie bêdzie z powrotem z nami, odzyskasz dobre imiê i wolny wstêp do miasta.~
+@41   = ~[Duke Belt]Mi³o mi to s³yszeæ.~
+@42   = ~Sam znajdê dalsz¹ drogê. Nie potrzebujê eskorty.~ ~Sama znajdê dalsz¹ drogê. Nie potrzebujê eskorty.~
+@43   = ~[FF Soldier (male)]Mam rozkaz przeprowadziæ ciê do wyjœcia. Ksi¹¿ê Srebrna Tarcza postawi³ stra¿e w kana³ach, aby zapobiec, by ktokolwiek w³ama³ siê do wiêzienia. Wiem te¿ doskonale, ¿e kapral Duncan wiele ucieszy³by siê ze spotkania z tob¹ tutaj. Potrzebujesz mojego wsparcia, by wydostaæ siê st¹d niezauwa¿enie.~
+@44   = ~Nie dbam o to. Pójdê sam i zobaczê, na co natrafiê po drodze.~ ~Nie dbam o to. Pójdê sama i zobaczê, na co natrafiê po drodze.~
+@45   = ~Racja. ProwadŸ zatem.~
+@46   = ~[FF Soldier (male)]Ech. Ksi¹¿ê Belt urwie mi g³owê – nie dos³ownie, rzecz jasna. Có¿, nie mogê ciê zmusiæ, byœ poszed³ ze mn¹, powodzenia zatem.~ ~[FF Soldier (male)]Ech. Ksi¹¿ê Belt urwie mi g³owê – nie dos³ownie, rzecz jasna. Có¿, nie mogê ciê zmusiæ, byœ posz³a ze mn¹, powodzenia zatem.~
+
+

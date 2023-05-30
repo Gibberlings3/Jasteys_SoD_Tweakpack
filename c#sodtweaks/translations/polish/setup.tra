@@ -1,0 +1,44 @@
+@1000   = ~Ten komponent jest kompatybilny tylko z SoD i EET.~
+@1001   = ~Ten komponent jest kompatybilny tylko z BGT i EET.~ 
+@1002   = ~Przed zainstalowaniem modow do tej gry wymagana jest instalacja Modmerge lub DLC Merger.~
+@1003   = ~Odpowiedzi postaci gracza nie wplywaja na zakonczenie~
+@1004   = ~Nie przegap dialogow postaci gracza z towarzyszami~
+@1005   = ~Dotyczy tylko towarzyszy w druzynie~
+@1006   = ~Zawsze aktywuj dialogi postaci gracza z towarzyszami~
+@1007   = ~Pomin loch Korlasz~
+@1008   = ~Dodaj wiecej opcji dialogowych i zapobiegaj sytuacjom bez wyjscia~
+@1009   = ~Uzywaj portetu Imoen z SoD w BGII w EET i BGT~
+
+/* new for v2 */
+@1010   = ~Ten komponent jest kompatybilny tylko z SoD.~
+@1011   = ~Przywroc pierwotnie zakodowana scene walki towarzyszaca uprowadzeniu~
+
+/* new for v3 */
+@1012   = ~Dopasuj poczatkowe PD postaci gracza na starcie SoD, autor: subtledoctor~
+@1013   = ~Ustaw poczatkowa liczbe PD na 65,000~
+@1014   = ~Ustaw poczatkowa liczbe PD na 90,000~
+@1015   = ~Ustaw poczatkowa liczbe PD na 125,000~
+@1016   = ~Ustaw poczatkowa liczbe PD na 161,000~
+
+/* new for v5 */
+@1017   = ~Ten komponent nalezy zainstalowac przed EET_End.~
+@1018   = ~Zakonczenie SoD: Poprawki jastey~
+@1019   = ~Wersja zmodyfikowana - pelna~
+@1020   = ~Wersja zmodyfikowana - uproszczona~
+@1021   = ~Wersja skrocona~
+@1022   = ~Wersja oryginalna - uproszczona~
+
+/* new for v6 */
+@1023   = ~Inne opcjonalne zakonczenie SoD zostalo juz zainstalowane.~
+@1024   = ~Inny mod sprawia, ze ten komponent nie jest potrzebny.~
+@1025   = ~Hephernaan zabiera klucz do krypty w Zamku Smoczej Wloczni~
+@1026   = ~Portal mozna zamknac ze strony Zamku Smoczej Wloczni (Aun Srebrzysty zawsze bedzie uratowany)~
+
+/* new for v7 */
+@1027   = ~Poprawianie transferu przedmiotow do palacowej komnaty postaci gracza z modu Another fine Hell.~
+@1028   = ~Poprawianie transferu przedmiotow z lochu Korlasz do palacowej komnaty postaci gracza z modu EndlessBG1.~
+@1029   = ~Poprawianie transferu przedmiotow z lochu Korlasz do palacowej komnaty postaci gracza z modu Transitions.~
+@1030   = ~Poprawianie warunkow aktywacji podrozy na wejsciu do krypty Korlasz z modu EndlessBG1.~
+
+
+

@@ -270,6 +270,7 @@ Lava Del'Vortel: ideas
 Machiavélique: proofreading (v8.1 French)
 Shai-Hulud: proofreading (v7.1 German)
 subteldoctor: author
+Ulpian: Russian translation (v11.1)
 yota13: Russian translation (v5.1, v9.1)
 
 
@@ -296,6 +297,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version 11.1:
+-Russian version revised, by Ulpian.
 
 Version 11:
 -Polish version added, by GoForTheEyes.

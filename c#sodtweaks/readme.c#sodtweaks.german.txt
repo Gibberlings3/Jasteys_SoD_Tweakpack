@@ -257,6 +257,7 @@ Lava Del'Vortel: Ideen
 Machiavélique: Korrekturlesen (v8.1 französisch)
 Shai-Hulud: Korrekturlesen (v7.1 deutsch)
 subteldoctor: Autor
+Ulpian: Russian translation (v11.1)
 yota13: Russische Übersetzung (v5.1, 9.1)
 
 
@@ -284,6 +285,9 @@ DeepL Online Translator
 www.DeepL.com/Translator
 
 VERSIONS-HISTORIE
+
+Version 11.1:
+-Russian version revised, by Ulpian.
 
 Version 11:
 -Polish version added, by GoForTheEyes.

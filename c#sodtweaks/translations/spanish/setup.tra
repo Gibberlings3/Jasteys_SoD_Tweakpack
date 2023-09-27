@@ -1,0 +1,42 @@
+@1000   = ~Este componente solo es compatible con SoD y EET.~
+@1001   = ~Este componente solo es compatible con BGT y EET.~ 
+@1002   = ~Modmerge o DLC Merger es necesario antes de poder instalar mods en este juego.~
+@1003   = ~Final independiente de las respuestas del PJ~
+@1004   = ~No te pierdas los dialogos entre PNJ-PJ~
+@1005   = ~Solo para PNJ de grupo~
+@1006   = ~Activar siempre todos los dialogos entre PNJ-PJ~
+@1007   = ~Saltar la mazmorra de Korlasz~
+@1008   = ~Mas opciones de dialogo y evitar callejones sin salida~
+@1009   = ~Usar retrato de Imoen en SoD para BGII en EET & BGT~
+
+/* new for v2 */
+@1010   = ~Este componente solo es compatible con SoD.~
+@1011   = ~Restaurar la escena del secuestro~
+
+/* new for v3 */
+@1012   = ~Ajustar la experiencia inicial del PJ al comienzo de SoD~
+@1013   = ~Fijar experiencia inicial en 65,000~
+@1014   = ~Fijar experiencia inicial en 90,000~
+@1015   = ~Fijar experiencia inicial en 125,000~
+@1016   = ~Fijar experiencia inicial en 161,000~
+
+/* new for v5 */
+@1017   = ~Este componente necesita ser instalado antes de EET_End.~
+@1018   = ~Final SoD: Ajustes de jastey~
+@1019   = ~Revised full version~
+@1020   = ~Revised streamlined version~
+@1021   = ~Skipit version~
+@1022   = ~Original streamlined version~
+
+/* new for v6 */
+@1023   = ~Otro final opcional para SoD ya esta instalado.~
+@1024   = ~Otro mod esta haciendo este componente innecesario.~
+@1025   = ~Hephernaan toma la llave de la boveda de Dragasta~
+@1026   = ~Cierra el portal desde el Castillo Dragasta (Aun Argentea sobrevive siempre)~
+
+/* new for v7 */
+@1027   = ~Parche de transferencia de objetos a la residencia del palacio del PJ personalizado de "Another Fine Hell".~
+@1028   = ~Parche de transferencia de objetos de la mazmorra de Korlasz a la residencia del palacio del PJ desde "EndlessBG1".~
+@1029   = ~Parche de transferencia de objetos de la mazmorra de Korlasz a la residencia del palacio del PJ desde "Transitions".~
+@1030   = ~Parche de activadores de viaje para la entrada a la mazmorra de Korlasz de "EndlessBG1".~
+

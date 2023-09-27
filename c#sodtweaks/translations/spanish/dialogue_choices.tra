@@ -1,0 +1,44 @@
+@0   = ~¿Hay algo más que deba saber sobre los prisioneros aquí? ¿Alguna posibilidad de que algo como esto se repita?~
+@1   = ~¡Espero que no! El único otro prisionero especial es el doppelganger de la celda del noreste, pero no debería ser capaz de lanzar tal hechizo.~
+@2   = ~Yo no soy el ladrón y lo sabéis muy bien. No seáis estúpida, Mizhena.~ ~Yo no soy la ladrona y lo sabéis muy bien. No seáis estúpida, Mizhena.~
+@3   = ~Es vuestra vela, y os estoy preguntando por ella. ¿Qué esperáis que haga aparte de "bailar con mis palabras"?~
+@4   = ~¿Tal vez debería enseñaros modales, clériga?~
+@5   = ~¿Perdón? Creo que una lección de modales es más que apropiada aquí.~
+@6   = ~¡Qué tal si lo intentais, clériga, y os mostraré lo que esto significaría para *vos*!~
+
+/* new for v4 */
+@7   = ~Seguiré mi camino.~
+@8   = ~Perdonad, ¿quién sois y cómo habéis entrado aquí?~
+@9   = ~No veo sentido en discutir esto con vos. Iros ahora, antes de que llame a los guardias.~
+
+/* new for v5 */
+@47   = ~[Dynaheir]Minsc y yo hemos sido enviados por los Wychlaran a buscar engendros de Bhaal. Os acompañaremos, ahora más que nunca después de que el pueblo pida vuestra sangre sólo por vuestro divino padre.~
+@48   = ~[Jaheira]Khalid y yo prometimos a Gorion velar por vos y protegeros. No os daremos la espalda ahora que más lo necesitáis.~
+
+/* new for v6 */
+@49   = ~[PC reply to Caelar]Ah, ¿queréis decir "este fue el día en que Caelar la demente trajo muerte y destrucción a la Costa de la Espada"?~
+@50   = ~[PC reply to Caelar]Bueno, sería un cambio seguro. Hasta ahora, toda la sangre derramada estaba a vuestro servicio.~
+@51   = ~[PC reply to Caelar]¿Intentáis ridiculizar el veneno que dejó inconsciente a mi amiga Imoen durante días y que después convirtió sus manos en un fiasco tembloroso? ¿Se supone que debo estar agradecido de que no fuera mortal o qué estáis insinuando?~ ~[PC reply to Caelar]¿Intentáis ridiculizar el veneno que dejó inconsciente a mi amiga Imoen durante días y que después convirtió sus manos en un fiasco tembloroso? ¿Se supone que debo estar agradecida de que no fuera mortal o qué estáis insinuando?~
+@52   = ~[PC reply to Caelar]¿Cómo, Caelar? ¿Cómo lo haréis? Iluminadnos.~
+@53   = ~[PC reply to Caelar]Así que eso es lo que haréis entonces, marchar a los nueve infiernos con vuestro ejército. Estáis loca.~
+@54   = ~[PC reply to Caelar]Caelar... Estáis planeando marchar hacia el Averno, lo que significa que abriréis un camino hacia él, dándole a los demonios una salida. Realmente no veo cómo esto es una buena idea. ¡Necesitáis que os detengan!~
+@55   = ~[PC reply to Caelar]*O* lo que estáis planeando llevará a que el infierno se desate sobre la Costa de la Espada... otra vez. Creo que sois vos la que necesita "iluminación" aquí.~
+@56   = ~[PC reply to Caelar]Ninguna de estas locuras ha "valido la pena". Estáis completamente delirando.~
+@57   = ~[PC Reply, referring to Caelar]Todo lo que he oído son exageraciones polémicas de una lunática para conseguir que otros hagan su voluntad.~
+
+/* new for v9 */
+@58   = ~Tendría que inspeccionar el terreno primero antes de poder responder a eso.~
+@59   = ~Decidme, habéis estado más tiempo aquí abajo.~
+
+/* new for v10 */
+@60  = ~[PC reply]¿Estáis torturando a los prisioneros?~
+@61  = ~[PC reply]Esa es una de las razones por las que este método es discutible, pero no estoy aquí para cuestionar vuestras decisiones. ¿Y ahora qué?~
+@62  = ~[PC reply]Sí, lo haré.~
+@63  = ~[PC reply]Supongo que no tengo elección.~
+@64  = ~[PC reply]Sí, pero como el Mariscal Nederlok acaba de señalar, ¡ni siquiera está garantizado que lo haga!~
+@65  = ~[PC reply]Bien. ¿Y ahora qué?~
+@66  = ~[PC reply]¿Veneno? ¿Estamos tan desesperados que tenemos que tomar medidas para que nuestros enemigos mueran en sus camas?~
+@67  = ~[PC reply]Estoy seguro de que tenéis buenas razones para sugerir esto. Dejadme oírlas.~ ~[PC reply]Estoy segura de que tenéis buenas razones para sugerir esto. Dejadme oírlas.~
+@68  = ~[PC reply]Creo que se me permite venir a por provisiones, ¿o me he equivocado, Alteza?~
+@69  = ~[PC reply]...dice la capitana mientras se pone a salvo en el campamento.~
+@70  = ~[PC reply]Los oficiales me han puesto a cargo de esto, Corwin, así que mejor confiad en mí en esto.~

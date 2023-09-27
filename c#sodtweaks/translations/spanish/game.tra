@@ -1,0 +1,33 @@
+@0   = ~<CHARNAME>, necesito unirme al grupo, ¡quiero hablar con vos!~
+
+/* new for v5 */
+@100 = ~¡Nos salvasteis!~
+@101 = ~¡Vergüenza! ¡Vergüenza para quien mató a la chica de Escudo de Plata!~
+@102 = ~Salvasteis a Fuertepuente de la cruzada. ¡Nos salvasteis a todos de Caelar!~
+@103 = ~¡Aquí viene nuestro héroe!~ ~¡Aquí viene nuestra heroína!~
+@104 = ~¡Sed nuestro héroe! ¡No necesitamos otro Sarevok!~ ~¡Sed nuestra heroína! ¡No necesitamos otro Sarevok!~
+@105 = ~¡Nos salvasteis a todos!~
+@106 = ~¡Viva el victorioso Puño Llameante!~
+@107 = ~¡Que los dioses se apiaden del alma de Skie!~
+@108 = ~¡Caelar se ha ido! ¡Nadie llorará su muerte!~
+@109 = ~¡Viva nuestro héroe!~ ~¡Viva nuestra héroe!~
+@110 = ~¿Qué le habéis hecho a la chica de Escudo de Plata?~
+@111 = ~¡Hijo de Bhaal! No confiamos en vos~ ~¡Hija de Bhaal! No confiamos en vos~
+@112 = ~¿Sois otro Sarevok? ¡Veremos vuestra verdadera naturaleza, hijo de Bhaal!~ ~¿Sois otro Sarevok? ¡Veremos vuestra verdadera naturaleza, hija de Bhaal!~
+
+/* new for v6 */
+/* in c#stc59c.baf */
+@120 = ~Está hecho. La puerta está sellada. Esto es todo lo que se puede hacer por ahora.~
+/* in tp2 */
+/* #59853 changed */
+@121 = ~Sucesos importantes
+
+Caelar se ha sacrificado para guardar el portal en Averno. 
+
+Caelar Argent se ha quedado para vigilar el portal. No pude detenerla y, en verdad, parecía feliz de dar su vida por la seguridad de la tierra.~
+/* #39315 changed */
+@122 = ~Aquí, tomad esta llave. La recuperé después de que Hephernaan me la quitara para su amo, pero ya no tiene importancia para mí. Abrirá la bóveda de Dragasta. No volveré a Toril.~
+/* #39298 changed */
+@123 = ~Aquí es donde nos separamos, amigo. Tomad esta llave que encontré junto a los cuerpos. No sé lo que abre, pero estoy seguro de que no es nada en este lugar infernal.~ ~Aquí es donde nos separamos, amiga. Tomad esta llave que encontré junto a los cuerpos. No sé lo que abre, pero estoy seguro de que no es nada en este lugar infernal.~
+/* #62441 changed */
+@124 = ~El portal brilla con luz infernal. Lleva de vuelta a Dragasta, pero no a un lugar seguro, no mientras Hephernaan tenga la llave de la bóveda del portal. Para sobrevivir, debéis encontrar la forma de sellar esta grieta entre planos.~

@@ -1,0 +1,12 @@
+@0   = ~Por favor, decidle a <CHARNAME> que hable conmigo. Tengo una oferta que hacerle.~ ~Por favor, decidla a <CHARNAME> que hable conmigo. Tengo una oferta que hacerla.~
+@1   = ~Saludos, <CHARNAME>. Estoy aquí para ofreceros ayuda en vuestra búsqueda. Dejad que mis camaradas y yo nos encarguemos de Korlasz y sus seguidores. No hay necesidad de que el héroe de Puerta de Baldur se arrastre por todas las mazmorras.~ ~Saludos, <CHARNAME>. Estoy aquí para ofreceros ayuda en vuestra búsqueda. Dejad que mis camaradas y yo nos encarguemos de Korlasz y sus seguidores. No hay necesidad de que la heroína de Puerta de Baldur se arrastre por todas las mazmorras.~
+@2   = ~Si aceptáis nuestra ayuda, nos encargaremos de esta mazmorra y volveréis al Palacio Ducal. Os entregaremos todos los objetos que encontremos para que estén con vos en el Palacio Ducal, en algún lugar de vuestros aposentos privados. Estoy seguro de que los encontraréis para recoger los que queráis conservar.~
+@3   = ~Esto suena muy bien. Por favor, hacedlo, y no hagáis prisioneros. Korlasz merece morir.~
+@4   = ~De acuerdo. Tratad de perdonar a Korlasz y sus seguidores, si aceptan rendirse.~
+@5   = ~Primero echaré un vistazo. Os haré saber si necesito vuestros servicios.~
+@6   = ~Muy bien. Aquí estaré.~
+@7   = ~Hola de nuevo. ¿Cansado de hacer todo el trabajo vos solo?~ ~Hola de nuevo. ¿Cansada de hacer todo el trabajo vos sola?~
+@8   = ~En camino.~
+@9   = ~Está hecho.~
+@10  = ~Creo que Imoen quiere veros, así que será mejor que esperéis aquí hasta que esté lista para hablar con vos.~
+@11  = ~Os deseamos lo mejor.~

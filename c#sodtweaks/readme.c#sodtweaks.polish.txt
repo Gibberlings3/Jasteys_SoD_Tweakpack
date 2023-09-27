@@ -256,6 +256,7 @@ CREDITS
 Argent77: coding help
 Arkie: Russian translation (v7.1)
 CamDawg: correctly sized portrait files
+ElGamerViejuno: Spanish translation (v12)
 GoForTheEyes: Polish translation (v11)
 JohnBob: French translation (v9.2)
 Kaliesto: tweak idea
@@ -295,6 +296,9 @@ www.DeepL.com/Translator
 
 
 HISTORY
+
+Version 12:
+-Spanish version added, by ElGamerViejuno.
 
 Version 11.1:
 -Russian version revised, by Ulpian.

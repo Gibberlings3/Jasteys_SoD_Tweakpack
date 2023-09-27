@@ -248,6 +248,7 @@ DANKSAGUNGEN
 Argent77: Codinghilfe
 Arkie: Russische Übersetzung (v7.1)
 CamDawg: Portraitdateien im richtigen Format
+ElGamerViejuno: Spanish translation (v12)
 GoForTheEyes: Polish translation (v11)
 JohnBob: French translation (v9.2)
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
@@ -285,6 +286,9 @@ DeepL Online Translator
 www.DeepL.com/Translator
 
 VERSIONS-HISTORIE
+
+Version 12:
+-Spanish version added, by ElGamerViejuno.
 
 Version 11.1:
 -Russian version revised, by Ulpian.

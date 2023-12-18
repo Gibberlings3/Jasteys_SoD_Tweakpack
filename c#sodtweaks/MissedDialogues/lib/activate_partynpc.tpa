@@ -41,19 +41,6 @@ IsOverMe(Player6)~
 END
 BUT_ONLY_IF_IT_CHANGES
 
-COPY_EXISTING ~bdrom03.bcs~ ~override~
-DECOMPILE_AND_PATCH BEGIN
-REPLACE_TEXTUALLY ~\(IsOverMe(Player1)\)~
-~OR(6)
-\1 
-IsOverMe(Player2)
-IsOverMe(Player3)
-IsOverMe(Player4)
-IsOverMe(Player5)
-IsOverMe(Player6)~
-END
-BUT_ONLY_IF_IT_CHANGES
-
 COPY_EXISTING ~bdrom04.bcs~ ~override~
 DECOMPILE_AND_PATCH BEGIN
 REPLACE_TEXTUALLY ~\(IsOverMe(Player1)\)~

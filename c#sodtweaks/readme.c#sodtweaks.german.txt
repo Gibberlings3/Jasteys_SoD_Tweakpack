@@ -287,6 +287,9 @@ www.DeepL.com/Translator
 
 VERSIONS-HISTORIE
 
+Version 12.1:
+- Fixed bug due to doubled patch code for bdrom03.bcs ("Do Not Miss NPC-PC Dialogues").
+
 Version 12:
 -Spanish version added, by ElGamerViejuno.
 

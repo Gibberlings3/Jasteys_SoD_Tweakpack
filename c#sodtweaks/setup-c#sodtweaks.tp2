@@ -127,6 +127,10 @@ LANGUAGE ~Spanish~
          ~c#sodtweaks/translations/spanish/setup.tra~
 	 ~c#sodtweaks/translations/spanish/game.tra~
 
+LANGUAGE ~Simplified Chinese~
+         ~schinese~   
+         ~c#sodtweaks/translations/schinese/setup.tra~
+	 ~c#sodtweaks/translations/schinese/game.tra~
 
 /* ~Jastey's SoD Tweaks for SoD and EET~ */
 

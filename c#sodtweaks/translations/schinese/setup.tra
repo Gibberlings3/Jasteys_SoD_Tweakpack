@@ -1,0 +1,41 @@
+@1000   = ~该组件只适用于SoD和EET~
+@1001   = ~该组件只适用于BGT和EET~ 
+@1002   = ~在安装该Mod前必须用Modmerge或Argent's DLC Merger对游戏进行处理~
+@1003   = ~结局独立于主角的回应~
+@1004   = ~无法错过的NPC与主角间的对话~
+@1005   = ~只有在队伍中的NPC有效~
+@1006   = ~激活所有NPC与主角间的对话~
+@1007   = ~跳过Korlasz的初始地牢~
+@1008   = ~更多的对话选项，并防止对话出现死路~
+@1009   = ~在BG2、BGT和EET中使用爱蒙在SoD中的头像~
+
+/* new for v2 */
+@1010   = ~该组件只适用于SoD~
+@1011   = ~恢复绑架过场中的打斗~
+
+/* new for v3 */
+@1012   = ~调整角色在SoD开始时的经验值~
+@1013   = ~将开场经验值设为65000~
+@1014   = ~将开场经验值设为90000~
+@1015   = ~将开场经验值设为125000~
+@1016   = ~将开场经验值设为161000~
+
+/* new for v5 */
+@1017   = ~这个组件需要在EET_End之前安装~
+@1018   = ~SoD结局：jastey的调整~
+@1019   = ~修改的完全版本~
+@1020   = ~修改的精简版~
+@1021   = ~跳过版本~
+@1022   = ~原版精简版本~
+
+/* new for v6 */
+@1023   = ~其他可选的已SoD结局安装。~
+@1024   = ~另一个mod使这个组件不再需要。~
+@1025   = ~海夫南拿着龙矛金库的钥匙~
+@1026   = ~可从龙矛堡关闭传送门（奥恩·白银始终活着）~
+
+/* new for v7 */
+@1027   = ~Patching item transfer into custom PC's palace residence from Another fine Hell mod.~
+@1028   = ~Patching item transfer from Korlasz Dungeon into PC's palace residence from EndlessBG1.~
+@1029   = ~Patching item transfer from Korlasz Dungeon into PC's palace residence from Transitions.~
+@1030   = ~Patching travel triggers for entrance to Korlasz' Crypt from EndlessBG1.~

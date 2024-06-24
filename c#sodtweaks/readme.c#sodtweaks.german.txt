@@ -255,6 +255,7 @@ Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
 Lauriel: Ideen und Korrekturen, Korrekturlesen (v3.1 englisch)
 Lava Del'Vortel: Ideen
+Lzw104522773: Simplified Chinese translation (v13)
 Machiavélique: Korrekturlesen (v8.1 französisch)
 Shai-Hulud: Korrekturlesen (v7.1 deutsch)
 subteldoctor: Autor
@@ -286,6 +287,9 @@ DeepL Online Translator
 www.DeepL.com/Translator
 
 VERSIONS-HISTORIE
+
+Version 13:
+-Simplified Chinese version added, by Lzw104522773.
 
 Version 12.1:
 - Fixed bug due to doubled patch code for bdrom03.bcs ("Do Not Miss NPC-PC Dialogues").

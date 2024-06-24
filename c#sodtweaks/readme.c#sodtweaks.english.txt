@@ -266,6 +266,7 @@ Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lauriel: ideas and corrections, proof reading (v3.1)
 Lava Del'Vortel: ideas
+Lzw104522773: Simplified Chinese translation (v13)
 Machiavélique: proofreading (v8.1 French)
 Shai-Hulud: proofreading (v7.1 German)
 subteldoctor: author
@@ -299,6 +300,9 @@ www.DeepL.com/Translator
 
 
 HISTORY
+
+Version 13:
+-Simplified Chinese version added, by Lzw104522773.
 
 Version 12.1:
 - Fixed bug due to doubled patch code for bdrom03.bcs ("Do Not Miss NPC-PC Dialogues").

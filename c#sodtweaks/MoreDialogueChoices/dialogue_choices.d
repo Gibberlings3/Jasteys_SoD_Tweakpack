@@ -142,7 +142,7 @@ END
 
 /* ~And so we reach the end of a long, long journey. If you only knew the sacrifices I made to bring us to this point. All of them worthwhile.~ [BD38472] */
 EXTEND_BOTTOM bdcaelar 50
-++ @56 /* ~None of this madness was "worthwhile". You are delusional beyond recovery.~ */ EXTERN ~BDBENCE~ 61 
+++ @56 /* ~None of this madness was "worthwhile". You are delusional beyond recovery.~ */ DO ~SetGlobal("bd_plot","global",486)~ EXTERN ~BDBENCE~ 61
 END
 
 /* bdcrus10 */

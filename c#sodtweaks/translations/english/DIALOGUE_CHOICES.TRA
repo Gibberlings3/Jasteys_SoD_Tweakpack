@@ -16,7 +16,7 @@
 @48   = ~[Jaheira]Khalid and I promised Gorion to watch over and protect you. We will not turn our backs now that you need it the most.~
 
 /* new for v6 */
-@49   = ~[PC reply to Caelar]Ah, you mean "this is was the day that madwoman Caelar brought death and destruction upon the lands"?~
+@49   = ~[PC reply to Caelar]Ah, you mean "this was the day that madwoman Caelar brought death and destruction upon the lands"?~
 @50   = ~[PC reply to Caelar]Well, it would be a change for sure. So far, all blood spilled was in service to you.~
 @51   = ~[PC reply to Caelar]Are you trying to ridicule the poison that put my friend Imoen out for days and after that made her hands a trembling fiasco? Am I supposed to be thankful it wasn't deadly or what are you implying?~
 @52   = ~[PC reply to Caelar]How, Caelar? How will you do that? Enlighten us.~
@@ -42,3 +42,9 @@
 @68  = ~[PC reply]I am allowed to come by and restock, or am I mistaken, your highness?~
 @69  = ~[PC reply]...Says the captain while she is standing idle in the safe camp.~
 @70  = ~[PC reply]The officers entrusted me with this task, so you better trust me in how I'm performing it, Corwin.~
+
+/* new for v14 */
+@71  = ~Fair point. But let's assume for the moment it is true - there's no harm in checking it out.~
+@72  = ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~
+@73  = ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~
+@74  = ~Do you not realize how absurd this is?~

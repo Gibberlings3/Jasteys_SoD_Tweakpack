@@ -42,3 +42,9 @@
 @68  = ~[PC reply]我被允许过来补充库存，还是我错了，殿下？~
 @69  = ~[PC reply]……当她在安全营地空闲时，船长说道。~
 @70  = ~[PC reply]军官们把这项任务交给了我，所以你最好相信我的表现，科温。~
+
+/* new for v14 */
+@71  = ~Fair point. But let's assume for the moment it is true - there's no harm in checking it out.~
+@72  = ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~
+@73  = ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~
+@74  = ~Do you not realize how absurd this is?~

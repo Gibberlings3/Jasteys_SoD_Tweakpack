@@ -40,6 +40,11 @@
 @1029   = ~Correction du transfert d'objets du donjon de Korlasz dans la residence du PC au palais par le mod Transitions.~
 @1030   = ~Correction des declencheurs de voyage pour l'entree du donjon de Korlasz du mod EndlessBG1.~
 
+/* new for v14 */
+@1030   = ~Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake~
+@1031   = ~Only Make it Permanently Killable~
+@1032   = ~Vampire Fledgling Will Also Return if not Staked~
+
 
 
 /* =============== *

@@ -1,0 +1,38 @@
+ADD_JOURNAL TITLE (@2) @3 @4 USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/c#stvstk.tra~
+
+COPY_EXISTING ~bdbeleg3.sto~ ~override~
+  ADD_STORE_ITEM ~bdstake~ LAST #0 #0 #0 ~IDENTIFIED~ #3
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  OUTER_SPRINT ~EET_only_slash~ ~~
+  OUTER_SPRINT ~EET_only_asteriks~ ~~
+END ELSE BEGIN
+  OUTER_SPRINT ~EET_only_slash~ ~/~
+  OUTER_SPRINT ~EET_only_asteriks~ ~*~
+END
+
+COMPILE EVALUATE_BUFFER ~c#sodtweaks/stake_vampire_bd7410/c#stvstk.baf~
+
+EXTEND_BOTTOM ~bd7410.bcs~ ~c#sodtweaks/stake_vampire_bd7410/bd7410_add.baf~ EVALUATE_BUFFER USING ~c#sodtweaks/translations/autotra/%LANGUAGE%/c#stvstk.tra~
+
+/* add info trigger to coffin */
+COPY_EXISTING ~bd7410.are~ ~override~
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type         = 1    //trigger
+    fj_box_left    = 307
+    fj_box_top     = 324
+    fj_box_right   = 386
+    fj_box_bottom  = 385
+    fj_cursor_idx   = 12
+    fj_vertex_0    = 323 + (385 << 16)
+    fj_vertex_1    = 386 + (348 << 16)
+    fj_vertex_2    = 385 + (337 << 16)
+    fj_vertex_3    = 371 + (324 << 16)
+    fj_vertex_4    = 307 + (360 << 16)
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = c#stv_coffin
+    fj_reg_script   = c#stvstk
+  END
+BUT_ONLY

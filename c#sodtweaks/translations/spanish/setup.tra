@@ -40,3 +40,8 @@
 @1029   = ~Parche de transferencia de objetos de la mazmorra de Korlasz a la residencia del palacio del PJ desde "Transitions".~
 @1030   = ~Parche de activadores de viaje para la entrada a la mazmorra de Korlasz de "EndlessBG1".~
 
+/* new for v14 */
+@1030   = ~Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake~
+@1031   = ~Only Make it Permanently Killable~
+@1032   = ~Vampire Fledgling Will Also Return if not Staked~
+

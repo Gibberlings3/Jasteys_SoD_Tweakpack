@@ -43,4 +43,10 @@
 @69  = ~[PC reply to Corwin]...dit le capitaine pendant qu'elle se tient à l'écart dans le camp en toute sécurité.~
 @70  = ~[PC reply to Corwin]Les officiers m'ont chargé d'accomplir cette tâche, Corwin, alors vous feriez mieux de me faire confiance quant à la marche à suivre.~
 
+/* new for v14 */
+@71  = ~Fair point. But let's assume for the moment it is true - there's no harm in checking it out.~
+@72  = ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~
+@73  = ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~
+@74  = ~Do you not realize how absurd this is?~
+
 

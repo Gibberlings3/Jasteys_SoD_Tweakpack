@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
 
 
-VERSION ~v13~
+VERSION ~v14~
 
 
 README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
@@ -1072,7 +1072,7 @@ END
 ////// 10 ~Hephernaan takes Dragonspear Vault Key~
 ////// 
 ////////////////////////////////////////////////////////////////////////
-/* New component: Hephernaan would take the vault key from Caelar with him. De Lancie wouldn't be the one responsible to lock the door, but would stand outside with no means to help the trapped PC in a timely fashion.
+/* Hephernaan would take the vault key from Caelar with him. De Lancie wouldn't be the one responsible to lock the door, but would stand outside with no means to help the trapped PC in a timely fashion.
 */
 
 BEGIN @1025 /* ~Hephernaan takes Dragonspear Vault Key~ */ DESIGNATED 21
@@ -1107,6 +1107,39 @@ STRING_SET %strref_62441% @124"
 INCLUDE ~.../inlined/string_set_caelarkey.tph~
 
 
+////////////////////////////////////////////////////////////////////////
+//////
+////// 11 ~Make Vampire in bd7410 Perma Killable with Stake~
+//////
+////////////////////////////////////////////////////////////////////////
+/* Idea from zelazko: BD7410.are vampire hideout where you can't permanently kill vampire with a stake. Vampire coffin is there and the vampires retreat by changing into gaseous form. The vampire coffin is not interactable.
+https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#findComment-331839
+*/
+BEGIN @1031 /* Only Make it Permanently Killable */
+DESIGNATED 31
+LABEL ~JasteySoDTweaks_StakeVampireBD7410~
+SUBCOMPONENT @1030 /* ~Make Fledgling Vampire in bd7410 Perma Killable with Stake~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
 
+  OUTER_SPRINT ~Option_2_slash~ ~/~
+  OUTER_SPRINT ~Option_2_asteriks~ ~*~
+
+INCLUDE ~c#sodtweaks/stake_vampire_bd7410/stake_vampire_bd7410.tpa~
+
+
+BEGIN @1032 /* Vampire Fledgling Will Also Return if not Staked */
+DESIGNATED 32
+LABEL ~JasteySoDTweaks_StakeVampireBD7410Return~
+SUBCOMPONENT @1030 /* ~Make Fledgling Vampire in bd7410 Perma Killable with Stake~ */
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
+
+  OUTER_SPRINT ~Option_2_slash~ ~~
+  OUTER_SPRINT ~Option_2_asteriks~ ~~
+
+INCLUDE ~c#sodtweaks/stake_vampire_bd7410/stake_vampire_bd7410.tpa~
 
 

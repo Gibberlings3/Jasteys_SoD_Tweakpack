@@ -1,0 +1,88 @@
+/* script of coffin info trigger in bd7410: make vampire fledgling perma killable with a stake */
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,12)
+    Global("c#stv_vampirebd7410_defeated","global",0)
+THEN
+    RESPONSE #100
+        DisplayStringHead(Myself,%eet_2%63415)  // This coffin, lined with black soil, is currently empty.
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,12)
+    Global("c#stv_tomb_clicked","MYAREA",1)
+    Global("c#stv_vampirebd7410_defeated","global",1)
+    PartyHasItem("bdstake")  // Wooden Stake from SoD
+THEN
+    RESPONSE #100
+        TakePartyItemNum("bdstake",1)  // Wooden Stake
+        DestroyItem("bdstake")  // Wooden Stake
+        DisplayString(Myself,%eet_2%48426)  // (SoD) Your stake pierces the vampire's heart. It shrieks, writhing in agony, then collapses into a pile of dust.
+        EraseJournalEntry(@3)
+        AddJournalEntry(@4,QUEST_DONE)
+        SetGlobal("c#stv_vampirebd7410_defeated","global",2)
+        AddexperienceParty(1000)
+        PlaySound("vampp07")
+        CreateVisualEffectObject("spdeath3",Myself)
+        Wait(1)
+        CreateVisualEffectObject("spflesh3",Myself)
+END
+%EET_only_slash%%EET_only_asteriks%
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,12)
+    Global("c#stv_tomb_clicked","MYAREA",1)
+    Global("c#stv_vampirebd7410_defeated","global",1)
+    PartyHasItem("MISC6W")  // Wooden Stake from BGII
+THEN
+    RESPONSE #100
+        TakePartyItemNum("misc6w",1)  // Wooden Stake
+        DestroyItem("misc6w")  // Wooden Stake
+        DisplayString(Myself,%eet_2%48426)  // (SoD) Your stake pierces the vampire's heart. It shrieks, writhing in agony, then collapses into a pile of dust.
+        EraseJournalEntry(@3)
+        AddJournalEntry(@4,QUEST_DONE)
+        SetGlobal("c#stv_vampirebd7410_defeated","global",2)
+        AddexperienceParty(1000)
+        PlaySound("vampp07")
+        CreateVisualEffectObject("spdeath3",Myself)
+        Wait(1)
+        CreateVisualEffectObject("spflesh3",Myself)
+END
+%EET_only_asteriks%%EET_only_slash%
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,12)
+    Global("c#stv_vampirebd7410_defeated","global",2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@0)  // (BGII 35849) The vampire is truly dead, and the coffin reeks of carrion. There is nothing else you can do with it.
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,12)
+    Global("c#stv_vampirebd7410_defeated","global",1)
+    OR(2)
+        Global("c#stv_tomb_clicked","MYAREA",0)
+        !PartyHasItem("bdstake") // Wooden Stake
+%EET_only_slash%%EET_only_asteriks%
+    OR(2)
+        Global("c#stv_tomb_clicked","MYAREA",0)
+        !PartyHasItem("MISC6W") // Wooden Stake from BGII
+%EET_only_asteriks%%EET_only_slash%
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@1)  // The vampire retreated to this coffin once you defeated it. If you have a wooden stake, you can try to kill it. His body slowly regenerates, but it will be some time before it is fully healed.
+        SetGlobal("c#stv_tomb_clicked","MYAREA",1)
+END
+
+IF
+    Clicked([ANYONE])
+    !Range(LastTrigger,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,%eet_2%38224)  // You are too far away to use that.
+END
+

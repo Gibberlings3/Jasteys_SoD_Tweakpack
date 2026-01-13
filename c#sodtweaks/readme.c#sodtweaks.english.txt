@@ -192,6 +192,23 @@ This is a small tweak which doesn't have any real influence on the game. It will
 
 
 
+11 Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake
+-----------------------------------
+This component makes the coffin of the fledgling vampire in the hideout in the Bloodbark Grove (area bd7410.are) interactible, so that the vampire can be staked after he retreated in his gaseous form. With this, permanently killing the fledgling vampire is made consistent with the other vampire quest in SoD ("Isabella and Ikros" with the vampire Tsolak) as well as the vampires in BGII.
+Stakes are added to one of Belegarm's shops.
+
+The component has two install options:
+
+1. Only Make it Permanently Killable
+This component only adds the possibility to stake the vampire after he was defeated in a fight.
+
+2. Vampire Fledgling Will Also Return if not Staked
+With this component, the fledgling vampire will return to life after an ingame timer of 50 days if he is not staked until then.
+
+Note: In EET, both stake item variants (SoD's "bdstake" as well as BGII's "misc6w") can be used to stake the fledgling vampire. If both are in inventory, the SoD one will be used.
+
+
+
 COMPATIBILITY NOTE
 
 Install at least the component "Skip Korlasz Dungeon" after the following mods (see above for more details): 
@@ -261,6 +278,7 @@ Arkie: Russian translation (v7.1)
 CamDawg: correctly sized portrait files
 ElGamerViejuno: Spanish translation (v12)
 GoForTheEyes: Polish translation (v11)
+Humanoid Taifun: ideas for reply options
 JohnBob: French translation (v9.2)
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
@@ -269,9 +287,10 @@ Lava Del'Vortel: ideas
 Lzw104522773: Simplified Chinese translation (v13)
 Machiavélique: proofreading (v8.1 French)
 Shai-Hulud: proofreading (v7.1 German)
-subteldoctor: author
+subteldoctor: author of component "Adjust PC's Starting XP at Beginning of SoD"
 Ulpian: Russian translation (v11.1)
 yota13: Russian translation (v5.1; v9.1)
+zelazko: idea for component "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake".
 
 
 USED TOOLS AND RESSOURCES
@@ -300,6 +319,12 @@ www.DeepL.com/Translator
 
 
 HISTORY
+
+Version 14:
+-New component: "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake" with two install options, idea by zelazko (https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#findComment-331839).
+-New reply options, ideas from Humanoid Taifun (https://forums.beamdog.com/discussion/comment/1219512/#Comment_1219512).
+-New reply options for Caelar should not bork the dialogue progress (added missing variable to advange bd_plot).
+-Updated link to Shai Hulud's Text-Patch.
 
 Version 13:
 -Simplified Chinese version added, by Lzw104522773.

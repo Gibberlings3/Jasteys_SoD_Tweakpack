@@ -39,3 +39,8 @@
 @1028   = ~Patching item transfer from Korlasz Dungeon into PC's palace residence from EndlessBG1.~
 @1029   = ~Patching item transfer from Korlasz Dungeon into PC's palace residence from Transitions.~
 @1030   = ~Patching travel triggers for entrance to Korlasz' Crypt from EndlessBG1.~
+
+/* new for v14 */
+@1030   = ~Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake~
+@1031   = ~Only Make it Permanently Killable~
+@1032   = ~Vampire Fledgling Will Also Return if not Staked~

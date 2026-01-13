@@ -40,5 +40,10 @@
 @1029   = ~Poprawianie transferu przedmiotow z lochu Korlasz do palacowej komnaty postaci gracza z modu Transitions.~
 @1030   = ~Poprawianie warunkow aktywacji podrozy na wejsciu do krypty Korlasz z modu EndlessBG1.~
 
+/* new for v14 */
+@1030   = ~Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake~
+@1031   = ~Only Make it Permanently Killable~
+@1032   = ~Vampire Fledgling Will Also Return if not Staked~
+
 
 

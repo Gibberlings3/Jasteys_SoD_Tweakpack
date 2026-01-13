@@ -1,0 +1,142 @@
+/* vampire fledgling is defeated */
+
+/* detect that the vampire fledgling is defeated */
+/* short timer, also a fail safe in case the gaseous form bugged out */
+IF
+    Global("c#stv_vampirebd7410_defeated","global",0)
+    OR(3)
+        Dead("VAMFLM01")
+        !Exists("VAMFLM01")  // Fledgling Vampire
+        InMyArea("gasform4")
+    Global("c#stv_settimer","MYAREA",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        RealSetGlobalTimer("c#stv_intermediate_timer","global",5)
+        SetGlobal("c#stv_settimer","MYAREA",1)
+        SetInterrupt(TRUE)
+END
+/* vampire is back in coffin */
+IF
+    RealGlobalTimerExpired("c#stv_intermediate_timer","global")
+    Global("c#stv_settimer","MYAREA",1)
+    !InMyArea("gasform4") //Gaseous Form
+    Global("c#stv_vampirebd7410_defeated","global",0)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("c#stv_vampirebd7410_defeated","global",1)
+        SetInterrupt(TRUE)
+END
+/* set journal entry once */
+IF
+    Global("c#stv_vampirebd7410_defeated","global",1)
+    Global("c#stv_journalentry","MYAREA",0)
+THEN
+    RESPONSE #100
+        AddJournalEntry(@3,QUEST)
+        SetGlobal("c#stv_journalentry","MYAREA",1)
+END
+
+%Option_2_slash%%Option_2_asteriks%
+
+/* additional to c#stvstk.bcs: option if vampire fledgling comes back after being restored */
+
+/* set timer */
+IF
+    Global("c#stv_vampirebd7410_defeated","global",1)
+    GlobalLT("c#stv_settimer","MYAREA",2)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+//##        SetGlobalTimer("c#stv_vampirebd7410_timer","global",FIFTY_DAYS)
+        SetGlobalTimer("c#stv_vampirebd7410_timer","global",30)
+        SetGlobal("c#stv_settimer","MYAREA",2)
+        SetInterrupt(TRUE)
+END
+
+/* timer run out - fledgling returns */
+IF
+    GlobalTimerExpired("c#stv_vampirebd7410_timer","global")
+    Global("c#stv_settimer","MYAREA",2)
+    !Exists("VAMFLM01")  // Fledgling Vampire
+    Global("c#stv_vampirebd7410_defeated","global",1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("SPRITE_IS_DEADVAMFLM01","GLOBAL",0)
+        CreateCreature("VAMFLM01",[388.388],14)
+        SetGlobal("c#stv_settimer","MYAREA",0)
+        SetGlobal("c#stv_vampire_summon_wolves","MYAREA",1)
+        SetGlobal("c#stv_vampirebd7410_defeated","global",0)
+        SetInterrupt(TRUE)
+END
+
+/* calls wolves */
+IF
+    Global("c#stv_vampire_summon_wolves","MYAREA",1)
+    Exists("VAMFLM01")
+    !Dead("VAMFLM01")
+    InMyArea(Player1)
+THEN
+    RESPONSE #100
+        SetInterrupt(FALSE)
+        SetGlobal("c#stv_vampire_summon_wolves","MYAREA",2)
+        ActionOverride("VAMFLM01",DisplayString(Myself,%eet_2%70433))  // *summons wolves*
+        PlaySound("VWOLF03")
+        SetInterrupt(TRUE)
+        Continue()
+END
+
+/* spawn wolves at the same places like before */
+/* EASIEST, EASY */
+
+IF
+    Global("c#stv_vampire_summon_wolves","MYAREA",2)
+THEN
+    RESPONSE #100
+        SetGlobal("c#stv_vampire_summon_wolves","MYAREA",3)
+        PlaySound("WWOLF03")
+        CreateCreature("BDWOLFDR",[524.404],SE)  // Dread Wolf
+        CreateCreature("BDWOLFDR",[445.347],SE)  // Dread Wolf
+        CreateCreature("WOLF",[589.455],S)  // Wolf
+        CreateCreature("WOLF",[517.463],SE)  // Wolf
+        CreateCreature("WOLF",[468.482],SE)  // Wolf
+        CreateCreature("WOLF",[430.455],E)  // Wolf
+END
+
+/* NORMAL +  */
+IF
+    Global("c#stv_vampire_summon_wolves","MYAREA",3)
+    DifficultyGT(EASY)
+THEN
+    RESPONSE #100
+        SetGlobal("c#stv_vampire_summon_wolves","MYAREA",4)
+        CreateCreature("BDWOLFDR",[427.381],S)  // Dread Wolf
+END
+
+/* HARD + */
+IF
+    Global("c#stv_vampire_summon_wolves","MYAREA",4)
+    DifficultyGT(NORMAL)
+THEN
+    RESPONSE #100
+        SetGlobal("c#stv_vampire_summon_wolves","MYAREA",5)
+        PlaySound("WWOLF03")
+        CreateCreature("BDWOLFDR",[333.427],E)  // Dread Wolf
+        CreateCreature("bdwolfva",[370.514],E)  // Vampiric Wolf
+        CreateCreature("bdwolfva",[268.382],SE)  // Vampiric Wolf
+END
+
+/* HARDEST + */
+IF
+    Global("c#stv_vampire_summon_wolves","MYAREA",5)
+    DifficultyGT(HARD)
+THEN
+    RESPONSE #100
+        SetGlobal("c#stv_vampire_summon_wolves","MYAREA",6)
+        CreateCreature("bdwolfva",[482.430],S)  // Vampiric Wolf
+        CreateCreature("bdwolfva",[402.305],S)  // Vampiric Wolf
+END
+
+%Option_2_asteriks%%Option_2_slash%

@@ -43,5 +43,11 @@
 @69  = ~[PC reply]... Powiedzia³a kapitan, stercz¹c bezczynnie w bezpiecznym obozie.~
 @70  = ~[PC reply]Dowódcy zaufali mi, powierzaj¹c mi to zadanie, zatem ty lepiej ufaj, ¿e wiem, jak je wykonaæ, Corwin.~
 
+/* new for v14 */
+@71  = ~Fair point. But let's assume for the moment it is true - there's no harm in checking it out.~
+@72  = ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~
+@73  = ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~
+@74  = ~Do you not realize how absurd this is?~
+
 
 

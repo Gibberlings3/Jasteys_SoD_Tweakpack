@@ -111,7 +111,7 @@ END
 /* More reply options to Caelar at Coast Way Crossing and later */
 /* ~We stand poised on the cusp of a new age. Someday, all Faerûn shall look to this moment and say, "Then. That was when everything changed."~ [BD35807] */
 EXTEND_BOTTOM bdcaelar 12
-++ @49 /* ~Ah, you mean "this is was the day that madwoman Caelar brought death and destruction upon the lands"?~ */ + 14
+++ @49 /* ~Ah, you mean "this was the day that madwoman Caelar brought death and destruction upon the lands"?~ */ + 14
 END
 
 /* ~You wish to see me dead, then? More blood spilled in service to the Grand Dukes?~ [BD35813] */
@@ -138,6 +138,12 @@ END
 EXTEND_BOTTOM bdcaelar 46
 ++ @54 /* ~Caelar... You are planning on marching into Avernus, which will mean you will open a way into it - giving the fiends a way out of it. I really do not see how this is a good idea. You need to be stopped!~ */ + 48
 ++ @55 /* ~*Or* what you are planning will lead to hell breaking lose over the Sword Coast... again. I think you are the one needing "enlightenment" here.~ */ + 47
+++ @73 /* ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~ */ + 47
+END
+
+/* ~A heavy toll was paid, by me and those who followed me. A heavier one still was exacted from those who stood in my path. Am I without regret? No. Would I do it again? Without hesitation.~ [BD39218] */
+EXTEND_BOTTOM bdcaelar 76
+++ @74 /* ~Do you not realize how absurd this is?~ */ + 80
 END
 
 /* ~And so we reach the end of a long, long journey. If you only knew the sacrifices I made to bring us to this point. All of them worthwhile.~ [BD38472] */
@@ -173,6 +179,8 @@ END
 EXTEND_BOTTOM BDNEDERL 27
 ++ @60 /* ~You are torturing the prisoners?~ */ EXTERN BDDELANC 10
 ++ @61 /* ~That's one of the reasons why it's a questionable concept to gain answers, but I'm not here to argue about this. What now?~ */ + 28
+++ @71 /* ~Fair point. But let’s assume for the moment it is true — there’s no harm in checking it out.~ */ + 28
+++ @72 /* ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~ */ EXTERN BDDELANC 10
 END
 
 /* BDNEDERL
@@ -199,6 +207,7 @@ END
 EXTEND_BOTTOM BDDELANC 9
 ++ @64 /* ~Yes, but as Marshal Nederlok just pointed out it's not even guaranteed that it will!~ */ + 10
 ++ @65 /* ~Fine. What now?~ */ EXTERN BDNEDERL 28
+++ @72 /* ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~ */ + 10
 END
 
 

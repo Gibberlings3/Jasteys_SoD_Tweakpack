@@ -43,3 +43,9 @@
 @69  = ~[PC reply]...Sagt der Hauptmann, während sie selbst untätig im sicheren Lager sitzt.~
 @70  = ~[PC reply]Die Offiziere haben mich mit diesem Auftrag betraut, Corwin. Ihr vertraut mir besser damit, wie ich ihn auszuführen gedenke.~
 
+/* new for v14 */
+@71  = ~Das stimmt sicherlich. Aber lasst uns einen Moment annehmen, dass es stimmt. Es könnte sich lohnen, es zu überprüfen.~
+@72  = ~Wenn die Genauigkeit zweifelhaft ist, warum sollte man sie dann nicht mit Magie überprüfen? Sicherlich können unsere Magier die Geschichte eines Gefangenen bestätigen, bevor wir dafür Leben riskieren.~
+@73  = ~Mich Euch anschließen? Ich verstehe noch nicht mal ansatzweise, wozu all das Blutvergießen gut gewesen sein soll, Caelar!~
+@74  = ~Merkt Ihr wirklich nicht, wie absurd das ist?~
+

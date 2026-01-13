@@ -192,6 +192,23 @@ Dies ist eine kleine Änderung, die keinen wirklichen Einfluss auf das Spiel hat.
 
 
 
+11 Junger Vampir in bd7410 kann mit Holzplock vernichtet werden
+-----------------------------------
+Diese Komponente macht den Sarg des jungen Vampirs im Versteck im Blutrindenhain (area bd7410.are) inter-agierbar, sodass der Vampir mit einem Holzpflock permanent getötet werden kann, nachdem er sich in seiner gasförmige Gestalt zurückgezogen hat. Damit wird Konsistenz mit der anderen Vampirquest in SoD („Isabella und Ikros”, mit dem Vampir Tsolak) sowie den Vampiren in BGII hergestellt.
+Pflöcke werden zu einem der Läden von Belegarm hinzugefügt.
+
+Die Komponente hat zwei Installationsoptionen:
+
+1. Nur pfaehlbar machen
+Diese Komponente fügt lediglich die Möglichkeit hinzu, den Vampir zu pfählen, nachdem er im Kampf besiegt wurde.
+
+2. Zusaetzlich regeneriert sich der Junge Vampir, wenn er nicht gepfaehlt wird
+Mit dieser Komponente kehrt der junge Vampir nach Ablauf von 50 Ingame-Tagen ins Leben zurück, wenn er bis dahin nicht gepfählt wurde.
+
+Hinweis: Beide Pflock Item-Varianten, sowohl aus SoD ("bdstake") als auch aus BGII ("misc6w"), können zum Pfählen des jungen Vampirs verwendet werden. Befinden sich beide im Inventar, wird die aus SoD verwendet.
+
+
+
 KOMPATIBILITÄTSHINWEIS
 
 Installiert mindestens die Komponente "Skip Korlasz Dungeon" nach den folgenden Mods (siehe oben für weitere Details): 
@@ -239,7 +256,7 @@ Wenn bei der Installation Probleme auftreten oder Ihr beim Spielen Bugs bemerkt,
 HINWEIS AN SPIELER DER DEUTSCHEN VERSION
 
 Die deutsche Modversion orientiert sich an der deutschen Fanübersetzung "Deutsche Übersetzung für SoD". Dies bedeutet, dass die im Spiel verwendeten Eigennamen und Übersetzungen der Örtlichkeiten etc. mit der Fanübersetzung konsistent sind und zur offiziellen SoD-Übersetzung Diskrepanzen bestehen, vor allem bei den Namen der Spielcharaktere. Installiert die Fanübersetzung für ein konsistentes Spielerlebnis.
-Download Link: https://baldurs-gate.de/index.php?resources/deutsche-%C3%9Cbersetzung-f%C3%BCr-sod.49/
+Download Link: https://www.baldurs-gate.de/index.php?threads/shai-huluds-text-patch.45417/
 
 
 
@@ -250,6 +267,7 @@ Arkie: Russische Übersetzung (v7.1)
 CamDawg: Portraitdateien im richtigen Format
 ElGamerViejuno: Spanish translation (v12)
 GoForTheEyes: Polish translation (v11)
+Humanoid Taifun: Ideen für Antwortoptionen
 JohnBob: French translation (v9.2)
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
@@ -258,9 +276,10 @@ Lava Del'Vortel: Ideen
 Lzw104522773: Simplified Chinese translation (v13)
 Machiavélique: Korrekturlesen (v8.1 französisch)
 Shai-Hulud: Korrekturlesen (v7.1 deutsch)
-subteldoctor: Autor
+subteldoctor: Autor der Komponente "Start-EP des HC in SoD anpassen"
 Ulpian: Russian translation (v11.1)
 yota13: Russische Übersetzung (v5.1, 9.1)
+zelazko: Idee für die Komponente "Junger Vampir im Blutrindenhain kann mit Holzplock vernichtet werden".
 
 
 VERWENDETE TOOLS UND RESSOURCEN
@@ -287,6 +306,12 @@ DeepL Online Translator
 www.DeepL.com/Translator
 
 VERSIONS-HISTORIE
+
+Version 14:
+-New component: "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake" with two install options, idea by zelazko (https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#findComment-331839).
+-New reply options, ideas from Humanoid Taifun (https://forums.beamdog.com/discussion/comment/1219512/#Comment_1219512).
+-New reply options for Caelar should not bork the dialogue progress (added missing variable to advange bd_plot).
+-Updated link to Shai Hulud's Text-Patch.
 
 Version 13:
 -Simplified Chinese version added, by Lzw104522773.

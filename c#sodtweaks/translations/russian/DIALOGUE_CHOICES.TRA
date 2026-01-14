@@ -44,7 +44,7 @@
 @70 = ~[PC reply]Офицеры поручили мне это задание, так что лучше доверься мне в том, как я его выполню, Корвин.~ 
 
 /* new for v14 */
-@71  = ~Fair point. But let's assume for the moment it is true - there's no harm in checking it out.~
-@72  = ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~
-@73  = ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~
-@74  = ~Do you not realize how absurd this is?~
+@71  = ~Справедливое замечание. Хорошо, давайте предположим, что это всё правда - проверить то не помешает.~
+@72  = ~Если точность вызывает сомнения, почему бы не использовать магию для проверки? Наши маги наверняка смогут подтвердить рассказ пленника, прежде чем мы отправимся рисковать своими жизнями.~
+@73  = ~Присоединиться к тебе? Я и правда не понимаю, зачем было нужно всё это кровопролитие, Каэлар!~
+@74  = ~Ты же понимаешь, насколько это абсурдно?~

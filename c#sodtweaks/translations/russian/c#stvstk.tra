@@ -1,12 +1,16 @@
-@0  = ~[BGII #35849]The vampire is truly dead, and the coffin reeks of carrion. There is nothing else you can do with it.~
-@1  = ~[BGII #35811]The vampire retreated to this coffin once you defeated it. If you have a wooden stake, you can try to kill it. [SoD #48425, second half]His body slowly regenerates, but it will be some time before it is fully healed.~
-@2  = ~Stake Vampire in Bloodbark Grove~
-@3  = ~Stake Vampire in Bloodbark Grove
+@0  = ~[BGII #35849]Вампир окончательно мёртв, и от гроба пахнет падалью. Больше с ним ничего нельзя сделать.~
+@1  = ~[BGII #35811]Ты победил вампира, и он вернулся в свой гроб. Если у тебя есть деревянный кол, ты можешь попытаться убить его.~ ~Ты победила вампира, и он вернулся в свой гроб. Если у тебя есть деревянный кол, ты можешь попытаться убить его.~
+@2  = ~Пронзить вампира в Кровавой Роще~
+@3  = ~Пронзить вампира в Кровавой Роще
 
-I defeated a fledgling vampire in a hideout in Bloodbark Grove, but I need to stake it with a wooden stake to kill it permanently.~
-@4  = ~Stake Vampire in Bloodbark Grove
+Я победил молодого вампира в его укрытии в Кровавой Роще, но теперь мне нужно пронзить его деревянным колом, чтобы умертвить навсегда.~ ~Пронзить вампира в Кровавой Роще
 
-I staked the fledgling vampire. It won't come back to life.~
+Я победила молодого вампира в его укрытии в Кровавой Роще, но теперь мне нужно пронзить его деревянным колом, чтобы умертвить навсегда.~
+@4  = ~Пронзить вампира в Кровавой Роще
+
+Я пронзил молодого вампира колом. Больше он не оживёт.~ ~Пронзить вампира в Кровавой Роще
+
+Я пронзила молодого вампира колом. Больше он не оживёт.~
 /*
 @5  =
 @6  =

@@ -41,9 +41,9 @@
 @1030   = ~Correction des declencheurs de voyage pour l'entree du donjon de Korlasz du mod EndlessBG1.~
 
 /* new for v14 */
-@1030   = ~Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake~
-@1031   = ~Only Make it Permanently Killable~
-@1032   = ~Vampire Fledgling Will Also Return if not Staked~
+@1031   = ~Uniquement la possibilite de le tuer definitivement.~
+@1032   = ~Le vampire novice revient a la vie s'il n'est pas empale.~
+@1033   = ~Ajouter la possibilite de tuer definitivement le vampire novice du Bosquet d'Ecorsang.~
 
 
 

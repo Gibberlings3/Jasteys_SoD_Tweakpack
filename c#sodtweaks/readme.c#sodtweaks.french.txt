@@ -196,21 +196,20 @@ De cette manière, De Lancie n'enferme pas le PC pour qu'il combatte seul les mo
 Il s'agit d'une petite modification qui n'a pas de réelle influence sur le jeu. Ce sera toujours Caelar ou Aun Argent qui remettra la clé au PC après le combat avant de repartir par le portail.
 
 
-11 Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake
------------------------------------
-This component makes the coffin of the fledgling vampire in the hideout in the Bloodbark Grove (area bd7410.are) interactible, so that the vampire can be staked after he retreated in his gaseous form. With this, permanently killing the fledgling vampire is made consistent with the other vampire quest in SoD ("Isabella and Ikros" with the vampire Tsolak) as well as the vampires in BGII.
-Stakes are added to one of Belegarm's shops.
+11 Ajouter la possibilité de tuer définitivement le vampire novice du Bosquet d'Ecorsang.
+-----------------------------------------------------------------------------------------
+Ce composant permet d'interagir avec le cercueil du vampire novice dans la cachette du Bosquet d'Ecorsang (zone bd7410.are), afin de pouvoir l'empaler après qu'il se soit retiré sous sa forme gazeuse. Ainsi, la mort définitive de ce vampire novice est cohérente avec les autres quêtes de vampires dans SoD (« Isabella et Ikros » avec le vampire Tsolak) ainsi qu'avec les vampires dans BGII.
+Des pieux sont ajoutés à l'un des magasins de Belegarm.
 
-The component has two install options:
+Ce composant dispose de deux options d'installation :
 
-1. Only Make it Permanently Killable
-This component only adds the possibility to stake the vampire after he was defeated in a fight.
+1. Uniquement la possibilité de le tuer définitivement.
+Ajoute uniquement la possibilité d'empaler le vampire après l'avoir vaincu au combat.
 
-2. Vampire Fledgling Will Also Return if not Staked
-With this component, the fledgling vampire will return to life after an ingame timer of 50 days if he is not staked until then.
+2. Le vampire novice revient a la vie s'il n'est pas empale.
+Le vampire novice reviendra à la vie dans un délai de 50 jours de jeu s'il n'est pas empalé avant cette échéance.
 
-Note: Both stake item variants, from SoD ("bdstake") as well as BGII ("misc6w") can be used to stake the fledgling vampire. If both are in inventory, the SoD one will be used.
-  
+Remarque : les deux variants pour les pieux, provenant respectivement de SoD (« bdstake.itm ») et BGII (« misc6w.itm »), peuvent être utilisées pour mettre en jeu le vampire novice. Si les deux se trouvent dans l'inventaire, c'est celui de SoD qui sera utilisé.
 
 
 

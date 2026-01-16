@@ -1,12 +1,12 @@
-@0  = ~[BGII #35849]The vampire is truly dead, and the coffin reeks of carrion. There is nothing else you can do with it.~
-@1  = ~[BGII #35811]The vampire retreated to this coffin once you defeated it. If you have a wooden stake, you can try to kill it. [SoD #48425, second half]His body slowly regenerates, but it will be some time before it is fully healed.~
-@2  = ~Stake Vampire in Bloodbark Grove~
-@3  = ~Stake Vampire in Bloodbark Grove
+@0  = ~[BGII #35849]El vampiro está realmente muerto y el ataúd apesta a carroña. No hay nada más que podáis hacer con él.~
+@1  = ~[BGII #35811]El vampiro se retiró a este ataúd una vez que lo derrotasteis. Si tenéis una estaca de madera, podéis intentar matarlo. [SoD #48425, second half]Su cuerpo se regenera lentamente, pero pasará algún tiempo antes de que se cure por completo.~
+@2  = ~Clavar una estaca al vampiro en la Arboleda Corteza de Sangre~
+@3  = ~Clavar una estaca al vampiro en la Arboleda Corteza de Sangre
 
-I defeated a fledgling vampire in a hideout in Bloodbark Grove, but I need to stake it with a wooden stake to kill it permanently.~
-@4  = ~Stake Vampire in Bloodbark Grove
+He derrotado a un vampiro novato en un escondite en la Arboleda Corteza de Sangre, pero necesito clavarle una estaca de madera para matarlo definitivamente.~
+@4  = ~Clavar una estaca al vampiro en la Arboleda Corteza de Sangre
 
-I staked the fledgling vampire. It won't come back to life.~
+Clavé una estaca al vampiro novato. No volverá a la vida.~
 /*
 @5  =
 @6  =

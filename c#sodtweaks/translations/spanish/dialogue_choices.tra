@@ -44,7 +44,7 @@
 @70  = ~[PC reply]Los oficiales me han puesto a cargo de esto, Corwin, así que mejor confiad en mí en esto.~
 
 /* new for v14 */
-@71  = ~Fair point. But let's assume for the moment it is true - there's no harm in checking it out.~
-@72  = ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~
-@73  = ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~
-@74  = ~Do you not realize how absurd this is?~
+@71  = ~Una observación acertada. Pero supongamos por un momento que es cierto... no hay nada de malo en comprobarlo.~
+@72  = ~Si hay dudas sobre su veracidad, ¿por qué no usar la magia para comprobarlo? Seguro que nuestros magos pueden confirmar la historia de un prisionero antes de que arriesguemos nuestras vidas en ello.~
+@73  = ~¿Unirme a vos? ¡De verdad que no entiendo para qué ha servido todo este derramamiento de sangre, Caelar!~
+@74  = ~¿No os dais cuenta de lo absurdo que es esto?~

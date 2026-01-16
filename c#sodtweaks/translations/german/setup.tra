@@ -37,6 +37,6 @@
 @1030 = ~"EndlessBG1"-Mod detektiert: Traveltrigger zu Korlasz' Gruft wird angepasst.~
 
 /* new for v14 */
-@1030   = ~Junger Vampir im Blutrindenhain kann mit Holzplock vernichtet werden~
 @1031   = ~Nur pfaehlbar machen~
 @1032   = ~Zusaetzlich regeneriert sich der Junge Vampir, wenn er nicht gepfaehlt wird~
+@1033   = ~Junger Vampir im Blutrindenhain kann mit Holzplock vernichtet werden~

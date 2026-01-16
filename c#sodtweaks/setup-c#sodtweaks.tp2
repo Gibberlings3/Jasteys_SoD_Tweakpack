@@ -1118,7 +1118,7 @@ https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#fi
 BEGIN @1031 /* Only Make it Permanently Killable */
 DESIGNATED 31
 LABEL ~JasteySoDTweaks_StakeVampireBD7410~
-SUBCOMPONENT @1030 /* ~Make Fledgling Vampire in bd7410 Perma Killable with Stake~ */
+SUBCOMPONENT @1033 /* ~Make Fledgling Vampire in bd7410 Perma Killable with Stake~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017
@@ -1132,7 +1132,7 @@ INCLUDE ~c#sodtweaks/stake_vampire_bd7410/stake_vampire_bd7410.tpa~
 BEGIN @1032 /* Vampire Fledgling Will Also Return if not Staked */
 DESIGNATED 32
 LABEL ~JasteySoDTweaks_StakeVampireBD7410Return~
-SUBCOMPONENT @1030 /* ~Make Fledgling Vampire in bd7410 Perma Killable with Stake~ */
+SUBCOMPONENT @1033 /* ~Make Fledgling Vampire in bd7410 Perma Killable with Stake~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  @1000 /* ~This component is only compatible with SoD and EET.~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @1017
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @1017

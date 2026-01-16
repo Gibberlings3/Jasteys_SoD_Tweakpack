@@ -1,12 +1,12 @@
-@0  = ~[BGII #35849]The vampire is truly dead, and the coffin reeks of carrion. There is nothing else you can do with it.~
-@1  = ~[BGII #35811]The vampire retreated to this coffin once you defeated it. If you have a wooden stake, you can try to kill it. [SoD #48425, second half]His body slowly regenerates, but it will be some time before it is fully healed.~
-@2  = ~Stake Vampire in Bloodbark Grove~
-@3  = ~Stake Vampire in Bloodbark Grove
+@0  = ~[BGII #35849]*le vampire est vraiment mort et le cercueil grouille de vers... il n'y a rien d'autre que vous puissiez faire avec*~
+@1  = ~*le vampire s'est retiré dans son cercueil une fois vaincu...  Son corps se régénère lentement, il lui faudra un certain temps avant d'être complètement guéri. Si vous possédez un pieu de bois, vous pouvez essayer de le tuer*~ // [BGII #35811] [SoD #48425, second half]
+@2  = ~Empaler le vampire du Bosquet d'Ecorsang~
+@3  = ~Empaler le vampire du Bosquet d'Ecorsang
 
-I defeated a fledgling vampire in a hideout in Bloodbark Grove, but I need to stake it with a wooden stake to kill it permanently.~
-@4  = ~Stake Vampire in Bloodbark Grove
+J'ai combattu un vampire novice dans une cave dissimulé au Bosquet d'Ecorsang, le transpercer avec un pieu en bois est nécessaire pour le détruire définitivement.~
+@4  = ~Empaler le vampire du Bosquet d'Ecorsang
 
-I staked the fledgling vampire. It won't come back to life.~
+J'ai enfoncé un pieu dans le cœur du vampire novice. Il est mort pour de bon.~
 /*
 @5  =
 @6  =

@@ -15,10 +15,10 @@
 
 /* new for v3 */
 @1012   = ~Ajustar la experiencia inicial del PJ al comienzo de SoD~
-@1013   = ~Fijar experiencia inicial en 65,000~
-@1014   = ~Fijar experiencia inicial en 90,000~
-@1015   = ~Fijar experiencia inicial en 125,000~
-@1016   = ~Fijar experiencia inicial en 161,000~
+@1013   = ~Fijar experiencia inicial en 65.000~
+@1014   = ~Fijar experiencia inicial en 90.000~
+@1015   = ~Fijar experiencia inicial en 125.000~
+@1016   = ~Fijar experiencia inicial en 161.000~
 
 /* new for v5 */
 @1017   = ~Este componente necesita ser instalado antes de EET_End.~
@@ -41,7 +41,7 @@
 @1030   = ~Parche de activadores de viaje para la entrada a la mazmorra de Korlasz de "EndlessBG1".~
 
 /* new for v14 */
-@1030   = ~Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake~
-@1031   = ~Only Make it Permanently Killable~
-@1032   = ~Vampire Fledgling Will Also Return if not Staked~
+@1031   = ~Hacerlo solo permanentemente matable~
+@1032   = ~El vampiro novato regresara si no se le clava una estaca~
+@1033   = ~Hacer que el vampiro novato de la Arboleda Corteza de Sangre sea permanentemente matable con una estaca~
 

@@ -270,13 +270,14 @@ Link do pobrania: https://baldurs-gate.de/index.php?resources/deutsche-%C3%9Cber
 
 CREDITS
 
+abalabokhin: Russian translation (v14)
 Argent77: coding help
 Arkie: Russian translation (v7.1)
 CamDawg: correctly sized portrait files
-ElGamerViejuno: Spanish translation (v12)
+ElGamerViejuno: Spanish translation (v14)
 GoForTheEyes: Polish translation (v11)
 Humanoid Taifun: ideas for reply options
-JohnBob: French translation (v9.2)
+JohnBob: French translation (v14)
 Kaliesto: tweak idea
 k4thos: template for restoring the SoD end scene and the permission to use it here
 Lauriel: ideas and corrections, proof reading (v3.1)
@@ -285,9 +286,8 @@ Lzw104522773: Simplified Chinese translation (v13)
 Machiavélique: proofreading (v8.1 French)
 Shai-Hulud: proofreading (v7.1 German)
 subteldoctor: author of component "Adjust PC's Starting XP at Beginning of SoD"
-Humanoid Taifun: ideas for reply options
 Ulpian: Russian translation (v11.1)
-yota13: Russian translation (v5.1; v9.1)
+yota13: Russian translation (v4 - v9.1)
 zelazko: idea for component "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake".
 
 
@@ -319,7 +319,7 @@ www.DeepL.com/Translator
 HISTORY
 
 Version 14:
--New component: "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake" with two install options, idea by zelazko (https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#findComment-331839).
+-New component: "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake" with two install options, idea by zelazko (https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#findComment-331839). French by JohnBob (11jo), Russian by abalabokhin, Spanish by ElGamerViejuno.
 -New reply options, ideas from Humanoid Taifun (https://forums.beamdog.com/discussion/comment/1219512/#Comment_1219512).
 -New reply options for Caelar should not bork the dialogue progress (added missing variable to advange bd_plot).
 -Updated link to Shai Hulud's Text-Patch.

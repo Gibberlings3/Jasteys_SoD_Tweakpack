@@ -262,13 +262,14 @@ Download Link: https://www.baldurs-gate.de/index.php?threads/shai-huluds-text-pa
 
 DANKSAGUNGEN
 
+abalabokhin: Russische Übersetzung (v14)
 Argent77: Codinghilfe
 Arkie: Russische Übersetzung (v7.1)
 CamDawg: Portraitdateien im richtigen Format
-ElGamerViejuno: Spanish translation (v12)
+ElGamerViejuno: Spanish translation (v14)
 GoForTheEyes: Polish translation (v11)
 Humanoid Taifun: Ideen für Antwortoptionen
-JohnBob: French translation (v9.2)
+JohnBob: French translation (v14)
 Kaliesto: Tweakidee "Geskripteten Kampf am Ende von SoD wiederherstellen"
 k4thos: Skripting-Vorlage zum smarten Transferieren der Gegenstände
 Lauriel: Ideen und Korrekturen, Korrekturlesen (v3.1 englisch)
@@ -278,7 +279,7 @@ Machiavélique: Korrekturlesen (v8.1 französisch)
 Shai-Hulud: Korrekturlesen (v7.1 deutsch)
 subteldoctor: Autor der Komponente "Start-EP des HC in SoD anpassen"
 Ulpian: Russian translation (v11.1)
-yota13: Russische Übersetzung (v5.1, 9.1)
+yota13: Russische Übersetzung (v4 - v9.1)
 zelazko: Idee für die Komponente "Junger Vampir im Blutrindenhain kann mit Holzplock vernichtet werden".
 
 
@@ -308,7 +309,7 @@ www.DeepL.com/Translator
 VERSIONS-HISTORIE
 
 Version 14:
--New component: "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake" with two install options, idea by zelazko (https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#findComment-331839).
+-New component: "Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake" with two install options, idea by zelazko (https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/page/8/#findComment-331839). French by JohnBob (11jo), Russian by abalabokhin, Spanish by ElGamerViejuno.
 -New reply options, ideas from Humanoid Taifun (https://forums.beamdog.com/discussion/comment/1219512/#Comment_1219512).
 -New reply options for Caelar should not bork the dialogue progress (added missing variable to advange bd_plot).
 -Updated link to Shai Hulud's Text-Patch.

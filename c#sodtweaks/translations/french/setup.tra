@@ -15,10 +15,10 @@
 
 /* new for v3 */
 @1012   = ~Ajuster l'experience de depart du PC au debut de SoD, par Subtledoctor~
-@1013   = ~Regler l'experience de depart a 65,000~
-@1014   = ~Regler l'experience de depart a 90,000~
-@1015   = ~Regler l'experience de depart a 125,000~
-@1016   = ~Regler l'experience de depart a 161,000~
+@1013   = ~Regler l'experience de depart a 65 000~
+@1014   = ~Regler l'experience de depart a 90 000~
+@1015   = ~Regler l'experience de depart a 125 000~
+@1016   = ~Regler l'experience de depart a 161 000~
 
 /* new for v5 */
 @1017   = ~Ce composant doit etre installe avant EET_End.~

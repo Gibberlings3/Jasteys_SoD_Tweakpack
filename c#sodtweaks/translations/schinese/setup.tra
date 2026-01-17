@@ -34,13 +34,13 @@
 @1025   = ~海夫南拿着龙矛金库的钥匙~
 @1026   = ~可从龙矛堡关闭传送门（奥恩·白银始终活着）~
 
-/* new for v7 */
-@1027   = ~Patching item transfer into custom PC's palace residence from Another fine Hell mod.~
-@1028   = ~Patching item transfer from Korlasz Dungeon into PC's palace residence from EndlessBG1.~
-@1029   = ~Patching item transfer from Korlasz Dungeon into PC's palace residence from Transitions.~
-@1030   = ~Patching travel triggers for entrance to Korlasz' Crypt from EndlessBG1.~
+/* v7版本新增 */
+@1027   = ~正在应用补丁：将“Another fine Hell”模组的物品转移至玩家角色自定义的宫殿居所。~
+@1028   = ~正在应用补丁：将“EndlessBG1”模组中科拉斯地窖的物品转移至玩家角色的宫殿居所。~
+@1029   = ~正在应用补丁：将“Transitions”模组中科拉斯地窖的物品转移至玩家角色的宫殿居所。~
+@1030   = ~正在应用补丁：为来自“EndlessBG1”模组的科拉斯墓穴入口设置旅行触发器。~
 
-/* new for v14 */
-@1031   = ~Only Make it Permanently Killable~
-@1032   = ~Vampire Fledgling Will Also Return if not Staked~
-@1033   = ~Make Fledgling Vampire in Bloodbark Grove Perma Killable with Stake~
+/* v14版本新增 */
+@1031   = ~仅设为永久可击杀~
+@1032   = ~未钉木桩则吸血鬼新生体仍将复活~
+@1033   = ~使血皮树林中的吸血鬼新生体可通过木桩永久击杀~

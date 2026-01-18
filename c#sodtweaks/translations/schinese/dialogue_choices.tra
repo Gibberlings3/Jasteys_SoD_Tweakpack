@@ -32,7 +32,7 @@
 
 /* new for v10 */
 @60  = ~[PC reply]你在拷问犯人？~
-@61  = ~[PC reply这就是为什么获得答案是一个有问题的概念的原因之一，但我不是来争论这个的。现在怎么办？~
+@61  = ~[PC reply]这就是为什么获得答案是一个有问题的概念的原因之一，但我不是来争论这个的。现在怎么办？~
 @62  = ~[PC reply]是，我会的。~
 @63  = ~[PC reply]我想我没有更多选择了。~
 @64  = ~[PC reply]是的，但正如奈德洛克统帅刚刚指出的那样，甚至不能保证它会！~
@@ -44,7 +44,7 @@
 @70  = ~[PC reply]军官们把这项任务交给了我，所以你最好相信我的表现，科温。~
 
 /* new for v14 */
-@71  = ~Fair point. But let's assume for the moment it is true - there's no harm in checking it out.~
-@72  = ~If accuracy is in doubt, why not use magic to test it? Surely our mages can confirm a prisoner’s tale before we risk lives on it.~
-@73  = ~Join you? I truly cannot see what all the bloodshed was for, Caelar!~
-@74  = ~Do you not realize how absurd this is?~
+@71  = ~有道理。不过咱们暂且假设这是真的——去核实一下也无妨。~
+@72  = ~既然准确性存疑，为何不用魔法来验证呢？在我们的士兵冒生命风险之前，法师们肯定能确认囚犯的供词是否属实。~
+@73  = ~加入你？我实在不明白，凯拉，这一切的流血牺牲到底是为了什么！~
+@74  = ~你难道没意识到这有多荒谬吗？~

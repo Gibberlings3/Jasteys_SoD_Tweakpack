@@ -1,12 +1,12 @@
-@0  = ~[BGII #35849]The vampire is truly dead, and the coffin reeks of carrion. There is nothing else you can do with it.~
-@1  = ~[BGII #35811]The vampire retreated to this coffin once you defeated it. If you have a wooden stake, you can try to kill it. [SoD #48425, second half]His body slowly regenerates, but it will be some time before it is fully healed.~
-@2  = ~Stake Vampire in Bloodbark Grove~
-@3  = ~Stake Vampire in Bloodbark Grove
+@0  = ~[BGII #35849]这吸血鬼已完全死亡，而棺木也飘散出腐尸的恶臭。你能做的也就只有这些。~
+@1  = ~[BGII #35811]吸血鬼被打败后就逃回了这副棺材里。如果有木桩的话，可以试着彻底摧毁它。[SoD #48425, second half]他的身体慢慢地再生，但要完全复原还需要一段时间。~
+@2  = ~在血皮树林钉死吸血鬼~
+@3  = ~在血皮树林钉死吸血鬼
 
-I defeated a fledgling vampire in a hideout in Bloodbark Grove, but I need to stake it with a wooden stake to kill it permanently.~
-@4  = ~Stake Vampire in Bloodbark Grove
+我在血皮树林的藏身处击败了一只新生的吸血鬼，但需用木桩钉穿其身躯方能彻底消灭它。~
+@4  = ~在血皮树林钉死吸血鬼
 
-I staked the fledgling vampire. It won't come back to life.~
+我已用木桩处决了那只新生吸血鬼。它将不再复活。~
 /*
 @5  =
 @6  =
